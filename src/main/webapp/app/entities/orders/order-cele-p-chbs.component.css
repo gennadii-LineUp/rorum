@@ -1,0 +1,23 @@
+/*table tbody tr td{*/
+    /*!*max-width: 300px;*!*/
+    /*word-wrap: break-word;*/
+    /*white-space: normal;*/
+/*}*/
+
+.size {
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    padding: 5px; /* Поля */
+    text-overflow: ellipsis ; /* Многоточие */
+}
+.size:hover {
+    background-color: #d3d3d3;
+    white-space: normal ; /* Обычный перенос текста */
+}
+.table {
+    margin-bottom: 0;
+}
+label {
+    margin-bottom: 0 !important;
+    padding-bottom: .5rem !important;;
+}

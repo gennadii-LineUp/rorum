@@ -1,0 +1,33 @@
+{
+    "rorumApp": {
+        "setOfSentPurposes" : {
+            "home": {
+                "title": "Plan",
+                "createLabel": "Dodaj Set Of Sent Purposes",
+                "createOrEditLabel": "Dodaj lub edytuj: Set Of Sent Purposes"
+            },
+            "popupNotation": {
+                "title": "Odrzuć zaproponowany plan"
+            },
+            "created": "Utworzono plan z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Set Of Sent Purposes z identyfikatorem {{ param }}",
+            "deleted": "Usunięto plan użytkownika z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć wybrany plan?"
+            },
+            "detail": {
+                "title": "Set Of Sent Purposes"
+            },
+            "rejectionReason": "Wiadomość od administratora",
+            "statusOfSending": "Status wysłanego planu",
+            "isLastVersion": "Is Last Version",
+            "creationDate": "Data utworzenia",
+            "notation": "Powód",
+            "orders": "Orders",
+            "user": "Utworzone przez",
+            "glossaryOfPurposes": "Glossary Of Purposes",
+            "measureUnitsPurposes": "Measure Units Purposes",
+            "risksPurposes": "Risks Purposes"
+        }
+    }
+}

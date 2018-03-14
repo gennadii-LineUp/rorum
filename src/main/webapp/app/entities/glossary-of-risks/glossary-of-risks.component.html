@@ -1,0 +1,88 @@
+<div>
+    <h2>
+        <span jhiTranslate="rorumApp.glossaryOfRisks.home.title">Glossary Of Risks</span>
+        <button *jhiHasAnyAuthority="'ROLE_EDYCJA_SLOWNIKA_RYZYK'" class="btn btn-primary float-right jh-create-entity create-glossary-of-risks" [routerLink]="['/', { outlets: { popup: ['glossary-of-risks-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span  jhiTranslate="rorumApp.glossaryOfRisks.home.createLabel">
+            Create new Glossary Of Risks
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="glossaryOfRisksDTO">
+        <table *jhiHasAnyAuthority="'ROLE_PRZEGLADANIE_SLOWNIKA_RYZYK'" class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="transition.bind(this)">
+            <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="name"><span jhiTranslate="rorumApp.glossaryOfRisks.name">Name</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="completionDate"><span jhiTranslate="rorumApp.glossaryOfRisks.completionDate">Completion Date</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="creationDate"><span jhiTranslate="rorumApp.glossaryOfRisks.creationDate">Creation Date</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="importantTo"><span jhiTranslate="rorumApp.glossaryOfRisks.importantTo">Important To</span> <span class="fa fa-sort"></span></th>
+            <!-- <th jhiSortBy="isChecked"><span jhiTranslate="rorumApp.glossaryOfRisks.isChecked">Is Checked</span> <span class="fa fa-sort"></span></th> -->
+            <!-- <th jhiSortBy="user.id"><span jhiTranslate="rorumApp.glossaryOfRisks.user">User</span> <span class="fa fa-sort"></span></th> -->
+            <!-- <th jhiSortBy="glossaryOfRisksService.id"><span jhiTranslate="rorumApp.glossaryOfRisks.glossaryOfPurposes">Glossary Of Purposes</span> <span class="fa fa-sort"></span></th> -->
+            <!-- <th jhiSortBy="organisationStructure.id"><span jhiTranslate="rorumApp.glossaryOfRisks.organisationStructure">Organisation Structure</span> <span class="fa fa-sort"></span></th> -->
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let glossaryOfRisksDTO of glossaryOfRisksDTO ;trackBy: trackId">
+                <td><a [routerLink]="['../glossary-of-risks', glossaryOfRisksDTO.id ]">{{glossaryOfRisksDTO.id}}</a></td>
+                <td>{{glossaryOfRisksDTO.name}}</td>
+                <td>{{glossaryOfRisksDTO.completionDate | date:'mediumDate'}}</td>
+                <td>{{glossaryOfRisksDTO.creationDate | date:'mediumDate'}}</td>
+                <td>{{glossaryOfRisksDTO.importantTo | date:'mediumDate'}}</td>
+                <!-- <td>{{glossaryOfRisksDTO.isChecked}}</td> -->
+                <!-- <td>
+                    {{glossaryOfRisksDTO.user?.id}}
+                </td> -->
+                <!-- <td>
+                    <div *ngIf="glossaryOfRisksDTO.glossaryOfPurposes">
+                        <a [routerLink]="['../glossary-of-purposes', glossaryOfRisksDTO.glossaryOfPurposes?.id ]" >{{glossaryOfRisksDTO.glossaryOfPurposes?.id}}</a>
+                    </div>
+                </td>
+                <td>
+                    <div *ngIf="glossaryOfRisksDTO.organisationStructure">
+                        <a [routerLink]="['../organisation-structure', glossaryOfRisksDTO.organisationStructure?.id ]" >{{glossaryOfRisksDTO.organisationStructure?.id}}</a>
+                    </div>
+                </td> -->
+                <td *jhiHasAnyAuthority="'ROLE_EDYCJA_SLOWNIKA_RYZYK'" class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['../glossary-of-risks', glossaryOfRisksDTO.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'glossary-of-risks/'+ glossaryOfRisksDTO.id + '/edit'} }]"
+                                replaceUrl="true"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'glossary-of-risks/'+ glossaryOfRisksDTO.id + '/delete'} }]"
+                                replaceUrl="true"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+        <div *ngIf="glossaryOfRisksDTO && glossaryOfRisksDTO.length">
+            <div class="row justify-content-center">
+                <jhi-item-count [page]="page" [total]="queryCount" [maxSize]="5" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+            </div>
+            <div class="row justify-content-center">
+                <ngb-pagination [collectionSize]="totalItems" [maxSize]="5" [pageSize]="itemsPerPage" [(page)]="page" (pageChange)="loadPage(page)"></ngb-pagination>
+            </div>
+        </div>
+</div>

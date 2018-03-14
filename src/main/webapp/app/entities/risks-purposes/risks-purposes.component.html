@@ -1,0 +1,70 @@
+<div>
+    <h2>
+        <span jhiTranslate="rorumApp.risksPurposes.home.title">Risks Purposes</span>
+        <button class="btn btn-primary float-right jh-create-entity create-risks-purposes" [routerLink]="['/', { outlets: { popup: ['risks-purposes-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span  jhiTranslate="rorumApp.risksPurposes.home.createLabel">
+            Create new Risks Purposes
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="risksPurposes">
+        <table class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="transition.bind(this)">
+            <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="creationDate"><span jhiTranslate="rorumApp.risksPurposes.creationDate">Creation Date</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="setOfSentPurposes.id"><span jhiTranslate="rorumApp.risksPurposes.setOfSentPurposes">Set Of Sent Purposes</span> <span class="fa fa-sort"></span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let risksPurposes of risksPurposes ;trackBy: trackId">
+                <td><a [routerLink]="['../risks-purposes', risksPurposes.id ]">{{risksPurposes.id}}</a></td>
+                <td>{{risksPurposes.creationDate | date:'mediumDate'}}</td>
+                <td>
+                    <div *ngIf="risksPurposes.setOfSentPurposes">
+                        <a [routerLink]="['../set-of-sent-purposes', risksPurposes.setOfSentPurposes?.id ]" >{{risksPurposes.setOfSentPurposes?.id}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['../risks-purposes', risksPurposes.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'risks-purposes/'+ risksPurposes.id + '/edit'} }]"
+                                replaceUrl="true"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'risks-purposes/'+ risksPurposes.id + '/delete'} }]"
+                                replaceUrl="true"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+        <div *ngIf="risksPurposes && risksPurposes.length">
+            <div class="row justify-content-center">
+                <jhi-item-count [page]="page" [total]="queryCount" [maxSize]="5" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+            </div>
+            <div class="row justify-content-center">
+                <ngb-pagination [collectionSize]="totalItems" [maxSize]="5" [pageSize]="itemsPerPage" [(page)]="page" (pageChange)="loadPage(page)"></ngb-pagination>
+            </div>
+        </div>
+</div>

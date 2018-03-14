@@ -1,0 +1,51 @@
+
+<div *ngIf="filledMeasureUnits">
+    <h2><span jhiTranslate="rorumApp.filledMeasureUnits.detail.title">Filled Measure Units</span> {{filledMeasureUnits.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="rorumApp.filledMeasureUnits.baseValue">Value</span></dt>
+        <dd>
+            <span>{{filledMeasureUnits.baseValue}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.filledMeasureUnits.option">Option</span></dt>
+        <dd>
+            <span jhiTranslate="{{'rorumApp.OptionOfMeasureUnits.' + filledMeasureUnits.option}}">{{filledMeasureUnits.option}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.filledMeasureUnits.finalValue">Final Value</span></dt>
+        <dd>
+            <span>{{filledMeasureUnits.finalValue}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.filledMeasureUnits.glossaryOfRisksService">Glossary Of Purposes</span></dt>
+        <dd>
+            <div *ngIf="filledMeasureUnits.glossaryOfRisksService">
+                <a [routerLink]="['/glossary-of-purposes', filledMeasureUnits.glossaryOfRisksService?.id]">{{filledMeasureUnits.glossaryOfRisksService?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.filledMeasureUnits.measureUnitsPurposes">Measure Units Purposes</span></dt>
+        <dd>
+            <div *ngIf="filledMeasureUnits.measureUnitsPurposes">
+                <a [routerLink]="['/measure-units-purposes', filledMeasureUnits.measureUnitsPurposes?.id]">{{filledMeasureUnits.measureUnitsPurposes?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.filledMeasureUnits.glossaryOfMeasureUnitsDTO">Glossary Of Measure Units</span></dt>
+        <dd>
+            <div *ngIf="filledMeasureUnits.glossaryOfMeasureUnitsDTO">
+                <a [routerLink]="['/glossary-of-measure-units', filledMeasureUnits.glossaryOfMeasureUnitsDTO?.id]">{{filledMeasureUnits.glossaryOfMeasureUnitsDTO?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'filled-measure-units/'+ filledMeasureUnits.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

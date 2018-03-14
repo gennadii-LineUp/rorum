@@ -1,0 +1,23 @@
+{
+    "rorumApp": {
+        "measureUnitsPurposes" : {
+            "home": {
+                "title": "Measure Units Purposes",
+                "createLabel": "Dodaj Measure Units Purposes",
+                "createOrEditLabel": "Dodaj lub edytuj: Measure Units Purposes"
+            },
+            "created": "Utworzono nowy Measure Units Purposes z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Measure Units Purposes z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Measure Units Purposes z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Measure Units Purposes {{ id }}?"
+            },
+            "detail": {
+                "title": "Measure Units Purposes"
+            },
+            "creationDate": "Creation Date",
+            "setOfSentPurposes": "Set Of Sent Purposes",
+            "filledMeasureUnits": "Filled Measure Units"
+        }
+    }
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="config/liquibase/changelog/20171218223657_added_entity_GlossaryOfProcesses.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170218221851_probability_configuration.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170218221852_power_of_influence_configuration.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170638291853_percentages_of_calculated_values.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218224403_added_entity_OrganisationStructure.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218224933_added_entity_Orders.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/95633565424244_added_entity_authorities.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/52337654246525_added_entity_roles.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/34534687335356_added_entity_roles_authorities.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/55636765272624_added_entity_users_roles.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218230023_added_entity_GlossaryOfPurposes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218231015_added_entity_SetOfSentPurposes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218231612_added_entity_GlossaryOfMeasureUnits.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218232221_added_entity_GlossaryOfRisks.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218232743_added_entity_GlossaryOfCommercialRisks.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218233525_added_entity_RisksPurposes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218234125_added_entity_MeasureUnitsPurposes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218234649_added_entity_FilledMeasureUnits.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171219000102_added_entity_FilledRisks.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171219123211_added_entity_CommercialRisksPurposes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171219124633_added_entity_FilledCommercialRisks.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180119101544_added_entity_PossibilitiesToImproveRisk.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180119102844_added_entity_DecisionForRisk.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180119112836_added_entity_HighRisk.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180119123045_added_entity_HighCommercialRisk.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180202090713_added_entity_Incident.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180220091404_added_entity_GlossaryOfKeyRiskIndicators.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180220101126_added_entity_KeyRiskIndicatorPurposes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180220094107_added_entity_FilledKeyRiskIndicator.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180221160345_added_entity_GlossaryOfControlMechanisms.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/201803011237_create_db_functions.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20171218224403_added_entity_constraints_OrganisationStructure.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218230023_added_entity_constraints_GlossaryOfPurposes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218231015_added_entity_constraints_SetOfSentPurposes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218231612_added_entity_constraints_GlossaryOfMeasureUnits.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218232221_added_entity_constraints_GlossaryOfRisks.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218232743_added_entity_constraints_GlossaryOfCommercialRisks.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218233525_added_entity_constraints_RisksPurposes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218234125_added_entity_constraints_MeasureUnitsPurposes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171218234649_added_entity_constraints_FilledMeasureUnits.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171219000102_added_entity_constraints_FilledRisks.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171219123211_added_entity_constraints_CommercialRisksPurposes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20171219124633_added_entity_constraints_FilledCommercialRisks.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180119112836_added_entity_constraints_HighRisk.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180119123045_added_entity_constraints_HighCommercialRisk.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180202090713_added_entity_constraints_Incident.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180220091404_added_entity_constraints_GlossaryOfKeyRiskIndicators.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180220101126_added_entity_constraints_KeyRiskIndicatorPurposes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180220094107_added_entity_constraints_FilledKeyRiskIndicator.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>

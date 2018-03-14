@@ -1,0 +1,36 @@
+{
+    "register": {
+        "title": "Rejestracja",
+        "form": {
+            "button": "Zarejestruj"
+        },
+        "messages": {
+            "validate": {
+                "login": {
+                    "required": "Twój login jest wymagany.",
+                    "minlength": "Twój login musi mieć długość co najmniej 1 znaku",
+                    "maxlength": "Twój login nie może być dłuższy niż 50 znaków",
+                    "pattern": "Twój login może zawierać tylko małe litery i cyfry"
+                },
+                "firstName": {
+                    "required": "Twoje imię jest wymagane.",
+                    "minlength": "Twoje imię musi mieć długość co najmniej 1 znaku",
+                    "maxlength": "Twoje imię nie może być dłuższy niż 50 znaków",
+                    "pattern": "Twoje imię może zawierać tylko małe litery"
+                },
+                "lastName": {
+                    "required": "Twoje nazwisko jest wymagane.",
+                    "minlength": "Twoje nazwisko musi mieć długość co najmniej 1 znaku",
+                    "maxlength": "Twoje nazwisko nie może być dłuższy niż 50 znaków",
+                    "pattern": "Twoje nazwisko może zawierać tylko małe litery"
+                }
+            },
+            "success": "<strong>Rejestracja udała się!</strong> Wysłaliśmy do Ciebie email z linkiem do weryfikacji konta i prosimy abyś sprawdził swoją skrzynkę pocztową.",
+            "error": {
+                "fail": "<strong>Rejestracja nieudana!</strong> Prosimy spróbować później.",
+                "userexists": "<strong>Użytkownik z taką nazwą już istnieje!</strong> Prosimy wybrać inną nazwę.",
+                "emailexists": "<strong>Ten adres email jest już zarejestrowany!</strong> Prosimy wybrać inny adres."
+            }
+        }
+    }
+}

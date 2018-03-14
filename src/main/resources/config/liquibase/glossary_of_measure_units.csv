@@ -1,0 +1,225 @@
+id;name;units_of_measurement;frequency_of_gathering_data;glossary_of_purposes_id;is_checked;organisation_structure_id;user_id
+1;liczba sporządzonych aktów;SZT;MONTH;18;true;null;14
+2;liczba kart urodzenia;SZT;MONTH;18;true;null;14
+3;liczba sporządzonych aktów;SZT;YEAR;19;true;null;14
+4;liczba sporządzonych zapewnień do zawarcia aktu małżeńskiego;SZT;YEAR;19;true;null;14
+5;liczba wydanych aktów;SZT;YEAR;19;true;null;14
+6;liczba sporządzonych aktów;SZT;YEAR;20;true;null;14
+7;liczba wniosków;SZT;YEAR;20;true;null;14
+8;liczba postanowień sądowych;SZT;YEAR;20;true;null;14
+9;liczba wydanych odpisów;SZT;YEAR;21;true;null;14
+10;liczba wniosków;SZT;YEAR;21;true;null;14
+11;zaświadczenie o stanie cywilnym;SZT;YEAR;21;true;null;14
+12;zaświadczenie o zamieszczonych lub niezamieszczonych danych dot. osoby;SZT;YEAR;21;true;null;14
+13;zaświadczenie  o braku przeszkód do zawarcia związku małżeńskiego;SZT;YEAR;21;true;null;14
+14;zaświadczenie stwierdzające moĹĽność zawarcia małżeństwa zgodnie z prawem polskim;SZT;YEAR;21;true;null;14
+15;liczba poprawionych aktów;SZT;YEAR;22;true;null;14
+16;liczba udzielonych ślubów;SZT;YEAR;23;true;null;14
+17;liczba wpisanych aktów stanu cywilnego;SZT;YEAR;24;true;null;14
+18;liczba odtworzonych aktów;SZT;YEAR;25;true;null;14
+19;liczba wydanych decyzji;SZT;YEAR;26;true;null;14
+20;liczba wniosków;SZT;YEAR;26;true;null;14
+21;liczba wniosków;SZT;YEAR;27;true;null;14
+22;liczba wniosków o pomiar;SZT;YEAR;28;true;null;14
+23;liczba pomiarów kontrolnych;SZT;YEAR;28;true;null;14
+24;liczba opinii;SZT;YEAR;29;true;null;14
+25;liczba wystąpień do jednostek o dane;SZT;YEAR;30;true;null;14
+26;przygotowanie OPZ;SZT;YEAR;30;true;null;14
+27;liczba etapów do odbioru;SZT;YEAR;30;true;null;14
+28;mapa akustyczna;SZT;YEAR;30;true;null;14
+29;liczba konsultacji;SZT;YEAR;30;true;null;14
+30;uchwalony program;SZT;YEAR;30;true;null;14
+31;Program Ochrony Środowiska;SZT;YEAR;31;true;null;14
+32;liczba wystąpień do jednostek o dane;SZT;YEAR;31;true;null;14
+33;liczba konsultacji;SZT;YEAR;31;true;null;14
+34;opracowanie diagnozy;SZT;YEAR;31;true;null;14
+35;uchwalony program;SZT;YEAR;31;true;null;14
+36;liczba wniosków;SZT;YEAR;32;true;null;14
+37;liczba decyzji;SZT;YEAR;32;true;null;14
+38;liczba postanowień;SZT;YEAR;32;true;null;14
+39;liczbawszystkich zakończonych postępowań;SZT;YEAR;32;true;null;14
+40;liczba opinii;SZT;YEAR;33;true;null;14
+41;liczba wniosków;SZT;YEAR;34;true;null;14
+42;liczba decyzji;SZT;YEAR;34;true;null;14
+43;liczba postanowień;SZT;YEAR;34;true;null;14
+44;liczba wszystkich zakończonych postępowań;SZT;YEAR;34;true;null;14
+45;liczba punktów pomiarowych;SZT;YEAR;35;true;null;14
+46;liczba kontroli;SZT;YEAR;35;true;null;14
+47;odbiór pomiarów;SZT;YEAR;35;true;null;14
+48;wykonanie OPZ;SZT;YEAR;35;true;null;14
+49;podpisanie umowy;SZT;YEAR;35;true;null;14
+50;liczba wniosków;SZT;YEAR;36;true;null;14
+51;liczba decyzji;SZT;YEAR;36;true;null;14
+52;liczba postanowień;SZT;YEAR;36;true;null;14
+53;liczba wszystkich zakończonych postępowań;SZT;YEAR;36;true;null;14
+54;liczba przeglądów;SZT;YEAR;37;true;null;14
+55;liczba wniosków;SZT;YEAR;38;true;null;14
+56;liczba decyzji;SZT;YEAR;38;true;null;14
+57;liczba postanowień;SZT;YEAR;38;true;null;14
+58;liczba wszystkich zakończonych postępowań;SZT;YEAR;38;true;null;14
+59;liczba opinii;SZT;YEAR;39;true;null;14
+60;liczba przetargów;SZT;YEAR;40;true;null;14
+61;liczba umów;SZT;YEAR;40;true;null;14
+62;liczba zabiegów pielęgnacyjnych;SZT;YEAR;40;true;null;14
+63;liczba kontroli;SZT;YEAR;40;true;null;14
+64;liczba wniosków;SZT;YEAR;40;true;null;14
+65;liczba ekspertyz;SZT;YEAR;40;true;null;14
+66;liczba projektów uchwał;SZT;YEAR;40;true;null;14
+67;koszt w zł;ZL;YEAR;40;true;null;14
+68;liczba przyjętych sprawozdań rzeczowo-finansowych;SZT;YEAR;41;true;null;14
+69;liczba przyjętych wniosków gospodarczych;SZT;YEAR;41;true;null;14
+70;liczba wniosków;SZT;YEAR;42;true;null;14
+71;liczba udzielonych dotacji;SZT;YEAR;42;true;null;14
+72;liczba rozliczonych umów o dotację;SZT;YEAR;42;true;null;14
+73;liczba wniosków;SZT;YEAR;43;true;null;14
+74;liczba udzielonych dotacji;SZT;YEAR;43;true;null;14
+75;liczba rozliczonych umów o dotację;SZT;YEAR;43;true;null;14
+76;liczba wniosków;SZT;YEAR;44;true;null;14
+77;liczba udzielonych dotacji;SZT;YEAR;44;true;null;14
+78;liczba rozliczonych umów o dotację;SZT;YEAR;44;true;null;14
+79;liczba wniosków;SZT;YEAR;45;true;null;14
+80;liczba wydanych kart wędkarskich;SZT;YEAR;45;true;null;14
+81;liczba zarejestrowanych sprzętów pływających;SZT;YEAR;45;true;null;14
+82;liczba zaświadczeń o rejestracji/ zarejestrowanych zwierząt egzotycznych;SZT;YEAR;45;true;null;14
+83;sporządzony plan kontroli ;SZT;YEAR;46;true;null;14
+84;liczba kontroli finansowych;SZT;YEAR;46;true;null;14
+85;liczba kontroli merytorycznych;SZT;YEAR;46;true;null;14
+86;liczba konkursów;SZT;YEAR;47;true;null;14
+87;liczba ofert;SZT;YEAR;47;true;null;14
+88;liczba umów;SZT;YEAR;47;true;null;14
+89;kwota wypłaconych dotacji w zł;ZL;YEAR;47;true;null;14
+90;liczba zaczipowanych zwierząt;SZT;YEAR;48;true;null;14
+91;przeprowadzenie przetargu;SZT;YEAR;48;true;null;14
+92;liczba umów (dzielnic);SZT;YEAR;48;true;null;14
+93;przeprowadzony przetarg;SZT;YEAR;49;true;null;14
+94;liczba kg zakupionej karmy;SZT;YEAR;49;true;null;14
+95;liczba kontroli;SZT;YEAR;49;true;null;14
+96;kwota w zł;ZL;YEAR;49;true;null;14
+97;liczba wizytacji;SZT;YEAR;50;true;null;14
+98;zaopiniowanie sprawozdania jednostki;SZT;YEAR;50;true;null;14
+99;zaopiniowanie planu finansowego jednostki;SZT;YEAR;50;true;null;14
+100;zaopiniowanie sprawozdania jednostki;SZT;YEAR;51;true;null;14
+101;zaopiniowanie planu finansowego jednostki;SZT;YEAR;51;true;null;14
+102;liczba umów;SZT;YEAR;52;true;null;14
+103;kwota w zł;SZT;YEAR;52;true;null;14
+104;projekt uchwały;SZT;YEAR;53;true;null;14
+105;liczba wniosków;SZT;YEAR;54;true;null;14
+106;liczba decyzji;SZT;YEAR;54;true;null;14
+107;liczba oświadczeń woli;SZT;YEAR;55;true;null;14
+108;liczba opinii;SZT;YEAR;55;true;null;14
+109;liczba wniosków;SZT;YEAR;56;true;null;14
+110;liczba decyzji;SZT;YEAR;56;true;null;14
+111;liczba interwencji;SZT;YEAR;57;true;null;14
+112;liczba decyzji;SZT;YEAR;57;true;null;14
+113;liczba wniosków;SZT;YEAR;58;true;null;14
+114;liczba decyzji;SZT;YEAR;58;true;null;14
+115;liczba interwencji;SZT;YEAR;59;true;null;14
+116;liczba wniosków;SZT;YEAR;59;true;null;14
+117;liczba decyzji;SZT;YEAR;59;true;null;14
+118;liczba akcji ekologicznych;SZT;YEAR;60;true;null;14
+119;liczba uczestników;SZT;YEAR;60;true;null;14
+120;liczba konkursów;SZT;YEAR;60;true;null;14
+121;kwota wydatków w zł;ZL;YEAR;60;true;null;14
+122;liczba inwestycji;SZT;YEAR;61;true;null;14
+123;długość nowych ścieżek w km;KM;YEAR;61;true;null;14
+124;długość przebudowanych ścieżek w km;KM;YEAR;61;true;null;14
+125;pow. nowych skwerów;M2;YEAR;61;true;null;14
+126;pow. nowych terenów zieleni;M2;YEAR;61;true;null;14
+127;liczba nasadzeń drzew;SZT;YEAR;61;true;null;14
+128;powierzchnia nasadzeń;M2;YEAR;61;true;null;14
+129;pow. przebudowanych skwerów;M2;YEAR;61;true;null;14
+130;pow przebudowanych terenów zielonych;SZT;YEAR;61;true;null;14
+131;liczba etapów prac;ZL;YEAR;61;true;null;14
+132;koszt inwestycji w zł;ZL;YEAR;61;true;null;14
+133;liczba interwencji;SZT;YEAR;62;true;null;14
+134;liczba oczyszczanych miejsc;SZT;YEAR;62;true;null;14
+135;tonaż\objętość usuniętych odpadów;KG;YEAR;62;true;null;14
+136;koszt realizacji zadania w zł;ZL;YEAR;62;true;null;14
+137;liczba wezwań;SZT;YEAR;63;true;null;14
+138;liczba decyzji;SZT;YEAR;63;true;null;14
+139;kwota wydatków w zł;ZL;YEAR;63;true;null;14
+140;liczba wykonań zastępczych;SZT;YEAR;63;true;null;14
+141;liczba deklaracji;SZT;YEAR;64;true;null;14
+142;liczba wprowadzonych kont;SZT;YEAR;64;true;null;14
+143;liczba decyzji;SZT;YEAR;64;true;null;14
+144;liczba przeprowadzonych kontroli;SZT;YEAR;65;true;null;14
+145;liczba przeglądów;SZT;YEAR;66;true;null;14
+146;liczba konserwacji;SZT;YEAR;66;true;null;14
+147;liczba zleceń/ przetargów;SZT;YEAR;66;true;null;14
+148;liczba kontroli;SZT;YEAR;66;true;null;14
+149;kwota wydatków w zł;ZL;YEAR;66;true;null;14
+150;liczba zgłoszeń;SZT;YEAR;67;true;null;14
+151;liczba wydanych zawiadomień;SZT;YEAR;67;true;null;14
+152;dochód w zł;ZL;YEAR;67;true;null;14
+153;liczba nowych placów zabaw;SZT;YEAR;68;true;null;14
+154;liczba istniejących placów zabaw;SZT;YEAR;68;true;null;14
+155;liczba urządzeń;SZT;YEAR;68;true;null;14
+156;liczba wymian piasku;SZT;YEAR;68;true;null;14
+157;liczba napraw i konserwacji;SZT;YEAR;68;true;null;14
+158;liczba przeglądów;SZT;YEAR;68;true;null;14
+159;kwota wydatków w zł;ZL;YEAR;68;true;null;14
+160;liczba nowych siłowni plenerowych;SZT;YEAR;69;true;null;14
+161;liczba istniejących siłowni plenerowych;SZT;YEAR;69;true;null;14
+162;liczba urządzeń;SZT;YEAR;69;true;null;14
+163;liczba przeglądów;SZT;YEAR;69;true;null;14
+164;liczba konserwacji;SZT;YEAR;69;true;null;14
+165;koszt w zł;ZL;YEAR;69;true;null;14
+166;powierzchnia istniejących parków i skwerów;M2;YEAR;70;true;null;14
+167;liczba przeglądów;SZT;YEAR;70;true;null;14
+168;liczba zleconych zadań z kosztorysu;SZT;YEAR;70;true;null;14
+169;koszt w zł;ZL;YEAR;70;true;null;14
+170;liczba interwencji;SZT;YEAR;71;true;null;14
+171;liczba deratyzacji;SZT;YEAR;71;true;null;14
+172;liczba usuniętych gniazd;SZT;YEAR;71;true;null;14
+173;liczba usuniętych padłych zwierząt;SZT;YEAR;71;true;null;14
+174;liczba przetargów;SZT;YEAR;71;true;null;14
+175;liczba podpisanych umów;SZT;YEAR;71;true;null;14
+176;koszt w zł;ZL;YEAR;71;true;null;14
+177;długość oczyszczonych dróg gminnych (dg) w km;KM;YEAR;72;true;null;14
+178;chodniki przy dg w km/ km2;KM;YEAR;72;true;null;14
+179;koszt oczyszczania dg w zł;ZL;YEAR;72;true;null;14
+180;koszt usuwania śmieci z pasów drogowych i chodników dg;ZL;YEAR;72;true;null;14
+181;liczba akcji oczyszczania;SZT;YEAR;72;true;null;14
+182;odśnieżone dg w km;KM;YEAR;73;true;null;14
+183;koszt odśnieżania dg w zł;ZL;YEAR;73;true;null;14
+184;liczba akcji odśnieżania;SZT;YEAR;73;true;null;14
+185;liczba nowych koszy;SZT;YEAR;74;true;null;14
+186;liczba istniejących koszy;SZT;YEAR;74;true;null;14
+187;liczba opróżnień koszy;SZT;YEAR;74;true;null;14
+188;koszt w zł;ZL;YEAR;74;true;null;14
+189;liczba nowych szaletów;SZT;YEAR;75;true;null;14
+190;liczba nowych kabin sanitarnych;SZT;YEAR;75;true;null;14
+191;liczba przeglądów;SZT;YEAR;75;true;null;14
+192;liczba konserwacji;SZT;YEAR;75;true;null;14
+193;liczba kontroli;SZT;YEAR;75;true;null;14
+194;koszt w zł;ZL;YEAR;75;true;null;14
+195;liczba ujęć wody;SZT;YEAR;76;true;null;14
+196;objętość pobieranej wody;L;YEAR;76;true;null;14
+197;koszt w zł;ZL;YEAR;76;true;null;14
+198;liczba nasadzeń;SZT;YEAR;77;true;null;14
+199;liczba zabiegów pielęgnacyjnych;SZT;YEAR;77;true;null;14
+200;liczba wycinek;SZT;YEAR;77;true;null;14
+201;liczba koszeń;SZT;YEAR;77;true;null;14
+202;liczba usunięć odpadów;SZT;YEAR;77;true;null;14
+203;liczba wydanych skierowań;SZT;YEAR;78;true;null;14
+204;liczba kastracji;SZT;YEAR;78;true;null;14
+205;liczba sterylizacji;SZT;YEAR;78;true;null;14
+206;liczba pozostałych usług weterynaryjnych;SZT;YEAR;78;true;null;14
+207;liczba zwierząt objętych opieką;SZT;YEAR;78;true;null;14
+208;liczba społecznych opiekunów zwierząt;SZT;YEAR;78;true;null;14
+209;liczba kg wydanej karmy;SZT;YEAR;78;true;null;14
+210;liczba wydanych talonów na karmę;SZT;YEAR;78;true;null;14
+211;liczba konkursów/ przetargów;SZT;YEAR;78;true;null;14
+212;liczba podpisanych umów;SZT;YEAR;78;true;null;14
+213;koszt w zł;ZL;YEAR;78;true;null;14
+214;liczba koszy na śmieci;SZT;YEAR;79;true;null;14
+215;liczba wywozów odpadów;SZT;YEAR;79;true;null;14
+216;liczba wywozów odpadów zielonych;SZT;YEAR;79;true;null;14
+217;powierzchnia skoszonych trawników;M2;YEAR;79;true;null;14
+218;powierzchnia zgrabionych trawników;M2;YEAR;79;true;null;14
+219;koszt w zł;ZL;YEAR;79;true;null;14
+220;liczba decyzji;SZT;YEAR;80;true;null;14
+221;liczba interwencji;SZT;YEAR;80;true;null;14
+222;koszt badań;ZL;YEAR;80;true;null;14
+223;liczba wykonanych ekspertyz;SZT;YEAR;80;true;null;14
+224;liczba wydanych opinii;SZT;YEAR;81;true;null;14

@@ -1,0 +1,45 @@
+
+<div *ngIf="filledCommercialRisks">
+    <h2><span jhiTranslate="rorumApp.filledCommercialRisks.detail.title">Filled Commercial Risks</span> {{filledCommercialRisks.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="rorumApp.filledCommercialRisks.probability">Probability</span></dt>
+        <dd>
+            <span>{{filledCommercialRisks.probability}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.filledCommercialRisks.powerOfInfluence">Power Of Influence</span></dt>
+        <dd>
+            <span>{{filledCommercialRisks.powerOfInfluence}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.filledCommercialRisks.calculatedValue">Calculated Value</span></dt>
+        <dd>
+            <span>{{filledCommercialRisks.calculatedValue}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.filledCommercialRisks.glossaryOfCommercialRisksDTO">Glossary Of Commercial Risks</span></dt>
+        <dd>
+            <div *ngIf="filledCommercialRisks.glossaryOfCommercialRisksDTO">
+                <a [routerLink]="['/glossary-of-commercial-risks', filledCommercialRisks.glossaryOfCommercialRisksDTO?.id]">{{filledCommercialRisks.glossaryOfCommercialRisksDTO?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.filledCommercialRisks.commercialRisksPurposes">Commercial Risks Purposes</span></dt>
+        <dd>
+            <div *ngIf="filledCommercialRisks.commercialRisksPurposes">
+                <a [routerLink]="['/commercial-risks-purposes', filledCommercialRisks.commercialRisksPurposes?.id]">{{filledCommercialRisks.commercialRisksPurposes?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'filled-commercial-risks/'+ filledCommercialRisks.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

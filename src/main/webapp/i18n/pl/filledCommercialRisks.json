@@ -1,0 +1,25 @@
+{
+    "rorumApp": {
+        "filledCommercialRisks" : {
+            "home": {
+                "title": "Filled Commercial Risks",
+                "createLabel": "Dodaj Filled Commercial Risks",
+                "createOrEditLabel": "Dodaj lub edytuj: Filled Commercial Risks"
+            },
+            "created": "Utworzono nowy Filled Commercial Risks z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Filled Commercial Risks z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Filled Commercial Risks z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Filled Commercial Risks {{ id }}?"
+            },
+            "detail": {
+                "title": "Filled Commercial Risks"
+            },
+            "probability": "Prawdopodobieństwo",
+            "powerOfInfluence": "Siła oddziaływania",
+            "calculatedValue": "Poziom ryzyka",
+            "glossaryOfCommercialRisks": "Glossary Of Commercial Risks",
+            "commercialRisksPurposes": "Commercial Risks Purposes"
+        }
+    }
+}

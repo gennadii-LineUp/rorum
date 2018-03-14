@@ -1,0 +1,73 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myIncidentLabel" jhiTranslate="rorumApp.incident.home.createOrEditLabel">Create or edit a Incident</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!incident.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="incident.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.incident.description" for="field_description">Description</label>
+            <input type="text" class="form-control" name="description" id="field_description"
+                [(ngModel)]="incident.description"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.incident.descriptionOfReaction" for="field_descriptionOfReaction">Description Of Reaction</label>
+            <input type="text" class="form-control" name="descriptionOfReaction" id="field_descriptionOfReaction"
+                [(ngModel)]="incident.descriptionOfReaction"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.incident.descriptionOfPlannedActivities" for="field_descriptionOfPlannedActivities">Description Of Planned Activities</label>
+            <input type="text" class="form-control" name="descriptionOfPlannedActivities" id="field_descriptionOfPlannedActivities"
+                [(ngModel)]="incident.descriptionOfPlannedActivities"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.incident.isCritical" for="field_isCritical">Is Critical</label>
+            <input type="checkbox" class="form-control" name="isCritical" id="field_isCritical"
+                [(ngModel)]="incident.isCritical"  />
+        </div>
+
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.incident.setOfSentPurposes" for="field_setOfSentPurposes">Set Of Sent Purposes</label>
+            <select class="form-control" id="field_setOfSentPurposes" name="setOfSentPurposes" [(ngModel)]="incident.setOfSentPurposes" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="setOfSentPurposesOption.id === incident.setOfSentPurposes?.id ? incident.setOfSentPurposes : setOfSentPurposesOption" *ngFor="let setOfSentPurposesOption of setofsentpurposes; trackBy: trackSetOfSentPurposesById">{{setOfSentPurposesOption.id}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.incident.glossaryOfPurposes" for="field_glossaryOfPurposes">Glossary Of Purposes</label>
+            <select class="form-control" id="field_glossaryOfPurposes" name="glossaryOfPurposes" [(ngModel)]="incident.glossaryOfPurposes" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="glossaryOfPurposesOption.id === incident.glossaryOfPurposes?.id ? incident.glossaryOfPurposes : glossaryOfPurposesOption" *ngFor="let glossaryOfPurposesOption of glossaryofpurposes; trackBy: trackGlossaryOfPurposesById">{{glossaryOfPurposesOption.id}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.incident.filledRisks" for="field_filledRisks">Filled Risks</label>
+            <select class="form-control" id="field_filledRisks" name="filledRisks" [(ngModel)]="incident.filledRisks" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="filledRisksOption.id === incident.filledRisks?.id ? incident.filledRisks : filledRisksOption" *ngFor="let filledRisksOption of filledrisks; trackBy: trackFilledRisksById">{{filledRisksOption.id}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.incident.filledCommercialRisks" for="field_filledCommercialRisks">Filled Commercial Risks</label>
+            <select class="form-control" id="field_filledCommercialRisks" name="filledCommercialRisks" [(ngModel)]="incident.filledCommercialRisks" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="filledCommercialRisksOption.id === incident.filledCommercialRisks?.id ? incident.filledCommercialRisks : filledCommercialRisksOption" *ngFor="let filledCommercialRisksOption of filledcommercialrisks; trackBy: trackFilledCommercialRisksById">{{filledCommercialRisksOption.id}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

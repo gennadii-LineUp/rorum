@@ -1,0 +1,53 @@
+
+<div *ngIf="setOfSentPurposes">
+    <h2><span jhiTranslate="rorumApp.setOfSentPurposes.detail.title">Set Of Sent Purposes</span> {{setOfSentPurposes.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="rorumApp.setOfSentPurposes.statusOfSending">Status Of Sending</span></dt>
+        <dd>
+            <span jhiTranslate="{{'rorumApp.StatusOfSending.' + setOfSentPurposes.statusOfSending}}">{{setOfSentPurposes.statusOfSending}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.setOfSentPurposes.isLastVersion">Is Last Version</span></dt>
+        <dd>
+            <span>{{setOfSentPurposes.isLastVersion}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.setOfSentPurposes.creationDate">Creation Date</span></dt>
+        <dd>
+            <span>{{setOfSentPurposes.creationDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.setOfSentPurposes.notation">Notation</span></dt>
+        <dd>
+            <span>{{setOfSentPurposes.notation}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.setOfSentPurposes.orders">Orders</span></dt>
+        <dd>
+            <div *ngIf="setOfSentPurposes.orders">
+                <a [routerLink]="['/orders', setOfSentPurposes.orders?.id]">{{setOfSentPurposes.orders?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.setOfSentPurposes.user">User</span></dt>
+        <dd>
+            {{setOfSentPurposes.user?.id}}
+        </dd>
+        <dt><span jhiTranslate="rorumApp.setOfSentPurposes.glossaryOfRisksService">Glossary Of Purposes</span></dt>
+        <dd>
+            <span *ngFor="let glossaryOfRisksService of setOfSentPurposes.glossaryOfRisksService; let last = last">
+                <a [routerLink]="['/glossary-of-purposes', glossaryOfRisksService?.id ]">{{glossaryOfRisksService.id}}</a>{{last ? '' : ', '}}
+            </span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'set-of-sent-purposes/'+ setOfSentPurposes.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

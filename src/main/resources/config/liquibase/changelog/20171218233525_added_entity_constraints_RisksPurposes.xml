@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="20171218233525-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="glossary_of_purposes_id"
+                                 baseTableName="risks_purposes"
+                                 constraintName="fk_risks_purposes_glossary_of_purposes_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="glossary_of_purposes"/>
+
+        <addForeignKeyConstraint baseColumnNames="set_of_sent_purposes_id"
+                                 baseTableName="risks_purposes"
+                                 constraintName="fk_risks_purposes_set_of_sent_purposes_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="set_of_sent_purposes"/>
+    </changeSet>
+</databaseChangeLog>

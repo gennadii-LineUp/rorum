@@ -1,0 +1,39 @@
+
+<div *ngIf="commercialRisksPurposes">
+    <h2><span jhiTranslate="rorumApp.commercialRisksPurposes.detail.title">Commercial Risks Purposes</span> {{commercialRisksPurposes.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="rorumApp.commercialRisksPurposes.statusOfSending">Status Of Sending</span></dt>
+        <dd>
+            <span jhiTranslate="{{'rorumApp.StatusOfSending.' + commercialRisksPurposes.statusOfSending}}">{{commercialRisksPurposes.statusOfSending}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.commercialRisksPurposes.creationDate">Creation Date</span></dt>
+        <dd>
+            <span>{{commercialRisksPurposes.creationDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.commercialRisksPurposes.notation">Notation</span></dt>
+        <dd>
+            <span>{{commercialRisksPurposes.notation}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.commercialRisksPurposes.setOfSentPurposes">Set Of Sent Purposes</span></dt>
+        <dd>
+            <div *ngIf="commercialRisksPurposes.setOfSentPurposes">
+                <a [routerLink]="['/set-of-sent-purposes', commercialRisksPurposes.setOfSentPurposes?.id]">{{commercialRisksPurposes.setOfSentPurposes?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'commercial-risks-purposes/'+ commercialRisksPurposes.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

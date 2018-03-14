@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="20180119123045-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="filled_commercial_risks_id"
+                                 baseTableName="high_commercial_risk"
+                                 constraintName="fk_high_commercial_risk_filled_commercial_risks_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="filled_commercial_risks"/>
+
+        <addForeignKeyConstraint baseColumnNames="decision_for_risk_id"
+                                 baseTableName="high_commercial_risk"
+                                 constraintName="fk_high_commercial_risk_decision_for_risk_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="decision_for_risk"/>
+
+        <addForeignKeyConstraint baseColumnNames="high_commercial_risks_id"
+                                 baseTableName="high_commercial_risk_possibilities_to_improve_risk"
+                                 constraintName="fk_high_commercial_risk_possibilities_to_improve_risk_high_commercial_risks_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="high_commercial_risk"/>
+
+        <addForeignKeyConstraint baseColumnNames="possibilities_to_improve_risks_id"
+                                 baseTableName="high_commercial_risk_possibilities_to_improve_risk"
+                                 constraintName="fk_high_commercial_risk_possibilities_to_improve_risk_possibilities_to_improve_risks_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="possibilities_to_improve_risk"/>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,30 @@
+.link {
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+    
+}
+.center {
+    max-width: 60% !important;
+    align-content: center;
+    transition: transform .2s;
+}
+.center:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.7;
+}
+.tooltip {
+    min-width: 300px; 
+}
+.not-finished {
+    background-color: lightblue;
+}
+
+.in-progress {
+    background-color: lemonchiffon;
+}
+:host >>> .ui-dialog-title {
+    font-family: 'Times New Roman', Times, serif
+}

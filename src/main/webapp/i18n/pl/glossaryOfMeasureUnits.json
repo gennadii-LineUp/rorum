@@ -1,0 +1,26 @@
+{
+    "rorumApp": {
+        "glossaryOfMeasureUnits" : {
+            "home": {
+                "title": "Słownik jednostek miar",
+                "createLabel": "Dodaj jednostkę miary",
+                "createOrEditLabel": "Dodaj lub edytuj jednostkę miary"
+            },
+            "created": "Utworzono nową jednostkę miary z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono jednostkę miary z identyfikatorem {{ param }}",
+            "deleted": "Usunięto jednostkę miary z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć jednostkę miary o id = {{ id }}?"
+            },
+            "detail": {
+                "title": "Słownik jednostek miar"
+            },
+            "name": "Nazwa",
+            "unitsOfMeasurement": "J.m.",
+            "frequencyOfGatheringData": "Częstość zbierania danych",
+            "isChecked": "Czy zatwierdzony",
+            "glossaryOfPurposes": "Słownik celów id",
+            "organisationStructure": "Struktura organizacyjna"
+        }
+    }
+}

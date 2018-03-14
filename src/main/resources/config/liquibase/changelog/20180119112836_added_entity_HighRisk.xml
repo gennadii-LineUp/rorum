@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <changeSet id="20180119112836-1" author="jhipster">
+        <createTable tableName="high_risk">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="reject_to_accomplish_purpose" type="boolean">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="postpone_purpose_accomplishment" type="boolean">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="restrict_range_of_purpose_accomplishment" type="boolean">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="cost_of_listed_possibilities" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="projected_term_deploy_start" type="timestamp" defaultValueDate="${now}">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="projected_term_deploy_finish" type="timestamp" defaultValueDate="${now}">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="probability_to_reach" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="power_of_influence_to_reach" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="jhi_analyze" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="substantiation_for_analyze" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="comment_to_high_risk_procedure" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="decision_for_risk_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="filled_risk_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+        </createTable>
+
+        <createTable tableName="high_risk_possibilities_to_improve_risk">
+            <column name="possibilities_to_improve_risks_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="high_risks_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addPrimaryKey columnNames="high_risks_id, possibilities_to_improve_risks_id"
+                       tableName="high_risk_possibilities_to_improve_risk"/>
+    </changeSet>
+</databaseChangeLog>

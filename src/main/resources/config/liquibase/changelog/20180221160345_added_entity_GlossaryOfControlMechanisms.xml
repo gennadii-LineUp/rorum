@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <changeSet id="20180221160345-1" author="jhipster">
+        <createTable tableName="glossary_of_control_mechanisms">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="parent_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="possible_to_mark" type="boolean">
+                <constraints nullable="false" />
+            </column>
+
+        </createTable>
+
+        <createTable tableName="filled_risks_control_mechanisms">
+            <column name="filled_risk_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="control_mechanism_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint baseColumnNames="filled_risk_id"
+                                 baseTableName="filled_risks_control_mechanisms"
+                                 constraintName="fk_filled_risk_id_control_mechanism_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="filled_risks"/>
+
+        <addForeignKeyConstraint baseColumnNames="control_mechanism_id"
+                                 baseTableName="filled_risks_control_mechanisms"
+                                 constraintName="fk_control_mechanism_id_filled_risk_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="glossary_of_control_mechanisms"/>
+
+        <loadData file="config/liquibase/glossary_of_control_mechanisms.csv"
+                  separator=";"
+                  tableName="glossary_of_control_mechanisms"/>
+    </changeSet>
+</databaseChangeLog>

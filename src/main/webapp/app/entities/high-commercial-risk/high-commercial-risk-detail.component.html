@@ -1,0 +1,83 @@
+
+<div *ngIf="highCommercialRisk">
+    <h2><span jhiTranslate="rorumApp.highCommercialRisk.detail.title">High Commercial Risk</span> {{highCommercialRisk.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="rorumApp.highCommercialRisk.rejectToAccomplishPurpose">Reject To Accomplish Purpose</span></dt>
+        <dd>
+            <span>{{highCommercialRisk.rejectToAccomplishPurpose}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.highCommercialRisk.postponePurposeAccomplishment">Postpone Purpose Accomplishment</span></dt>
+        <dd>
+            <span>{{highCommercialRisk.postponePurposeAccomplishment}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.highCommercialRisk.restrictRangeOfPurposeAccomplishment">Restrict Range Of Purpose Accomplishment</span></dt>
+        <dd>
+            <span>{{highCommercialRisk.restrictRangeOfPurposeAccomplishment}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.highCommercialRisk.costOfListedPossibilities">Cost Of Listed Possibilities</span></dt>
+        <dd>
+            <span>{{highCommercialRisk.costOfListedPossibilities}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.highCommercialRisk.projectedTermDeployStart">Projected Term Deploy Start</span></dt>
+        <dd>
+            <span>{{highCommercialRisk.projectedTermDeployStart}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.highCommercialRisk.projectedTermDeployFinish">Projected Term Deploy Finish</span></dt>
+        <dd>
+            <span>{{highCommercialRisk.projectedTermDeployFinish}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.highCommercialRisk.probabilityToReach">Probability To Reach</span></dt>
+        <dd>
+            <span>{{highCommercialRisk.probabilityToReach}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.highCommercialRisk.powerOfInfluenceToReach">Power Of Influence To Reach</span></dt>
+        <dd>
+            <span>{{highCommercialRisk.powerOfInfluenceToReach}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.highCommercialRisk.analyze">Analyze</span></dt>
+        <dd>
+            <span jhiTranslate="{{'rorumApp.AnalyzeOfRisk.' + highCommercialRisk.analyze}}">{{highCommercialRisk.analyze}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.highCommercialRisk.substantiationForAnalyze">Substantiation For Analyze</span></dt>
+        <dd>
+            <span>{{highCommercialRisk.substantiationForAnalyze}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.highCommercialRisk.commentToHighRiskProcedure">Comment To High Risk Procedure</span></dt>
+        <dd>
+            <span>{{highCommercialRisk.commentToHighRiskProcedure}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.highCommercialRisk.filledCommercialRisks">Filled Commercial Risks</span></dt>
+        <dd>
+            <div *ngIf="highCommercialRisk.filledCommercialRisks">
+                <a [routerLink]="['/filled-commercial-risks', highCommercialRisk.filledCommercialRisks?.id]">{{highCommercialRisk.filledCommercialRisks?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.highCommercialRisk.decisionForRisk">Decision For Risk</span></dt>
+        <dd>
+            <div *ngIf="highCommercialRisk.decisionForRisk">
+                <a [routerLink]="['/decision-for-risk', highCommercialRisk.decisionForRisk?.id]">{{highCommercialRisk.decisionForRisk?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.highCommercialRisk.possibilitiesToImproveRisk">Possibilities To Improve Risk</span></dt>
+        <dd>
+            <span *ngFor="let possibilitiesToImproveRisk of highCommercialRisk.possibilitiesToImproveRisks; let last = last">
+                <a [routerLink]="['/possibilities-to-improve-risk', possibilitiesToImproveRisk?.id ]">{{possibilitiesToImproveRisk.id}}</a>{{last ? '' : ', '}}
+            </span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'high-commercial-risk/'+ highCommercialRisk.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

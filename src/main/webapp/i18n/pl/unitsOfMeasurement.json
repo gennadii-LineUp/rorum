@@ -1,0 +1,14 @@
+{
+    "rorumApp": {
+        "UnitsOfMeasurement" : {
+            "null": "",
+            "ZL": "ZL",
+            "OS": "OS",
+            "KM": "KM",
+            "KG": "KG",
+            "L": "L",
+            "SZT": "SZT",
+            "M2" : "M2"
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "rorumApp": {
+        "highCommercialRisk" : {
+            "home": {
+                "title": "High Commercial Risks",
+                "createLabel": "Dodaj High Commercial Risk",
+                "createOrEditLabel": "Dodaj lub edytuj: High Commercial Risk"
+            },
+            "created": "Utworzono nowy High Commercial Risk z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono High Commercial Risk z identyfikatorem {{ param }}",
+            "deleted": "Usunięto High Commercial Risk z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć High Commercial Risk {{ id }}?"
+            },
+            "detail": {
+                "title": "High Commercial Risk"
+            },
+            "rejectToAccomplishPurpose": "Reject To Accomplish Purpose",
+            "postponePurposeAccomplishment": "Postpone Purpose Accomplishment",
+            "restrictRangeOfPurposeAccomplishment": "Restrict Range Of Purpose Accomplishment",
+            "costOfListedPossibilities": "Cost Of Listed Possibilities",
+            "projectedTermDeployStart": "Projected Term Deploy Start",
+            "projectedTermDeployFinish": "Projected Term Deploy Finish",
+            "probabilityToReach": "Probability To Reach",
+            "powerOfInfluenceToReach": "Power Of Influence To Reach",
+            "analyze": "Analyze",
+            "substantiationForAnalyze": "Substantiation For Analyze",
+            "commentToHighRiskProcedure": "Comment To High Risk Procedure",
+            "filledCommercialRisks": "Filled Commercial Risks",
+            "decisionForRisk": "Decision For Risk",
+            "possibilitiesToImproveRisk": "Possibilities To Improve Risk"
+        }
+    }
+}

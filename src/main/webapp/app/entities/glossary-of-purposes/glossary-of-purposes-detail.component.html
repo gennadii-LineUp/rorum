@@ -1,0 +1,53 @@
+
+<div *ngIf="glossaryOfRisksService">
+    <h2><span jhiTranslate="rorumApp.glossaryOfPurposes.detail.title">Glossary Of Purposes</span> {{glossaryOfRisksService.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="rorumApp.glossaryOfPurposes.name">Name</span></dt>
+        <dd>
+            <span>{{glossaryOfRisksService.name}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfPurposes.parentId">Parent Id</span></dt>
+        <dd>
+            <span>{{glossaryOfRisksService.parentId}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfPurposes.sumUp">Sum Up</span></dt>
+        <dd>
+            <span>{{glossaryOfRisksService.sumUp}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfPurposes.assignmentToCell">Assignment To Cell</span></dt>
+        <dd>
+            <span jhiTranslate="{{'rorumApp.AssignmentToCell.' + glossaryOfRisksService.assignmentToCell}}">{{glossaryOfRisksService.assignmentToCell}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfPurposes.isChecked">Is Checked</span></dt>
+        <dd>
+            <span>{{glossaryOfRisksService.isChecked}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfPurposes.glossaryOfProcesses">Glossary Of Processes</span></dt>
+        <dd>
+            <div *ngIf="glossaryOfRisksService.glossaryOfProcesses">
+                <a [routerLink]="['/glossary-of-processes', glossaryOfRisksService.glossaryOfProcesses?.id]">{{glossaryOfRisksService.glossaryOfProcesses?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfPurposes.organisationStructure">Organisation Structure</span></dt>
+        <dd>
+            <div *ngIf="glossaryOfRisksService.organisationStructure">
+                <a [routerLink]="['/organisation-structure', glossaryOfRisksService.organisationStructure?.id]">{{glossaryOfRisksService.organisationStructure?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'glossary-of-purposes/'+ glossaryOfRisksService.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="20180119112836-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="decision_for_risk_id"
+                                 baseTableName="high_risk"
+                                 constraintName="fk_high_risk_decision_for_risk_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="decision_for_risk"/>
+
+        <addForeignKeyConstraint baseColumnNames="filled_risk_id"
+                                 baseTableName="high_risk"
+                                 constraintName="fk_high_risk_filled_risk_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="filled_risks"/>
+
+        <addForeignKeyConstraint baseColumnNames="high_risks_id"
+                                 baseTableName="high_risk_possibilities_to_improve_risk"
+                                 constraintName="fk_high_risk_possibilities_to_improve_risk_high_risks_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="high_risk"/>
+
+        <addForeignKeyConstraint baseColumnNames="possibilities_to_improve_risks_id"
+                                 baseTableName="high_risk_possibilities_to_improve_risk"
+                                 constraintName="fk_high_risk_possibilities_to_improve_risk_possibilities_to_improve_risks_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="possibilities_to_improve_risk"/>
+    </changeSet>
+</databaseChangeLog>

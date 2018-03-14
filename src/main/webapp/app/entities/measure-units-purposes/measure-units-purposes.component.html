@@ -1,0 +1,70 @@
+<div>
+    <h2>
+        <span jhiTranslate="rorumApp.measureUnitsPurposes.home.title">Measure Units Purposes</span>
+        <button class="btn btn-primary float-right jh-create-entity create-measure-units-purposes" [routerLink]="['/', { outlets: { popup: ['measure-units-purposes-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span  jhiTranslate="rorumApp.measureUnitsPurposes.home.createLabel">
+            Create new Measure Units Purposes
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="measureUnitsPurposes">
+        <table class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="transition.bind(this)">
+            <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="creationDate"><span jhiTranslate="rorumApp.measureUnitsPurposes.creationDate">Creation Date</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="setOfSentPurposes.id"><span jhiTranslate="rorumApp.measureUnitsPurposes.setOfSentPurposes">Set Of Sent Purposes</span> <span class="fa fa-sort"></span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let measureUnitsPurposes of measureUnitsPurposes ;trackBy: trackId">
+                <td><a [routerLink]="['../measure-units-purposes', measureUnitsPurposes.id ]">{{measureUnitsPurposes.id}}</a></td>
+                <td>{{measureUnitsPurposes.creationDate | date:'mediumDate'}}</td>
+                <td>
+                    <div *ngIf="measureUnitsPurposes.setOfSentPurposes">
+                        <a [routerLink]="['../set-of-sent-purposes', measureUnitsPurposes.setOfSentPurposes?.id ]" >{{measureUnitsPurposes.setOfSentPurposes?.id}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['../measure-units-purposes', measureUnitsPurposes.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'measure-units-purposes/'+ measureUnitsPurposes.id + '/edit'} }]"
+                                replaceUrl="true"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'measure-units-purposes/'+ measureUnitsPurposes.id + '/delete'} }]"
+                                replaceUrl="true"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+        <div *ngIf="measureUnitsPurposes && measureUnitsPurposes.length">
+            <div class="row justify-content-center">
+                <jhi-item-count [page]="page" [total]="queryCount" [maxSize]="5" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+            </div>
+            <div class="row justify-content-center">
+                <ngb-pagination [collectionSize]="totalItems" [maxSize]="5" [pageSize]="itemsPerPage" [(page)]="page" (pageChange)="loadPage(page)"></ngb-pagination>
+            </div>
+        </div>
+</div>

@@ -1,0 +1,1742 @@
+id;name;parent_id;supervisory_unit_id;status_id;specifying_cells;glossary_of_processes_id
+18;Warszawa;8;0;1;MIASTO;null
+19;Miasto Stołeczne Warszawa;18;0;1;MIASTO;null
+20;Jednostki Organizacyjne Miasta Stołecznego Warszawy;19;0;1;JEDNOSTKAORGANIZACYJNA;null
+21;Urząd Miasta Warszawy;20;0;1;URZEDYDZIELNIC;null
+22;Biura Urzędu;21;0;1;BIURA;null
+23;Biuro Administracji i Spraw Obywatelskich;22;0;1;BIURO;null
+24;Biuro Organizacji Urzędu;22;0;1;BIURO;null
+25;Biuro Architektury i Planowania Przestrzennego;22;0;1;BIURO;null
+26;Biuro Audytu Wewnętrznego;22;0;1;BIURO;null
+27;Biuro Bezpieczeństwa i Zarządzania Kryzysowego;22;0;1;BIURO;null
+30;Biuro Edukacji;22;0;1;BIURO;null
+32;Biuro Geodezji i Katastru;22;0;1;BIURO;null
+33;Biuro Mienia Miasta i Skarbu Państwa;22;0;1;BIURO;6
+34;Biuro Gospodarki Odpadami Komunalnymi;22;0;1;BIURO;null
+36;Biuro Infrastruktury;22;0;1;BIURO;null
+37;Biuro Kadr i Szkoleń;22;0;1;BIURO;null
+38;Biuro Kontroli;22;0;1;BIURO;null
+39;Biuro Koordynacji Inwestycji i Remontów w Pasie Drogowym;22;0;1;BIURO;null
+40;Biuro Księgowości i Kontrasygnaty;22;0;1;BIURO;null
+41;Biuro Kultury;22;0;1;BIURO;null
+42;Biuro Nadzoru Właścicielskiego;22;0;1;BIURO;null
+44;Biuro Ochrony Środowiska;22;0;1;BIURO;1
+46;Biuro Planowania Budżetowego;22;0;1;BIURO;null
+47;Biuro Podatków i Egzekucji;22;0;1;BIURO;null
+51;Biuro Polityki Zdrowotnej;22;0;1;BIURO;null
+52;Biuro Pomocy i Projektów Społecznych;22;0;1;BIURO;9
+53;Centrum Komunikacji Społecznej;22;0;1;BIURO;null
+54;Biuro Prawne;22;0;1;BIURO;null
+55;Gabinet Prezydenta;22;0;1;BIURO;null
+58;Biuro Rady m. st Warszawy;22;0;1;BIURO;null
+60;Biuro Sportu i Rekreacji;22;0;1;BIURO;null
+61;Biuro Stołecznego Konserwatora Zabytków;22;0;1;BIURO;null
+62;Biuro Zamówień Publicznych;22;0;1;BIURO;null
+63;Urząd Stanu Cywilnego;22;0;1;BIURO;null
+64;Biuro Marketingu Miasta;22;0;1;BIURO;null
+65;Biuro Rozwoju Gospodarczego;22;0;1;BIURO;null
+66;Biuro Spraw Dekretowych;22;0;1;BIURO;null
+387;Urzędy Dzielnic;21;0;1;URZEDYDZIELNIC;null
+392;Urząd Dzielnicy Bemowo;387;0;1;URZADDZIELNICY;null
+394;Urząd Dzielnicy Białołęka;387;0;1;URZADDZIELNICY;null
+395;Urząd Dzielnicy Bielany;387;0;1;URZADDZIELNICY;null
+396;Urząd Dzielnicy Mokotów;387;0;1;URZADDZIELNICY;null
+397;Urząd Dzielnicy Ochota;387;0;1;URZADDZIELNICY;null
+398;Urząd Dzielnicy Praga Południe;387;0;1;URZADDZIELNICY;null
+399;Urząd Dzielnicy Praga Północ;387;0;1;URZADDZIELNICY;null
+400;Urząd Dzielnicy Rembertów;387;0;1;URZADDZIELNICY;null
+401;Urząd Dzielnicy Śródmieście;387;0;1;URZADDZIELNICY;null
+28;Biuro Polityki Mobilności i Transportu;22;0;1;BIURO;null
+48;Biuro Długu i Restrukturyzacji Wierzytelności;22;0;1;BIURO;null
+402;Urząd Dzielnicy Targówek;387;0;1;URZADDZIELNICY;null
+403;Urząd Dzielnicy Ursus;387;0;1;URZADDZIELNICY;null
+404;Urząd Dzielnicy Ursynów;387;0;1;URZADDZIELNICY;null
+405;Urząd Dzielnicy Wawer;387;0;1;URZADDZIELNICY;null
+406;Urząd Dzielnicy Wesoła;387;0;1;URZADDZIELNICY;null
+407;Urząd Dzielnicy Wilanów;387;0;1;URZADDZIELNICY;null
+408;Urząd Dzielnicy Włochy;387;0;1;URZADDZIELNICY;1
+409;Urząd Dzielnicy Wola;387;0;1;URZADDZIELNICY;null
+410;Urząd Dzielnicy Żoliborz;387;0;1;URZADDZIELNICY;null
+412;Jednostki Organizacyjne;20;0;1;JEDNOSTKAORGANIZACYJNA;null
+1000;Wydział Nadzoru, Kontroli i Rejestracji Pojazdów oraz Wydawania Uprawnień;23;0;1;WYDZIAL;1
+1001;Wydział Spraw Komunalnych i Organizacji Uroczystości;23;0;1;WYDZIAL;null
+1002;Wydział Spraw Obywatelskich;23;0;1;WYDZIAL;1
+1003;Wieloosobowe Stanowisko ds. Organizacji Uroczystości;1001;0;1;WYDZIAL;6
+1004;Wieloosobowe Stanowisko Pracy ds. Cmentarnictwa;1001;0;1;WYDZIAL;16
+1007;Wydział Archiwum;24;0;1;WYDZIAL;5
+1010;Wydział Kancelaryjny;24;0;1;WYDZIAL;5
+1018;Samodzielne Wieloosobowe Stanowisko Pracy ds. Obsługi Prawnej;24;0;1;WYDZIAL;5
+1022;Wydział Polityki Przestrzennej;25;0;1;WYDZIAL;2
+1026;Wydział Ryzyka;55;0;1;WYDZIAL;6
+1027;Wydzial Wsparcia Merytorycznego;26;0;1;WYDZIAL;6
+1028;Wydział Audytu Dzialalności;26;0;1;WYDZIAL;6
+1029;Wydział Audytu Jednostek;26;0;1;WYDZIAL;6
+1030;Wydział Audytu Środków Pomocowych;26;0;1;WYDZIAL;6
+1031;Wydział Audytu Bezpieczeństwa Systemów Teleinformatycznych;26;0;1;WYDZIAL;6
+1034;Wydział Organizacyjny;27;0;1;WYDZIAL;3
+1035;Wydział Bezpieczeństwa Publicznego;27;0;1;WYDZIAL;3
+1036;Wydział Centrum Zarządzania Kryzysowego;27;0;1;WYDZIAL;3
+1037;Wydział Spraw Obronnych;27;0;1;WYDZIAL;3
+1038;Wydział Imprez Masowych i Zgromadzeń Publicznych;27;0;1;WYDZIAL;3
+1039;Wydział Zintegrowanego Stanowiska Koordynacji i Reagowania;27;0;1;WYDZIAL;3
+1041;Wydział Czasowej Organizacji Ruchu;28;0;1;WYDZIAL;15
+1045;Wydział Kontroli i Zezwoleń;28;0;1;WYDZIAL;15
+1046;Wydział Stałej Organizacji Ruchu;28;0;1;WYDZIAL;15
+1047;Wydział Sygnalizacji Świetlnej;28;0;1;WYDZIAL;15
+1048;Wydział Edukacji Pozaszkolnej i Pozaformalnej;30;0;1;WYDZIAL;4
+1049;Wydział Finansów i Infrastruktury Oświaty;30;0;1;WYDZIAL;4
+1050;Wydział Kadr Oświatowych i Spraw Organizacyjnych;30;0;1;WYDZIAL;4
+1051;Wydział Kształcenia Specjalnego i Pomocy Psychologiczno-Pedagogicznej;30;0;1;WYDZIAL;4
+1052;Wydział Szkół Ponadgimnazjalnych i Kształcenia Ustawicznego;30;0;1;WYDZIAL;4
+1053;Wydział Doskonalenia Nauczycieli, Projektów  Edukacyjnych i Międzynarodowych;30;0;1;WYDZIAL;4
+1054;Wydział Przedszkoli, Szkół Publicznych i Oświaty Niepublicznej;30;0;1;WYDZIAL;4
+1055;Zespół Informacji Oświatowej;30;0;1;WYDZIAL;4
+1056;Wydział Aktualizacji Ewidencji Gruntów i Budynków;32;0;1;WYDZIAL;8
+1057;Wydział Ewidencji Nazw i Adresów;32;0;1;WYDZIAL;8
+1058;Wydział Katastru;32;0;1;WYDZIAL;8
+1025;Wydział Organizacji i Finansów;25;0;1;WYDZIAL;2
+1040;Wydział Strategii Transportowej i Mobilności;28;0;1;WYDZIAL;15
+1042;Wydział Infrastruktury Drogowej;28;0;1;WYDZIAL;15
+1044;Wydział Transportu Publicznego;28;0;1;WYDZIAL;15
+1011;Wydział Transportowy;67;0;1;WYDZIAL;5
+1059;Wydział Kontroli Dokumentacji Geodezyjnej i Kartograficznej;32;0;1;WYDZIAL;8
+1060;Wydział Numerycznej Mapy Zasadniczej;32;0;1;WYDZIAL;8
+1062;Wydział Organizacyjny;32;0;1;WYDZIAL;8
+1063;Wydział Postępowań Administracyjnych;32;0;1;WYDZIAL;8
+1066;Wydział Udostępniania Danych Ewidencji Gruntów i Budynków;32;0;1;WYDZIAL;8
+1068;Ośrodek Dokumentacji Geodezyjnej i Kartograficznej;32;0;1;WYDZIAL;8
+1070;Samodzielne Wieloosobowe Stanowisko Pracy Radców Prawnych;32;0;1;WYDZIAL;8
+1072;Wydział Ewidencji Gruntów i Budynków dla Dzielnicy Mokotów;32;0;1;WYDZIAL;8
+1073;Delegatura Biura Geodezji i Katastru w Dzielnicy Praga-Południe;32;0;1;WYDZIAL;8
+1079;Samodzielne Wieloosobowe Stanowisko Pracy Radców Prawnych;33;0;1;WYDZIAL;10
+1098;Wydział Zarządzania Systemem Gospodarki Odpadami Komunalnymi ;34;0;1;WYDZIAL;16
+1099;Wydział Obsługi Umów z Podmiotami ;34;0;1;WYDZIAL;16
+1100;Samodzielne Wieloosobowe Stanowisko Pracy ds. Informacji, Promocji i Edukacji;34;0;1;WYDZIAL;16
+1101;Samodzielne Wieloosobowe Stanowisko Pracy ds. Finansowych;34;0;1;WYDZIAL;16
+1102;Samodzielne Wieloosobowe Stanowisko Pracy ds. Obsługi Biura i Obsługi Kancelaryjnej;34;0;1;WYDZIAL;16
+1103;Samodzielne Wieloosobowe Stanowisko Pracy Radców Prawnych ;34;0;1;WYDZIAL;16
+1112;Wydział Ekonomiczny;36;0;1;WYDZIAL;16
+1114;Wydział Organizacji i Projektów;36;0;1;WYDZIAL;16
+1118;Samodzielne Wieloosobowe Stanowisko Pracy Radców Prawnych;36;0;1;WYDZIAL;16
+1120;Wydział Kadr;37;0;1;WYDZIAL;5
+1121;Wydział Rachuby Płac;37;0;1;WYDZIAL;5
+1122;Wydział Ochrony Pracy;37;0;1;WYDZIAL;5
+1123;Zespół Spraw Socjalnych;37;0;1;WYDZIAL;5
+1064;Wydział Systemów Informatycznych do Obsługi Zasobu Geodezyjnego i Kartograficznego;32;0;1;WYDZIAL;8
+1067;Wydział Utrzymania i Rozwoju Centrum Przetwarzania Danych Przestrzennych;32;0;1;WYDZIAL;8
+1065;Wydział Przetwarzania Danych Przestrzennych;32;0;1;WYDZIAL;8
+1115;Wydział Strategii;36;0;1;WYDZIAL;16
+1116;Wydział Inżynierii Miejskiej;36;0;1;WYDZIAL;16
+1074;Wydział Inwestycji;33;0;1;WYDZIAL;10
+1077;Wydział Mienia m.st. Warszawy;33;0;1;WYDZIAL;10
+1124;Samodzielne Jednoosobowe Stanowisko Pracy Radcy Prawnego;37;0;1;WYDZIAL;5
+1125;Samodzielne Wieloosobowe Stanowisko Pracy ds. Obsługi Sekretariatu;37;0;1;WYDZIAL;5
+1126;Wydział Kontroli Finansowej;38;0;1;WYDZIAL;6
+1127;Wydział Kontroli Gospodarowania Nieruchomościami;38;0;1;WYDZIAL;6
+1129;Wydział Kontroli Technicznej;38;0;1;WYDZIAL;6
+1130;Wydział Kontroli Zamówień Publicznych;38;0;1;WYDZIAL;6
+1132;Samodzielne Wieloosobowe Stanowisko Pracy Radców Prawnych;38;0;1;WYDZIAL;6
+1134;Wydział Koordynacji;39;0;1;WYDZIAL;16
+1135;Wydział Monitorowania Przygotowania Inwestycji;39;0;1;WYDZIAL;16
+1136;Wydział Organizacyjny;39;0;1;WYDZIAL;16
+1137;Wydział Planowania;39;0;1;WYDZIAL;16
+1138;Wydział Dochodów;40;0;1;WYDZIAL;7
+1139;Wydział Ewidencji i Windykacji Mandatów;40;0;1;WYDZIAL;7
+1140;Wydział Ewidencji Księgowej Wynagrodzeń i Kasa;40;0;1;WYDZIAL;7
+1142;Wydział Księgowości i Sprawozdawczości Budżetu;40;0;1;WYDZIAL;7
+1143;Wydział Księgowości Wydatków Urzędu;40;0;1;WYDZIAL;7
+1144;Wydział Obsługi Bankowej Miasta;40;0;1;WYDZIAL;7
+1146;Wydział Zaangażowania i Kontrasygnaty;40;0;1;WYDZIAL;7
+1155;Wydział Współpracy z Organizacjami Pozarządowymi;41;0;1;WYDZIAL;11
+1157;Wydział Organizacji i Wsparcia;42;0;1;WYDZIAL;7
+1158;Wydział Spółek i Przedsiębiorstw I;42;0;1;WYDZIAL;7
+1159;Zespół Spółek i Przedsiębiorstw II;42;0;1;WYDZIAL;7
+1160;Wydział Spółek i Przedsiębiorstw III;42;0;1;WYDZIAL;7
+1161;Wydział Spółek i Przedsiębiorstw IV;42;0;1;WYDZIAL;7
+1162;Wydział Ochrony Danych Osobowych;24;0;1;WYDZIAL;5
+1164;Wydział Ochrony Informacji Niejawnych;27;0;1;WYDZIAL;5
+1166;Wydział Gospodarki Odpadami;44;0;1;WYDZIAL;9
+1167;Wydział Gospodarowania Wodami i Geologii;44;0;1;WYDZIAL;9
+1168;Wydział Ochrony Systemu Przyrodniczego Miasta;44;0;1;WYDZIAL;9
+1169;Wydział Ogólny;44;0;1;WYDZIAL;9
+1170;Wydział Opiniowania Wniosków Ekologicznych;44;0;1;WYDZIAL;9
+1171;Wydział Spraw Zwierząt;44;0;1;WYDZIAL;9
+1172;Wydział Uzgodnień Inwestycyjnych i Ochrony Powietrza;44;0;1;WYDZIAL;9
+1173;Samodzielne Wieloosobowe Stanowisko Pracy ds. Finansowych;44;0;1;WYDZIAL;9
+1174;Samodzielne Wieloosobowe Stanowisko Pracy Radców Prawnych;44;0;1;WYDZIAL;9
+1175;Wydział Analiz Ekonomicznych i Prognozowania Dochodów;46;0;1;WYDZIAL;7
+1176;Wydział Kontrolingu i Zarządzania Budżetem;46;0;1;WYDZIAL;7
+1177;Wydział Procedur Budżetowych Dzielnicowych Sfer Pozaoświatowych;46;0;1;WYDZIAL;7
+1178;Wydział Procedur Budżetowych Ogólnomiejskich i Unijnych;46;0;1;WYDZIAL;7
+1179;Wydział Procedur Budżetowych Sfery Oświatowej;46;0;1;WYDZIAL;7
+1181;Wydział Kontroli Podatkowej;47;0;1;WYDZIAL;7
+1182;Wydział Podatków i Opłat;47;0;1;WYDZIAL;7
+1184;Wydział Eksploatacji;48;0;1;WYDZIAL;7
+1131;Wydział Kontroli Zarządzania;38;0;1;WYDZIAL;6
+1185;Wydział Płynności Finansowej;48;0;1;WYDZIAL;7
+1186;Wydział Polityki Finansowej i Analiz;48;0;1;WYDZIAL;7
+1187;Zespół Dokumentacji;48;0;1;WYDZIAL;7
+1188;Zespół Finansowania Rozwoju;48;0;1;WYDZIAL;7
+1141;Wydział Księgowości Funduszy Europejskich;40;0;1;WYDZIAL;7
+1190;BPL Zespół Naczelników;50;0;1;WYDZIAL;10
+1191;Wydział Finansów i Gospodarki Nieruchomościami;51;0;1;WYDZIAL;12
+1192;Wydział Inwestycji;51;0;1;WYDZIAL;12
+1193;Wydział Organizacji i Nadzoru;51;0;1;WYDZIAL;12
+1194;Wydział Profilaktyki i Promocji Zdrowia;51;0;1;WYDZIAL;12
+1196;Wydział Zdrowia Publicznego;51;0;1;WYDZIAL;12
+1207;Wydział I;54;0;1;WYDZIAL;6
+1208;Wydział II;54;0;1;WYDZIAL;6
+1209;Wydział III;54;0;1;WYDZIAL;6
+1210;Wydział IV;54;0;1;WYDZIAL;6
+1211;Wydział V;54;0;1;WYDZIAL;6
+1212;Wydział VI;54;0;1;WYDZIAL;6
+1213;Wydział VII;54;0;1;WYDZIAL;6
+1214;Wydział VIII;54;0;1;WYDZIAL;6
+1215;Wydział IX-Kancelaria;54;0;1;WYDZIAL;6
+1217;Wydział Ogólny;58;0;1;WYDZIAL;6
+1218;Wydział Sesji;58;0;1;WYDZIAL;6
+1219;Wydział Komisji;58;0;1;WYDZIAL;6
+1221;Samodzielne Wieloosobowe Stanowisko Pracy ds. Kontaktów ze Środkami Społecznego Przekazu;58;0;1;WYDZIAL;6
+1222;Samodzielne Jednoosobowe Stanowisko Pracy Radcy Prawnego;58;0;1;WYDZIAL;6
+1224;Wydział Inwestycji Dzielnicowych;31;0;1;WYDZIAL;7
+1225;Wydział Planowania Wydatków Majątkowych;31;0;1;WYDZIAL;7
+1228;Wydział Kontroli i Rozliczeń;60;0;1;WYDZIAL;14
+1229;Wydział Sportu;60;0;1;WYDZIAL;14
+1231;Zespół Nadzoru nad Stowarzyszeniami Kultury Fizycznej;60;0;1;WYDZIAL;14
+1233;Samodzielne Jednoosobowe Stanowisko Pracy Eurokoordynatora;60;0;1;WYDZIAL;14
+1234;Samodzielne Jednoosobowe Stanowisko Pracy Radcy Prawnego;60;0;1;WYDZIAL;14
+1236;Wydział Dotacji i Kontroli;61;0;1;WYDZIAL;2
+1243;Wydział Nadzoru;62;0;1;WYDZIAL;5
+1244;Wydział Prawno-Organizacyjny;62;0;1;WYDZIAL;5
+1245;Wydział Postępowań o Zamówienia Publiczne;62;0;1;WYDZIAL;5
+1246;Wydział Narzędzi Elektronicznych i Analiz;62;0;1;WYDZIAL;5
+1247;Zespół Koordynacji Zamówień Publicznych;62;0;1;WYDZIAL;5
+1249;Wydział Reprezentacji Miasta;55;0;1;WYDZIAL;6
+1250;Wydział Administracyjno-Finansowy;55;0;1;WYDZIAL;6
+1252;Wydział Organizacyjny;55;0;1;WYDZIAL;6
+1253;Wydział Informacji Publicznej;55;0;1;WYDZIAL;6
+1254;Wydział Skarg i Wniosków;55;0;1;WYDZIAL;6
+1255;I Wydział Rejestracji Stanu Cywilnego, Obrotu Zagranicznego oraz Zmiany Imion i Nazwisk;63;0;1;WYDZIAL;1
+1256;II Wydział Rejestracji Stanu Cywilnego;63;0;1;WYDZIAL;1
+1257;III Wydział Rejestracji Stanu Cywilnego i Ksiąg Zabużańskich;63;0;1;WYDZIAL;1
+1258;IV Wydział Rejestracji Stanu Cywilnego;63;0;1;WYDZIAL;1
+1259;V Wydział Rejestracji Stanu Cywilnego;63;0;1;WYDZIAL;1
+1226;Wydział Monitorowania Finansowego;31;0;1;WYDZIAL;7
+1230;Zespół Infrastruktury Sportowej;60;0;1;WYDZIAL;14
+1240;Wydział Organizacji i Budżetu;61;0;1;WYDZIAL;2
+1248;Wydział Koordynacji;55;0;1;WYDZIAL;6
+1251;Wydział Ustroju Miasta;55;0;1;WYDZIAL;6
+1260;Wydział Archiwum;63;0;1;WYDZIAL;1
+1261;Wydział Administracyjny, Analiz i Organizacji Pracy;63;0;1;WYDZIAL;1
+1263;Wydział Licencji i Transportu Drogowego;23;0;1;WYDZIAL;1
+1264;Wydział Operatorów Numerów Alarmowych;27;0;1;WYDZIAL;3
+1266;Wydział Infrastruktury Informacji Przestrzennej;32;0;1;WYDZIAL;8
+1269;Wydział Strategii Personalnej;37;0;1;WYDZIAL;5
+1270;Wydział Finansowo - Organizacyjny;41;0;1;WYDZIAL;11
+1271;Wydział Instytucji Kultury m.st.Warszawy;41;0;1;WYDZIAL;11
+1272;Wydział Dziedzictwa i Współpracy Zagranicznej;41;0;1;WYDZIAL;11
+1273;Wydział Projektów Kulturalnych;41;0;1;WYDZIAL;11
+1274;Zespoł Komunikacji i Promocji;41;0;1;WYDZIAL;11
+1275;Wydział Strategii i Informacji o Środowisku;44;0;1;WYDZIAL;9
+1278;Wydział Kontaktów z Mieszkańcami;24;0;1;WYDZIAL;6
+1279;Wydział Miejskiego Rzecznika Konsumentów;24;0;1;WYDZIAL;6
+1284;Zespół Naczelników Wydziałów Biura;52;0;1;WYDZIAL;13
+1285;Zespół Organizacyjno - Finansowy ;54;0;1;WYDZIAL;6
+1286;Samodzielne Jednoosobowe Stanowisko Pracy Radcy Prawnego;54;0;1;WYDZIAL;6
+1287;Wydział Zarządzania Marką;64;0;1;WYDZIAL;6
+1288;Wydział Projektów Miejskich;64;0;1;WYDZIAL;6
+1289;Wydział Współpracy z Organizacjami Pozarządowymi;53;0;1;WYDZIAL;6
+1292;Wydział Prasowy;64;0;1;WYDZIAL;6
+1293;Wydział Kontaktów z Radą i Dzielnicami;24;0;1;WYDZIAL;6
+1294;Wydział Kontaktów Zagranicznych;64;0;1;WYDZIAL;6
+1295;Zespół Projektów Międzynarodowych;64;0;1;WYDZIAL;6
+1296;Samodzielne Jednoosobowe Stanowisko Pracy Radcy Prawnego;53;0;1;WYDZIAL;6
+1298;Wydział Organizacyjno-Finansowy;53;0;1;WYDZIAL;6
+1300;Zespół Badań i Analiz;64;0;1;WYDZIAL;6
+1301;Wydział Nowych Mediów;64;0;1;WYDZIAL;6
+1302;Wydział Marketingu;64;0;1;WYDZIAL;6
+1303;Wydział Organizacyjno-Finansowy;64;0;1;WYDZIAL;6
+1304;Samodzielne Wieloosobowe Stanowisko Pracy Radców Prawnych;64;0;1;WYDZIAL;6
+1306;Zespół Opracowania Kierunków Zmian Systemu Gospodarki Odpadami Komunalnymi;34;0;1;WYDZIAL;16
+1309;Wydział Doboru Kadr;37;0;1;WYDZIAL;5
+1310;Wydział Rozwoju Kadr;37;0;1;WYDZIAL;5
+1314;Samodzielne Wieloosobowe Stanowisko Pracy ds. Organizacyjno-Finansowych;65;0;1;WYDZIAL;6
+1315;Samodzielne Jednoosobowe Stanowisko Pracy Radcy Prawnego;65;0;1;WYDZIAL;6
+1316;Wydział Spraw Dekretowych I;66;0;1;WYDZIAL;10
+1317;Wydział Spraw Dekretowych II;66;0;1;WYDZIAL;10
+1318;Wydział Organizacyjno-Finansowy;66;0;1;WYDZIAL;10
+1319;Wydział Obsługi Pełnomocnika;66;0;1;WYDZIAL;10
+1265;Wydział Projektów Infrastrukturalnych;31;0;1;WYDZIAL;7
+1311;Wydział Analizy Podatku Należnego VAT i CIT;40;0;1;WYDZIAL;7
+1312;Wydział Analizy Podatku Naliczonego VAT i CIT;40;0;1;WYDZIAL;7
+1313;Zespół Księgowości Podatku VAT i CIT;40;0;1;WYDZIAL;7
+1320;Zespół Odszkodowań;66;0;1;WYDZIAL;10
+1291;Zespół Wzmacniania Wspólnoty Lokalnej;53;0;1;WYDZIAL;6
+1290;Wydział Konsultacji Społecznych i Współdecydowania z Mieszkańcami;53;0;1;WYDZIAL;6
+1297;Wydział Projektów Interdyscyplinarnych;53;0;1;WYDZIAL;6
+1276;Wydział Organizacji Pracy Urzędu;24;0;1;WYDZIAL;6
+1277;Samodzielne Wieloosobowe Stanowisko Pracy ds. Koordynacji i Rozwoju;24;0;1;WYDZIAL;5
+1280;Wydział Budżetu i Zamówień Publicznych;67;0;1;WYDZIAL;5
+1321;Samodzielne Wieloosobowe Stanowisko Pracy Radców Prawnych;66;0;1;WYDZIAL;10
+1350;Wydział Administracyjno-Gospodarczy dla Dzielnicy Bemowo;392;0;1;WYDZIAL;5
+1351;Wydział Architektury i Budownictwa dla Dzielnicy Bemowo;392;0;1;WYDZIAL;2
+1352;Wydział Budżetowo-Księgowy dla Dzielnicy Bemowo;392;0;1;WYDZIAL;7
+1353;Wydział Działalności Gospodarczej i Zezwoleń dla Dzielnicy Bemowo;392;0;1;WYDZIAL;1
+1355;Wydział Informatyki dla Dzielnicy Bemowo;392;0;1;WYDZIAL;5
+1356;Wydział Inwestycji dla Dzielnicy Bemowo;392;0;1;WYDZIAL;16
+1359;Wydział Obsługi Mieszkańców dla Dzielnicy Bemowo;392;0;1;WYDZIAL;6
+1361;Wydział Ochrony Środowiska dla Dzielnicy Bemowo;392;0;1;WYDZIAL;9
+1363;Wydział Oświaty i Wychowania dla Dzielnicy Bemowo;392;0;1;WYDZIAL;4
+1367;Wydział Spraw Społecznych i Zdrowia dla Dzielnicy Bemowo;392;0;1;WYDZIAL;13
+1368;Wydział Zamówień Publicznych dla Dzielnicy;392;0;1;WYDZIAL;5
+1369;Wydział Zasobów Lokalowych dla Dzielnicy Bemowo;392;0;1;WYDZIAL;10
+1374;Wydział Architektury i Budownictwa;394;0;1;WYDZIAL;2
+1375;Wydział Budżetowo-Księgowy;394;0;1;WYDZIAL;7
+1376;Wydział Działalności Gospodarczej i Zezwoleń;394;0;1;WYDZIAL;1
+1380;Wydział Kultury;394;0;1;WYDZIAL;11
+1381;Wydział Obsługi Mieszkańców;394;0;1;WYDZIAL;6
+1385;Wydział Konserwacji i Środowiska;394;0;1;WYDZIAL;9
+1386;Wydział Oświaty i Wychowania;394;0;1;WYDZIAL;4
+1388;Wydział Prawny;394;0;1;WYDZIAL;6
+1389;Wydział Zamówień Publicznych;394;0;1;WYDZIAL;5
+1391;Wydział Sportu i Rekreacji;394;0;1;WYDZIAL;14
+1392;Wydział Spraw Społecznych i Zdrowia;394;0;1;WYDZIAL;13
+1393;Wydział Zasobów Lokalowych;394;0;1;WYDZIAL;10
+1394;Wydział Administracyjno-Gospodarczy dla Dzielnicy;395;0;1;WYDZIAL;5
+1395;Wydział Architektury i Budownictwa dla Dzielnicy;395;0;1;WYDZIAL;2
+1396;Wydział Budżetowo-Księgowy dla Dzielnicy;395;0;1;WYDZIAL;7
+1397;Wydział Działalności Gospodarczej i Zezwoleń dla Dzielnicy;395;0;1;WYDZIAL;1
+1399;Wydział Informatyki dla Dzielnicy;395;0;1;WYDZIAL;5
+1400;Wydział Infrastruktury dla Dzielnicy;395;0;1;WYDZIAL;16
+1401;Wydział Kadr dla Dzielnicy;395;0;1;WYDZIAL;5
+1402;Wydział Obsługi Mieszkańców dla Dzielnicy;395;0;1;WYDZIAL;6
+1403;Wydział Obsługi Rady Dzielnicy;395;0;1;WYDZIAL;6
+1404;Wydział Ochrony Środowiska dla Dzielnicy;395;0;1;WYDZIAL;9
+1405;Wydział Organizacyjno-Prawny dla Dzielnicy;395;0;1;WYDZIAL;6
+1406;Wydział Oświaty i Wychowania dla Dzielnicy;395;0;1;WYDZIAL;4
+1407;Wydział Spraw Społecznych i Zdrowia dla Dzielnicy;395;0;1;WYDZIAL;13
+1408;Wydział Zamówień Publicznych dla Dzielnicy;395;0;1;WYDZIAL;5
+1409;Wydział Zasobów Lokalowych dla Dzielnicy;395;0;1;WYDZIAL;10
+1411;Wydział Kultury i Promocji dla Dzielnicy - Promocja;1757;0;1;WYDZIAL;6
+1412;Wydział Kultury i Promocji dla Dzielnicy - Kultura;1757;0;1;WYDZIAL;11
+1413;Zespół Sportu i Rekreacji dla Dzielnicy;395;0;1;WYDZIAL;14
+1354;Wydział Nieruchomości dla Dzielnicy Bemowo;392;0;1;WYDZIAL;10
+1360;Wydział Obsługi Urzędu i Funduszy Europejskich dla Dzielnicy Bemowo;392;0;1;WYDZIAL;6
+1364;Wydział Prawny i Spraw Pracowniczych dla Dzielnicy Bemowo;392;0;1;WYDZIAL;6
+1378;Wydział Infrastruktury;394;0;1;WYDZIAL;15
+1379;Wydział Kadr;394;0;1;WYDZIAL;5
+1371;Referat Administracyjno-Gospodarczy;1736;0;1;WYDZIAL;5
+1398;Wydział Nieruchomości dla Dzielnicy;395;0;1;WYDZIAL;10
+1414;Wydział Budżetowo-Księgowy dla Dzielnicy Mokotów;396;0;1;WYDZIAL;7
+1415;Wydział Administracyjno-Gospodarczy dla Dzielnicy Mokotów;396;0;1;WYDZIAL;5
+1416;Wydział Architektury i Budownictwa dla Dzielnicy Mokotów;396;0;1;WYDZIAL;2
+1417;Wydział Działalności Gospodarczej i Zezwoleń dla Dzielnicy Mokotów;396;0;1;WYDZIAL;1
+1418;Wydział Informatyki dla Dzielnicy Mokotów;396;0;1;WYDZIAL;5
+1419;Wydział Inwestycji i Infrastruktury dla Dzielnicy Mokotów;396;0;1;WYDZIAL;15
+1420;Wydział Kadr dla Dzielnicy Mokotów;396;0;1;WYDZIAL;5
+1421;Wydział Nieruchomości dla Dzielnicy Mokotów;396;0;1;WYDZIAL;10
+1422;Wydział Obrotu Nieruchomościami dla Dzielnicy Mokotów;396;0;1;WYDZIAL;10
+1423;Wydział Obsługi Mieszkańców dla Dzielnicy Mokotów;396;0;1;WYDZIAL;6
+1424;Wydział Obsługi Rady Dzielnicy Mokotów;396;0;1;WYDZIAL;6
+1425;Wydział Ochrony Środowiska dla Dzielnicy Mokotów;396;0;1;WYDZIAL;9
+1426;Wydział Organizacyjno - Prawny dla Dzielnicy Mokotów;396;0;1;WYDZIAL;6
+1427;Wydział Oświaty i Wychowania dla Dzielnicy Mokotów;396;0;1;WYDZIAL;4
+1428;Wydział Promocji i Komunikacji Społecznej;396;0;1;WYDZIAL;6
+1429;Wydział Spraw Społecznych i Zdrowia dla Dzielnicy Mokotów;396;0;1;WYDZIAL;13
+1432;Wydział Zamówień Publicznych dla Dzielnicy Mokotów;396;0;1;WYDZIAL;5
+1433;Wydział Zasobów Lokalowych dla Dzielnicy Mokotów;396;0;1;WYDZIAL;10
+1434;Zespół Funduszy Europejskich dla Dzielnicy Mokotów;396;0;1;WYDZIAL;7
+1435;Zespół Kultury dla Dzielnicy Mokotów;396;0;1;WYDZIAL;11
+1436;Zespół Sportu i Rekreacji dla Dzielnicy Mokotów;396;0;1;WYDZIAL;14
+1437;Wydział Administracyjno-Gospodarczy dla Dzielnicy Ochota;397;0;1;WYDZIAL;5
+1438;Wydział Architektury i Budownictwa dla Dzielnicy Ochota;397;0;1;WYDZIAL;2
+1439;Wydział Budżetowo-Księgowy dla Dzielnicy Ochota;397;0;1;WYDZIAL;7
+1440;Wydział Działalności Gospodarczej i Zezwoleń dla Dzielnicy Ochota;397;0;1;WYDZIAL;1
+1441;Wydział Informatyki dla Dzielnicy Ochota;397;0;1;WYDZIAL;5
+1442;Wydział Infrastruktury dla Dzielnicy Ochota;397;0;1;WYDZIAL;16
+1443;Wydział Kadr dla Dzielnicy Ochota;397;0;1;WYDZIAL;5
+1444;Wydział Kultury dla Dzielnicy Ochota;397;0;1;WYDZIAL;11
+1445;Wydział Nieruchomości dla Dzielnicy Ochota;397;0;1;WYDZIAL;10
+1446;Wydział Obsługi Mieszkańców dla Dzielnicy Ochota;397;0;1;WYDZIAL;6
+1447;Wydział Obsługi Rady Dzielnicy Ochota;397;0;1;WYDZIAL;6
+1448;Wydział Ochrony Środowiska dla Dzielnicy Ochota;397;0;1;WYDZIAL;9
+1449;Wydział Organizacyjny dla Dzielnicy Ochota;397;0;1;WYDZIAL;6
+1450;Wydział Oświaty i Wychowania dla Dzielnicy Ochota;397;0;1;WYDZIAL;4
+1451;Wydział Prawny dla Dzielnicy Ochota;397;0;1;WYDZIAL;6
+1452;Wydział Komunikacji Społecznej i Funduszy Europejskich dla Dzielnicy Ochota ;397;0;1;WYDZIAL;6
+1453;Wydział Spraw Społecznych i Zdrowia dla Dzielnicy Ochota;397;0;1;WYDZIAL;13
+1454;Wydział Zamówień Publicznych dla Dzielnicy Ochota;397;0;1;WYDZIAL;5
+1455;Wydział Zasobów Lokalowych dla Dzielnicy Ochota;397;0;1;WYDZIAL;10
+1456;Zespół Sportu i Rekreacji dla Dzielnicy Ochota;397;0;1;WYDZIAL;14
+1457;Wydział Administracyjno-Gospodarczy;398;0;1;WYDZIAL;5
+1458;Wydział Architektury i Budownictwa;398;0;1;WYDZIAL;2
+1459;Wydział Budżetowo-Księgowy;398;0;1;WYDZIAL;7
+1460;Wydział Działalności Gospodarczej i Zezwoleń;398;0;1;WYDZIAL;1
+1461;Wydział Gospodarki Nieruchomościami i Nadzoru Właścicielskiego;398;0;1;WYDZIAL;10
+1462;Wydział Informatyki;398;0;1;WYDZIAL;5
+1463;Wydział Infrastruktury;398;0;1;WYDZIAL;16
+1464;Wydział Kadr;398;0;1;WYDZIAL;5
+1465;Wydział Obsługi Mieszkańców;398;0;1;WYDZIAL;6
+1467;Wydział Ochrony Środowiska;398;0;1;WYDZIAL;9
+1468;Wydział Organizacyjny;398;0;1;WYDZIAL;6
+1469;Wydział Oświaty i Wychowania;398;0;1;WYDZIAL;4
+1470;Wydział Prawny;398;0;1;WYDZIAL;6
+1471;Wydział Spraw Społecznych i Zdrowia;398;0;1;WYDZIAL;13
+1472;Wydział Zamówień Publicznych;398;0;1;WYDZIAL;5
+1473;Wydział Zasobów Lokalowych;398;0;1;WYDZIAL;10
+1476;Wydział Administracyjno-Gospodarczy dla Dzielnicy Rembertów;400;0;1;WYDZIAL;5
+1477;Wydział Architektury i Urbanistyki dla Dzielnicy Rembertów;400;0;1;WYDZIAL;2
+1478;Wydział Budżetowo-Księgowy dla Dzielnicy Rembertów;400;0;1;WYDZIAL;7
+1479;Wydział Gospodarki Gruntami i Działalności Gospodarczej dla Dzielnicy Rembertów;400;0;1;WYDZIAL;10
+1480;Wydział Informatyki dla Dzielnicy Rembertów;400;0;1;WYDZIAL;5
+1481;Wydział Infrastruktury dla Dzielnicy Rembertów;400;0;1;WYDZIAL;15
+1482;Wydział Kultury i Promocji dla Dzielnicy Rembertów;400;0;1;WYDZIAL;11
+1483;Wydział Obsługi Mieszkanców dla Dzielnicy Rembertów;400;0;1;WYDZIAL;6
+1484;Wydział Ochrony Środowiska dla Dzielnicy Rembertów;400;0;1;WYDZIAL;9
+1485;Wydział Organizacyjny dla Dzielnicy Rembertów;400;0;1;WYDZIAL;6
+1486;Wydział Spraw Społecznych i Zdrowia dla Dzielnicy Rembertów;400;0;1;WYDZIAL;13
+1487;Wydział Zasobów Lokalowych dla Dzielnicy Rembertów;400;0;1;WYDZIAL;10
+1488;Zespół Obsługi Prawnej dla Dzielnicy Rembertów;400;0;1;WYDZIAL;6
+1490;Zespół Sportu i Rekreacji dla Dzielnicy Rembertów;400;0;1;WYDZIAL;14
+1491;Samodzielne wieloosobowe stanowisko ds. Kadr dla Dzielnicy Rembertów;400;0;1;WYDZIAL;5
+1492;Wydział Oświaty i Wychowania dla Dzielnicy Rembertów ;400;0;1;WYDZIAL;4
+1493;Zespół ds. Obsługi Rady Dzielnicy Rembertów;400;0;1;WYDZIAL;6
+1516;Wydział Architektury i Budownictwa dla Dzielnicy Targówek;402;0;1;WYDZIAL;2
+1517;Wydział Budżetowo-Księgowy dla Dzielnicy Targówek;402;0;1;WYDZIAL;7
+1518;Wydział Działalności Gospodarczej i Zezwoleń dla Dzielnicy Targówek;402;0;1;WYDZIAL;1
+1519;Wydział Edukacji i Wychowania dla Dzielnicy Targówek;402;0;1;WYDZIAL;4
+1520;Wydział Gospodarowania Nieruchomościami dla Dzielnicy Targówek;402;0;1;WYDZIAL;10
+1521;Wydział Infrastruktury dla Dzielnicy Targówek;402;0;1;WYDZIAL;15
+1522;Wydział Inwestycji dla Dzielnicy Targówek;402;0;1;WYDZIAL;16
+1524;Referat Analiz i Funduszy Europejskich -  Targówek;1523;0;1;WYDZIAL;6
+1525;Wieloosobowe stanowisko Pracy ds. Obsługi Kadrowej -  Targówek;1523;0;1;WYDZIAL;5
+1526;Wydział Kultury i Promocji dla Dzielnicy Targówek;402;0;1;WYDZIAL;11
+1527;Wydział Obsługi Mieszkańców dla Dzielnicy Targówek;402;0;1;WYDZIAL;6
+1528;Wydział Obsługi Rady Dzielnicy Targówek;402;0;1;WYDZIAL;6
+1529;Wydział Obsługi Urzędu i Informatyki dla Dzielnicy Targówek;402;0;1;WYDZIAL;5
+1494;Wydział Administracyjno Gospodarczy - Śródmieście;401;0;1;WYDZIAL;5
+1495;Wydział Architektury i Budownictwa - Śródmieście;401;0;1;WYDZIAL;2
+1496;Wydział Budżetowo-Księgowy - Śródmieście;401;0;1;WYDZIAL;7
+1499;Wydział Inwestycji - Śródmieście;401;0;1;WYDZIAL;16
+1498;Wydział Informatyki - Śródmieście;401;0;1;WYDZIAL;5
+1500;Wydział Kultury i Promocji - Śródmieście;401;0;1;WYDZIAL;11
+1501;Wydział Nieruchomości - Śródmieście;401;0;1;WYDZIAL;10
+1502;Wydział Obsługi Mieszkańców - Śródmieście;401;0;1;WYDZIAL;6
+1504;Wydział Organizacyjny - Śródmieście;401;0;1;WYDZIAL;6
+1503;Wydział Ochrony Środowiska - Śródmieście;401;0;1;WYDZIAL;9
+1508;Wydział Prawny - Śródmieście;401;0;1;WYDZIAL;6
+1512;Wydział Sprzedaży Lokali - Śródmieście;401;0;1;WYDZIAL;10
+1513;Wydział Zamówień Publicznych - Śródmieście;401;0;1;WYDZIAL;5
+1514;Wydział Zasobów Lokalowych - Śródmieście;401;0;1;WYDZIAL;10
+1515;Zespół Gospodarowania Odpadami Komunalnymi - Śródmieście;401;0;1;WYDZIAL;16
+1557;Wydział Administracyjno-Gospodarczy i Informatyki dla Dzielnicy Ursynów;404;0;1;WYDZIAL;5
+1558;Wydział Architektury i Budownictwa dla Dzielnicy Ursynów;404;0;1;WYDZIAL;2
+1559;Wydział Budżetowo - Księgowy dla Dzielnicy Ursynów;404;0;1;WYDZIAL;7
+1560;Wydział Działalności Gospodarczej i Zezwoleń dla Dzielnicy Ursynów;404;0;1;WYDZIAL;1
+1561;Wydział Gospodarki Nieruchomościami dla Dzielnicy Ursynów;404;0;1;WYDZIAL;10
+1562;Wydział Infrastruktury dla Dzielnicy Ursynów;404;0;1;WYDZIAL;16
+1564;Wydział Kultury dla Dzielnicy Ursynów;404;0;1;WYDZIAL;11
+1565;Wydział Obsługi Mieszkańców dla Dzielnicy Ursynów;404;0;1;WYDZIAL;6
+1566;Wydział Ochrony Środowiska dla Dzielnicy Ursynów;404;0;1;WYDZIAL;9
+1567;Wydział Organizacyjny dla Dzielnicy Ursynów;404;0;1;WYDZIAL;6
+1568;Wydział Oświaty i Wychowania dla Dzielnicy Ursynów;404;0;1;WYDZIAL;4
+1569;Wydział Prawny dla Dzielnicy Ursynów;404;0;1;WYDZIAL;6
+1570;Wydział Komunikacji Społecznej dla Dzielnicy Ursynów;404;0;1;WYDZIAL;6
+1571;Wydział Spraw Społecznych i Zdrowia dla Dzielnicy Ursynów;404;0;1;WYDZIAL;13
+1572;Wydział Zamówień Publicznych dla Dzielnicy Ursynów;404;0;1;WYDZIAL;5
+1573;Wydział Zasobów Lokalowych dla Dzielnicy Ursynów;404;0;1;WYDZIAL;10
+1574;Zespół Obsługi Rady dla Dzielnicy Ursynów;404;0;1;WYDZIAL;6
+1575;Wydział Sportu i Rekreacji dla Dzielnicy Ursynów;404;0;1;WYDZIAL;14
+1576;Samodzielne Jednoosobowe Stanowisko Pracy ds. Kontroli oraz Systemu Kontroli Zarządczej dla Dzielnicy Ursynów;404;0;1;WYDZIAL;6
+1579;Wydział Architektury i Budownictwa - Wawer;405;0;1;WYDZIAL;2
+1580;Wydział Budżetowo - Księgowy - Wawer;405;0;1;WYDZIAL;7
+1581;Wydział Działalności Gospodarczej i Zezwoleń - Wawer;405;0;1;WYDZIAL;1
+1583;Wydział Informatyki - Wawer;405;0;1;WYDZIAL;5
+1584;Wydział Infrastruktury - Wawer;405;0;1;WYDZIAL;16
+1585;Wydział Inwestycji - Wawer;405;0;1;WYDZIAL;16
+1587;Wydział Obsługi Mieszkańców - Wawer;405;0;1;WYDZIAL;6
+1588;Wydział Obsługi Rady - Wawer;405;0;1;WYDZIAL;6
+1538;Wydział Administracyjno-Gospodarczy - Ursus;403;0;1;WYDZIAL;5
+1539;Wydział Architektury i Budownictwa - Ursus;403;0;1;WYDZIAL;2
+1540;Wydział Budżetowo-Księgowy - Ursus;403;0;1;WYDZIAL;7
+1541;Wydział Infrastruktury - Ursus;403;0;1;WYDZIAL;16
+1542;Wydział Kadr - Ursus;403;0;1;WYDZIAL;5
+1543;Wydział Kultury - Ursus;403;0;1;WYDZIAL;11
+1544;Wydział Obsługi Mieszkańców - Ursus;403;0;1;WYDZIAL;6
+1545;Wydział Ochrony Środowiska - Ursus;403;0;1;WYDZIAL;9
+1546;Wydział Organizacyjny - Ursus;403;0;1;WYDZIAL;6
+1547;Wydział Oświaty i Wychowania - Ursus;403;0;1;WYDZIAL;4
+1549;Wydział Zasobów Lokalowych - Ursus;403;0;1;WYDZIAL;10
+1550;Zespół Działalności Gospodarczej i Zezwoleń - Ursus;403;0;1;WYDZIAL;1
+1551;Zespół Funduszy Europejskich - Ursus;403;0;1;WYDZIAL;7
+1553;Zespół Obsługi Prawnej - Ursus;403;0;1;WYDZIAL;6
+1552;Wydział Informatyki - Ursus;403;0;1;WYDZIAL;5
+1555;Zespół Sportu i Rekreacji - Ursus;403;0;1;WYDZIAL;14
+1556;Zespół Zamówień Publicznych - Ursus;403;0;1;WYDZIAL;5
+1530;Wydział Obsługi Zarządu Dzielnicy Targówek;402;0;1;WYDZIAL;6
+1531;Wydział Ochrony Środowiska dla Dzielnicy Targówek;402;0;1;WYDZIAL;9
+1533;Referat Zamówień Publicznych - Targówek;1532;0;1;WYDZIAL;5
+1534;Wieloosobowe Stanowisko Pracy ds. Obsługi Prawnej - Targówek;1532;0;1;WYDZIAL;6
+1535;Wydział Spraw Społecznych i Zdrowia dla Dzielnicy Targówek;402;0;1;WYDZIAL;13
+1536;Wydział Zasobów Lokalowych dla Dzielnicy Targówek;402;0;1;WYDZIAL;10
+1537;Zespół Sportu i Rekreacji dla Dzielnicy Targówek;402;0;1;WYDZIAL;14
+1582;Wydział Nieruchomości - Wawer;405;0;1;WYDZIAL;10
+1601;Wydział Administracyjno-Gospodarczy dla Dzielnicy Wesoła;406;0;1;WYDZIAL;5
+1602;Wydział Architektury i Budownictwa dla Dzielnicy Wesoła;406;0;1;WYDZIAL;2
+1603;Wydział Budżetowo-Księgowy dla Dzielnicy Wesoła;406;0;1;WYDZIAL;7
+1604;Wydział Infrastruktury dla Dzielnicy Wesoła;406;0;1;WYDZIAL;16
+1605;Wydział Obsługi Mieszkańców dla Dzielnicy Wesoła;406;0;1;WYDZIAL;6
+1606;Wydział Organizacyjny dla Dzielnicy Wesoła;406;0;1;WYDZIAL;6
+1607;Wydział Oświaty, Kultury i Sportu dla Dzielnicy Wesoła;406;0;1;WYDZIAL;null
+1608;Wydział Oświaty, Kultury i Sportu dla Dzielnicy Wesoła - Oświata;1607;0;1;WYDZIAL;4
+1609;Wydział Oświaty, Kultury i Sportu dla Dzielnicy Wesoła - Kultura;1607;0;1;WYDZIAL;11
+1610;Wydział Oświaty, Kultury i Sportu dla Dzielnicy Wesoła - Sport;1607;0;1;WYDZIAL;14
+1611;Wydział Spraw Społecznych i Lokalowych dla Dzielnicy Wesoła;406;0;1;WYDZIAL;13
+1615;Zespół Zamówień Publicznych dla Dzielnicy Wesoła;406;0;1;WYDZIAL;5
+1632;Wydział Architektury i Budownictwa dla Dzielnicy Włochy;408;0;1;WYDZIAL;2
+1633;Wydział Budżetowo-Księgowy dla Dzielnicy Włochy;408;0;1;WYDZIAL;7
+1634;Wydział Działalności Gospodarczej i Zezwoleń dla Dzielnicy Włochy;408;0;1;WYDZIAL;1
+1635;Zespół Infrastruktury - Włochy;408;0;1;WYDZIAL;16
+1636;Zespół Inwestycji - Włochy;408;0;1;WYDZIAL;16
+1637;Zespół Kadr - Włochy;408;0;1;WYDZIAL;5
+1641;Wydział Nieruchomości dla Dzielnicy Włochy;408;0;1;WYDZIAL;10
+1642;Wydział Obsługi Mieszkańców dla Dzielnicy Włochy;408;0;1;WYDZIAL;6
+1643;Wydział Obsługi Rady Dzielnicy Włochy;408;0;1;WYDZIAL;6
+1644;Wydział Ochrony Środowiska dla Dzielnicy Włochy;408;0;1;WYDZIAL;9
+1645;Wydział Organizacyjny dla Dzielnicy Włochy;408;0;1;WYDZIAL;6
+1616;Wydział Administracyjno-Gospodarczy dla Dzielnicy Wilanów;407;0;1;WYDZIAL;5
+1617;Wydział Architektury i Budownictwa dla Dzielnicy Wilanów;407;0;1;WYDZIAL;2
+1618;Wydział Budżetowo-Księgowy dla Dzielnicy Wilanów;407;0;1;WYDZIAL;7
+1619;Wydział Informatyki dla Dzielnicy Wilanów;407;0;1;WYDZIAL;5
+1620;Wydział Infrastruktury dla Dzielnicy Wilanów;407;0;1;WYDZIAL;16
+1621;Wydział Kadr dla Dzielnicy Wilanów;407;0;1;WYDZIAL;5
+1623;Wydział Kultury i Sportu dla Dzielnicy Wilanów;407;0;1;WYDZIAL;11
+1624;Wydział Obsługi Mieszkańców dla Dzielnicy Wilanów;407;0;1;WYDZIAL;6
+1625;Wydział Organizacyjny dla Dzielnicy Wilanów;407;0;1;WYDZIAL;6
+1627;Wydział Prawny dla Dzielnicy Wilanów;407;0;1;WYDZIAL;6
+1628;Wydział Spraw Społecznych i Świadczeń dla Dzielnicy Wilanów;407;0;1;WYDZIAL;13
+1629;Zespół Zamówień Publicznych - Wilanów;407;0;1;WYDZIAL;5
+1630;Wydział Zarządzania Nieruchomościami dla Dzielnicy Wilanów;407;0;1;WYDZIAL;10
+1612;Samodzielne Wieloosobowe Stanowisko Pracy ds. Obsługi Prawnej dla Dzielnicy Wesoła;406;0;1;WYDZIAL;6
+1614;Wydział Ochrony Środowiska dla Dzielnicy Wesoła;406;0;1;WYDZIAL;9
+1589;Wydział Ochrony Środowiska - Wawer;405;0;1;WYDZIAL;9
+1590;Wydział Organizacyjny - Wawer;405;0;1;WYDZIAL;6
+1591;Wydział Oświaty i Wychowania - Wawer;405;0;1;WYDZIAL;4
+1593;Wydział Spraw Społecznych i Świadczeń - Wawer;405;0;1;WYDZIAL;13
+1594;Zespół Zamówień Publicznych - Wawer;405;0;1;WYDZIAL;5
+1596;Wydział Promocji, Kultury i Sportu - Sport - Wawer;1595;0;1;WYDZIAL;14
+1597;Wydział Promocji, Kultury i Sportu - Kultura - Wawer;1595;0;1;WYDZIAL;11
+1598;Wydział Promocji, Kultury i Sportu - Promocja - Wawer;1595;0;1;WYDZIAL;6
+1599;Samodzielne Jednoosobowe Stanowisko Pracy ds. Kontroli Wewnętrznej - Wawer;405;0;1;WYDZIAL;6
+1600;Wydział Zasobów Lokalowych - Wawer;405;0;1;WYDZIAL;10
+1675;Wydział Administracyjno-Gospodarczy dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;5
+1676;Wydział Architektury i Budownictwa dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;2
+1677;Wydział Budżetowo-Księgowy dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;7
+1679;Wydział Informatyki dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;5
+1680;Wydział Infrastruktury dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;16
+1681;Wydział Kadr dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;5
+1682;Wydział Kultury i Promocji dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;11
+1683;Wydział Nieruchomości dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;10
+1684;Wydział Obsługi Mieszkańców dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;6
+1685;Wydział Obsługi Rady Dzielnicy Żoliborz;410;0;1;WYDZIAL;6
+1686;Wydział Ochrony Środowiska dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;9
+1687;Wydział Organizacyjny dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;6
+1688;Wydział Oświaty i Wychowania dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;4
+1689;Zespół Prawny dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;6
+1690;Wydział Sportu i Rekreacji dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;14
+1691;Wydział Spraw Społecznych i Zdrowia dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;13
+1692;Wydział Zasobów Lokalowych dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;10
+1693;Zespół Zamówień Publicznych dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;5
+1694;Samodzielne Stanowisko ds. Kontroli Wewnętrznej dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;6
+1695;Wydział Projektów Rozwoju Regionalnego (FE-WPR);31;0;1;WYDZIAL;7
+1703;Zespół Projektów Ochrony Środowiska (FE-ZOŚ);31;0;1;WYDZIAL;7
+1701;Wydział Zezwoleń Alkoholowych;65;0;1;WYDZIAL;1
+1700;Wydział Działalności Gospodarczej;65;0;1;WYDZIAL;1
+1699;Wydział Promocji Gospodarczej;65;0;1;WYDZIAL;6
+1707;Samodzielne Wieloosobowe Stanowisko Pracy Radcy Prawnego (FE-RP);31;0;1;WYDZIAL;6
+1708;Wydział Administracyjno-Gospodarczy;399;0;1;WYDZIAL;5
+1709;Wydział Architektury i Budownictwa;399;0;1;WYDZIAL;2
+1710;Wydział Budżetowo-Księgowy;399;0;1;WYDZIAL;7
+1655;Wydział Budżetowo-Księgowy dla Dzielnicy Wola;409;0;1;WYDZIAL;7
+1656;Wydział Działalności Gospodarczej i Funduszy Zewnętrznych dla Dzielnicy Wola;409;0;1;WYDZIAL;1
+1657;Wydział Informatyki dla Dzielnicy Wola;409;0;1;WYDZIAL;5
+1658;Wydział Infrastruktury dla Dzielnicy Wola;409;0;1;WYDZIAL;16
+1660;Wydział Obsługi Mieszkańców - Wola;409;0;1;WYDZIAL;6
+1663;Wydział Organizacyjny i Obsługi Rady dla Dzielnicy Wola;409;0;1;WYDZIAL;6
+1662;Wydział Ochrony Środowiska dla Dzielnicy Wola;409;0;1;WYDZIAL;9
+1653;Wydział Administracyjno-Gospodarczy dla Dzielnicy Wola;409;0;1;WYDZIAL;5
+1664;Wydział Oświaty i Wychowania dla Dzielnicy Wola;409;0;1;WYDZIAL;4
+1665;Wydział Prawny dla Dzielnicy Wola;409;0;1;WYDZIAL;6
+1669;Zespół Zamówień Publicznych dla Dzielnicy Wola;409;0;1;WYDZIAL;5
+1670;Wydział Zasobów Lokalowych dla Dzielnicy Wola;409;0;1;WYDZIAL;10
+1666;Wydział Spraw Społecznych i Zdrowia dla Dzielnicy Wola;409;0;1;WYDZIAL;13
+1672;Zespół Kadr - Wola;409;0;1;WYDZIAL;5
+1673;Zespół Kultury dla Dzielnicy Wola;409;0;1;WYDZIAL;11
+1674;Wydział Sportu, Promocji i Komunikacji Społecznej - Wola;409;0;1;WYDZIAL;14
+1646;Wydział Oświaty, Sportu i Wychowania dla Dzielnicy Włochy;408;0;1;WYDZIAL;4
+1647;Zespół Promocji, Komunikacji Społecznej i Kontaktów z Mediami - Włochy;408;0;1;WYDZIAL;6
+1648;Zespół Spraw Społecznych i Zdrowia dla Dzielnicy Włochy;408;0;1;WYDZIAL;13
+1649;Wydział Zamówień Publicznych dla Dzielnicy Włochy;408;0;1;WYDZIAL;5
+1650;Wydział Zasobów Lokalowych dla Dzielnicy Włochy;408;0;1;WYDZIAL;10
+1651;Zespół Informatyki - Włochy;408;0;1;WYDZIAL;5
+1706;Wydział Organizacyjno-Finansowy;31;0;1;WYDZIAL;6
+1711;Wydział Działalności Gospodarczej i Zezwoleń;399;0;1;WYDZIAL;1
+1712;Wydział Funduszy Europejskich;399;0;1;WYDZIAL;1
+1713;Wydział Gospodarowania Nieruchomościami;399;0;1;WYDZIAL;10
+1714;Wydział Informatyki;399;0;1;WYDZIAL;5
+1715;Wydział Infrastruktury;399;0;1;WYDZIAL;16
+1716;Wydział Kadr;399;0;1;WYDZIAL;5
+1717;Wydział Kultury;399;0;1;WYDZIAL;11
+1718;Wydział Obsługi Mieszkańców;399;0;1;WYDZIAL;6
+1719;Wydział Obsługi Rady Dzielnicy;399;0;1;WYDZIAL;6
+1720;Wydział Ochrony Środowiska;399;0;1;WYDZIAL;9
+1721;Wydział Organizacyjny;399;0;1;WYDZIAL;6
+1722;Wydział Oświaty i Wychowania;399;0;1;WYDZIAL;4
+1723;Wydział Prawny;399;0;1;WYDZIAL;6
+1724;Wydział Sportu i Rekreacji;399;0;1;WYDZIAL;14
+1725;Wydział Spraw Społecznych i Zdrowia;399;0;1;WYDZIAL;13
+1726;Wydział Zamówień Publicznych;399;0;1;WYDZIAL;5
+1727;Wydział Zasobów Lokalowych;399;0;1;WYDZIAL;10
+1731;Wydział Sportu i Rekreacji dla Dzielnicy Bemowo;392;0;1;WYDZIAL;14
+1732;Wydział Kultury dla Dzielnicy Bemowo;392;0;1;WYDZIAL;11
+1734;Wydział Informatyki;394;0;1;WYDZIAL;5
+1735;Wydział Obsługi Rady;394;0;1;WYDZIAL;6
+1736;Wydział Organizacyjny;394;0;1;WYDZIAL;6
+1741;Wydział Kadr i Funduszy Europejskich dla Dzielnicy Ursynów;404;0;1;WYDZIAL;5
+1742;Samodzielne Wieloosobowe Stanowisko Pracy ds. Jakości Zarządzania Oświatą;30;0;1;WYDZIAL;4
+1743;Samodzielne Wieloosobowe Stanowisko Pracy Radcy Prawnego;30;0;1;WYDZIAL;4
+1745;Samodzielne Jednoosobowe Stanowisko Pracy Radcy Prawnego;55;0;1;WYDZIAL;6
+1746;Wydział Zintegrowanych Inwestycji Terytorialnych (FE-ZIT);31;0;1;WYDZIAL;7
+1747;Samodzielne Jednoosobowe Stanowisko Pracy ds. Oświadczeń;37;0;1;WYDZIAL;5
+1748;Samodzielne Wieloosobowe Stanowisko Pracy ds. Przeciwdziałania Zjawisku Mobbingu w Urzędzie m.st. Warszawy;37;0;1;WYDZIAL;5
+1750;Wydział Inwestycji;394;0;1;WYDZIAL;16
+1752;Wydział Kultury, Promocji i Sportu;398;0;1;WYDZIAL;null
+1753;Zespół Gospodarowania Odpadami Komunalnymi;398;0;1;WYDZIAL;16
+1754;Samodzielne Wieloosobowe Stanowisko Pracy ds. Kontaktów z Mediami;398;0;1;WYDZIAL;6
+1755;Samodzielne Jednoosobowe Stanowisko Pracy ds. Kontroli wewnętrznej;398;0;1;WYDZIAL;6
+1757;Wydział Kultury i Promocji dla Dzielnicy;395;0;1;WYDZIAL;null
+2000;Zarząd Cmentarzy Komunalnych;412;1004;1;JEDNOSTKAWYKONAWCZA;16
+2001;Miejska Pracownia Planowania Przestrzennego i Strategii Rozwoju;412;25;1;JEDNOSTKAWYKONAWCZA;2
+2002;Straż Miejska Miasta Stołecznego Warszawy;412;1035;1;JEDNOSTKAWYKONAWCZA;3
+2003;Stołeczny Ośrodek dla Osób Nietrzeźwych;412;1035;1;JEDNOSTKAWYKONAWCZA;3
+2004;Zakład Obsługi Systemu Monitoringu;412;1039;1;JEDNOSTKAWYKONAWCZA;3
+2005;Zarząd Dróg Miejskich;412;1042;1;JEDNOSTKAWYKONAWCZA;15
+1763;Zespół Radców Prawnych dla Dzielnicy Włochy;408;0;1;WYDZIAL;6
+1760;Wydział Komunikacji Społecznej i Promocji dla Dzielnicy Wilanów;407;0;1;WYDZIAL;6
+1761;Zespół Obsługi Rady Dzielnicy Wilanów;407;0;1;WYDZIAL;6
+1758;Wydział Komunikacji Społecznej i Promocji - Ursus;403;0;1;WYDZIAL;6
+1737;Wydział Oświaty i Funduszy Europejskich - Śródmieście;401;0;1;WYDZIAL;null
+1738;Wydział Oświaty i Funduszy Europejskich - Edukacja - Śródmieście;1737;0;1;WYDZIAL;4
+1739;Referat Funduszy Europejskich i Analiz - Śródmieście;1737;0;1;WYDZIAL;6
+1759;Wydział Gospodarowania Nieruchomościami - Ursus;403;0;1;WYDZIAL;10
+1756;Wydział Strategii Rozwoju Miasta;31;0;1;WYDZIAL;6
+1733;Wydział Promocji i Komunikacji Społecznej dla Dzielnicy Bemowo;392;0;1;WYDZIAL;6
+1744;Zespół Obsługi Logistycznej;67;0;1;WYDZIAL;5
+1740;Wydział Prawny i Kadr - Wawer;405;0;1;WYDZIAL;6
+2006;Zarząd Transportu Miejskiego;412;1044;1;JEDNOSTKAWYKONAWCZA;15
+2007;Zarząd Oczyszczania Miasta;412;1043;1;JEDNOSTKAWYKONAWCZA;15
+2008;Zakład Remontów i Konserwacji Dróg;412;1043;1;JEDNOSTKAWYKONAWCZA;15
+2009;Pałac Młodzieży;412;1048;1;JEDNOSTKAWYKONAWCZA;4
+2010;Stołeczne Centrum Edukacji Kulturalnej im. Komisji Edukacji Narodowej;412;1048;1;JEDNOSTKAWYKONAWCZA;4
+2020;Zespół Placówek - Europejski Dom Spotkań Młodzieży;412;1048;1;JEDNOSTKAWYKONAWCZA;4
+2021;Bursa Szkolna nr 4;412;1048;1;JEDNOSTKAWYKONAWCZA;4
+2024;Specjalistyczna Poradnia Profilaktyczno-Terapeutyczna dla Dzieci i Młodzieży ze Środowisk Zagrożonych Alkoholizmem OPTA;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2028;Zespół Szkół Specjalnych Nr 38;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2031;Zespół Szkół Specjalnych Nr 85;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2034;Zespół Szkół Specjalnych Nr 89;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2035;Zespół Szkół Specjalnych Nr 90;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2041;Zespół Szkół Specjalnych Nr 96 w Instytucie Psychiatrii i Neurologii;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2047;Zespół Szkół Specjalnych Nr 102;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2050;Zespół Szkół Specjalnych Nr 105;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2055;Specjalny Ośrodek Szkolno-Wychowawczy Nr 9;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2057;Specjalny Ośrodek Szkolno-Wychowawczy dla Dzieci Słabosłyszących Nr 15 im. Ottona Lipkowskiego;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2058;Specjalny Ośrodek Szkolno-Wychowawczy dla Głuchych im. Jana Siestrzyńskiego;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2012;Szkolne Schronisko Młodzieżowe Nr 3 Syrenka;412;1048;1;JEDNOSTKAWYKONAWCZA;4
+2015;Pozaszkolna Placówka Specjalistyczna - Młodzieżowy Ośrodek Edukacyjno - Wypoczynkowy Zatoka Uklei w Gawrych Rudzie;412;1048;1;JEDNOSTKAWYKONAWCZA;4
+2016;Pozaszkolna Placówka Specjalistyczna - Ośrodek Rehabilitacyjno-Wypoczynkowy SYRENA w Mielnie;412;1048;1;JEDNOSTKAWYKONAWCZA;4
+2017;Pozaszkolna Placówka Specjalistyczna - Szkolny Ośrodek Wypoczynkowy SYRENKA w Marózie;412;1048;1;JEDNOSTKAWYKONAWCZA;4
+2018;Pozaszkolna Placówka Specjalistyczna - Szkolny Ośrodek Wypoczynkowy ORLE GNIAZDO w Sromowcach Wyżnych;412;1048;1;JEDNOSTKAWYKONAWCZA;4
+2019;Państwowe Ognisko Artystyczne Nowolipki;412;1048;1;JEDNOSTKAWYKONAWCZA;4
+2022;Bursa Szkolna nr 5 im. ppłk mgr inż. Grażyny Lipińskiej;412;1048;1;JEDNOSTKAWYKONAWCZA;4
+2023;Bursa Szkolna nr 6;412;1048;1;JEDNOSTKAWYKONAWCZA;4
+2025;Specjalistyczna Poradnia Psychologiczno-Pedagogiczna „Uniwersytet dla Rodziców;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2026;Poradnia Specjalistyczna Młodzieżowy Ośrodek Profilaktyki i Psychoterapii MOP, ul. Boryszewska 4;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2027;Specjalistyczna Poradnia Psychologiczno-Pedagogiczna TOP;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2029;Szkoła Podstawowa Specjalna nr 213 im. Ireny Sendlerowej;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2030;Zespół Szkół Specjalnych nr 78 im. Ewy Szelburg - Zarembiny w Instytucie „Pomnik – Centrum Zdrowia Dziecka”;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2032;Szkoła Podstawowa Specjalna nr 282 w Samodzielnym Zespole Publicznych Zakładów Opieki Zdrowotnej im. prof. dr Jana Bogdanowicza;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2033;Szkoła Podstawowa Specjalna nr 287 w Samodzielnym Publicznym Dziecięcym Szpitalu Klinicznym;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2036;Szkoła Podstawowa Specjalna nr 240;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2037;Szkoła Podstawowa Specjalna nr 177 im. Marii Konopnickiej;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2038;Szkoła Podstawowa Specjalna nr 346 w Szpitalu Bielańskim im. ks. Jerzego Popiełuszki w Samodzielnym Publicznym Zakładzie Opieki Zdrowotnej;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2039;Szkoła Podstawowa Specjalna nr 22 w Narodowym Instytucie Geriatrii, Reumatologii i Rehabilitacji im. prof. dr hab. med. Eleonory Reicher;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2040;Szkoła Podstawowa Specjalna nr 244;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2042;Szkoła Podstawowa Specjalna nr 6;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2043;Szkoła Podstawowa Specjalna nr 99 im. Małego Powstańca;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2045;Szkoła Podstawowa Specjalna nr 123;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2046;Szkoła Podstawowa Specjalna nr 147;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2049;Szkoła Podstawowa Specjalna nr 283 w Instytucie Matki i Dziecka;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2051;Szkoła Podstawowa Specjalna nr 291;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2052;Szkoła Podstawowa Specjalna nr 167;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2053;Szkoła Podstawowa Specjalna nr 327 im. dr Anny Lechowicz;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2054;Zespół Placówek Szkolno-Wychowawczo-Rewalidacyjnych nr 1;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2056;Specjalny Ośrodek Szkolno-Wychowawczy dla Dzieci Słabowidzących nr 8 im.dr Zofii Galewskiej;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2059;Młodzieżowy Ośrodek Socjoterapii nr 7;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2060;Instytut Głuchoniemych im. Jakuba Falkowskiego;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2064;Specjalny Ośrodek Wychowawczy Dom przy Rynku;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2065;Młodzieżowy Ośrodek Socjoterapii Nr 6;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2066;Młodzieżowy Ośrodek Socjoterapii Nr 8;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2067;Młodzieżowy Ośrodek Wychowawczy Nr 2;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2068;Młodzieżowy Ośrodek Wychowawczy Nr 3 im. dr Grzegorza Maja;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2069;Młodzieżowy Ośrodek Wychowawczy Nr 4;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2070;Zespół Placówek Opiekuńczo-Wychowawczych;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2071;Szkoła Podstawowa Specjalna Nr 302 w Ośrodku Terapii Dziecka w Środowisku;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2074;Miejskie Biuro Finansów Oświaty m.st. Warszawy;412;1049;1;JEDNOSTKAWYKONAWCZA;4
+2076;Centrum Nauki Kopernik;412;1053;1;JEDNOSTKAWYKONAWCZA;4
+2077;Zarząd Mienia m.st. Warszawy;412;1075;1;JEDNOSTKAWYKONAWCZA;10
+2078;Zarząd Mienia Skarbu Państwa;412;1076;1;JEDNOSTKAWYKONAWCZA;10
+2079;Centrum Myśli Jana Pawła II;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2080;Dom Spotkań z Historią;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2081;Muzeum Historii Żydów Polskich;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2082;Muzeum Warszawy;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2083;Muzeum Karykatury im. Eryka Lipińskiego;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2084;Muzeum Powstania Warszawskiego;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2085;Orkiestra Sinfonia Varsovia;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2086;Północne Centrum Sztuki Teatr Komedia;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2087;Staromiejski Dom Kultury;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2089;Teatr Ateneum im. Stefana Jaracza;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2090;Teatr Baj;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2091;Teatr Lalek Guliwer;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2092;Teatr Kwadrat im. Edwarda Dziewońskiego;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2093;Teatr Lalka;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2094;Teatr Muzyczny Roma;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2095;Nowy Teatr;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2096;Teatr Ochoty - Ośrodek Kultury Teatralnej;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2097;Teatr Powszechny w Warszawie im. Zygmunta Hübnera;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2098;Teatr Rampa - na Targówku;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2099;Teatr Rozmaitości;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2100;Teatr Scena Prezentacje;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2101;Teatr Studio im. Stanisława Ignacego Witkiewicza;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2102;Teatr Syrena;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2103;Teatr Współczesny;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2104;Teatr Żydowski im. Estery Racheli i Idy Kamińskich - Centum Kultury Jidysz;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2105;Teatr Dramatyczny Miasta Stołecznego Warszawa;412;1271;1;JEDNOSTKAWYKONAWCZA;11
+2106;Lasy Miejskie - Warszawa;412;1168;1;JEDNOSTKAWYKONAWCZA;9
+2107;Miejski Ogród Zoologiczny;412;1171;1;JEDNOSTKAWYKONAWCZA;9
+2108;Schronisko dla Bezdomnych Zwierząt;412;1171;1;JEDNOSTKAWYKONAWCZA;9
+2109;Szpital Bielański im. ks. Jerzego Popiełuszki SPZOZ;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2111;Warszawski Szpital dla Dzieci SPZOZ;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2112;Szpital Wolski im. dr Anny Gosztyńskiej SPZOZ;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2113;Szpital Specjalistyczny Inflancka im. Krysi Niżyńskiej Zakurzonej SPZOZ;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2114;Szpital Specjalistyczny im. Świętej Rodziny SPZOZ;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2115;SZPZLO Warszawa Bemowo - Włochy;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2116;SPZOZ Warszawa-Białołęka;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2117;SZPZLO Warszawa-Mokotów;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2118;SZPZLO Warszawa-Ochota;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2119;SZPZLO Warszawa Praga Południe;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2062;Młodzieżowy Ośrodek Socjoterapii nr 2 KĄT;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2072;Szkoła Podstawowa Specjalna nr 394;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2075;Warszawskie Centrum Innowacji Edukacyjno-Społecznych i Szkoleń;412;1053;1;JEDNOSTKAWYKONAWCZA;4
+2088;Stołeczna Estrada;412;64;1;JEDNOSTKAWYKONAWCZA;11
+2120;SZPZLO Warszawa Praga-Północ;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2121;SZPZLO Warszawa-Rembertów;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2122;SZPZLO Warszawa-Targówek;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2123;SPZOZ Warszawa-Ursynów;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2124;SZPZLO Warszawa-Wawer;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2125;SZPZLO Warszawa-Wesoła;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2126;SPZOZ Warszawa Wola-Śródmieście;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2127;SPZZLO Warszawa-Żoliborz;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2128;Centrum Odwykowe SPZOZ;412;1193;1;JEDNOSTKAWYKONAWCZA;12
+2129;Centrum Usług Socjalnych i Szkolenia Kadr Pomocy Społecznej „Ośrodek Nowolipie;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2130;Dom Dziecka nr 1 „Nasz Dom im. Maryny Falskiej;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2131;Dom Dziecka nr 2 im. dr. J. Korczaka;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2132;Dom Dziecka nr 4;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2133;Dom Dziecka nr 9 im. Lidii i Adama Ciołkoszów;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2134;Zespół Małych Form Opieki i Wychowania Chata;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2135;Dom Dziecka nr 12;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2136;Dom Dziecka nr 15 im. Ks.  G. P. Baudouina;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2137;Dom Dziecka nr 16;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2138;Centrum Alzheimera;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2139;Dom Pomocy Społecznej, ul. Wójtowska 13;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2140;Dom Pomocy Społecznej Budowlani;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2141;Dom Pomocy Społecznej Chemik;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2143;Dom Pomocy Społecznej im. Matysiaków;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2144;Dom Pomocy Społecznej im. Św. Brata Alberta;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2145;Dom Pomocy Społecznej Kombatant;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2146;Dom Pomocy Społecznej Leśny;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2147;Dom Pomocy Społecznej Na Przedwiośniu;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2148;Dom Pomocy Społecznej Pod Brzozami;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2149;Dom Pomocy Społecznej Pracownika Oświaty;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2150;Dom Pomocy Społecznej Syrena;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2151;Dom Pomocy Społecznej Na Bachusa;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2152;Ośrodek Wsparcia Dziecka i Rodziny „Koło”;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2153;Ośrodek Wspomagania Rodziny;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2154;Pogotowie Opiekuńcze nr 1;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2155;Pogotowie Opiekuńcze nr 2;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2157;Warszawskie Centrum Pomocy Rodzinie;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2158;Cetrum Wspierania Rodzin Rodzinna Warszawa;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2161;Zespół Żłobków m.st. Warszawy;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2163;Placówka Rodzinna przy ul. Juliusza Słowackiego 75 w Warszawie;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2164;Placówka Rodzinna przy ul. Ząbkowskiej 23/25 m. 53 w Warszawie;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2165;Placówka Rodzinna przy ul. Warzelniczej 23b w Warszawie;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2166;Placówka Rodzinna przy Al. Jerozolimskich 99/15 w Warszawie;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2167;Placówka Rodzinna przy ul. Wilczej 23 m. 27 w Warszawie;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2168;Zarząd Miejskich Inwestycji Drogowych;412;1706;1;JEDNOSTKAWYKONAWCZA;7
+2169;Stołeczny Zarząd Rozbudowy Miasta;412;1706;1;JEDNOSTKAWYKONAWCZA;7
+2172;Park Kultury w Powsinie;412;1230;1;JEDNOSTKAWYKONAWCZA;14
+2173;Ośrodek Pomocy Społecznej Dzielnicy Bemowo m.st. Warszawy;412;1367;1;JEDNOSTKAWYKONAWCZA;13
+2174;Specjalistyczna Poradnia Rodzinna Dzielnicy Bemowo m.st. Warszawy;412;1367;1;JEDNOSTKAWYKONAWCZA;13
+2176;Ośrodek Sportu i Rekreacji m.st. Warszawy w Dzielnicy Bemowo;412;1731;1;JEDNOSTKAWYKONAWCZA;14
+2177;Biblioteka Publiczna w Dzielnicy Bemowo m.st. Warszawy;412;1732;1;JEDNOSTKAWYKONAWCZA;11
+2178;Bemowskie Centrum Kultury w Dzielnicy Bemowo m.st. Warszawy;412;1732;1;JEDNOSTKAWYKONAWCZA;11
+2179;Dzielnicowe Biuro Finansów Oświaty – Bemowo m.st. Warszawy;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2180;Poradnia Psychologiczno-Pedagogiczna nr 20 - Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2181;Przedszkole Nr 63 - Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2182;Przedszkole Nr 75 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2183;Przedszkole Nr 98 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2184;Przedszkole Nr 205 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2185;Przedszkole Nr 214 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2186;Przedszkole Nr 215 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2187;Przedszkole Nr 216 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2188;Przedszkole Nr 222 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2189;Przedszkole Nr 319 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2190;Przedszkole Nr 320 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2191;Przedszkole Nr 336 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2192;Przedszkole Nr 337 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2193;Przedszkole Nr 371 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2194;Przedszkole Nr 390 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2195;Przedszkole Nr 402 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2196;Przedszkole Nr 406 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2197;Szkoła Podstawowa Nr 82 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2198;Szkoła Podstawowa Nr 306 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2199;Szkoła Podstawowa Nr 341 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2204;Zespół Szkół Nr 48 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2205;Zespół Szkolno-Przedszkolny Nr 2 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2206;Przedszkole nr 415 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2207;Przedszkole nr 417 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2208;Zespół Szkolno-Przedszkolny Nr 6 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2209;Zespół Szkolno-Przedszkolny Nr 7 Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2210;Liceum Ogólnokształcące LXXVIII Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2212;Szkoła Podstawowa nr 110 im. K. Jeżewskiego ul. Bohaterów 41 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2214;Szkoła Podstawowa nr 118 im. Przyjaciół Mazowsza ul. Leszczynowa 5 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2215;Szkoła Podstawowa nr 154 im. Pawła Edmunda Strzeleckiego ul. Leśnej Polanki 63/65 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2216;Szkoła Podstawowa nr 231 im. Gen. Mariusza Zaruskiego ul. Juranda ze Spychowa 10 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2217;Szkoła Podstawowa nr 257 im. prof. M. Falskiego ul. Podróżnicza 11 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2218;Szkoła Podstawowa nr 314 im. Przyjaciół Ziemi ul. Porajów 3 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2219;Szkoła Podstawowa z Oddziałami Integracyjnymi nr 342 im. Jana Marcina Szancera ul. Strumykowa 21A - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2220;Szkoła Podstawowa z Oddziałami Integracyjnymi nr 344 im. Powstania Warszawskiego ul. Erazma z Zakroczmia 15 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2222;Zespół Szkół nr 106 (CV L.O. im. Z. Herberta, Gimnazjum nr 122 z oddziałami dwujęzycznymi im. Gen. Charlesa de Gaulle'a) ul. Vincenta Van Gogha 1 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2269;Przedszkole Nr 181 „Wesołe Nutki” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2226;Przedszkole z Oddziałami Integracyjnymi nr 226 Małego Europejczyka ul. Strumykowa 17 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2227;Przedszkole nr 192 „Wesoły Pędzelek” ul. Liczydło 3A - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2228;Przedszkole nr 76 im. Warsa i Sawy ul. Odkryta 18a - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2229;Przedszkole nr 64 im. Przyjaciół Kubusia Puchatka ul. Porajów 3 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2230;Przedszkole z Oddziałami Integracyjnymi nr 65 Tarchominek ul. Pancera 3 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2231;Przedszkole nr 414 ul. Hemara 8 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2232;Poradnia Psychologiczno-Pedagogiczna nr 21 ul. Marywilska 44 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2233;Dzielnicowe Biuro Finansów Oświaty dla Dzielnicy Białołęka - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2234;Biblioteka Publiczna w Dzielnicy Białołęka ul. Kowalczyka 3 - Białołęka;412;1380;1;JEDNOSTKAWYKONAWCZA;11
+2235;Białołęcki Ośrodek Kultury ul. Vincenta van Gogha 1 - Białołęka;412;1380;1;JEDNOSTKAWYKONAWCZA;11
+2213;Szkoła Podstawowa nr 112 i. Marii Kownackiej ul. Zaułek 34-Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2221;Szkoła Podstawowa nr 365 im. Wojciecha Zawadzkiego ul. Płużnicka 4 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2223;Szkoła Podstawowa nr 366 im. Jana Pawła II ul. Strumykowa 21- Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2224;Szkoła Podstawowa nr 367  im. Polskich Noblistów ul. Przytulna 3 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2225;Szkoła Podstawowa nr 368 im. Polskich Olimpijczyków ul. Ostródzka 175- Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+2236;Ośrodek Pomocy Społecznej Dzielnicy Białołęka ul. Marywilska 44 c;412;1392;1;JEDNOSTKAWYKONAWCZA;13
+2237;Zakład Gospodarowania Nieruchomościami m. st. Warszawy dla Dzielnicy Białołęka;412;1393;1;JEDNOSTKAWYKONAWCZA;10
+2238;Białołęcki Ośrodek Sportu ul. Światowida 56;412;1391;1;JEDNOSTKAWYKONAWCZA;14
+2243;Zespół Szkół nr 10 im. Stanisława Staszica, w tym:  Technikum nr 25, CXLIII Liceum Ogólnokształacące dla Dorosłych - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2245;Zespół Szkół Nr 18, w tym: LII Liceum Ogólnokształcące im. W. Reymonta, Technikum Księgarskie im. Stefana Żeromskiego, Szkoła Policealna Nr 6 - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2247;Zespół Szkół Nr 35 im. Zofii Jaroszewicz”Kasi”, w tym: Technikum Ekonomiczne Nr 5, Zasadnicza Szkoła Zawodowa Nr 18 - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2249;XXII Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Jose Marti - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2254;Szkoła Podstawowa Nr 53 im. M. Zaruskiego - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2255;Szkoła Podstawowa Nr 77 im. W. Zieleńczyk - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2256;Szkoła Podstawowa Nr 80 im. M. Kownackiej - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2257;Szkoła Podstawowa Nr 133 im. S. Czarnieckiego - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2258;Szkoła Podstawowa Nr 187 im. A. Mickiewicza - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2259;Szkoła Podstawowa Nr 209 im. H. Ordonówny - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2260;Szkoła Podstawowa z Oddziałami Integracyjnymi  Nr 223 im. Partyzantów Ziemi Kieleckiej - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2261;Szkoła Podstawowa z Oddziałami Integracyjnymi Nr 247 im. K. Lisieckiego ”Dziadka” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2262;Szkoła Podstawowa Nr 273 im. dr. A. Landy, w tym: Szkoła Filialna - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2263;Szkoła Podstawowa Nr 289 im. H. Sienkiewicza - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2264;Szkoła Podstawowa Nr 293 im. J. Kochanowskiego - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2265;Przedszkole Nr 39 „Pod Topolami” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2266;Przedszkole Nr 49 „Pluszowy Miś” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2267;Przedszkole Nr 97 „Leśna Polanka” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2268;Przedszkole Nr 105 „Wesoła Stopiątka” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2270;Przedszkole Nr 182 „Tajemniczy Ogród” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2271;Przedszkole Nr 236 „Mali Odkrywcy” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2272;Przedszkole Nr 240 im. Polskich Olimpijczyków - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2273;Przedszkole Specjalne Nr 245 dla Dzieci Słabowidzących „Sowy Mądrej Głowy” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2274;Przedszkole Nr 268 „Słoneczny Promyk” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2275;Przedszkole Nr 271 „Wróbelka Elemelka” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2276;Przedszkole Nr 272 im.„Misia Uszatka” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2277;Przedszkole Nr 287 „Piotrusia Pana” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2278;Przedszkole Nr 301 „Zaczarowany Świat” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2279;Przedszkole Nr 306 „Mali Optymiści” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2280;Przedszkole Nr 307”Wesołe Ekoludki” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2240;Szkoła Podstawowa nr 263 im. Powstańców Wielkopolskich- Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2241;Szkoła Podstawowa z Oddziałami Integracyjnymi nr 214 im. Stanisława Skrypija - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2242;Zespół Szkół Nr 49, w tym: LX Liceum Ogólnokształcące im. Wojciecha Górskiego, Szkoła Podstawowa nr 370 - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2244;LIX Liceum Ogólnokształcące Mistrzostwa Sportowego im. Janusza Kusocińskiego;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2246;XCIV Liceum Ogólnokształcące im. gen. Stanisława Maczka-Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2250;XLI Liceum Ogólnokształcące im. Joachima Lelewela - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2251;XXXIX Liceum Ogólnokształcące im. Lotnictwa Polskiego-Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2252;Szkoła Podstawowa nr 352 im. Jerzego Huberta Wagnera  - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2253;Szkoła Podstawowa nr 369  im. Antoniego Boleslawa Dobrowolskiego  - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2281;Przedszkole Nr 308 „Krasnala Hałabały” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2282;Przedszkole z Oddziałami Integracyjnymi  Nr 309 „Baśniowa Kraina” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2283;Przedszkole Nr 318 „Zielony Zakątek” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2284;Przedszkole Nr 327 „Kolorowa Kraina” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2285;Przedszkole Nr 328 „Akademia pod czereśnią” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2286;Przedszkole Nr 334 im. „Jasia i Małgosi” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2287;Przedszkole Nr 340 „Kasztanowego Ludka” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2288;Przedszkole z Oddziałami Integracyjnymi Nr 341 „Kota Filemona” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2289;Przedszkole Nr 346 „Pod Kasztanem” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2290;Przedszkole Nr 364 ”Pod Tęczą” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2291;Przedszkole Nr 409 „Królestwo Maciusia I” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2292;Młodzieżowy Dom Kultury im. Marii Gwizdak - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2293;Młodzieżowy Dom Kultury „Bielany” - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2294;Bielańskie Centrum Edukacji Kulturalnej - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2295;Poradnia Psychologiczno Pedagogiczna Nr 10 - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2296;Dzielnicowe Biuro Finansów Oświaty-Bielany m.st. Warszawy;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2297;Ośrodek Pomocy Społecznej Bielany m.st. Warszawy;412;1407;1;JEDNOSTKAWYKONAWCZA;13
+2298;Specjalistyczna Poradnia Rodzinna Dzielnicy Bielany m.st. Warszawy;412;1407;1;JEDNOSTKAWYKONAWCZA;13
+2299;Zakład Gospodarowania Nieruchomościami w Dzielnicy Bielany m.st. Warszawy;412;1409;1;JEDNOSTKAWYKONAWCZA;10
+2302;Centrum Rekreacyjno – Sportowe m.st. Warszawy w Dzielnicy Bielany;412;1413;1;JEDNOSTKAWYKONAWCZA;14
+2303;Bielański Środowiskowy Dom Samopomocy;412;1407;1;JEDNOSTKAWYKONAWCZA;13
+2304;Przedszkole Nr 28 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2305;Przedszkole Integracyjne Nr 45 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2306;Przedszkole Nr 67 Służewiaczek - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2307;Przedszkole Nr 69 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2308;Przedszkole Nr 80 Słoneczna Dolinka - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2309;Przedszkole Nr 83 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2310;Przedszkole Nr 108 Tęczowy Promyk - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2311;Przedszkole Integracyjne Nr 117 Przyjazna Kraina - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2312;Przedszkole Nr 138 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2313;Przedszkole Nr 139 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2314;Przedszkole Nr 140 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2315;Przedszkole Nr 142 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2316;Przedszkole Nr 144 Zaczarowany ołówek - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2317;Przedszkole Nr 145 Czterolistna Koniczynka - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2318;Przedszkole Nr 146 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2319;Przedszkole Nr 147 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2320;Przedszkole Nr 148 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2321;Przedszkole Nr 149 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2322;Przedszkole Nr 151 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2323;Przedszkole Nr 170 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2324;Przedszkole Specjalne Nr 188 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2325;Przedszkole Nr 189 „Na Wierzbnie” - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2326;Przedszkole Nr 190 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2327;Przedszkole Nr 191 im. Marii Kownackiej - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2301;Bielański Ośrodek Kultury;412;1412;1;JEDNOSTKAWYKONAWCZA;11
+2329;Przedszkole Nr 196 Kraina Misiów - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2330;Przedszkole Nr 199 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2331;Przedszkole nr 228 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2332;Przedszkole Nr 244 Niegocińskie Skrzaty - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2333;Przedszkole Nr 270 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2334;Przedszkole Nr 274 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2335;Przedszkole Nr 275 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2336;Przedszkole Nr 278 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2337;Przedszkole Nr 284 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2338;Przedszkole Nr 294 Promyk Czerniakowa - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2339;Przedszkole Nr 299 „Bernardyńskie Krasnale” - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2340;Przedszkole Nr 300 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2341;Przedszkole Nr 305 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2342;Przedszkole Nr 311 Sadybiańskie Świerszcze - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2343;Przedszkole Nr 317 Smykolandia - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2344;Przedszkole Nr 325 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2345;Przedszkole Nr 326 Chatka Skrzatka - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2346;Przedszkole Nr 330 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2347;Przedszkole Nr 344 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2348;Przedszkole Nr 349 Barcelonka - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2349;Przedszkole Nr 360 Słoneczny Domek - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2350;Przedszkole Nr 391 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2351;Przedszkole Specjalne Nr 393 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2352;Szkoła Podstawowa Nr 33 im. Wojsk Obrony Powietrznej Kraju - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2353;Szkoła Podstawowa Nr 46 im. Stefana Starzyńskiego - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2354;Szkoła Podstawowa Nr 69 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2355;Szkoła Podstawowa Nr 70 z Oddziałami Integracyjnymi im. Bohaterów Monte Cassino - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2356;Szkoła Podstawowa Nr 85 im. Benito Juareza - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2357;Szkoła Podstawowa Nr 98 z Oddziałami Integracyjnymi im. Lucy Maud Montgomery -Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2358;Szkoła Podstawowa Nr 103 im. Bohaterów Warszawy 1939-1945 -Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2359;Szkoła Podstawowa Nr 107 im. Bronisława Malinowskiego -Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2360;Szkoła Podstawowa Nr 115 im. Wandy Turowskiej -Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2361;Szkoła Podstawowa Nr 119 im. 3-go Berlińskiego Pułku Piechoty -Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2362;Szkoła Podstawowa Nr 146 im. Janusza Korczaka -Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2363;Szkoła Podstawowa Nr 157 im. Adama Mickiewicza -Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2364;Szkoła Podstawowa Nr 190 im. Orła Białego-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2365;Szkoła Podstawowa Nr 191 im. Józefa Ignacego Kraszewskiego-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2366;Szkoła Podstawowa Nr 202 im. 34 Pułku Strzelców Budziszyńskich -Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2367;Szkoła Podstawowa Nr 205 im. Żołnierzy Powstania Warszawskiego-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2368;Szkoła Podstawowa Nr 212 im. Krystyny Krahelskiej -Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2369;Szkoła Podstawowa Nr 260 im. Jana Matejki-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2370;Szkoła Podstawowa Nr 271 im. 11 Listopada-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2371;Szkoła Podstawowa Nr 307 im. Króla Jana III Sobieskiego-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2381;X Liceum Ogólnokształcące im. Królowej Jadwigi-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2382;XXVIII Liceum Ogólnokształcące im. Jana Kochanowskiego-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2383;XXXIV Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Miguela de Cervantesa-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2384;XLII Liceum Ogólnokształcące im. Marii Konopnickiej-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2385;XLIII Liceum Ogólnokształcące im. Kazimierza Wielkiego-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2386;XLIV Liceum Ogólnokształcące im. Antoniego Dobiszewskiego-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2387;XLIX Liceum Ogólnokształcace im. Johanna Wolfganga Goethego-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2388;LXVIII Liceum Ogólnokształcące im.Tytusa Chałubińskiego-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2378;CLVI Liceum Ogólnokształcące Integracyjne Przy Łazienkach Królewskich - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2389;Zespół Szkolno-Przedszkolny Nr 1-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2390;Zespół Szkół Licealnych i Technicznych Nr 1-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2391;Zespół Szkół Hotelarsko-Turystyczno-Gastronomicznych Nr 1-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2392;Zespół Szkół Nr 3 im.2 Armii Wojska Polskiego-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2393;LXV Liceum Ogólnokształcące z Oddziałami Integracyjnymi im. gen. Józefa Bema-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2394;Zespól Szkół Odzieżowych, Fryzjerskich i Kosmetycznych Nr 22-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2395;Zespół Szkół Nr 27-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2396;Zespół Szkół Nr 39 im. prof. Edmunda Jankowskiego-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2398;Zespół Szkół Nr 59-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2401;Poradnia Psychologiczno-Pedagogiczna Nr 7-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2402;Poradnia Psychologiczno-Pedagogiczna Nr 8-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2403;Ognisko Pracy Pozaszkolnej 175-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2404;Ognisko Pracy Pozaszkolnej przy Szkole Podstawowej nr 70-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2405;II Ogród Jordanowski-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2406;Młodzieżowy Dom Kultury przy ul. Puławskiej 97-Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2407;Dzielnicowe Biuro Finansów Oświaty-Mokotów m.st. Warszawy;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2408;Ośrodek Pomocy Społecznej m.st. Warszawy-Mokotów;412;1429;1;JEDNOSTKAWYKONAWCZA;13
+2409;Zakład Gospodarowania Nieruchomościami w Dzielnicy Mokotów m.st. Warszawy;412;1422;1;JEDNOSTKAWYKONAWCZA;10
+2410;Biblioteka Publiczna im. Zygmunta Łazarskiego w Dzielnicy Mokotów m.st. Warszawy;412;1435;1;JEDNOSTKAWYKONAWCZA;11
+2411;Centrum „Łowicka” - Dom Kultury w Dzielnicy Mokotów m.st. Warszawy;412;1435;1;JEDNOSTKAWYKONAWCZA;11
+2412;Dom Kultury „KADR” w Dzielnicy Mokotów m.st. Warszawy;412;1435;1;JEDNOSTKAWYKONAWCZA;11
+2413;Dom Kultury „Dorożkarnia” w Dzielnicy Mokotów m.st. Warszawy;412;1435;1;JEDNOSTKAWYKONAWCZA;11
+2414;Służewski Dom Kultury w Dzielnicy Mokotów m.st. Warszawy;412;1435;1;JEDNOSTKAWYKONAWCZA;11
+2415;Szkoła Podstawowa nr 10 im. G. Piramowicza - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2416;Szkoła Podstawowa nr 23 im. E. Szymańskiego - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2417;Szkoła Podstawowa z Oddz. Integracyjnymi nr 61 im. J. Przybosia - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2418;Szkoła Podstawowa nr 97 im. L. Kruczkowskiego - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2420;Szkoła Podstawowa nr 175 im. H. Marusarzówny - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2421;Szkoła Podstawowa nr 264 im. G. Mistral - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2422;Szkoła Podstawowa z Oddz. Integraf. nr 280 im. T. Chałubińskiego - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2427;VII Liceum Ogólnokształcące im. J. Słowackiego - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2428;XXI Liceum Ogólnokształcące im. H. Kołłątaja - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2429;XLVIII Liceum Ogólnokształcące im. E. Dembowskiego - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2430;Zespół Szkół nr 4 im. E. Kwiatkowskiego - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2431;Zespół Szkół nr 26 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2432;Zespół Szkół im. inż. St. Wysockiego d. „Kolejówka” - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2434;Centrum Kształcenia Ustawicznego nr 2 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2435;Przedszkole nr 59 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2436;Przedszkole nr 61 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2437;Przedszkole nr 66 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2438;Przedszkole z Oddz. Integracyjnymi nr 70 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2440;Przedszkole Nr 100 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2399;VI Liceum Ogólnokształcące im. Tadeusza Reytana - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2397;Szkoła Podstawowa Sportowa Nr 272 im. Eugeniusza Lokajskiego - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2419;Szkoła Podstawowa nr 152 im. M. Dąbrowskiej;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2423;XIV Liceum Ogólnokształcące im. St. Staszica;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2439;Przedszkole nr 99 im. Misia Wojtka;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2433;Zespół Szkół Samochodowych i Licealnych nr 1 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2441;Przedszkole Nr 101 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2442;Przedszkole z Oddz. Integracyjnymi 102 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2443;Przedszkole Nr 111 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2444;Przedszkole Nr 114 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2445;Przedszkole Nr 176 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2446;Przedszkole Nr 225 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2447;Przedszkole Nr 239 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2448;Przedszkole Nr 241 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2449;Przedszkole Nr 248 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2450;Przedszkole Nr 255 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2451;Przedszkole Nr 293 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2452;Przedszkole Integracyjne Nr 312 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2453;Przedszkole Nr 315 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2454;Przedszkole Integracyjne Nr 404 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2455;Poradnia Psychologiczno-Pedagogiczna nr 9 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2456;III Ogród Jordanowski - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2457;Międzyszkolny Ośrodek Sportowy nr 7 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2458;Młodzieżowy Dom Kultury - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2459;Ognisko Pracy Pozaszkolnej przy Szkole Podstawowej nr 264 - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2460;Dzielnicowe Biuro Finansów Oświaty Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+2461;Zakład Gospodarowania Nieruchomościami w Dzielnicy Ochota;412;1455;1;JEDNOSTKAWYKONAWCZA;10
+2462;Ośrodek Sportu i Rekreacji w Dzielnicy Ochota;412;1456;1;JEDNOSTKAWYKONAWCZA;14
+2463;Ośrodek Kultury Ochoty;412;1444;1;JEDNOSTKAWYKONAWCZA;11
+2464;Ośrodek Pomocy Społecznej Dzielnicy Ochota;412;1453;1;JEDNOSTKAWYKONAWCZA;13
+2465;Środowiskowy Dom Samopomocy „Pod Skrzydłami” - Ochota;412;1453;1;JEDNOSTKAWYKONAWCZA;13
+2466;Biblioteka Publiczna w Dzielnicy Ochota;412;1444;1;JEDNOSTKAWYKONAWCZA;11
+2467;Ośrodek Sportu i Rekreacji Dzielnicy Praga-Południe m.st. Warszawy;412;1752;1;JEDNOSTKAWYKONAWCZA;14
+2468;Zakład Gospodarowania Nieruchomościami w Dzielnicy Praga Południe m.st. Warszawy;412;1473;1;JEDNOSTKAWYKONAWCZA;10
+2469;Ośrodek Pomocy Społecznej Dzielnicy Praga-Południe m.st. Warszawy;412;1471;1;JEDNOSTKAWYKONAWCZA;13
+2470;Biblioteka Publiczna im. Zygmunta Jana Rumla w Dzielnicy Praga - Południe m. st. Warszawy;412;1752;1;JEDNOSTKAWYKONAWCZA;11
+2471;Centrum Promocji Kultury Praga Południe;412;1752;1;JEDNOSTKAWYKONAWCZA;11
+2472;Dzielnicowe Biuro Finansów Oświaty – Praga-Południe m.st. Warszawy;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2473;Przedszkole nr 46 „W Krainie Baśni” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2474;Przedszkole nr 48 „Zielony Groszek” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2475;Przedszkole nr 51 „Misia Czarodzieja”- Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2476;Przedszkole nr 54 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2477;Przedszkole nr 57 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2478;Przedszkole nr 73 „Bajeczka” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2479;Przedszkole nr 89 „Niezapominajka” Oddziały Zamiejscowe Przedszkola nr 89 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2480;Przedszkole nr 143 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2481;Przedszkole nr 153 „Słoneczne Przedszkole” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2482;Przedszkole nr 162 „Saski Zakątek” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2483;Przedszkole nr 166 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2484;Przedszkole nr 177 „Bajkowe Przedszkole” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2485;Przedszkole nr 178 „Kolorowa Kraina” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2487;Przedszkole nr 180 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2488;Przedszkole nr 198 z Oddziałami Integracyjnymi „Bajeczne Przedszkole” Oddziały Zamiejscowe Przedszkola nr 198 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2489;Przedszkole nr 211 „Kubusia Puchatka” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2490;Przedszkole nr 218 „Iskra” Oddziały Zamiejscowe Przedszkola nr 218 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2491;Przedszkole nr 220 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2494;Przedszkole nr 235 „Tęczowe Przedszkole” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2492;Przedszkole nr 227 Wesołe Nutki - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2495;Przedszkole Specjalne nr 249 dla Dzieci z Upośledzeniem Umysłowym w Stopniu Umiarkowanym i Znacznym - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2496;Przedszkole nr 250 „Akwarelka” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2498;Przedszkole nr 292 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2499;Przedszkole nr 295 „Kraina Bajek” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2500;Przedszkole nr 296 „Bajkowy Parasol” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2501;Przedszkole nr 331 „U Słonia Szczęściarza” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2502;Przedszkole nr 370 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2503;Przedszkole nr 380 „Promyk Gocławia” Oddziały Zamiejscowe Przedszkola nr 380 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2505;Przedszkole nr 392 „Wróbelka Elemelka” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2506;Przedszkole nr 397 „Ziarenko” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2507;Przedszkole nr 407 Oddziały Zamiejscowe Przedszkola nr 407 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2508;Przedszkole nr 411 „Akademia Króla Stasia” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2512;Szkoła Podstawowa nr 60 im. Powstania Listopadowego - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2513;Szkoła Podstawowa nr 72 im. Przyjaciół Grochowa - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2514;Szkoła Podstawowa nr 120 z Oddziałami Integracyjnymi im. Pułków Piechoty Dzieci Warszawy - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2515;Szkoła Podstawowa nr 141 im. mjr. Henryka Sucharskiego - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2516;Szkoła Podstawowa nr 143 im. Stefana Starzyńskiego - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2517;Szkoła Podstawowa nr 163 im. Batalionu „Zośka” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2518;Szkoła Podstawowa nr 185 im UNICEF - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2519;Szkoła Podstawowa nr 215 im. Piotra Wysockiego - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2520;Szkoła Podstawowa nr 246 im.1 Warszawskiej Dywizji Piechoty im. Tadeusza Kościuszki - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2521;Szkoła Podstawowa nr 255 im. Cypriana Kamila Norwida - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2522;Szkoła Podstawowa nr 279 im. Batalionów AK „Gustaw” i „Harnaś” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2523;Szkoła Podstawowa nr 312 im. Ewy Szelburg – Zarembiny - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2530;IV Liceum Ogólnokształcące im. Adama Mickiewicza - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2531;XIX Liceum Ogólnokształcące im. Powstańców Warszawy - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2532;XXIII Liceum Ogólnokształcące im. Marii Skłodowskiej – Curie - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2533;XLVII Liceum Ogólnokształcące im. Stanisława Wyspiańskiego - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2534;LXXII Liceum Ogólnokształcące im.gen. Jakuba Jasińskiego – Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2535;XCIX Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Zbigniewa Herberta - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2537;Zespół Szkół Nr 5 im. Stefana Kisielewskiego CXI Liceum Ogólnokształcące im. S. Kisielewskiego z Oddziałami Integracyjnymi Technikum nr 2 z Oddziałami Integracyjnymi - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2539;Zespół Szkół nr 21 LXXXVII Liceum Ogólnokształcące im. gen. Leopolda Okulickiego Technikum nr 27 im. prof. Józefa Zawadzkiego Szkoła Policealna nr 1 -Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2509;Szkoła Podstawowa Integracyjna nr 135 im. Marii Kownackiej - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2510;XXXV Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Bolesława Prusa - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2511;Szkoła Podstawowa nr 168 im. Wiktora Gomulickiego - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2524;Szkoła Podstawowa nr 373 im. I. J. Paderewskiego - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2525;Szkoła Podstawowa nr 397 im. Bohaterów Olszynki Grochowskiej - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2526;Szkoła Podstawowa nr 374 im. gen. Piotra Szembeka - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2528;Szkoła Podstawowa nr 375 im. Orląt Lwowskich - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2536;Zespół Szkół Gastronomiczno-Hotelarskich Technikum Gastronomiczno-Hotelarskie nr 2 im. prof. Stanisława Bergera Branżowa Szkoła I stopnia nr 20 im. prof. Stanisława Bergera - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2538;Zespół Szkół Nr 12 im. Olimpijczyków Polskich XCVII Liceum Ogólnokształcące im. Olimpijczyków Polskich, Technikum nr 12 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2596;Przedszkole Nr 34 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2542;Centrum Kształcenia Praktycznego - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2544;Międzyszkolny Ośrodek Sportowy nr 2 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2545;Ognisko Pracy Pozaszkolnej nr 1 „Jordanek” - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2546;Ognisko Pracy Pozaszkolnej nr 2 im. dr Henryka Jordana – Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2547;Ognisko Pracy Pozaszkolnej nr 3 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2548;Ognisko Pracy Pozaszkolnej nr 4 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2549;Poradnia Psychologiczno - Pedagogiczna nr 4 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2550;Poradnia Psychologiczno - Pedagogiczna nr 16 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2551;Dom Kultury „Rembertów”;412;1482;1;JEDNOSTKAWYKONAWCZA;11
+2552;Dom Kultury „Wygoda” - Rembertów;412;1482;1;JEDNOSTKAWYKONAWCZA;11
+2553;Biblioteka Publiczna im. Jana Pawła II - Rembertów;412;1482;1;JEDNOSTKAWYKONAWCZA;11
+2554;Ośrodek Pomocy Społecznej w Dzielnicy Rembertów;412;1486;1;JEDNOSTKAWYKONAWCZA;13
+2555;Zespół Szkół nr 74 - Rembertów;412;1492;1;JEDNOSTKAWYKONAWCZA;4
+2557;Szkoła Podstawowa nr 217 z Oddziałami Integracyjnymi im. Obrońców Radiostacji AK - Rembertów;412;1492;1;JEDNOSTKAWYKONAWCZA;4
+2559;LI Liceum Ogólnokształcące im. Tadeusza Kościuszki - Rembertów;412;1492;1;JEDNOSTKAWYKONAWCZA;4
+2560;Przedszkole nr 158 - Rembertów;412;1492;1;JEDNOSTKAWYKONAWCZA;4
+2561;Przedszkole nr 160 - Rembertów;412;1492;1;JEDNOSTKAWYKONAWCZA;4
+2562;Przedszkole nr 243 - Rembertów;412;1492;1;JEDNOSTKAWYKONAWCZA;4
+2563;Przedszkole nr 376 - Rembertów;412;1492;1;JEDNOSTKAWYKONAWCZA;4
+2564;Dzielnicowe Biuro Finansów Oświaty - Rembertów;412;1492;1;JEDNOSTKAWYKONAWCZA;4
+2565;Przedszkole Nr 1 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2566;Przedszkole Nr 2 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2567;Przedszkole Nr 3 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2568;Przedszkole Nr 4 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2569;Przedszkole Nr 5 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2570;Przedszkole Integracyjne Nr 6 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2571;Przedszkole Nr 7 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2572;Przedszkole Integracyjne Nr 8 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2573;Przedszkole Nr 9 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2574;Przedszkole Nr 10 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2575;Przedszkole Nr 11 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2576;Przedszkole Nr 12 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2577;Przedszkole Nr 13 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2578;Przedszkole Nr 14 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2579;Przedszkole Nr 16 Zaczarowany zakątek - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2580;Przedszkole Nr 17 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2581;Przedszkole Nr 19 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2582;Przedszkole Nr 20 z Oddziałami Integracyjnymi - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2583;Przedszkole Nr 21 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2584;Przedszkole Nr 122 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2585;Przedszkole Nr 23 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2586;Przedszkole Nr 24 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2587;Przedszkole Nr 25 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2588;Przedszkole Nr 26 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2589;Przedszkole Nr 72 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2590;Przedszkole Nr 82 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2591;Przedszkole Nr 129 Raj na Skarpie - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2541;Zespół Szkół Spożywczo-Gastronomicznych Technikum Spożywczo-Gastronomiczne im. Jana Pawła II Branżowa Szkoła Spożywczo-Gastronomiczna I stopnia im. Jana Pawła II CXLVII Liceum Ogólnokształcące dla Dorosłych - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2543;Centrum Kształcenia Ustawicznego Nr 5 Szkoła Podstawowa nr 224 dla Dorosłych CIV Liceum Ogólnokształcące dla Dorosłych Szkoła Policealna nr 42 dla Dorosłych - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2556;Szkoła Podstawowa z Oddziałami Integracyjnymi Nr 189 im. Marszałka Józefa Piłsudskiego;412;1492;1;JEDNOSTKAWYKONAWCZA;4
+2558;Szkoła Podstawowa nr 376 im. Bohaterów Westerpalatte;412;1492;1;JEDNOSTKAWYKONAWCZA;4
+2592;Przedszkole Nr 30 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2594;Przedszkole Nr 32 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2595;Przedszkole Nr 33 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2597;Przedszkole Nr 35 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2598;Przedszkole Nr 36 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2599;Przedszkole Integracyjne Nr 38 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2600;Przedszkole Nr 206 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2602;Przedszkole Nr 42 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2603;Przedszkole Nr 44 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2604;Przedszkole Specjalne Nr 208 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2605;Szkoła Podstawowa Nr 1 im. Gustawa Morcinka - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2610;Szkoła Podstawowa Nr 75 im. Marii Konopnickiej - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2611;Szkoła Podstawowa Nr 158 im. Jana Kilińskiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2612;Szkoła Podstawowa Nr 203 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2613;Szkoła Podstawowa Nr 210 im. Bohaterów Pawiaka - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2614;Szkoła Podstawowa Nr 211 im. Janusza Korczak - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2615;Szkoła Podstawowa Nr 220 im. dr Stanisława Kopczyńskiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2629;Zespół Szkół Architektoniczno-Budowlanych i Licealnych im. Stanisława Noakowskiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2630;Zespół Szkół Gastronomicznych im. prof. Eugeniusza Pijanowskiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2631;Zespół Szkół Licealnych i Ekonomicznych Nr 1 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2632;Zespół Szkół Nr 22 im. Emiliana Konopczyńskiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2633;Zespół Szkół Nr 23 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2634;Zespół Szkół Poligraficznych im. Marszałka Józefa Piłsudskiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2636;V Liceum Ogólnokształcące im. Księcia Józefa Poniatowskiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2638;XI Liceum Ogólnokształcące im. Mikołaja Reja - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2639;XVII Liceum Ogólnokształcące im. Andrzeja Frycza Modrzewskiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2640;XVIII Liceum Ogólnokształcące im. Jana Zamoyskiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2641;XXVII Liceum Ogólnokształcące im. Tadeusza Czackiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2642;XXXVII Liceum Ogólnokształcące im. Jarosława Dąbrowskiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2643;LXVII Liceum Ogólnokształcące im. Jana Nowaka Jeziorańskiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2645;LXXXI LO im. Aleksandra Fredry - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2646;Młodzieżowy Dom Kultury „Muranów” im. Cypriana Kamila Norwida - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2647;Młodzieżowy Dom Kultury im. Władysława Broniewskiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2648;Centrum Kształcenia Ustawicznego Nr 1 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2649;Międzyszkolny Ośrodek Sportowy Nr 3 im. Janusza Kusocińskiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2650;Poradnia Psychologiczno-Pedagogiczna Nr 1 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2593;Przedszkole Nr 31 im. Zdzisława Witwickiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2606;Szkoła Podstawowa Nr 12 im. Powstańców Śląskich - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2651;Poradnia Psychologiczno-Pedagogiczna Nr 11 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2652;Poradnia Psychologiczno-Pedagogiczna Nr 12 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2653;Dzielnicowe Biuro Finansów Oświaty - Śródmieście m.st. Warszawy;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2654;Centrum Pomocy Społecznej Dzielnicy Śródmieście m.st. Warszawy;412;1509;1;JEDNOSTKAWYKONAWCZA;13
+2655;Zarząd Terenów Publicznych - Śródmieście;412;1499;1;JEDNOSTKAWYKONAWCZA;16
+2880;Przedszkole nr 47 Mali Artyści - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2657;Ośrodek Sportu i Rekreacji Dzielnicy Śródmieście;412;1509;1;JEDNOSTKAWYKONAWCZA;14
+2658;Dom Kultury „Śródmieście”;412;1500;1;JEDNOSTKAWYKONAWCZA;11
+2663;Ośrodek Sportu i Rekreacji m.st. Warszawy w Dzielnicy Targówek;412;1537;1;JEDNOSTKAWYKONAWCZA;14
+2664;Przedszkole nr 18 - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2656;Zakład Gospodarowania Nieruchomościami w Dzielnicy Śródmieście m.st. Warszawy - Śródmieście;412;1514;1;JEDNOSTKAWYKONAWCZA;10
+2661;Środowiskowy Dom Samopomocy Na Targówku - Targówek;412;1535;1;JEDNOSTKAWYKONAWCZA;13
+2660;Ośrodek Pomocy Społecznej Dzielnicy Targówek m.st. Warszawy - Targówek;412;1535;1;JEDNOSTKAWYKONAWCZA;13
+2662;Zakład Gospodarowania Nieruchomościami w Dzielnicy Targówek m.st. Warszawy - Targówek;412;1536;1;JEDNOSTKAWYKONAWCZA;10
+2666;Przedszkole nr 88 „Pod Zielonym Listkiem” - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2665;Przedszkole nr 81 - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2667;Przedszkole nr 90 - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2668;Przedszkole nr 91 „Zaczarowany Ogród” - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2669;Przedszkole nr 94 Kraina Słonecznych Marzeń - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2671;Przedszkole nr 103 - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2672;Przedszkole nr 106 - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2673;Przedszkole nr 113 „W Tęczowym Kręgu” - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2674;Przedszkole nr 115 Przedszkole Pod Klonem - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2675;Przedszkole nr 119 „W Zielonym Ogrodzie” - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2676;Przedszkole Integracyjne nr 120 - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2677;Przedszkole nr 123 Ocean Marzeń - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2678;Przedszkole nr 125 „Pod Złotym Promykiem” - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2679;Przedszkole nr 128 - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2680;Przedszkole nr 150 Przystanek Uśmiech - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2681;Przedszkole nr 154 „Pod Wesołą Truskaweczką” - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2682;Przedszkole nr 155 „Roztańczona Kraina” - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2683;Przedszkole nr 156 - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2684;Przedszkole nr 157 „Przedszkole z Serduszkiem” - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2685;Szkoła Podstawowa nr 28 im. Stefana Żeromskiego - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2686;Szkoła Podstawowa z Oddziałami Integracyjnymi nr 42 im. K. I. Gałczyńskiego - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2687;Szkoła Podstawowa nr 52 im. Macieja Aleksego Dawidowskiego - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2688;Szkoła Podstawowa nr 58 im. Tadeusza Gajcego - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2689;Szkoła Podstawowa nr 84 im. Waleriana Łukasińskiego - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2690;Szkoła Podstawowa z Oddziałami Integracyjnymi nr 114 im. Jędrzeja Cierniaka - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2691;Szkoła Podstawowa z Oddziałami Integracyjnymi nr 275 im. Artura Oppmana - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2692;Szkoła Podstawowa nr 277 im. Elizy Orzeszkowej - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2693;Szkoła Podstawowa nr 285 im. Jana Marcina Szancera - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2694;Szkoła Podstawowa nr 298 im. Jana Kasprowicza - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2696;Szkoła Podstawowa nr 378 im. Ignacego Jana Paderewskiego - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2695;Szkoła Podstawowa nr 377 im. Mjr Henryka Dobrzańskiego Hubala - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2697;Szkoła Podstawowa nr 379 im. Szarych Szeregów - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2698;Szkoła Podstawowa nr 380 im. Jana Pawła II - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2699;XIII Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. płk Leopolda Lisa - Kuli - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2700;XLVI Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Stefana Czarnieckiego - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2701;Zespół Szkół im. Piotra Wysockiego, w tym: Technikum nr 11, Szkoła Policealna nr 45 - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2703;Zespół Szkół Nr 41, w tym: CII Liceum Ogólnokształcące z Oddziałami Integracyjnymi im. Księdza Józefa Woźniaka, Szkoła Podstawowa z Oddziałami Integracyjnymi nr 206 im. Władysława Reymonta- Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2711;Ośrodek Kultury „Arsus” - Ursus;412;1543;1;JEDNOSTKAWYKONAWCZA;11
+2713;Przedszkole Nr 112 „Leśne Skrzaty” - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2714;Przedszkole Integracyjne Nr 137 im. Janusza Korczaka - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2715;Przedszkole Nr 168 Misiowa Gromadka - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2716;Przedszkole Nr 194 - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2717;Przedszkole Nr 200 „Gąski Balbinki” - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2718;Przedszkole Nr 219 „Niezapominajka” - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2719;Przedszkole Nr 343 - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2720;Przedszkole Nr 413 - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2723;Szkoła Podstawowa Nr 4 im. Władysława Broniewskiego - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2724;Szkoła Podstawowa Nr 11 im. I Dywizji Kościuszkowskiej - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2729;LVI Liceum Ogólnokształcące im. Leona Kruczkowskiego - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2731;Poradnia Psychologiczno-Pedagogiczna Nr 15 - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2732;Dzielnicowe Biuro Finansów Oświaty - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2734;Ośrodek Pomocy Społecznej - Ursus;412;1548;1;JEDNOSTKAWYKONAWCZA;13
+2735;Ośrodek Sportu i Rekreacji - Ursus;412;1555;1;JEDNOSTKAWYKONAWCZA;14
+2736;Biblioteka Publiczna im. Juliana Ursyna Niemcewicza w Dzielnicy Ursynów m.st. Warszawy - Ursynów;412;1564;1;JEDNOSTKAWYKONAWCZA;11
+2737;Ursynowskie Centrum Sportu i Rekreacji;412;1575;1;JEDNOSTKAWYKONAWCZA;14
+2738;Ośrodek Pomocy Społecznej Dzielnicy Ursynów m.st. Warszawy;412;1571;1;JEDNOSTKAWYKONAWCZA;13
+2739;Dzielnicowe Biuro Finansów Oświaty Ursynów m.st. Warszawy;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2740;Przedszkole nr 50- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2741;Przedszkole nr 52- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2742;Przedszkole nr 55 im. Polskich Podróżników- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2743;Przedszkole nr 79- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2744;Przedszkole nr 126- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2745;Przedszkole nr 159- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2746;Przedszkole nr 201 Misia Ursynka - Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2747;Przedszkole Specjalne nr 213- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2748;Przedszkole nr 267- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2749;Przedszkole nr 282- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2750;Przedszkole nr 283- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2751;Przedszkole nr 286- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2725;Szkoła Podstawowa z Oddziałami Integracyjnymi Nr 14 im. Bohaterów Warszawy - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2705;VIII Ogród Jordanowski - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2702;Zespół Szkół nr 34 im. Mieszka I, w tym: Branżowa Szkoła I stopnia nr 41, CXL Liceum Ogólnokształcące dla Dorosłych, Technikum nr 30, Szkoła Policealna nr 36, Ośrodek Dokształcania i Doskonalenia Zawodowego - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2704;CXXXVII Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Roberta Schumana - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2706;Poradnia Psychologiczno - Pedagogiczna nr 13 - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2707;Dzielnicowe Biuro Finansów Oświaty-Targówek m.st. Warszawy - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+2708;Dom Kultury „Zacisze” - Targówek;412;1526;1;JEDNOSTKAWYKONAWCZA;11
+2709;Dom Kultury „Świt” - Targówek;412;1526;1;JEDNOSTKAWYKONAWCZA;11
+2710;Biblioteka Publiczna w Dzielnicy Targówek m.st. Warszawy (w tym: 17 placówek) - Targówek;412;1526;1;JEDNOSTKAWYKONAWCZA;11
+2712;Biblioteka Publiczna im. W.J. Grabskiego w Dzielnicy Ursus m.st. Warszawy - Ursus;412;1543;1;JEDNOSTKAWYKONAWCZA;11
+2728;Szkoła Podstawowa nr 383 im.Ks.Stefana Kardynała Wyszyńskiego;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2722;Szkoła Podstawowa z Oddziałami Integracyjnymi Nr 2 im.Jana Pawła II - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2726;Szkoła Podstawowa nr 381 im.Krzysztofa Kamila Baczyńskiego - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+2752;Przedszkole nr 351 im. Wandy Chotomskiej- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2753;Przedszkole nr 352- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2754;Przedszkole nr 366- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2755;Przedszkole nr 385- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2756;Przedszkole Integracyjne nr 394- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2757;Przedszkole nr 395 im. Barbary Lewandowskiej-Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2758;Przedszkole nr 400- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2759;Przedszkole nr 401- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2760;Przedszkole nr 412 z oddziałami Integracyjnymi- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2761;Szkoła Podstawowa nr 16 im. Tony Halika- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2762;Szkoła Podstawowa nr 81 im. Lucjana Rudnickiego - Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2763;Szkoła Podstawowa nr 96 im. Ireny Kosmowskiej- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2764;Szkoła Podstawowa nr 100 im. Francesco Nullo- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2765;Szkoła Podstawowa nr 303 im. Fryderyka Chopina- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2766;Szkoła Podstawowa nr 310 im. Michała Byliny- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2767;Szkoła Podstawowa nr 313 im. Polskich Odkrywców- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2768;Szkoła Podstawowa z Oddziałami Integracyjnymi nr 318 im. Jana  Chrystiana Andersena- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2769;Szkoła Podstawowa nr 319 im. Marii Kann- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2770;Szkoła Podstawowa nr 322 im. Jana Brzechwy- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2771;Szkoła Podstawowa nr 323 im. Polskich Olimpijczyków- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2772;Szkoła Podstawowa z Oddziałami Integracyjnymi nr 330 im. Nauczycieli Tajnego Nauczania- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2773;Szkoła Podstawowa nr 336 im. Janka Bytnara „Rudego”- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2774;Szkoła Podstawowa nr 340 im. Profesora Bogusława Molskiego- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2775;Szkoła Podstawowa z Oddziałami Integracyjnymi nr 343 im. Matki Teresy z Kalkuty- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2782;LXIII Liceum Ogólnokształcące im. Lajosa Kossutha- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2783;LXX Liceum Ogólnokształcące im. Aleksandra Kamińskiego- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2785;Poradnia Psychologiczno-Pedagogiczna nr 18- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2786;Poradnia Psychologiczno-Pedagogiczna nr 19- Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+2787;Ośrodek Sportu i Rekreacji m. st. Warszawy w Dzielnicy Wawer;412;1596;1;JEDNOSTKAWYKONAWCZA;14
+2788;Specjalistyczna Poradnia Rodzinna Dzielnicy Wawer m. st. Warszawy;412;1593;1;JEDNOSTKAWYKONAWCZA;13
+2789;Ośrodek Pomocy Społecznej Dzielnicy Wawer m.st. Warszawy;412;1593;1;JEDNOSTKAWYKONAWCZA;13
+2796;Biblioteka Publiczna w Dzielnicy Wawer m. st. Warszawy;412;1597;1;JEDNOSTKAWYKONAWCZA;11
+2797;Zakład Gospodarowania Nieruchomościami w Dzielnicy Wawer m.st. Warszawy;412;1600;1;JEDNOSTKAWYKONAWCZA;10
+2799;Szkoła Podstawowa nr 109 im. Batalionów Chłopskich - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2800;Szkoła Podstawowa nr 124 im. Stanisława Jachowicza - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2802;Szkoła Podstawowa nr 138 z Oddziałami Integracyjnymi im. Józefa Horsta - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2806;Szkoła Podstawowa nr 218 im. Michała Kajki - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2807;XXV Liceum Ogólnokształcące im. Józefa Wybickiego - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2808;Przedszkole nr 84 „Promyk” - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2805;Szkoła Podstawowa z Oddziałami Integracyjnymi nr 216 ,,Klonowego Liścia - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2798;Szkoła Podstawowa nr 76  im. 13 Dywizji Piechoty Strzelców Kresowych - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2803;Szkoła Podstawowa nr 140 im. Kazimierza Jeżewskiego - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2809;Przedszkole nr 85 Leśny Zakątek - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2811;Przedszkole nr 107 „Bajkowe Przedszkole” - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2812;Przedszkole nr 110 im. Warszawskiej Syrenki - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2813;Przedszkole nr 233 „Zielony Domek” - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2816;Zespół Szkolno-Przedszkolny nr 9 (Przedszkole nr 348 i Szkoła Podstawowa nr 128 im. Józefa Niećki) - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2817;Poradnia Psychologiczno-Pedagogiczna nr 17 - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2821;Dzielnicowe Biuro Finansów Oświaty Wawer m.st. Warszawy - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2822;Ośrodek Pomocy Społecznej Dzielnicy Wesoła m.st. Warszawy;412;1611;1;JEDNOSTKAWYKONAWCZA;13
+2823;Biblioteka Publiczna w Dzielnicy Wesoła m.st. Warszawy;412;1607;1;JEDNOSTKAWYKONAWCZA;11
+2824;Ośrodek Kultury w Dzielnicy Wesoła m.st. Warszawy;412;1607;1;JEDNOSTKAWYKONAWCZA;11
+2826;Szkoła Podstawowa Nr 171 im. Stanisława Staszica -Wesoła;412;1607;1;JEDNOSTKAWYKONAWCZA;4
+2833;Przedszkole nr 259 Leśna Bajka - Wesoła;412;1607;1;JEDNOSTKAWYKONAWCZA;4
+2838;Przedszkole Nr 56 „Wesołe Kubusie” - Wilanów;412;1626;1;JEDNOSTKAWYKONAWCZA;4
+2839;Przedszkole nr 416 w Warszawie - Wilanów;412;1626;1;JEDNOSTKAWYKONAWCZA;4
+2840;Zespół Szkolno Przedszkolny nr 3, w tym:Przedszkole nr 223 Skarby Powsina, Szkoła Podstawowa nr 104 im. Macieja Rataja - Wilanów;412;1626;1;JEDNOSTKAWYKONAWCZA;4
+2842;Zespół Szkół nr 79 im. Stanisława Kostki Potockiego, w tym: Szkoła Podstawowa nr 261 im. St. Kostki Potockiego, XXXVIII Liceum Ogólnokształcące im. St. Kostki Potockiego - Wilanów;412;1626;1;JEDNOSTKAWYKONAWCZA;4
+2844;Dzielnicowe Biuro Finansów Oświaty - Wilanów;412;1626;1;JEDNOSTKAWYKONAWCZA;4
+2849;Przedszkole nr 22 - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2850;Przedszkole nr 29 - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2851;Przedszkole nr 60 - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2852;Przedszkole nr 71 - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2853;Przedszkole nr 77 - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2854;Przedszkole nr 78 - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2856;Przedszkole nr 313 - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2857;Przedszkole Integracyjne nr 314 - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2858;Szkoła Podstawowa nr 66 im. ks. J Chrościckiego - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2860;Szkoła Podstawowa nr 88 im. Gabriela Narutowicza - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2814;Przedszkole nr 264 ,,Pluszowego Misia” - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2815;Przedszkole nr 338 Sosnowa Stacyjka - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2819;Szkoła Podstawowa nr 195 im. Króla Maciusia I  - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2820;Szkoła Podstawowa nr 86 im. Bronisława Czecha - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2829;Szkoła Podstawowa nr 174 z Oddziałami Integracyjnymi im. Tadeusza Kościuszki - Wesoła;412;1607;1;JEDNOSTKAWYKONAWCZA;4
+2825;Poradnia Psychologiczno – Pedagogiczna Nr 23 - Wesoła;412;1607;1;JEDNOSTKAWYKONAWCZA;4
+2828;Szkoła Podstawowa Nr 173 im. Górników Polskich - Wesoła;412;1607;1;JEDNOSTKAWYKONAWCZA;4
+2830;Szkoła Podstawowa Nr 353 im. Wielkich Odkrywców - Wesoła;412;1607;1;JEDNOSTKAWYKONAWCZA;4
+2841;Szkoła Podstawowa nr 300 im. Wandy Rutkiewicz - Wilanów;412;1626;1;JEDNOSTKAWYKONAWCZA;4
+2834;Przedszkole Nr 260 - Wesoła;412;1607;1;JEDNOSTKAWYKONAWCZA;4
+2835;Przedszkole Nr 261 „Pod Dębami” - Wesoła;412;1607;1;JEDNOSTKAWYKONAWCZA;4
+2836;Przedszkole Nr 262 - Wesoła;412;1607;1;JEDNOSTKAWYKONAWCZA;4
+2837;Dzielnicowe Biuro Finansów Oświaty- Dzielnica Wesoła m.st. Warszawy - Wesoła;412;1607;1;JEDNOSTKAWYKONAWCZA;4
+2843;Szkoła Podstawowa nr 169 im. Orła Białego - Wilanów;412;1626;1;JEDNOSTKAWYKONAWCZA;4
+2827;Szkoła Podstawowa nr 172  im. Polskiej Organizacji Wojskowej, ul. Krótka 1 - Wesoła;412;1607;1;JEDNOSTKAWYKONAWCZA;4
+2845;Biblioteka Publiczna w Dzielnicy Wilanów m.st. Warszawy;412;1623;1;JEDNOSTKAWYKONAWCZA;11
+2846;Centrum Kultury Wilanów;412;1623;1;JEDNOSTKAWYKONAWCZA;11
+2847;Ośrodek Pomocy Społecznej Dzielnicy Wilanów;412;1628;1;JEDNOSTKAWYKONAWCZA;13
+2848;Dzielnicowe Biuro Finansów Oświaty m.st. Warszawy - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2861;Szkoła Podstawowa nr 94 im. I Marszałka Polski Józefa Piłsudskiego - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2866;Zespół Szkół im. Bohaterów Narwiku: LXXXIV Liceum Ogólnokształcące, Technikum Nr 9 Lotnicze - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2867;Poradnia Psychologiczno-Pedagogiczna nr 22 - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2868;Ośrodek Pomocy Społecznej Dzielnicy Włochy m.st. Warszawy;412;1648;1;JEDNOSTKAWYKONAWCZA;13
+2869;Zakład Gospodarowania Nieruchomościami w Dzielnicy Włochy m.st. Warszawy;412;1650;1;JEDNOSTKAWYKONAWCZA;10
+2870;Dom Kultury „Włochy”;412;1638;1;JEDNOSTKAWYKONAWCZA;11
+2871;Biblioteka Publiczna w Dzielnicy Włochy m.st. Warszawy;412;1638;1;JEDNOSTKAWYKONAWCZA;11
+2872;Ośrodek Sportu i Rekreacji m.st. Warszawy w Dzielnicy Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;14
+2875;Biblioteka Publiczna w Dzielnicy Wola m.st. Warszawy;412;1673;1;JEDNOSTKAWYKONAWCZA;11
+2876;Ośrodek Sportu i Rekreacji m.st. Warszawy w Dzielnicy Wola;412;1674;1;JEDNOSTKAWYKONAWCZA;14
+2877;Ośrodek Pomocy Społecznej Dzielnicy Wola m.st. Warszawy;412;1666;1;JEDNOSTKAWYKONAWCZA;13
+2878;Zakład Gospodarowania Nieruchomościami w Dzielnicy Wola m.st. Warszawy;412;1670;1;JEDNOSTKAWYKONAWCZA;10
+2879;Przedszkole z Oddziałami Integracyjnymi nr 37 Bajkowy Świat - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2881;Przedszkole nr 58 im. Czesława Janczarskiego - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2882;Przedszkole nr 62 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2883;Przedszkole nr 74 Przy Zielonym Wzgórzu - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2884;Przedszkole nr 93 Baśniowy Dworek na Kole - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2885;Przedszkole nr 116 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2886;Przedszkole nr 118 z Oddziałami Integracyjnymi - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2887;Przedszkole nr 124 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2888;Przedszkole z Oddziałami Integracyjnymi nr 127 im. Wandy Chotomskiej - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2889;Przedszkole nr 133 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2890;Przedszkole nr 134 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2891;Przedszkole nr 135 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2892;Przedszkole nr 136 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2893;Przedszkole nr 172 im. Danuty Wawiłow - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2894;Przedszkole Integracyjne nr 209 Zaczarowane Ziarenko - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2895;Przedszkole nr 234 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2896;Przedszkole nr 237 im. Warszawskiej Syrenki - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2897;Przedszkole nr 238 Tęczowy Pajacyk - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2898;Przedszkole nr 253 Akademia Pana Kleksa - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2899;Przedszkole nr 263 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2900;Przedszkole nr 269 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2901;Przedszkole nr 273 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2902;Przedszkole nr 289 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2903;Przedszkole z Oddziałami Integracyjnymi nr 310 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2904;Przedszkole nr 350 Jaśminowy Gaj - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2905;Przedszkole nr 403 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2906;Szkoła Podstawowa nr 25 im. Komisji Edukacji Narodowej - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2907;Szkoła Podstawowa nr 26 im. Mirosława Biernackiego - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2908;Szkoła Podstawowa nr 63 im. Zawiszy Czarnego - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2909;Szkoła Podstawowa nr 132 im. Sandora Petofiego - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2910;Szkoła Podstawowa nr 139 im. Ludwiki Wawrzyńskiej - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2911;Szkoła Podstawowa nr 148 im. Hugona Kołłątaja - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2912;Szkoła Podstawowa nr 166 im. Żwirki i Wigury - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2913;Szkoła Podstawowa nr 221 z Oddziałami Integracyjnymi im. Barbary Bronisławy Czarnowskiej - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2914;Szkoła Podstawowa nr 222 im. Jana Brzechwy - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2915;Szkoła Podstawowa nr 225 im. Józefa Gardeckiego - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2916;Szkoła Podstawowa nr 234 im. Juliana Tuwima - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2917;Szkoła Podstawowa nr 238 im. Christo Botewa - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2918;Szkoła Podstawowa nr 236 z Oddziałami Integracyjnymi im. Ireny Sendlerowej - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2865;Zespół Szkół nr 17 im. Zawiszaków Proporca Victoria - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2927;III Liceum Ogólnokształcące im. gen. Józefa Sowińskiego - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2928;XII Liceum Ogólnokształcące im. Henryka Sienkiewicza - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2929;XXIV Liceum Ogólnokształcące im. Cypriana Kamila Norwida - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2930;XXX Liceum Ogólnokształcące im. Jana Śniadeckiego - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2931;LXXXVI Liceum Ogólnokształcące im. Batalionu Zośka - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2932;XL Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Stefana Żeromskiego - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2933;XLV Liceum Ogólnokształcące im. Romualda Traugutta - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2934;CXIX Liceum Ogólnokształcące im. Jacka Kuronia - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2935;Zespół Szkół Stenotypii i Języków Obcych - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2937;Zespół Szkół Nr 7 im. Szczepana Bońkowskiego - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2938;Zespół Szkół Nr 36 im. Marcina Kasprzaka - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2939;Zespół Szkół Fototechnicznych - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2940;Zespół Szkół im. Michała Konarskiego - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2941;Zespół Szkół Samochodowych i Licealnych Nr 2 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2942;Zespół Szkół Nr 32 im. Krzysztofa Kamila Baczyńskiego - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2944;Międzyszkolny Ośrodek Sportowy Nr 6 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2945;Zespół Wolskich Placówek Edukacji Kulturalnej - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2946;Poradnia Psychologiczno-Pedagogiczna Nr 2 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2947;Zespół Poradni Psychologiczno-Pedagogicznych Nr 1 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2948;Dzielnicowe Biuro Finansów Oświaty - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2949;Zakład Gospodarowania Nieruchomościami w Dzielnicy Żoliborz;412;1692;1;JEDNOSTKAWYKONAWCZA;10
+2950;Dzielnicowe Biuro Finansów Oświaty - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2951;Ognisko Pracy Pozaszkolnej „Żoliborz”;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2952;Biblioteka Publiczna w Dzielnicy Żoliborz m.st. Warszawy;412;1682;1;JEDNOSTKAWYKONAWCZA;11
+2953;Zespół Szkół Samochodowych i Licealnych Nr 3 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2954;Zespół Szkół Elektronicznych i Licealnych - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2955;Zespół Szkół Nr 31 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2956;I LO. z Oddz. Integracyjnymi - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2961;Szkoła Podstawowa Nr 267 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2962;Szkoła Podstawowa Nr 92 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2963;Szkoła Podstawowa z Oddz. Integracyjnymi Nr 68 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2964;Szkoła Podstawowa Nr 65 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2965;Przedszkole Nr 361 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2966;Przedszkole z Oddz. Integracyjnymi Nr 288 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2967;Przedszkole Integracyjne Nr 247 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2968;Przedszkole Nr 212 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2970;Przedszkole Nr 132 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2971;Przedszkole Nr 131 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2972;Przedszkole Nr 130 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2974;Przedszkole Nr 96 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2969;Przedszkole Nr 197 Do-Re-Mi - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2919;Szkoła Podstawowa Integracyjna nr 317 im. Edmunda Bojanowskiego - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2920;XXXIII Liceum Ogólnokształcące Dwujęzyczne im. Mikołaja Kopernika - Wola ;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2921;Szkoła Podstawowa nr 351 im. Bolesława Prusa - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2923;Szkoła Podstawowa nr 387 im. Szarych Szeregów - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2925;Szkoła Podstawowa nr 388 im. Jana Pawła II - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2926;Szkoła Podstawowa nr 389 im. Stefana Starzyńskiego - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2959;LXIV Liceum Ogólnokształcące - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2957;Szkoła Podstawowa nr 391 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2960;XVI Liceum Ogólnokształcące - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2975;Przedszkole Nr 87 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2976;Ośrodek Sportu i Rekreacji m. st. Warszawy w Dzielnicy Żoliborz;412;1690;1;JEDNOSTKAWYKONAWCZA;14
+2977;Ośrodek Pomocy Społecznej Dzielnicy Żoliborz;412;1691;1;JEDNOSTKAWYKONAWCZA;13
+2978;Poradnia Psychologiczno-Pedagogiczna Nr 3 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2979;Środowiskowy Dom Samopomocy w Warszawie - Żoliborz;412;1691;1;JEDNOSTKAWYKONAWCZA;13
+2980;Zespół Szkół nr 28 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+2981;Urząd Pracy Miasta Stołecznego Warszawy;412;1700;1;JEDNOSTKAWYKONAWCZA;1
+2982;Stołeczne Biuro Turystyki;412;1699;1;JEDNOSTKAWYKONAWCZA;6
+2983;Przedszkole nr 171 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2984;Przedszkole nr 217 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2985;Przedszkole nr 173 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2986;Przedszkole nr 169 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2987;Przedszkole nr 165 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2988;Przedszkole nr 164 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2989;Przedszkole nr 167 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2990;Przedszkole nr 184 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2991;Przedszkole nr 174 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2992;Przedszkole nr 163 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2993;Przedszkole nr 185 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2994;Przedszkole nr 186 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2995;Przedszkole nr 183 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2996;Szkoła Podstawowa z Oddziałami Integracyjnymi nr 30 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2997;Szkoła Podstawowa z Oddziałami Integracyjnymi nr 73 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2998;Szkoła Podstawowa nr 127 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2999;Szkoła Podstawowa nr 258 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+3003;LXXVI Liceum Ogólnokształcące - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+3004;Zespół Szkół nr 73 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+3005;Zespół Szkół nr 11 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+3006;Zespół Szkół nr 14 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+3008;Zespół Szkół nr 33 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+3009;Zespół Szkół nr 40 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+3012;VII Ogród Jordanowski - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+3013;Poradnia Psychologiczno – Pedagogiczna nr 5 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+3014;Dzielnicowe Biuro Finansów Oświaty - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+3015;Ośrodek Pomocy Społecznej - Praga Północ;412;1725;1;JEDNOSTKAWYKONAWCZA;13
+3016;Biblioteka publiczna im. Księdza Jana Twardowskiego - Praga Północ;412;1717;1;JEDNOSTKAWYKONAWCZA;11
+3017;Dom Kultury PRAGA - Praga Północ;412;1717;1;JEDNOSTKAWYKONAWCZA;11
+3018;Zarząd Praskich Terenów Publicznych - Praga Północ;412;1715;1;JEDNOSTKAWYKONAWCZA;16
+3019;Zakład Gospodarowania Nieruchomościami - Praga Północ;412;1727;1;JEDNOSTKAWYKONAWCZA;10
+3020;Dzielnicowy Ośrodek Sportu i Rekreacji - Praga Północ;412;1724;1;JEDNOSTKAWYKONAWCZA;14
+3021;Stołeczne Centrum Sportu „Aktywna Warszawa”;412;1230;1;JEDNOSTKAWYKONAWCZA;14
+3025;Przedszkole nr 420 w Warszawie - Wilanów;412;1626;1;JEDNOSTKAWYKONAWCZA;4
+3026;Centrum Sportu Wilanów;412;1623;1;JEDNOSTKAWYKONAWCZA;14
+3028;Przedszkole Nr 421 - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+3029;Przedszkole Nr 422 - Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+3030;Przedszkole nr 419 - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+3031;Zespół Szkolno-Przedszkolny Nr 5: Przedszkole nr 175, Szkoła Podstawowa nr 227 im. kpt. Lucyny Herz - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+3032;Centrum Administracyjne Nr 1;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+3023;Szkoła Podstawowa nr 355, ul. Ceramiczna 11 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+3024;Szkoła Podstawowa nr 356, ul. Głębocka 66 - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+3034;Przedszkole nr 423 - Rembertów;412;1492;1;JEDNOSTKAWYKONAWCZA;4
+3036;Wolskie Centrum Kultury;412;1673;1;JEDNOSTKAWYKONAWCZA;11
+3037;Centrum Kształcenia Zawodowego i Ustawicznego Nr 1;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+3039;Warszawski Ośrodek Interwencji Kryzysowej;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+3041;Przedszkole nr 425 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+3042;Szkoła Podstawowa nr 358 - Wilanów;412;1626;1;JEDNOSTKAWYKONAWCZA;4
+3044;Poradnia Psychologiczno-Pedagogiczna nr 24 - Wilanów;412;1626;1;JEDNOSTKAWYKONAWCZA;4
+1128;Wydział Kontroli Postępowań ;38;0;1;WYDZIAL;6
+50;Biuro Polityki Lokalowej;22;0;1;BIURO;null
+1698;Wydział Centrum Przedsiębiorczości Smolna;65;0;1;WYDZIAL;1
+2300;Biblioteka Publiczna im. St. Staszica w Dzielnicy Bielany m.st. Warszawy;412;1412;1;JEDNOSTKAWYKONAWCZA;11
+2504;Przedszkole nr 384 „Tajemniczy Ogród” + Oddziały Zamiejscowe Przedszkola nr 384 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+3038;Zarząd Zieleni m.st. Warszawy;412;1168;1;JEDNOSTKAWYKONAWCZA;9
+2142;Dom Pomocy Społecznej Dla Kombatantów;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+1061;Wydział Koordynacji Usytuowania Projektowanych Sieci Uzbrojenia Terenu;32;14;1;JEDNOSTKAWYKONAWCZA;8
+2973;Przedszkole Nr 109 Ludeczkowo - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+1678;Wydział Działalności Gospodarczej i Zezwoleń dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;1
+1654;Wydział Architektury i Budownictwa dla Dzielnicy Wola;409;0;1;WYDZIAL;2
+1631;Wydział Administracyjno-Gospodarczy dla Dzielnicy Włochy;408;0;1;WYDZIAL;5
+1638;Wydział Kultury oraz Inicjatyw Obywatelskich dla Dzielnicy Włochy;408;0;1;WYDZIAL;11
+1762;Zespół Świadczeń Rodzinnych i Alimentacyjnych dla Dzielnicy Włochy;408;0;1;WYDZIAL;13
+1764;Zespół Funduszy Europejskich i Rewitalizacji dla Dzielnicy Włochy;408;0;1;WYDZIAL;7
+2958;Szkoła Podstawowa nr 392 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+1622;Wydział Ochrony Środowiska Wilanów;407;0;1;WYDZIAL;9
+1626;Wydział Oświaty i Wychowania dla Dzielnicy Wilanów;407;0;1;WYDZIAL;4
+1578;Wydział Administracyjno - Gospodarczy - Wawer;405;0;1;WYDZIAL;5
+3033;Prom Kultury Saska Kępa - Praga-Południe;412;1752;1;JEDNOSTKAWYKONAWCZA;11
+3040;CLV Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Bohaterek Powstania Warszawskiego - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+3043;Szkoła Podstawowa z Oddziałami integracyjnymi nr 87, ul. Malownicza 31 - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+2607;Szkoła Podstawowa Nr 29 im. Giuseppe Garibaldiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+1595;Wydział Promocji, Kultury i Sportu - Wawer;405;0;1;WYDZIAL;null
+2810;Przedszkole z Oddziałami Integracyjnymi nr 86 - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+3027;Wawerskie Centrum Kultury - Wawer;412;1597;1;JEDNOSTKAWYKONAWCZA;11
+1548;Wydział Spraw Społecznych i Zdrowia - Ursus;403;0;1;WYDZIAL;13
+1554;Zespół Obsługi Rady - Ursus;403;0;1;WYDZIAL;6
+2721;Przedszkole z Oddziałami Integracyjnymi Nr 418 - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+1523;Wydział Kadr i Funduszy Europejskich dla Dzielnicy Targówek;402;0;1;WYDZIAL;null
+1532;Wydział Prawny i Zamówień Publicznych dla Dzielnicy Targówek;402;0;1;WYDZIAL;null
+1497;Wydział Działalności Gospodarczej i Zezwoleń - Śródmieście;401;0;1;WYDZIAL;1
+1509;Wydział Spraw Społecznych i Zdrowia - Śródmieście;401;0;1;WYDZIAL;13
+2609;Zespół Szkolno-Przedszkolny nr 8 - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2659;Biblioteka Publiczna w Dzielnicy Śródmieście m.st. Warszawy - Śródmieście;412;1500;1;JEDNOSTKAWYKONAWCZA;11
+1489;Samodzielne wieloosobowe stanowisko ds. Zamówień Publicznych dla Dzielnicy Rembertów;400;0;1;WYDZIAL;5
+31;Biuro Funduszy Europejskich i Polityki Rozwoju;22;0;1;BIURO;null
+1019;Wydział Architektoniczno-Budowlany;25;0;1;WYDZIAL;2
+3045;Wydział Kształtowania Przestrzeni Publicznej;25;0;1;WYDZIAL;2
+3046;Wydział Ochrony Krajobrazu;25;0;1;WYDZIAL;2
+3047;Wydział Przekształceń Przestrzennych i Rewitalizacji;25;0;1;WYDZIAL;2
+3049;Wydział Zagospodarowania Przestrzennego - Południe;25;0;1;WYDZIAL;2
+3050;Wydział Zagospodarowania Przestrzennego - Północ;25;0;1;WYDZIAL;2
+3051;Wydział Zagospodarowania Przestrzennego - Praga;25;0;1;WYDZIAL;2
+1305;Samodzielne Wieloosobowe Stanowisko Pracy ds. Obsługi Prawnej;26;0;1;WYDZIAL;6
+3052;Wydział Zagospodarowania Przestrzennego - Wschód;25;0;1;WYDZIAL;2
+3053;Wydział Zagospodarowania Przestrzennego - Zachód;25;0;1;WYDZIAL;2
+1189;Zespół Polityki Długu;48;0;1;WYDZIAL;7
+3055;Wydział Obsługi Wierzytelności;48;0;1;WYDZIAL;7
+3054;Zespół Audytów Sprawdzających;26;0;1;WYDZIAL;6
+3056;Zespół Rejestru Długów i Pomocy Publicznej;48;0;1;WYDZIAL;7
+2011;Warszawskie Centrum Sportu Młodzieżowego Agrykola;412;1048;1;JEDNOSTKAWYKONAWCZA;4
+2013;Pozaszkolna Placówka Specjalistyczna - Ośrodek Oświatowo – Szkoleniowy Arkadia w Kazimierzu Dolnym;412;1048;1;JEDNOSTKAWYKONAWCZA;4
+2044;Szkoła Podstawowa Specjalna nr 111 im. Stefana Starzyńskiego;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2061;Młodzieżowy Ośrodek Socjoterapii nr 1 SOS;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+2063;Młodzieżowy Ośrodek Socjoterapii nr 3 Dom na Trakcie  im. prof. dr Stanisława Jedlewskiego;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+3059;Wydział Obsługi Interesantów;32;0;1;WYDZIAL;8
+1133;Zespół Spraw Organizacyjno-Budżetowych;38;0;1;WYDZIAL;6
+3061;Wydział Rozliczeń Wypłat dla Osób Fizycznych Niebędących Pracownikami Urzędu i Jednostek Organizacyjnych;40;0;1;WYDZIAL;7
+3062;Zespół Ewidencji Księgowej Mienia Urzędu;40;0;1;WYDZIAL;7
+3063;Zespół Prognoz Wieloletnich i Modelowania Budżetowego;46;0;1;WYDZIAL;7
+3064;I Wydział Egzekucji Administracyjnej Należności Pieniężnych;47;0;1;WYDZIAL;7
+2804;Szkoła Podstawowa nr 204 im. 19 Pułku Ułanów Wołyńskich - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+2730;Zespół Szkół Nr 42: Branżowa Szkoła I stopnia nr 37 im. Jana Karskiego, Technikum Nr 8  im. Jana Karskiego, CLIVLiceum Ogólnokształcące dla Dorosłych - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+3058;Wydział Podziałów Nieruchomości;32;0;1;WYDZIAL;8
+3057;Samodzielne Wieloosobowe Stanowisko Pracy ds. Programowania i Współpracy Metropolitalnej;31;0;1;WYDZIAL;7
+2073;Przedszkole Specjalne nr 68 w Mazowieckim Centrum Rehabilitacji „STOCER;412;1051;1;JEDNOSTKAWYKONAWCZA;4
+3048;Wydział Zagospodarowania Przestrzennego - Centrum;25;0;1;WYDZIAL;2
+3060;Wydział Zrównoważonego Rozwoju;36;0;1;WYDZIAL;16
+3065;II Wydział Egzekucji Administracyjnej Należności Pieniężnych;47;0;1;WYDZIAL;7
+3066;III Wydział Egzekucji Administracyjnej Należności Pieniężnych;47;0;1;WYDZIAL;7
+3067;IV Wydział Egzekucji Administracyjnej Należności Pieniężnych;47;0;1;WYDZIAL;7
+3068;V Wydział Egzekucji Administracyjnej Należności Pieniężnych;47;0;1;WYDZIAL;7
+3069;VI Wydział Egzekucji Administracyjnej Należności Pieniężnych;47;0;1;WYDZIAL;7
+3070;VII Wydział Egzekucji Administracyjnej Należności Pieniężnych;47;0;1;WYDZIAL;7
+3072;Wydział Orzecznictwa Egzekucyjnego;47;0;1;WYDZIAL;7
+1043;Wydział Organizacji i Nadzoru;28;0;1;WYDZIAL;15
+3073;Wydział Bezpieczeństwa Ruchu Drogowego i Transportu;28;0;1;WYDZIAL;15
+3074;Wydział Organizacyjny, Promocji i Budżetu;60;0;1;WYDZIAL;14
+3100;Wydział Projektów Smart City – BC-WPSC;68;0;1;WYDZIAL;5
+3076;Wydział Nadzoru Konserwatorskiego;61;0;1;WYDZIAL;2
+3077;Wydział Badań, Dokumentacji i Edukacji;61;0;1;WYDZIAL;2
+3075;Wydział Opinii Konserwatorskich;61;0;1;WYDZIAL;2
+3078;Samodzielne Wieloosobowe Stanowisko Pracy ds. Współpracy i Komunikacji Społecznej;61;0;1;WYDZIAL;2
+3079;Samodzielne Wieloosobowe Stanowisko Pracy ds. Równego Traktowania;53;0;1;WYDZIAL;6
+3080;Samodzielne Wieloosobowe Stanowisko Pracy ds. Koordynacji Polityki Społecznej;53;0;1;WYDZIAL;6
+3081;Samodzielne wieloosobowe Stanowisko Pracy ds. Rozwoju Wolontariatu;53;0;1;WYDZIAL;6
+3082;Samodzielne Jednoosobowe Stanowisko Pracy ds. Kontroli Realizacji Zadań Publicznych Zleconych Organizacjom Pozarządowym;53;0;1;WYDZIAL;6
+3083;Zespół Budżetu Partycypacyjnego;53;0;1;WYDZIAL;6
+3084;Zespół Organizacji i Finansów;33;0;1;WYDZIAL;10
+3085;Zespół Koordynacji i Nadzoru;33;0;1;WYDZIAL;10
+3086;Wydział Mienia Skarbu Państwa;33;0;1;WYDZIAL;10
+3087;Wydział Wywłaszczeń i Odszkodowań;33;0;1;WYDZIAL;10
+3088;Wydział Ochrony Mienia;33;0;1;WYDZIAL;10
+67;Biuro Administracyjne;22;0;1;BIURO;null
+3101;Wydział Projektów Miejskich – BC-WPM;68;0;1;WYDZIAL;5
+3090;Wydział Zakupów i Ewidencji;67;0;1;WYDZIAL;5
+3091;Wydział Techniczno-Remontowy;67;0;1;WYDZIAL;5
+3092;Wydział Administrowania Nieruchomościami;67;0;1;WYDZIAL;5
+3093;Wydział Ochrony;67;0;1;WYDZIAL;5
+3102;Wydział Zarządzania Danymi – BC-WZD;68;0;1;WYDZIAL;5
+3095;Samodzielne Wieloosobowe Stanowisko Pracy ds. Organizacyjnych;67;0;1;WYDZIAL;5
+3094;Zespół Inwentaryzacji;67;0;1;WYDZIAL;5
+68;Biuro Cyfryzacji Miasta;22;0;1;BIURO;null
+3097;Zespół Głównego Architekta Systemów Informatycznych – BC-ZASI;68;0;1;WYDZIAL;5
+3098;Wydział Zarządzania Portfelem Projektów – BC-WZPP;68;0;1;WYDZIAL;5
+3099;Wydział Rozwoju i Utrzymania – BC-WRU;68;0;1;WYDZIAL;5
+3103;Wydział Finansowo-Organizacyjny – BC-WFO;68;0;1;WYDZIAL;5
+69;Miejskie Centrum Sieci i Danych;22;0;1;BIURO;null
+3104;Wydział Bezpieczeństwa;69;0;1;WYDZIAL;5
+3105;Wydział Koordynacji Infrastrukturalnych Projektów Miejskich;69;0;1;WYDZIAL;5
+3106;Wydział Organizacyjno-Finansowy;69;0;1;WYDZIAL;5
+3107;Wydział Wsparcia Użytkownika;69;0;1;WYDZIAL;5
+3108;Wydział Zarządzania Usługami;69;0;1;WYDZIAL;5
+3109;Wydział Zarządzania Siecią;69;0;1;WYDZIAL;5
+3110;Wydział Zarządzania Systemami IT;69;0;1;WYDZIAL;5
+3111;Samodzielne Wieloosobowe Stanowisko Pracy Radców Prawnych;69;0;1;WYDZIAL;5
+3096;Samodzielne Wielosobowe Stanowisko Pracy Radców Prawnych;67;0;1;WYDZIAL;5
+3089;Wydział Monitorowania Inwestycji II;31;0;1;WYDZIAL;7
+3112;Wydział Monitorowania Inwestycji I;31;0;1;WYDZIAL;7
+3114;Szkoła Podstawowa Nr 362 - Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+3113;Szkoła Podstawowa Nr 357 - Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+2211;Szkoła Podstawowa nr 31 im. Kardynała Stefana Wyszyńskiego ul. Kobiałka 49- Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+3142;CLVIII Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Księżnej Izabeli Czartoryskiej - Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+1377;Wydział Gospodarki Nieruchomościami;394;0;1;WYDZIAL;10
+3120;Referat Organizacyjny;1736;0;1;WYDZIAL;6
+3121;Wydział Inwestycji Drogowych;394;0;1;WYDZIAL;15
+3132;Szkoła Podstawowa Nr 41 im. Stanisława Staszica - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+3122;Wydział Promocji i Kontaktów z Mieszkańcami;394;0;1;WYDZIAL;6
+3123;Wydział Zarządzania Mieniem;394;0;1;WYDZIAL;10
+3124;Samodzielne Jednoosobowe Stanowisko Pracy ds. Planowania i Sprawozdawczości dla Dzielnicy Białołęka (PSP);394;0;1;WYDZIAL;7
+3125;Samodzielne Jednoosobowe Stanowisko Pracy – Rzecznik Prasowy Dzielnicy dla Dzielnicy Białołęka (RPD);394;0;1;WYDZIAL;6
+2239;CXXII Liceum Ogólnokształcące im. Ignacego Domeyki- Bielany;412;1406;1;JEDNOSTKAWYKONAWCZA;4
+2400;Szkoła Podstawowa Integracyjna nr 339 - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2328;Przedszkole nr 193 „Mokotowskie Nutki” - Mokotów;412;1427;1;JEDNOSTKAWYKONAWCZA;4
+2486;Przedszkole nr 179 Pozytywka - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2493;Przedszkole nr 230 Kolorowy Zakątek- Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2497;Przedszkole z Oddziałami Integracyjnymi nr 291 im. prof. dr med. Zofii Falkowskiej - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+2540;Zespół Szkół Nr 37 im. Agnieszki Osieckiej XCVI Liceum Ogólnokształcące im. Agnieszki Osieckiej Technikum Łączności im. prof. dr. inż. Janusza Groszkowskiego Branżowa Szkoła I stopnia nr 55 Szkoła Policealna nr 18 - Praga-Południe;412;1469;1;JEDNOSTKAWYKONAWCZA;4
+3128;VIII Liceum Ogólnokształcące - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+3129;Szkoła Podstawowa nr 395 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+3130;Szkoła Podstawowa z Oddziałami Integracyjnymi nr 354  - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+3133;Szkoła Podstawowa Nr 48 im. Adama Próchnika - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+3134;II Liceum Ogólnokształcące im. Stefana Batorego z oddziałami dwujęzycznymi - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+3135;LXII Liceum Mistrzostwa Sportowego im. Generała Broni Władysława Andersa - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+3136;LXXV Liceum Ogólnokształcące im. Jana III Sobieskiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+3137;CLVII Liceum Ogólnokształcące im. Marii Skłodowskiej-Curie - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+3138;Technikum Kinematograficzno-Komputerowe im. Krzysztofa Kieślowskiego - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+2670;Przedszkole nr 95 z Oddziałami Integracyjnymi im. Króla Maciusia I - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+3139;Szkoła Podstawowa nr 382 ul. Konińska 2 - Ursus;412;1547;1;JEDNOSTKAWYKONAWCZA;4
+3127;CLX Liceum Ogólnokształcące im. Gen. Dyw. Stefana Grota Roweckiego Grota - Ochota;412;1450;1;JEDNOSTKAWYKONAWCZA;4
+3119;Przedszkole 429 ul. Skarbka z Gór 9A - Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+3126;Ośrodek Sportu i Rekreacji M.St. Warszawy w Dzielnicy Mokotów - Mokotów;412;1436;1;JEDNOSTKAWYKONAWCZA;14
+3117;Szkoła Podstawowa Nr 150 - Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+3146;Przedszkole nr 424 - Wilanów;412;1626;1;JEDNOSTKAWYKONAWCZA;4
+3141;Szkoła Podstawowa nr 384 im. Stanisława Staszica - Ursynów;412;1568;1;JEDNOSTKAWYKONAWCZA;4
+3144;Przedszkole nr 434, ul. 1 Praskiego Pułku 116 - Wesoła;412;1607;1;JEDNOSTKAWYKONAWCZA;4
+3143;Szkoła Podstawowa nr 385 im. Marszałka Józefa Piłsudskiego - Wesoła;412;1607;1;JEDNOSTKAWYKONAWCZA;4
+3116;Szkoła Podstawowa Nr 364 - Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+3115;Szkoła Podstawowa Nr 363 - Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+3118;Przedszkole Nr 435 - Bemowo;412;1363;1;JEDNOSTKAWYKONAWCZA;4
+3145;Wydział Gospodarki Nieruchomościami dla Dzielnicy Wesoła;406;0;1;WYDZIAL;10
+2818;XXVI Liceum Ogólnokształcące im. gen. Henryka Jankowskiego Kuby - Wawer;412;1591;1;JEDNOSTKAWYKONAWCZA;4
+3131;Szkoła Podstawowa nr 50 - Praga Północ;412;1722;1;JEDNOSTKAWYKONAWCZA;4
+2864;Liceum Ogólnokształcąca CLIX im. Króla Jana III Sobieskiego, ul. Solipska 17/19 - Włochy;412;1646;1;JEDNOSTKAWYKONAWCZA;4
+3147;Przedszkole nr 426 - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+2924;Szkoła Podstawowa nr 386 im. Marszałka Józefa Piłsudskiego - Wola;412;1664;1;JEDNOSTKAWYKONAWCZA;4
+3149;Wydział Regulacji Stanów Prawnych Nieruchomości dla Dzielnicy Wola;409;0;1;WYDZIAL;10
+3148;Wydział Gospodarki i Obrotu Nieruchomościami dla Dzielnicy Wola;409;0;1;WYDZIAL;10
+3150;Zespół Gospodarki Odpadami dla Dzielnicy Żoliborz;410;0;1;WYDZIAL;16
+3151;Przedszkole nr 433 - Żoliborz;412;1688;1;JEDNOSTKAWYKONAWCZA;4
+3152;IX Liceum Ogólnokształcące im. Klementyny Hoffmanowej - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+3153;XV Liceum Ogólnokształcące im. Narcyzy Żmichowskiej z oddziałami dwujęzycznymi - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+3154;Przedszkole nr 432 - Targówek;412;1519;1;JEDNOSTKAWYKONAWCZA;4
+3155;Przedszkole nr 427 - Wilanów;412;1626;1;JEDNOSTKAWYKONAWCZA;4
+3156;Centrum Usług Społecznych Społeczna Warszawa;412;1284;1;JEDNOSTKAWYKONAWCZA;13
+2608;Szkoła Podstawowa Nr 32 z Oddziałami Integracyjnymi im. Małego Powstańca - Śródmieście;412;1738;1;JEDNOSTKAWYKONAWCZA;4
+3140;Wydział Mienia dla Dzielnicy Ursynów;404;0;1;WYDZIAL;10
+3157;Wydział Organizacyjno-Finansowy;24;0;1;WYDZIAL;5
+3158;Zespół Komunikacji Wewnętrznej;24;0;1;WYDZIAL;5
+3159;Dzielnicowy Ośrodek Kultury Ursynów;412;1564;1;JEDNOSTKAWYKONAWCZA;11
+3160;Wydział Projektów Międzynarodowych;31;0;1;WYDZIAL;7
+3161;Przedszkole nr 430, ul. Ceramiczna 11 – Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4
+3162;Przedszkole nr 431, ul. Głębocka 66 – Białołęka;412;1386;1;JEDNOSTKAWYKONAWCZA;4

@@ -1,0 +1,27 @@
+{
+    "rorumApp": {
+        "organisationStructure" : {
+            "home": {
+                "title": "Struktura Organizacyjna",
+                "createLabel": "Dodaj komórkę do struktury organizacyjnej",
+                "createOrEditLabel": "Dodaj lub edytuj komórkę w strukturze organizacyjnej"
+            },
+            "created": "Utworzono nową komórkę w strukturze organizacyjnej z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono komórkę w strukturze organizacyjnej z identyfikatorem {{ param }}",
+            "deleted": "Usunięto komórkę ze struktury organizacyjnej z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć komórkę ze struktury organizacyjnej o id = {{ id }}?"
+            },
+            "detail": {
+                "title": "Struktura Organizacyjna"
+            },
+            "name": "Nazwa",
+            "parentId": "Rodzic id",
+            "supervisoryUnitId": "Jednostka nadzorująca id",
+            "statusId": "Status",
+            "specifyingCells": "Określenie komórki",
+            "glossaryOfProcesses": "Słownik procesów id",
+            "glossaryOfCommercialRisks": "Słownik ryzyk korupcyjnych"
+        }
+    }
+}

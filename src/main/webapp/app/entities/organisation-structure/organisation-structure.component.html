@@ -1,0 +1,78 @@
+<div>
+    <h2>
+        <span jhiTranslate="rorumApp.organisationStructure.home.title">Organisation Structures</span>
+        <button *jhiHasAnyAuthority="'ROLE_EDYCJA_STRUKTURY_ORGANIZACYJNEJ'" class="btn btn-primary float-right jh-create-entity create-organisation-structure" [routerLink]="['/', { outlets: { popup: ['organisation-structure-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span  jhiTranslate="rorumApp.organisationStructure.home.createLabel">
+            Create new Organisation Structure
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    <div  class="table-responsive" *ngIf="organisationStructures">
+        <table *jhiHasAnyAuthority="'ROLE_PREGLAD_STRUKTURY_ORGANIZACYJNEJ'" class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="transition.bind(this)">
+            <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="name"><span jhiTranslate="rorumApp.organisationStructure.name">Name</span> <span class="fa fa-sort"></span></th>
+            <!-- <th jhiSortBy="parentId"><span jhiTranslate="rorumApp.organisationStructure.parentId">Parent Id</span> <span class="fa fa-sort"></span></th> -->
+            <!-- <th jhiSortBy="supervisoryUnitId"><span jhiTranslate="rorumApp.organisationStructure.supervisoryUnitId">Supervisory Unit Id</span> <span class="fa fa-sort"></span></th> -->
+            <!-- <th jhiSortBy="statusId"><span jhiTranslate="rorumApp.organisationStructure.statusId">Status Id</span> <span class="fa fa-sort"></span></th> -->
+            <!-- <th jhiSortBy="specifyingCells"><span jhiTranslate="rorumApp.organisationStructure.specifyingCells">Specifying Cells</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="glossaryOfProcesses.id"><span jhiTranslate="rorumApp.organisationStructure.glossaryOfProcesses">Glossary Of Processes</span> <span class="fa fa-sort"></span></th> -->
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let organisationStructure of organisationStructures ;trackBy: trackId">
+                <td><a [routerLink]="['../organisation-structure', organisationStructure.id ]">{{organisationStructure.id}}</a></td>
+                <td>{{organisationStructure.name}}</td>
+                <!-- <td>{{organisationStructure.parentId}}</td> -->
+                <!-- <td>{{organisationStructure.supervisoryUnitId}}</td> -->
+                <!-- <td>{{organisationStructure.statusId}}</td> -->
+                <!-- <td jhiTranslate="{{'rorumApp.SpecifyingCells.' + organisationStructure.specifyingCells}}">{{organisationStructure.specifyingCells}}</td> -->
+                <!-- <td>
+                    <div *ngIf="organisationStructure.glossaryOfProcesses">
+                        <a [routerLink]="['../glossary-of-processes', organisationStructure.glossaryOfProcesses?.id ]" >{{organisationStructure.glossaryOfProcesses?.id}}</a>
+                    </div>
+                </td> -->
+                <td *jhiHasAnyAuthority="'ROLE_EDYCJA_STRUKTURY_ORGANIZACYJNEJ'" class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['../organisation-structure', organisationStructure.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'organisation-structure/'+ organisationStructure.id + '/edit'} }]"
+                                replaceUrl="true"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'organisation-structure/'+ organisationStructure.id + '/delete'} }]"
+                                replaceUrl="true"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+        <div *ngIf="organisationStructures && organisationStructures.length">
+            <div class="row justify-content-center">
+                <jhi-item-count [page]="page" [total]="queryCount" [maxSize]="5" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+            </div>
+            <div class="row justify-content-center">
+                <ngb-pagination [collectionSize]="totalItems" [maxSize]="5" [pageSize]="itemsPerPage" [(page)]="page" (pageChange)="loadPage(page)"></ngb-pagination>
+            </div>
+        </div>
+</div>

@@ -1,0 +1,115 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myOrdersLabel" jhiTranslate="rorumApp.orders.home.createOrEditLabel">Create or edit a Orders</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!orders.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="orders.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.orders.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                [(ngModel)]="orders.name"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.orders.financingYear" for="field_financingYear">Financing Year</label>
+            <input type="number" class="form-control" name="financingYear" id="field_financingYear"
+                [(ngModel)]="orders.financingYear"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.orders.startDate" for="field_startDate">Start Date</label>
+            <div class="input-group">
+                <input id="field_startDate" type="text" class="form-control" name="startDate" ngbDatepicker  #startDateDp="ngbDatepicker" [(ngModel)]="orders.startDate"
+                required/>
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary" (click)="startDateDp.toggle()"><i class="fa fa-calendar"></i></button>
+                </span>
+            </div>
+            <div [hidden]="!(editForm.controls.startDate?.dirty && editForm.controls.startDate?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.startDate?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.orders.firstReportingDate" for="field_firstReportingDate">First Reporting Date</label>
+            <div class="input-group">
+                <input id="field_firstReportingDate" type="text" class="form-control" name="firstReportingDate" ngbDatepicker  #firstReportingDateDp="ngbDatepicker" [(ngModel)]="orders.firstReportingDate"
+                required/>
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary" (click)="firstReportingDateDp.toggle()"><i class="fa fa-calendar"></i></button>
+                </span>
+            </div>
+            <div [hidden]="!(editForm.controls.firstReportingDate?.dirty && editForm.controls.firstReportingDate?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.firstReportingDate?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.orders.secondReportingDate" for="field_secondReportingDate">Second Reporting Date</label>
+            <div class="input-group">
+                <input id="field_secondReportingDate" type="text" class="form-control" name="secondReportingDate" ngbDatepicker  #secondReportingDateDp="ngbDatepicker" [(ngModel)]="orders.secondReportingDate"
+                required/>
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary" (click)="secondReportingDateDp.toggle()"><i class="fa fa-calendar"></i></button>
+                </span>
+            </div>
+            <div [hidden]="!(editForm.controls.secondReportingDate?.dirty && editForm.controls.secondReportingDate?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.secondReportingDate?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.orders.thirdReportingDate" for="field_thirdReportingDate">Third Reporting Date</label>
+            <div class="input-group">
+                <input id="field_thirdReportingDate" type="text" class="form-control" name="thirdReportingDate" ngbDatepicker  #thirdReportingDateDp="ngbDatepicker" [(ngModel)]="orders.thirdReportingDate"
+                required/>
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary" (click)="thirdReportingDateDp.toggle()"><i class="fa fa-calendar"></i></button>
+                </span>
+            </div>
+            <div [hidden]="!(editForm.controls.thirdReportingDate?.dirty && editForm.controls.thirdReportingDate?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.thirdReportingDate?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.orders.finalDate" for="field_finalDate">Final Date</label>
+            <div class="input-group">
+                <input id="field_finalDate" type="text" class="form-control" name="finalDate" ngbDatepicker  #finalDateDp="ngbDatepicker" [(ngModel)]="orders.finalDate"
+                required/>
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary" (click)="finalDateDp.toggle()"><i class="fa fa-calendar"></i></button>
+                </span>
+            </div>
+            <div [hidden]="!(editForm.controls.finalDate?.dirty && editForm.controls.finalDate?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.finalDate?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

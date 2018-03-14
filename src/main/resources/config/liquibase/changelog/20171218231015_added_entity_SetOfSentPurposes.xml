@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <changeSet id="20171218231015-1" author="jhipster">
+        <createTable tableName="set_of_sent_purposes">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="status_of_sending" type="varchar(255)" defaultValue="UNCHECKED">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="is_last_version" type="boolean" defaultValueBoolean="true">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="creation_date" type="date" defaultValueDate="${now}">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="notation" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="orders_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="user_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+
+        <createTable tableName="set_of_sent_purposes_glossary_of_purposes">
+            <column name="glossary_of_purposes_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="set_of_sent_purposes_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addPrimaryKey columnNames="set_of_sent_purposes_id, glossary_of_purposes_id"
+                       tableName="set_of_sent_purposes_glossary_of_purposes"/>
+
+    </changeSet>
+</databaseChangeLog>

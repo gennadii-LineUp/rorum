@@ -1,0 +1,21 @@
+{
+    "rorumApp": {
+        "reporting" : {
+            "home": {
+                "title": "Moduł raportowania"
+            },
+            "tooltipText" : {
+                "byStructure": "Po kliknięciu zostanie wygenerowany raport wg struktury",
+                "bySupervisored": "Po kliknięciu zostanie wygenerowany raport wg nadzoru",
+                "risksReport": "Po kliknięciu zostanie wygenerowany raport z ryzyk",
+                "risksRegister": "Po kliknięciu zostanie wygenerowany raport przedstawiający zmiany ryzyk użytkownika w czasie",
+                "purposeAccomplishmentReport": "Po kliknięciu zostanie wygenerowany raport przedstawiający stopień realizacji celu danej jednostki",
+                "byProcess": "Po kliknięciu zostanie wygenerowany raport według procesu",
+                "changesRisk": "Po kliknięciu i wybraniu odpowiedniej jednostki Organizacyjnej zostanie wygenerowany raport przedstawiający zmiany ryzyk w czasie"
+            }
+
+
+
+        }
+    }
+}

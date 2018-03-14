@@ -1,0 +1,33 @@
+<div>
+    <div>
+        <h2>Zgłoszone incydenty</h2>
+    </div>
+    <div class="table-responsive" *ngIf="incidents">
+        <table class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse">
+                <th><span>Id</span> </th>
+                <th><span>Jednostka organizacyjna</span> </th>
+                <th><span>Opis</span> </th>
+                <th><span>Opis planowanych działań</span> </th>
+                <th><span>Opis reakcji</span> </th>
+                <th><span>Czy krytyczny?</span> </th>
+                <th><span>Status incydentu</span> </th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let i of incidents;">
+                <td>{{i.id}}</td>
+                <td>{{i.user.organisationStructure.name}}</td>
+                <td>{{i.description}}</td>
+                <td>{{i.descriptionOfPlannedActivities}}</td>
+                <td>{{i.descriptionOfReaction}}</td>
+                <td>{{i.isCritical}}</td>
+                <td>{{i.statusOfIncident}}</td>
+                <td><button class="btn btn-sm btn-info"> Click me !</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

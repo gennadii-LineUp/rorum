@@ -1,0 +1,27 @@
+{
+    "rorumApp": {
+        "glossaryOfCommercialRisks" : {
+            "home": {
+                "title": "Słownik ryzyk korupcyjnych",
+                "createLabel": "Dodaj ryzyko korupcyjne",
+                "createOrEditLabel": "Dodaj lub edytuj ryzyko korupcyjne"
+            },
+            "created": "Utworzono nowe ryzyko korupcyjne z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono ryzyko korupcyjne z identyfikatorem {{ param }}",
+            "deleted": "Usunięto ryzyko korupcyjne z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć ryzyko korupcyjne o id = {{ id }}?"
+            },
+            "detail": {
+                "title": "Słownik ryzyk korupcyjnych"
+            },
+            "name": "Nazwa",
+            "completionDate": "Completion Date",
+            "creationDate": "Data utworzenia",
+            "importantTo": "Ważne do",
+            "isChecked": "Potwierdzone",
+            "user": "Stworzone przez",
+            "organisationStructure": "Przypisane do komórki w strukturze organizacyjnej o id"
+        }
+    }
+}

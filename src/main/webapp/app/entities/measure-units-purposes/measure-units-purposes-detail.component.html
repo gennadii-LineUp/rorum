@@ -1,0 +1,31 @@
+
+<div *ngIf="measureUnitsPurposes">
+    <h2><span jhiTranslate="rorumApp.measureUnitsPurposes.detail.title">Measure Units Purposes</span> {{measureUnitsPurposes.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="rorumApp.measureUnitsPurposes.creationDate">Creation Date</span></dt>
+        <dd>
+            <span>{{measureUnitsPurposes.creationDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.measureUnitsPurposes.setOfSentPurposes">Set Of Sent Purposes</span></dt>
+        <dd>
+            <div *ngIf="measureUnitsPurposes.setOfSentPurposes">
+                <a [routerLink]="['/set-of-sent-purposes', measureUnitsPurposes.setOfSentPurposes?.id]">{{measureUnitsPurposes.setOfSentPurposes?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'measure-units-purposes/'+ measureUnitsPurposes.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

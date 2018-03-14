@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <changeSet id="20171218234649-1" author="jhipster">
+        <createTable tableName="filled_measure_units">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="base_value" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="actual_value" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="final_value" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="cost_of_purpose_realisation " type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="measure_units_purposes_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="glossary_of_measure_units_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="purpose_accomplishment_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="creation_date" type="timestamp" defaultValueDate="${now}">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="user_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="is_saved" type="boolean">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

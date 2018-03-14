@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="20171218234649-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="measure_units_purposes_id"
+                                 baseTableName="filled_measure_units"
+                                 constraintName="fk_filled_measure_units_measure_units_purposes_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="measure_units_purposes"/>
+
+        <addForeignKeyConstraint baseColumnNames="glossary_of_measure_units_id"
+                                 baseTableName="filled_measure_units"
+                                 constraintName="fk_filled_measure_units_glossary_of_measure_units_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="glossary_of_measure_units"/>
+
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="filled_measure_units"
+                                 constraintName="fk_filled_measure_units_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="users"/>
+    </changeSet>
+</databaseChangeLog>

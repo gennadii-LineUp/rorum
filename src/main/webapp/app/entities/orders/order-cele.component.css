@@ -1,0 +1,213 @@
+.accordionItem.close-item {
+}
+.bordered {
+    border-top: 3px solid darkgrey !important;
+    border-left: 1px solid darkgrey;
+    border-right: 1px solid darkgrey;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box;
+}
+.accordionItem.close-item + tr + tr.accordionItemContent>td>div {
+    -webkit-transition: max-height 1s ease-out 0s;
+    transition: max-height 1s ease-out 0s;
+    max-height: 0;
+    visibility: hidden;
+    overflow: auto;
+}
+table{
+    margin-bottom: 0;
+}
+table .ng-invalid:not(form) {
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    border-left: 2px solid red;
+}
+table .popupCheckboxesIsEmpty {
+    border-bottom: 2px solid red !important;
+}
+table .ng-valid[required], .ng-valid.required {
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+table, table th, table tr {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box;
+}
+table.table-accordion thead tr th,
+table._table-accordion thead tr th{
+   max-width: 20px;
+   word-wrap: break-word;
+   white-space: normal;
+}
+table.table-accordion td.narrow30,
+table._table-accordion td.narrow30{
+    min-width: 20px !important;
+    /*overflow: hidden;*/
+    white-space: nowrap;
+    width: 8%;
+    position: relative;
+}
+table.table-accordion td.narrow30 input{
+    width: 100%;
+    min-width: 20px !important;
+}
+.accordionItem.open + tr + tr.accordionItemContent{
+    border-left: 1px solid darkgrey;
+    border-right: 1px solid darkgrey;
+    border-bottom: 3px solid darkgrey;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box;
+}
+.accordionItem.open + tr + tr.accordionItemContent>td>div{
+    max-height: 10000px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box;
+    transition: max-height 15s ease-out 0s;
+    border-bottom: 2px solid inherit;
+    visibility: visible;
+    overflow: visible;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.table .table thead tr,
+.table .table tbody tr{
+    background-color: white !important;
+}
+button{
+    cursor: pointer;
+}
+button:disabled{
+    cursor: not-allowed;
+}
+.popupCheckboxes{
+    position: absolute;
+    top: 27px;
+    left: calc(50% - 29px);
+    left: -moz-calc(50% - 29px);
+    left: -webkit-calc(50% - 29px);
+    left: -webkit-calc(50% - 29px);
+    min-width: 200px;
+    /*width: 500px !important;*/
+    min-height: 100px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box;
+    border: 2px solid coral;
+    background-color: #d3d3d3;
+    opacity: 1;
+    z-index: 1000;
+}
+.popupCheckboxes td {
+    padding-top: 0 !important;;
+    padding-bottom: 0 !important;;
+}
+.popupBadRisk{
+    left: calc(50% - 39px);
+    left: -moz-calc(50% - 39px);
+    left: -webkit-calc(50% - 39px);
+    left: -webkit-calc(50% - 39px);
+
+}
+
+.tdWithSelectDuplicate{
+    padding: 0;
+}
+.select-duplicate{
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    color: graytext;
+    border-radius: 0px;
+    border-color: rgb(169, 169, 169);
+    background-color: white;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    font: 400 16px Arial;
+    margin: 4px 8px 0 0;
+    position: relative;
+}
+.select-duplicate span{
+    float: left;
+    margin: 3px 0 0 7px;
+}
+.select-duplicate .arrow-down {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 6px solid rgb(169, 169, 169);
+}
+.goodRisk {
+    background-color: #28a745;
+    border-color: #28a745;
+    user-select: none;
+    border-radius: .25rem;
+    cursor: initial;
+}
+.niceRisk {
+    background-color: #ffff00;
+    border-color: #ffff00;
+    user-select: none;
+    border-radius: .25rem;
+    cursor: initial;
+}
+.normalRisk {
+    background-color: #ffA500;
+    border-color: #ffA500;
+    user-select: none;
+    border-radius: .25rem;
+    cursor: initial;
+}
+.badRisk {
+    /*border-bottom: 2px dashed #ff0000;*/
+    cursor: pointer;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box;
+    margin-top: -2px;
+}
+.badRisk button {
+    height: 25px !important;
+    width: 100% !important;
+    padding: 0px !important;
+}
+.plusButton{
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    padding-bottom: 0px;
+    margin-left: -4px;
+    margin-right: -8px;
+    width: 16px;
+    cursor: pointer;
+}
+.colorGreen{
+    color: #28a745;
+    background: #28a745;
+}
+.colorRed{
+    background: red;
+    color: red;
+}

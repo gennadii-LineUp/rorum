@@ -1,0 +1,27 @@
+{
+    "rorumApp": {
+        "orders" : {
+            "home": {
+                "title": "Zlecenia",
+                "createLabel": "Dodaj zlecenie",
+                "createOrEditLabel": "Dodaj lub edytuj zlecenie"
+            },
+            "created": "Plan został wysłany do administratora",
+            "updated": "Status planu został zaktualizowany",
+            "deleted": "Plan został usunięty",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć zlecenie o id = {{ id }}?"
+            },
+            "detail": {
+                "title": "Zlecenia"
+            },
+            "name": "Nazwa",
+            "financingYear": "Rok budżetowy",
+            "startDate": "Zlecenie ważne od",
+            "firstReportingDate": "Pierwsza data sprawozdawcza",
+            "secondReportingDate": "Druga data sprawozdawcza",
+            "thirdReportingDate": "Trzecia data sprawozdawcza",
+            "finalDate": "Zlecenie ważne do"
+        }
+    }
+}

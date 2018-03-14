@@ -1,0 +1,26 @@
+{
+    "rorumApp": {
+        "filledRisks" : {
+            "home": {
+                "title": "Filled Risks",
+                "createLabel": "Dodaj Filled Risks",
+                "createOrEditLabel": "Dodaj lub edytuj: Filled Risks"
+            },
+            "created": "Utworzono nowy Filled Risks z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Filled Risks z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Filled Risks z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Filled Risks {{ id }}?"
+            },
+            "detail": {
+                "title": "Filled Risks"
+            },
+            "probability": "Prawdopodobieństwo",
+            "powerOfInfluence": "Siła oddziaływania",
+            "calculatedValue": "Poziom ryzyka",
+            "glossaryOfPurposes": "Glossary Of Purposes",
+            "risksPurposes": "Risks Purposes",
+            "glossaryOfRisks": "Glossary Of Risks"
+        }
+    }
+}

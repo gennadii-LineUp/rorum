@@ -1,0 +1,28 @@
+{
+    "rorumApp": {
+        "incident" : {
+            "home": {
+                "title": "Incidents",
+                "createLabel": "Dodaj Incident",
+                "createOrEditLabel": "Dodaj lub edytuj: Incident"
+            },
+            "created": "Utworzono nowy Incident z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Incident z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Incident z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Incident {{ id }}?"
+            },
+            "detail": {
+                "title": "Incident"
+            },
+            "description": "Description",
+            "descriptionOfReaction": "Description Of Reaction",
+            "descriptionOfPlannedActivities": "Description Of Planned Activities",
+            "isCritical": "Is Critical",
+            "setOfSentPurposes": "Set Of Sent Purposes",
+            "glossaryOfPurposes": "Glossary Of Purposes",
+            "filledRisks": "Filled Risks",
+            "filledCommercialRisks": "Filled Commercial Risks"
+        }
+    }
+}

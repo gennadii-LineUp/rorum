@@ -1,0 +1,11 @@
+{
+    "rorumApp": {
+        "FrequencyOfGatheringData" : {
+            "null": "",
+            "DAY": "DZIEŃ",
+            "WEEK": "TYDZIEŃ",
+            "MONTH": "MIESIĄC",
+            "YEAR": "ROK"
+        }
+    }
+}

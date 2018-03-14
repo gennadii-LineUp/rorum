@@ -1,0 +1,5 @@
+id;min;max;name;color
+1;1;19;Good risk;Green
+2;20;39;Nice risk;Yellow
+3;40;59;Normal risk;Orange
+4;60;100;Bad risk;Red

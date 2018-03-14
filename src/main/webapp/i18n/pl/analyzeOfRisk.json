@@ -1,0 +1,10 @@
+{
+    "rorumApp": {
+        "AnalyzeOfRisk" : {
+            "null": "",
+            "COSTS_MORE_BENEFITS": "COSTS_MORE_BENEFITS",
+            "COSTS_ARE_EQUALED_TO_BENEFITS": "COSTS_ARE_EQUALED_TO_BENEFITS",
+            "COSTS_LESS_BENEFITS": "COSTS_LESS_BENEFITS"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+
+<div *ngIf="glossaryOfMeasureUnitsDTO">
+    <h2><span jhiTranslate="rorumApp.glossaryOfMeasureUnits.detail.title">Glossary Of Measure Units</span> {{glossaryOfMeasureUnitsDTO.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="rorumApp.glossaryOfMeasureUnits.name">Name</span></dt>
+        <dd>
+            <span>{{glossaryOfMeasureUnitsDTO.name}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfMeasureUnits.unitsOfMeasurement">Units Of Measurement</span></dt>
+        <dd>
+            <span jhiTranslate="{{'rorumApp.UnitsOfMeasurement.' + glossaryOfMeasureUnitsDTO.unitsOfMeasurement}}">{{glossaryOfMeasureUnitsDTO.unitsOfMeasurement}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfMeasureUnits.frequencyOfGatheringData">Frequency Of Gathering Data</span></dt>
+        <dd>
+            <span jhiTranslate="{{'rorumApp.FrequencyOfGatheringData.' + glossaryOfMeasureUnitsDTO.frequencyOfGatheringData}}">{{glossaryOfMeasureUnitsDTO.frequencyOfGatheringData}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfMeasureUnits.isChecked">Is Checked</span></dt>
+        <dd>
+            <span>{{glossaryOfMeasureUnitsDTO.isChecked}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfMeasureUnits.glossaryOfPurposes">Glossary Of Purposes</span></dt>
+        <dd>
+            <div *ngIf="glossaryOfMeasureUnitsDTO.glossaryOfRisksService">
+                <a [routerLink]="['/glossary-of-purposes', glossaryOfMeasureUnitsDTO.glossaryOfRisksService?.id]">{{glossaryOfMeasureUnitsDTO.glossaryOfRisksService?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfMeasureUnits.organisationStructure">Organisation Structure</span></dt>
+        <dd>
+            <div *ngIf="glossaryOfMeasureUnitsDTO.organisationStructure">
+                <a [routerLink]="['/organisation-structure', glossaryOfMeasureUnitsDTO.organisationStructure?.id]">{{glossaryOfMeasureUnitsDTO.organisationStructure?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'glossary-of-measure-units/'+ glossaryOfMeasureUnitsDTO.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

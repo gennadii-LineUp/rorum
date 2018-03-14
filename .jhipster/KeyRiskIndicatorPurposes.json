@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "setOfSentPurposes",
+            "otherEntityName": "setOfSentPurposes",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "glossaryOfKeyRiskIndicators",
+            "otherEntityName": "glossaryOfKeyRiskIndicators",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [],
+    "changelogDate": "20180220101126",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "key_risk_indicator_purposes",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

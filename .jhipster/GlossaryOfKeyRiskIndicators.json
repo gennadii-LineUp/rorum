@@ -1,0 +1,33 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "glossaryOfPurposes",
+            "otherEntityName": "glossaryOfPurposes",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "importantTo",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20180220091404",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "glossary_of_kri",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

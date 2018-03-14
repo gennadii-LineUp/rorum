@@ -1,0 +1,85 @@
+<div>
+    <h2>
+
+        <span jhiTranslate="rorumApp.glossaryOfProcesses.home.title">Glossary Of Processes</span>
+        <button *jhiHasAnyAuthority="'ROLE_EDYCJA_SLOWNIKA_PROCESOW'"
+                class="btn btn-primary float-right jh-create-entity create-glossary-of-processes"
+                [routerLink]="['/', { outlets: { popup: ['glossary-of-processes-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span jhiTranslate="rorumApp.glossaryOfProcesses.home.createLabel">
+
+            Create new Glossary Of Processes
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+
+    <div class="table-responsive" *ngIf="glossaryOfProcesses">
+        <table *jhiHasAnyAuthority="'ROLE_PRZEGLADANIE_SLOWNIKA_PROCESOW'" class="table table-striped table-hover">
+            <thead>
+
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="transition.bind(this)">
+                <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <span class="fa fa-sort"></span></th>
+                <th jhiSortBy="name"><span jhiTranslate="rorumApp.glossaryOfProcesses.name">Name</span> <span
+                    class="fa fa-sort"></span></th>
+                <th jhiSortBy="importantTo"><span
+                    jhiTranslate="rorumApp.glossaryOfProcesses.importantTo">Important To</span> <span
+                    class="fa fa-sort"></span></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr *ngFor="let glossaryOfProcesses of glossaryOfProcesses ;trackBy: trackId"
+                [routerLink]="['../glossary-of-processes', glossaryOfProcesses.id ]">
+                <td><a
+                    [routerLink]="['../glossary-of-processes', glossaryOfProcesses.id ]">{{glossaryOfProcesses.id}}</a>
+                </td>
+                <td>{{glossaryOfProcesses.name}}</td>
+                <td>{{glossaryOfProcesses.importantTo | date:'mediumDate'}}</td>
+                <td class="text-right">
+                    <div *jhiHasAnyAuthority="'ROLE_EDYCJA_SLOWNIKA_PROCESOW'"
+                         class="btn-group flex-btn-group-container">
+                        <button type="submit"
+
+                                [routerLink]="['../glossary-of-processes', glossaryOfProcesses.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+
+                                [routerLink]="['/', { outlets: { popup: 'glossary-of-processes/'+ glossaryOfProcesses.id + '/edit'} }]"
+                                replaceUrl="true"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+
+                                [routerLink]="['/', { outlets: { popup: 'glossary-of-processes/'+ glossaryOfProcesses.id + '/delete'} }]"
+                                replaceUrl="true"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div *ngIf="glossaryOfProcesses && glossaryOfProcesses.length">
+        <div class="row justify-content-center">
+            <jhi-item-count [page]="page" [total]="queryCount" [maxSize]="5"
+                            [itemsPerPage]="itemsPerPage"></jhi-item-count>
+        </div>
+        <div class="row justify-content-center">
+            <ngb-pagination [collectionSize]="totalItems" [maxSize]="5" [pageSize]="itemsPerPage" [(page)]="page"
+                            (pageChange)="loadPage(page)"></ngb-pagination>
+        </div>
+    </div>
+</div>

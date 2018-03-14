@@ -1,0 +1,11 @@
+{
+    "rorumApp": {
+        "SetOfSentPurpose" : {
+            "null": "",
+            "CONFIRMED": "Potwierdzony",
+            "REJECT": "Odrzucony",
+            "UNCHECKED": "Niezatwierdzony",
+            "SAVED": "Zapisany"
+        }
+    }
+}

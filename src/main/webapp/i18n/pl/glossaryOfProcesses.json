@@ -1,0 +1,24 @@
+{
+    "rorumApp": {
+        "glossaryOfProcesses" : {
+            "home": {
+                "title": "Słownik procesów",
+                "createLabel": "Dodaj proces",
+                "createOrEditLabel": "Dodaj lub edytuj proces"
+            },
+            "created": "Utworzono nowy proces z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono proces z identyfikatorem {{ param }}",
+            "deleted": "Usunięto proces z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć proces o id = {{ id }}?"
+            },
+            "detail": {
+                "title": "Słownik procesów"
+            },
+            "name": "Nazwa",
+            "importantTo": "Ważny do",
+            "organisationStructure": "Jednostka w strukturze organizacyjnej",
+            "glossaryOfPurposes": "Słownik celów id"
+        }
+    }
+}

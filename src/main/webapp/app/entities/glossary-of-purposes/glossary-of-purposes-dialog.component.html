@@ -1,0 +1,79 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myGlossaryOfPurposesLabel" jhiTranslate="rorumApp.glossaryOfPurposes.home.createOrEditLabel">Create or edit a Glossary Of Purposes</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!glossaryOfRisksService.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="glossaryOfRisksService.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfPurposes.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                [(ngModel)]="glossaryOfRisksService.name" required />
+            <div [hidden]="!(editForm.controls.name?.dirty && editForm.controls.name?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.name?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfPurposes.parentId" for="field_parentId">Parent Id</label>
+            <input type="number" class="form-control" name="parentId" id="field_parentId"
+                [(ngModel)]="glossaryOfRisksService.parentId"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfPurposes.sumUp" for="field_sumUp">Sum Up</label>
+            <input type="checkbox" class="form-control" name="sumUp" id="field_sumUp"
+                [(ngModel)]="glossaryOfRisksService.sumUp"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfPurposes.assignmentToCell" for="field_assignmentToCell">Assignment To Cell</label>
+            <select class="form-control" name="assignmentToCell" [(ngModel)]="glossaryOfRisksService.assignmentToCell" id="field_assignmentToCell"  required>
+                <option baseValue="JO">{{'rorumApp.AssignmentToCell.JO' | translate}}</option>
+                <option baseValue="UD">{{'rorumApp.AssignmentToCell.UD' | translate}}</option>
+                <option baseValue="BIURO">{{'rorumApp.AssignmentToCell.BIURO' | translate}}</option>
+            </select>
+            <div [hidden]="!(editForm.controls.assignmentToCell?.dirty && editForm.controls.assignmentToCell?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.assignmentToCell?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfPurposes.isChecked" for="field_isChecked">Is Checked</label>
+            <input type="checkbox" class="form-control" name="isChecked" id="field_isChecked"
+                [(ngModel)]="glossaryOfRisksService.isChecked"  />
+        </div>
+
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfPurposes.glossaryOfProcesses" for="field_glossaryOfProcesses">Glossary Of Processes</label>
+            <select class="form-control" id="field_glossaryOfProcesses" name="glossaryOfProcesses" [(ngModel)]="glossaryOfRisksService.glossaryOfProcesses" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="glossaryOfProcessesOption.id === glossaryOfRisksService.glossaryOfProcesses?.id ? glossaryOfRisksService.glossaryOfProcesses : glossaryOfProcessesOption" *ngFor="let glossaryOfProcessesOption of glossaryofprocesses; trackBy: trackGlossaryOfProcessesById">{{glossaryOfProcessesOption.id}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfPurposes.organisationStructure" for="field_organisationStructure">Organisation Structure</label>
+            <select class="form-control" id="field_organisationStructure" name="organisationStructure" [(ngModel)]="glossaryOfRisksService.organisationStructure" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="organisationStructureOption.id === glossaryOfRisksService.organisationStructure?.id ? glossaryOfRisksService.organisationStructure : organisationStructureOption" *ngFor="let organisationStructureOption of organisationstructures; trackBy: trackOrganisationStructureById">{{organisationStructureOption.id}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

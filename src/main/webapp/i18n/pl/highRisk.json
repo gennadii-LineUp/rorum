@@ -1,0 +1,34 @@
+{
+    "rorumApp": {
+        "highRisk" : {
+            "home": {
+                "title": "High Risks",
+                "createLabel": "Dodaj High Risk",
+                "createOrEditLabel": "Dodaj lub edytuj: High Risk"
+            },
+            "created": "Utworzono nowy High Risk z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono High Risk z identyfikatorem {{ param }}",
+            "deleted": "Usunięto High Risk z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć High Risk {{ id }}?"
+            },
+            "detail": {
+                "title": "High Risk"
+            },
+            "rejectToAccomplishPurpose": "Reject To Accomplish Purpose",
+            "postponePurposeAccomplishment": "Postpone Purpose Accomplishment",
+            "restrictRangeOfPurposeAccomplishment": "Restrict Range Of Purpose Accomplishment",
+            "costOfListedPossibilities": "Cost Of Listed Possibilities",
+            "projectedTermDeployStart": "Projected Term Deploy Start",
+            "projectedTermDeployFinish": "Projected Term Deploy Finish",
+            "probabilityToReach": "Probability To Reach",
+            "powerOfInfluenceToReach": "Power Of Influence To Reach",
+            "analyze": "Analyze",
+            "substantiationForAnalyze": "Substantiation For Analyze",
+            "commentToHighRiskProcedure": "Comment To High Risk Procedure",
+            "filledRisks": "Filled Risks",
+            "decisionForRisk": "Decision For Risk",
+            "possibilitiesToImproveRisk": "Possibilities To Improve Risk"
+        }
+    }
+}

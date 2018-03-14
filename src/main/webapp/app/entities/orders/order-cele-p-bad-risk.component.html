@@ -1,0 +1,426 @@
+<div style="white-space: normal">
+    <!--*ngIf="_dataIncome && (_dataIncome.length > 0)"-->
+    <!--<span style="font-weight: bold">{{title}}</span>-->
+    <!--<button type="button" class="close" aria-label="Close" (click)="closePopup()"-->
+    <!--style="cursor: pointer; float: right; padding: 0 8px">-->
+    <!--<span aria-hidden="true">&times;</span>-->
+    <!--</button>-->
+
+    <!--<div class="container-fluid">-->
+    <div class="containter">
+        <div class="row justify-content-md-center text-center my-4">
+            <div class="col col-lg-5 border border-weight" *ngIf="riskOwner.firstName">
+                <p style="font-weight: bold">WŁAŚCICIEL RYZYKA:</p>
+
+                <div *ngIf="riskOwner.firstName" class="text-center">{{riskOwner.firstName}} {{riskOwner.lastName}}
+                </div>
+            </div>
+
+            <div class="col col-lg-5 border" *ngIf="riskOwner.firstName">
+                <p style="font-weight: bold">KOMÓRKA MERYTORYCZNA:</p>
+                <div *ngIf="riskOwner.firstName" class="text-center">{{riskOrg.name}}</div>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center text-center my-4">
+            <div class="col col-lg-4 border">
+                <p class="bold-style">Opis ryzyka</p>
+                <div *ngIf="_dataIncomeR.glossaryOfRisksDTO.name">{{_dataIncomeR.glossaryOfRisksDTO.name}}</div>
+                <div *ngIf="_dataIncomeCR.glossaryOfCommercialRisksDTO.name">
+                    {{_dataIncomeCR.glossaryOfCommercialRisksDTO.name}}
+                </div>
+            </div>
+            <div class="col col-lg-4 border">
+                <div class="row">
+                    <div class="col">
+                        <span class="bold-style"
+                              jhiTranslate="rorumApp.glossaryOfPurposes.probability">Probability:</span>
+                    </div>
+                </div>
+                <div class="row text-center my-2">
+                    <span class="w-100" *ngIf="_dataIncomeR.probability">{{_dataIncomeR.probability | probabilityValue}}</span>
+                    <span class="w-100" *ngIf="_dataIncomeCR.probability">{{_dataIncomeCR.probability | probabilityValue}}</span>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <span class="bold-style">Uzasadnienie:</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div *ngFor="let probability of probabilities">
+                            <div class="truncate-text" (click)="textVisibility=!textVisibility"
+                                 [ngClass]="textVisibility ? 'truncate-text text-opened' : 'truncate-text'">-
+                                {{probability.name}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col col-lg-4 border">
+                <div class="row">
+                    <div class="col">
+                        <span class="bold-style" jhiTranslate="rorumApp.glossaryOfPurposes.powerOfInfluence">Power of influence</span>:
+                    </div>
+                </div>
+                <div class="row text-center my-2">
+                    <span class="w-100" *ngIf="_dataIncomeR.powerOfInfluence">{{_dataIncomeR.powerOfInfluence | influenceValue}}</span>
+                    <span class="w-100" *ngIf="_dataIncomeCR.powerOfInfluence">{{_dataIncomeCR.powerOfInfluence | influenceValue}}</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <span class="bold-style">Uzasadnienie:</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div *ngFor="let power of powerOfInfluences">
+                            <div class="truncate-text" (click)="textVisibility=!textVisibility"
+                                 [ngClass]="textVisibility ? 'truncate-text text-opened' : 'truncate-text'">-
+                                {{power.name}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div *ngIf="purpose.length" class="row border text-center my-4">
+            <div class="col col-lg-10">
+                <h5>Cel:</h5>
+                <div class="text-left">
+                    <div>{{purpose}}</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <form #possibilitiesForm="ngForm" novalidate enctype="multipart/form-data">
+        <div class="text-left my-4 border">
+            <table class="table table-sm">
+                <thead>
+                <tr>
+                    <th class="text-center" style="max-width: 80%">CZY MOŻNA:</th>
+                    <th *ngIf="!_disadledMode" class="text-center" style="width: 10%">TAK</th>
+                    <th *ngIf="!_disadledMode" class="text-center" style="width: 10%">NIE</th>
+                    <th *ngIf="_disadledMode" class="text-center" style="width: 20%">Odpowiedź</th>
+                </tr>
+                </thead>
+                <tbody>
+                <ng-container *ngIf="!_disadledMode">
+                    <tr>
+                        <td class="text-left">{{csy_mozns_q1}}</td>
+                        <td *ngFor="let radio_v of radio_values">
+                            <div class="text-center">
+                                <label for="reject_{{radio_v.value}}">
+                                    <input type="radio" name="'reject_radio'" id="reject_{{radio_v.value}}"
+                                           [(ngModel)]="highRisk.rejectToAccomplishPurpose" [value]="radio_v.value"
+                                           (change)="sendHighRisk()" required>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">{{csy_mozns_q2}}</td>
+                        <td *ngFor="let radio_v of radio_values">
+                            <div class="text-center">
+                                <label for="postpone_{{radio_v.value}}">
+                                    <input type="radio" name="'postpone_radio'" id="postpone_{{radio_v.value}}"
+                                           [(ngModel)]="highRisk.postponePurposeAccomplishment" [value]="radio_v.value"
+                                           (change)="sendHighRisk()" required>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">{{csy_mozns_q3}}</td>
+                        <td *ngFor="let radio_v of radio_values">
+                            <div class="text-center">
+                                <label for="restrict_{{radio_v.value}}">
+                                    <input type="radio" name="'restrict_radio'" id="restrict_{{radio_v.value}}"
+                                           [(ngModel)]="highRisk.restrictRangeOfPurposeAccomplishment"
+                                           [value]="radio_v.value"
+                                           (change)="sendHighRisk()" required>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                </ng-container>
+                <ng-container *ngIf="_disadledMode">
+                    <tr>
+                        <td class="text-left">{{csy_mozns_q1 | lowercase}}</td>
+                        <td class="text-center">
+                                    <span class="disadledMode-answer">
+                                        {{highRisk.rejectToAccomplishPurpose | trueFalseFrontView}}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">{{csy_mozns_q2 | lowercase}}</td>
+                        <td class="text-center">
+                                    <span class="disadledMode-answer">
+                                        {{highRisk.postponePurposeAccomplishment | trueFalseFrontView}}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">{{csy_mozns_q3 | lowercase}}</td>
+                        <td class="text-center">
+                                    <span class="disadledMode-answer">
+                                        {{highRisk.restrictRangeOfPurposeAccomplishment | trueFalseFrontView}}</span>
+                        </td>
+                    </tr>
+                </ng-container>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="border my-4">
+            <h5>DZIAŁANIA, JAKIE NALEŻY PODJĄĆ ABY SPROWADZIĆ RYZYKO DO POZIOMU AKCEPTOWALNEGO:</h5>
+            <div class="text-left">
+
+                <table class="table table-sm">
+                    <thead>
+                    <tr class="my-2">
+                        <th *ngIf="!_disadledMode" style="max-width: 70%">Opis</th>
+                        <th *ngIf="!_disadledMode" class="text-center" style="width: 30%">Opcje</th>
+                        <!--<th *ngIf="_disadledMode" style="width: 100%">Description</th>-->
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <ng-container *ngIf="!_disadledMode">
+                        <tr *ngFor="let possibility of highRisk.possibilitiesToImproveRisks; let i='index'" align="center">
+                            <td>
+                                        <textarea *ngIf="_i === i" class="text-left"
+                                                  [attr.id]="'possibility_'+i" [attr.name]="'possibility_'+i" cols="56"
+                                                  rows="1"
+                                                  [(ngModel)]="edit_possibility"
+                                                  [ngModelOptions]="{standalone: true}">
+                                        </textarea>
+                                <div *ngIf="!(_i === i)" class="text-left">{{possibility}}</div>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button *ngIf="_i === i" type="submit" class="btn btn-primary btn-sm mx-2 rounded"
+                                            (click)="savePossibility(i)">
+                                        <span class="fa fa-save"></span>
+                                        <span class="d-none d-md-inline" jhiTranslate="entity.action.save">Save</span>
+                                    </button>
+                                    <button *ngIf="!(_i === i)" type="button" class="btn btn-primary btn-sm mx-2 rounded"
+                                            (click)="editPossibility(i, possibility)">
+                                        <span class="fa fa-pencil"></span>
+                                        <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                                    </button>
+                                    <button type="button" class="btn btn-danger btn-sm mx-2 rounded"
+                                            (click)="removePossibility(i)">
+                                        <span class="fa fa-remove"></span>
+                                        <span class="d-none d-md-inline"
+                                              jhiTranslate="entity.action.delete">Delete</span>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">
+                                        <textarea name="newPossibility" class="w-75" rows="2"
+                                                  [(ngModel)]="newPossibility"></textarea>
+                            </td>
+                            <td align="center">
+                                <button type="button" class="btn btn-info btn-sm mx-5"
+                                        (click)="addPossibility()">
+                                    <span class="fa fa-plus"></span>
+                                    <span class="d-none d-md-inline" jhiTranslate="entity.action.add">Add</span>
+                                </button>
+                            </td>
+                        </tr>
+                    </ng-container>
+                    <ng-container *ngIf="_disadledMode">
+                        <tr *ngFor="let possibility of highRisk.possibilitiesToImproveRisks; let i='index'">
+                            <td>
+                                <div class="text-left disadledMode-answer">{{possibility}}</div>
+                            </td>
+                        </tr>
+                    </ng-container>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="container justify-content-md-center border my-4">
+            <div class="row">
+                <div class="col col-lg-4 m-2 ">
+                    <div class="text-left">
+                        <h5>SZACUNKOWY KOSZT PODJĘCIA DZIAŁAŃ:</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-4 m-2">
+                    <h5>PLANOWANY TERMIN WDROŻENIA DZIAŁAŃ:</h5>
+                </div>
+                <div class="col col-lg-3 m-2">
+                    <h5>DOCELOWY POZIOM:</h5>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col col-lg-4 m-2 justify-content-md-center" align="center">
+                    <input *ngIf="!_disadledMode" name="input_cost" placeholder=""
+                           type="number" style="height: 24px; width: 80px" required
+                           [disabled]="plansAreSendAndUnchecked"
+                           [(ngModel)]="highRisk.costOfListedPossibilities"
+                           (ngModelChange)="sendHighRisk($event)"
+                           onkeydown="return ( event.ctrlKey || event.altKey
+                                                                        || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false)
+                                                                        || (95<event.keyCode && event.keyCode<106)
+                                                                        || (event.keyCode===8) || (event.keyCode===9)
+                                                                        || (event.keyCode>34 && event.keyCode<40)
+                                                                        || (event.keyCode===46) || (event.keyCode===110))"/>
+                    <span *ngIf="_disadledMode"
+                          class="disadledMode-answer">{{highRisk.costOfListedPossibilities}}</span>
+                    <span>PLN brutto</span>
+                </div>
+                <div class="col col-lg-4 m-2" >
+                    <div align="center">
+                        <div style="display: inline-block !important">
+
+                            <div *ngIf="!_disadledMode" class="input-group"><span>od </span>
+                                <input id="startDate" type="text" name="startDate" class="ml-1"
+                                       ngbDatepicker #startDate="ngbDatepicker" style="height: 24px"
+                                       [(ngModel)]="_startDate"
+                                       (ngModelChange)="convertDateFromDatepicker('startDate')"
+                                       required/>
+                                <span>
+                                    <button type="button" class="btn btn-secondary" (click)="startDate.toggle()"
+                                            style="margin-top: -1px; padding-top: 0px; height: 24px; width: 24px; padding-left: 4px; background: dodgerblue; border-radius: 0px;">
+                                        <i class="fa fa-calendar" style="color: white;"></i>
+                                    </button>
+                                </span>
+                            </div>
+                                <span *ngIf="_disadledMode" class="disadledMode-answer">
+                                    <span>od </span>
+                                    {{highRisk.projectedTermDeployStart}}
+                                </span>
+                            <!--<span>, to </span>-->
+                        </div>
+                        <div style="display: inline-block !important; height: 24px">
+
+                            <div *ngIf="!_disadledMode" class="input-group">
+                                <span>, do </span>
+                                <input id="endDate" type="text" name="endDate" class="ml-1"
+                                       ngbDatepicker #endDate="ngbDatepicker" style="height: 24px"
+                                       [(ngModel)]="_endDate"
+                                       (ngModelChange)="convertDateFromDatepicker('endDate')"
+                                       required/>
+                                <span>
+                                    <button type="button" class="btn btn-secondary" (click)="endDate.toggle()"
+                                            style="margin-top: -1px; padding-top: 0; height: 24px; width: 24px; padding-left: 4px; background: dodgerblue; border-radius: 0px;">
+                                        <i class="fa fa-calendar" style="color: white;"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <span *ngIf="_disadledMode" class="disadledMode-answer">
+                                <span>, do </span>{{highRisk.projectedTermDeployFinish}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3  m-2" align="center">
+                        <span
+                            jhiTranslate="rorumApp.glossaryOfPurposes.strengthOfProbability">Stregth Of Probability</span>
+                    <span *ngIf="highRisk.probabilityToReach">
+                         - <span class="disadledMode-answer">{{highRisk.probabilityToReach}}</span>,
+                    </span>
+
+                    <span jhiTranslate="rorumApp.glossaryOfPurposes.strengthOfInfluence">Stregth Of Power Of Influence</span>
+                    <span *ngIf="highRisk.powerOfInfluenceToReach">
+                        - <span class="disadledMode-answer">{{highRisk.powerOfInfluenceToReach}}</span>.
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="border my-4">
+            <h5>ANALIZA:</h5>
+            <hr>
+            <div class="text-left">
+                <div *ngIf="!_disadledMode" class="container">
+                    <div class="row justify-content-md-center my-4">
+                        <div style="min-width: 190px;" class="col col-lg-6" >
+                            <select class="w-50 m-5"
+                                    name="select_costs"
+                                    id="select_costs"
+                                    [(ngModel)]="highRisk.analyze"
+                                    (ngModelChange)="sendHighRisk()"
+                                    [disabled]="plansAreSendAndUnchecked" required>
+                                <option *ngFor="let cost of select_costs_values" [ngValue]="cost.value">
+                                    {{cost.display}}
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-6">
+                            <p><b>Uzasadnienie:</b></p>
+                            <textarea class="text-left w-100" required
+                                      id="substantiation" name="substantiation" rows="3"
+                                      [(ngModel)]="highRisk.substantiationForAnalyze"
+                                      [ngModelOptions]="{standalone: true}"
+                                      (ngModelChange)="sendHighRisk()">
+                            </textarea>
+                            <span *ngIf="_disadledMode" class="disadledMode-answer">
+                                    {{highRisk.substantiationForAnalyze}}</span>
+                        </div>
+                    </div>
+                    <!--<tr>-->
+                    <!--<td style="min-width: 190px">-->
+                    <!--<span>UZASADNIENIE:</span>-->
+                    <!--</td>-->
+                    <!--</tr>-->
+                </div>
+                <div *ngIf="_disadledMode" class="row justify-content-md-center">
+                    <div class="col-lg-6">
+                        <span *ngIf="_disadledMode" class="disadledMode-answer">{{highRisk.analyze | highriskAnalizaView}};</span>
+                    </div>
+                    <div class="col-lg-6">
+                        Uzasadnienie:
+                        <span *ngIf="_disadledMode"
+                              class="disadledMode-answer">{{highRisk.substantiationForAnalyze}}.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="border my-4 col col-lg-6">
+                <h5>DECYZJA:</h5>
+                <div class="text-left">
+                    <select *ngIf="!_disadledMode"
+                            name="select_decision" style="width: 100%; height: 24px"
+                            id="select_decision"
+                            [(ngModel)]="highRisk.decisionForRiskId"
+                            (ngModelChange)="sendHighRisk()"
+                            [disabled]="plansAreSendAndUnchecked" required>
+                        <option *ngFor="let decision of decisions" [ngValue]="decision.id">
+                            {{decision.name}}
+                        </option>
+                    </select>
+                    <span *ngIf="_disadledMode" class="disadledMode-answer">{{decision_selected}}</span>.
+                </div>
+            </div>
+            <div class="border my-4 col col-lg-6">
+                <h5>UWAGI:</h5>
+                <div class="text-left">
+                    <textarea *ngIf="!_disadledMode"
+                              class="text-left w-100" required
+                              id="comment" name="comment" rows="3"
+                              [(ngModel)]="highRisk.commentToHighRiskProcedure"
+                              (ngModelChange)="sendHighRisk()"
+                              [ngModelOptions]="{standalone: true}">
+                    </textarea>
+                    <span *ngIf="_disadledMode"
+                          class="disadledMode-answer">{{highRisk.commentToHighRiskProcedure}}</span>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--</div>-->
+</div>

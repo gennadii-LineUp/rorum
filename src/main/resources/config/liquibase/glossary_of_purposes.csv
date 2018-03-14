@@ -1,0 +1,82 @@
+﻿id;name;parent_id;sum_up;assignment_to_cell;glossary_of_processes_id;is_checked;organisation_structure_id;user_id
+1;Strategiczny - ODPOWIEDZIALNA WSPÓLNOTA;null;null;null;null;true;null;14
+2;Strategiczny - WYGODNA LOKALNOŚĆ;null;null;null;null;true;null;14
+3;Strategiczny - FUNKCJONALNA PRZESTRZEŃ;null;null;null;null;true;null;14
+4;Strategiczny - INNOWACYJNE ŚRODOWISKO;null;null;null;null;true;null;14
+5;Operacyjny - Dbamy o siebie nawzajem;1;TRUE;null;null;true;null;14
+6;Operacyjny - Wspólnie decydujemy o naszym mieście;1;TRUE;null;null;true;null;14
+7;Operacyjny - Mamy dostęp do szerokiej oferty mieszkań;2;TRUE;null;null;true;null;14
+8;Operacyjny - Aktywnie spędzamy czas wolny blisko domu;2;TRUE;null;null;true;null;14
+9;Operacyjny - Korzystamy z usług blisko domu;2;TRUE;null;null;true;null;14
+10;Operacyjny - Tworzymy warunki przyjazne biznesowi;2;TRUE;null;null;true;null;14
+11;Operacyjny - Korzystamy z atrakcyjnej przestrzeni publicznej;3;TRUE;null;null;true;null;14
+12;Operacyjny -  Żyjemy w czystym środowisku przyrodniczym;3;TRUE;null;null;true;null;14
+13;Operacyjny -  Korzystamy z przyjaznego systemu transportowego;3;TRUE;null;null;true;null;14
+14;Operacyjny - Rozwijamy nasz twórczy potencjał;4;TRUE;null;null;true;null;14
+15;Operacyjny - Generujemy innowacje;4;TRUE;null;null;true;null;14
+16;Operacyjny - Przyciągamy talenty i liderów;4;TRUE;null;null;true;null;14
+17;Operacyjny - Inspirujemy świat;4;TRUE;null;null;true;null;14
+18;Realizacja potrzeb mieszkańców poprzez zapewnienie rejestracji urodzenia oraz sporządzenie aktu urodzenia;5;TRUE;BIURO;1;true;null;14
+19;Realizacja potrzeb mieszkańców poprzez zapewnienie rejestracji małżeństwa oraz sporządzenie aktu małżeństwa;5;TRUE;BIURO;1;true;null;14
+20;Realizacja potrzeb mieszkańców poprzez zapewnienie rejestracji zgonu oraz sporządzenie aktu zgonu;5;TRUE;BIURO;1;true;null;14
+21;Wydawanie odpisów i zaswiadczeń oraz wnioski z innych USC na terenie kraju o migrację aktów stanu cywilnego ;5;TRUE;BIURO;1;true;null;14
+22;Usuwanie niezgodności w rejestrze PESEL;5;TRUE;BIURO;1;true;null;14
+23;Realizacja potrzeb mieszkańców poprzez udzielanie ślubów poza lokalem USC;5;TRUE;BIURO;1;true;null;14
+24;Realizacja potrzeb mieszkańców poprzez przeniesienie zagranicznego aktów stanu cywilnego do rejestru stanu cywilnego;5;TRUE;BIURO;1;true;null;14
+25;Realizacja potrzeb mieszkańców poprzez odtworzenie aktu stanu cywilnego;5;TRUE;BIURO;1;true;null;14
+26;Prowadzenie spraw z zakresu  zmiany imienia i/lub nazwiska;5;TRUE;BIURO;1;true;null;14
+27;Realizacja potrzeb mieszkańców poprzez udostępnianie informacji w trybie ustawy o dostępie do informacji o środowisku oraz informacji publicznej;6;TRUE;BIURO;9;true;null;14
+28;Ocena stanu akustycznego środowiska poprzez wykonywanie pomiarów hałasu;6;TRUE;BIURO;9;true;null;14
+29;Zmniejszenie negatywnego oddziaływania hałasu na środowisko poprzez wydawanie opinii w ramach wewnętrznych procedur;6;TRUE;BIURO;9;true;null;14
+30;Ograniczenie emisji hałasu do środowiska poprzez stworzenie Programu ochrony środowiska przed hałasem;6;TRUE;BIURO;9;true;null;14
+31;Poprawa jakości środowiska przyrodniczego m.st. Warszawy poprzez sporządzenie Programu Ochrony Środowiska;6;TRUE;BIURO;9;true;null;14
+32;Obsługa klienta Urzędu poprzez rozpatrywanie spraw z zakresu gospodarki odpadami;6;TRUE;BIURO;9;true;null;14
+33;Zmniejszenie negatywnego oddziaływania gospodarki odpadami na środowisko poprzez wydawanie opinii w ramach wewnętrznych procedur;6;TRUE;BIURO;9;true;null;14
+34;Obsługa klienta Urzędu poprzez rozpatrywanie spraw z zakresu gospodarowania nieczystościami ciekłymi;6;TRUE;BIURO;9;true;null;14
+35;Realizacja obowiązków ustawowych poprzez prowadzenie obserwacji terenów zagrożonych ruchami masowymi ziemi oraz terenów, na których występują te ruchy, a także rejestru zawierającego informację o tych terenach.;6;TRUE;BIURO;9;true;null;14
+36;Obsługa klienta Urzędu poprzez rozpatrywanie spraw z zakresu gospodarki wodnej i geologii;6;TRUE;BIURO;9;true;null;14
+37;Realizacja obowiązku ustawowego poprzez dokonywanie przeglądów pozwoleń wodnoprawnych;6;TRUE;BIURO;9;true;null;14
+38;Obsługa klienta Urzędu poprzez rozpatrywanie spraw dotyczących decyzji o  środowiskowych uwarunkowaniach, z zakresu ochrony powietrza oraz pozwoleń zintegrowanych;6;TRUE;BIURO;9;true;null;14
+39;Poprawa jakości powietrza poprzez wydawanie opinii w ramach wewnętrznych procedur;6;TRUE;BIURO;9;true;null;14
+40;Zachowanie obiektów dziedzictwa przyrodniczego poprzez dbałość o drzewa - pomniki przyrody;6;TRUE;BIURO;9;true;null;14
+41;Prowadzenie racjonalnej gospodarki leśnej poprzez nadzór nad jednostką organizacyjną m.st. Warszawy - Lasy Miejskie Warszawa;6;TRUE;BIURO;9;true;null;14
+42;Ochrona środowiska poprzez dofinansowanie usuwania i unieszkodliwiania wyrobów/odpadów zawierających azbest ;6;TRUE;BIURO;9;true;null;14
+43;Ochrona środowiska poprzez dofinansowanie likwidacji zbiorników bezodpływowych, w związku z budową przyłączy kanalizacyjnych;6;TRUE;BIURO;9;true;null;14
+44;Ochrona środowiska poprzez dofinansowanie inwestycji związanych z wykorzystaniem lokalnych źródeł energii odnawialnej ;6;TRUE;BIURO;9;true;null;14
+45;Bezpośrednia obsługa mieszkańców w zakresie w zakresie rybactwa śródlądowego oraz rejestracji zwierząt egzotycznych;6;TRUE;BIURO;9;true;null;14
+46;Kontrola wydatkowania środków publicznych poprzez ocenę prawidłowości wydatkowania udzielonych dotacji w roku poprzednim;6;TRUE;BIURO;9;true;null;14
+47;"Realizacja ""Programu współpracy z organizacjami pozarządowymi"" poprzez przyznawanie dotacji";6;TRUE;BIURO;9;true;null;14
+48;Zapobieganie bezdomności zwierząt poprzez akcję czipowania;6;TRUE;BIURO;9;true;null;14
+49;Dokarmianie kotów wolno żyjących poprzez zakup karmy;6;TRUE;BIURO;9;true;null;14
+50;Nadzór nad jednostką Schronisko dla Bezdomnych Zwierząt;6;TRUE;BIURO;9;true;null;14
+51;Nadzór nad jednostką Miejski Ogród Zoologiczny;6;TRUE;BIURO;9;true;null;14
+52;Zapewnienie pomocy zwierzętom z interwencji zgłaszanych do Straży Miejskiej poprzez zapewnienie całodobowej opieki weterynaryjnej i alpinistycznej;6;TRUE;BIURO;9;true;null;14
+53;"Realizacja obowiązku ustawowego poprzez przygotowanie projektu ""Programu opieki nad zwierzętami bezdomnymi""";6;TRUE;BIURO;9;true;null;14
+54;Realizacja potrzeb mieszkańców poprzez rozpatrzenie wniosków o wydanie zezwolenia na usunięcie drzew i krzewów;6;TRUE;URZADDZIELNICY;9;true;null;14
+55;Realizacja potrzeb mieszkańców poprzez wyrażanie zgody właścicielskiej na usunięcie drzew i krzewów;6;TRUE;URZADDZIELNICY;9;true;null;14
+56;Realizacja potrzeb mieszkańców poprzez wydawanie decyzji o środowiskowych uwarunkowaniach;6;TRUE;URZADDZIELNICY;9;true;null;14
+57;Ochrona zwierząt poprzez wydawanie decyzji o odebraniu zwierząt ich właścicielowi;6;TRUE;URZADDZIELNICY;9;true;null;14
+58;Realizacja potrzeb mieszkańców poprzez wydawanie decyzji zezwalających na hodowlę i utrzymanie psów;6;TRUE;URZADDZIELNICY;9;true;null;14
+59;Ochrona środowiska i mienia mieszkańców poprzez wydawanie decyzji o przywróceniu stanu poprzedniego na gruncie w zakresie stosunków wodnych;6;TRUE;URZADDZIELNICY;9;true;null;14
+60;Upowszechnianie wiedzy o środowisku  poprzez organizację akcji ekologicznych;6;TRUE;URZADDZIELNICY;9;true;null;14
+61;Realizacja inwestycji środowiskowej poprzez budowę/ przebudowę/ projekt X (np. budki dla jerzyków, ścieżki, skweru, parku);6;TRUE;URZADDZIELNICY;9;true;null;14
+62;Utrzymanie porządku i czystości poprzez oczyszczanie terenów  i usuwanie nielegalnych wysypisk śmieci na terenach administrowanych przez m.st. Warszawę;6;TRUE;URZADDZIELNICY;9;true;null;14
+63;ochrona środowiska poprzez wydawanie decyzji na usunięcie odpadów z miejsc nieprzeznaczonych do ich składowania;6;TRUE;URZADDZIELNICY;9;true;null;14
+64;Obsługa deklaracji dotyczących wysokości opłaty za  gospodarowanie odpadami komunalnymi;6;TRUE;URZADDZIELNICY;9;true;null;14
+65;Ochrona środowiska poprzez badanie czystości wód w rowach i zbiornikach wodnych;6;TRUE;URZADDZIELNICY;9;true;null;14
+66;Zapewnienie funkcjonowania i utrzymania urządzeń i zbiorników wodnych poprzez bieżącą konserwację;6;TRUE;URZADDZIELNICY;9;true;null;14
+67;Ochrona środowiska poprzez przyjmowanie zgłoszeń instalacji niewymagających pozwolenia;6;TRUE;URZADDZIELNICY;9;true;null;14
+68;Realizacja potrzeb mieszkańców poprzez tworzenie i utrzymanie placów zabaw dla dzieci;6;TRUE;URZADDZIELNICY;9;true;null;14
+69;Zapewnienie mieszkańcom możliwości wypoczynku i rekreacji poprzez tworzenie i utrzymanie siłowni plenerowych;6;TRUE;URZADDZIELNICY;9;true;null;14
+70;Zapewnienie mieszkańcom możliwości wypoczynku i rekreacji poprzez utrzymanie parków i skwerów;6;TRUE;URZADDZIELNICY;9;true;null;14
+71;Zapewnienie bezpieczeństwa, w tym sanitarnego, mieszkańcom poprzez deratyzację, usuwanie gniazd owadów i usuwanie padłych zwierząt;6;TRUE;URZADDZIELNICY;9;true;null;14
+72;Utrzymanie czystości i porządku na drogach poprzez oczyszczanie dróg gminnych oraz usuwanie odpadów z pasów drogowych i chodników dróg gminnych;6;TRUE;URZADDZIELNICY;9;true;null;14
+73;Utrzymanie czystości i porządku na drogach poprzez odśnieżanie dróg gminnych oraz usuwanie odpadów z pasów drogowych i chodników dróg gminnych;6;TRUE;URZADDZIELNICY;9;true;null;14
+74;Utrzymanie czystości i porządku poprzez instalację nowych i utrzymanie istniejących koszy ulicznych;6;TRUE;URZADDZIELNICY;9;true;null;14
+75;Realizacja potrzeb mieszkańców poprzez zapewnienie dostępu do szaletów miejskich i kabin sanitarnych;6;TRUE;URZADDZIELNICY;9;true;null;14
+76;Realizacja potrzeb mieszkańców poprzez utrzymanie studni oligoceńskich i czwartorzędowych;6;TRUE;URZADDZIELNICY;9;true;null;14
+77;Zaspokojenie potrzeb mieszkańców poprzez utrzymanie czystości i porządku na nieurządzonych miejskich terenach zieleni;6;TRUE;URZADDZIELNICY;9;true;null;14
+78;Zapewnienie równowagi ekologicznej poprzez opiekę nad zwierzętami wolno żyjącymi;6;TRUE;URZADDZIELNICY;9;true;null;14
+79;Realizacja potrzeb mieskzańców poprzez utrzymanie zieleni osiedlowej;6;TRUE;URZADDZIELNICY;9;true;null;14
+80;Ochrona środowiska poprzez wydawanie decyzji ustalających dopuszczalny poziom hałasu;6;TRUE;URZADDZIELNICY;9;true;null;14
+81;Wydawanie opinii w ramach inwestycji liniowych;6;TRUE;URZADDZIELNICY;9;true;null;14

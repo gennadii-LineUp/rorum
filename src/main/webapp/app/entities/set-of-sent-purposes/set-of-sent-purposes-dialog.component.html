@@ -1,0 +1,88 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="mySetOfSentPurposesLabel" jhiTranslate="rorumApp.setOfSentPurposes.popupNotation.title">Create or edit a Set Of Sent Purposes</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <!--<div class="form-group" [hidden]="!setOfSentPurposes.id">-->
+            <!--<label for="id" jhiTranslate="global.field.id">ID</label>-->
+            <!--<input type="text" class="form-control" id="id" name="id"-->
+                   <!--[(ngModel)]="setOfSentPurposes.id" readonly />-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+            <!--<label class="form-control-label" jhiTranslate="rorumApp.setOfSentPurposes.statusOfSending" for="field_statusOfSending">Status Of Sending</label>-->
+            <!--<select class="form-control" name="statusOfSending" [(ngModel)]="setOfSentPurposes.statusOfSending" id="field_statusOfSending" >-->
+                <!--<option value="CONFIRMED">{{'rorumApp.StatusOfSending.CONFIRMED' | translate}}</option>-->
+                <!--<option value="REJECT">{{'rorumApp.StatusOfSending.REJECT' | translate}}</option>-->
+                <!--<option value="UNCHECKED">{{'rorumApp.StatusOfSending.UNCHECKED' | translate}}</option>-->
+                <!--<option value="SAVED">{{'rorumApp.StatusOfSending.SAVED' | translate}}</option>-->
+            <!--</select>-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+            <!--<label class="form-control-label" jhiTranslate="rorumApp.setOfSentPurposes.isLastVersion" for="field_isLastVersion">Is Last Version</label>-->
+            <!--<input type="checkbox" class="form-control" name="isLastVersion" id="field_isLastVersion"-->
+                <!--[(ngModel)]="setOfSentPurposes.isLastVersion"  />-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+            <!--<label class="form-control-label" jhiTranslate="rorumApp.setOfSentPurposes.creationDate" for="field_creationDate">Creation Date</label>-->
+            <!--<div class="input-group">-->
+                <!--<input id="field_creationDate" type="text" class="form-control" name="creationDate" ngbDatepicker  #creationDateDp="ngbDatepicker" [(ngModel)]="setOfSentPurposes.creationDate"-->
+                <!--/>-->
+                <!--<span class="input-group-btn">-->
+                    <!--<button type="button" class="btn btn-secondary" (click)="creationDateDp.toggle()"><i class="fa fa-calendar"></i></button>-->
+                <!--</span>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.setOfSentPurposes.notation" for="field_notation"></label>
+            <input type="text" class="form-control" name="notation" id="field_notation"
+                   (keyup.enter)='rejectSetOfPurposes()'
+                   [(ngModel)]="setOfSentPurposes.notation"  />
+        </div>
+
+        <!--<div class="form-group">-->
+            <!--<label class="form-control-label" jhiTranslate="rorumApp.setOfSentPurposes.orders" for="field_orders">Orders</label>-->
+            <!--<select class="form-control" id="field_orders" name="orders" [(ngModel)]="setOfSentPurposes.orders" >-->
+                <!--<option [ngValue]="null"></option>-->
+                <!--<option [ngValue]="ordersOption.id === setOfSentPurposes.orders?.id ? setOfSentPurposes.orders : ordersOption" *ngFor="let ordersOption of orders; trackBy: trackOrdersById">{{ordersOption.id}}</option>-->
+            <!--</select>-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+            <!--<label class="form-control-label" jhiTranslate="rorumApp.setOfSentPurposes.user" for="field_user">User</label>-->
+            <!--<select class="form-control" id="field_user" name="user" [(ngModel)]="setOfSentPurposes.user" >-->
+                <!--<option [ngValue]="null"></option>-->
+                <!--<option [ngValue]="userOption.id === setOfSentPurposes.user?.id ? setOfSentPurposes.user : userOption" *ngFor="let userOption of users; trackBy: trackUserById">{{userOption.id}}</option>-->
+            <!--</select>-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+            <!--<label jhiTranslate="rorumApp.setOfSentPurposes.glossaryOfRisksService" for="field_glossaryOfPurposes">Glossary Of Purposes</label>-->
+            <!--<select class="form-control" id="field_glossaryOfPurposes" multiple name="glossaryOfRisksService" [(ngModel)]="setOfSentPurposes.glossaryOfRisksService">-->
+                <!--<option [ngValue]="getSelected(setOfSentPurposes.glossaryOfRisksService, glossaryOfPurposesOption)" *ngFor="let glossaryOfPurposesOption of glossaryofpurposes; trackBy: trackGlossaryOfPurposesById">{{glossaryOfPurposesOption.id}}</option>-->
+            <!--</select>-->
+        <!--</div>-->
+    </div>
+    <div class="modal-footer">
+        <button *ngIf="statusOfSending === 'UNCHECKED_PURPOSES'"
+            type="button" class="btn btn-info" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button *ngIf="statusOfSending === 'UNCHECKED_PURPOSES'"
+                type="button" [disabled]="editForm.form.invalid || isSaving" (click)="rejectSetOfPurposes()" class="btn btn-danger">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.reject">Reject</span>
+        </button>
+
+        <button *ngIf="statusOfSending === 'UNCHECKED_PLAN'"
+                type="button" class="btn btn-info" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button *ngIf="statusOfSending === 'UNCHECKED_PLAN'"
+                type="button" [disabled]="editForm.form.invalid || isSaving" (click)="rejectPlan()" class="btn btn-danger">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.reject">Reject</span>
+        </button>
+    </div>
+</form>

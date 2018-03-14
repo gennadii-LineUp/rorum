@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <changeSet id="20180220094107-1" author="jhipster">
+        <createTable tableName="filled_key_risk_indicator">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="min_cautionary_step" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="first_cautionary_step" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="second_cautionary_step" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="third_cautionary_step" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="fourth_cautionary_step" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="max_cautionary_step" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="kri_value" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="does_user_realize" type="boolean">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="creation_date" type="timestamp" defaultValueDate="${now}">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="jm" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="saved" type="boolean">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="user_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="glossary_of_key_risk_indicators_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="key_risk_indicator_purposes_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

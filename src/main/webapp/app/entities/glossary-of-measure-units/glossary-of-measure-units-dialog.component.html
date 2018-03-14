@@ -1,0 +1,88 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myGlossaryOfMeasureUnitsLabel" jhiTranslate="rorumApp.glossaryOfMeasureUnits.home.createOrEditLabel">Create or edit a Glossary Of Measure Units</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!glossaryOfMeasureUnitsDTO.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="glossaryOfMeasureUnitsDTO.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfMeasureUnits.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                [(ngModel)]="glossaryOfMeasureUnitsDTO.name" required />
+            <div [hidden]="!(editForm.controls.name?.dirty && editForm.controls.name?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.name?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfMeasureUnits.unitsOfMeasurement" for="field_unitsOfMeasurement">Units Of Measurement</label>
+            <select class="form-control" name="unitsOfMeasurement" [(ngModel)]="glossaryOfMeasureUnitsDTO.unitsOfMeasurement" id="field_unitsOfMeasurement"  required>
+                <option baseValue="ZL">{{'rorumApp.UnitsOfMeasurement.ZL' | translate}}</option>
+                <option baseValue="OS">{{'rorumApp.UnitsOfMeasurement.OS' | translate}}</option>
+                <option baseValue="KM">{{'rorumApp.UnitsOfMeasurement.KM' | translate}}</option>
+                <option baseValue="L">{{'rorumApp.UnitsOfMeasurement.L' | translate}}</option>
+                <option baseValue="KG">{{'rorumApp.UnitsOfMeasurement.KG' | translate}}</option>
+                <option baseValue="SZT">{{'rorumApp.UnitsOfMeasurement.SZT' | translate}}</option>
+                <option baseValue="M2">{{'rorumApp.UnitsOfMeasurement.M2' | translate}}</option>
+            </select>
+            <div [hidden]="!(editForm.controls.unitsOfMeasurement?.dirty && editForm.controls.unitsOfMeasurement?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.unitsOfMeasurement?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfMeasureUnits.frequencyOfGatheringData" for="field_frequencyOfGatheringData">Frequency Of Gathering Data</label>
+            <select class="form-control" name="frequencyOfGatheringData" [(ngModel)]="glossaryOfMeasureUnitsDTO.frequencyOfGatheringData" id="field_frequencyOfGatheringData"  required>
+                <option baseValue="DAY">{{'rorumApp.FrequencyOfGatheringData.DAY' | translate}}</option>
+                <option baseValue="WEEK">{{'rorumApp.FrequencyOfGatheringData.WEEK' | translate}}</option>
+                <option baseValue="MONTH">{{'rorumApp.FrequencyOfGatheringData.MONTH' | translate}}</option>
+                <option baseValue="YEAR">{{'rorumApp.FrequencyOfGatheringData.YEAR' | translate}}</option>
+            </select>
+            <div [hidden]="!(editForm.controls.frequencyOfGatheringData?.dirty && editForm.controls.frequencyOfGatheringData?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.frequencyOfGatheringData?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfMeasureUnits.isChecked" for="field_isChecked">Is Checked</label>
+            <input type="checkbox" class="form-control" name="isChecked" id="field_isChecked"
+                [(ngModel)]="glossaryOfMeasureUnitsDTO.isChecked"  />
+        </div>
+
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfMeasureUnits.glossaryOfPurposes" for="field_glossaryOfPurposes">Glossary Of Purposes</label>
+            <select class="form-control" id="field_glossaryOfPurposes" name="glossaryOfRisksService" [(ngModel)]="glossaryOfMeasureUnitsDTO.glossaryOfRisksService" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="glossaryOfPurposesOption.id === glossaryOfMeasureUnitsDTO.glossaryOfRisksService?.id ? glossaryOfMeasureUnitsDTO.glossaryOfRisksService : glossaryOfPurposesOption" *ngFor="let glossaryOfPurposesOption of glossaryofpurposes; trackBy: trackGlossaryOfPurposesById">{{glossaryOfPurposesOption.name}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfMeasureUnits.organisationStructure" for="field_organisationStructure">Organisation Structure</label>
+            <select class="form-control" id="field_organisationStructure" name="organisationStructure" [(ngModel)]="glossaryOfMeasureUnitsDTO.organisationStructure" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="organisationStructureOption.id === glossaryOfMeasureUnitsDTO.organisationStructure?.id ? glossaryOfMeasureUnitsDTO.organisationStructure : organisationStructureOption" *ngFor="let organisationStructureOption of organisationstructures; trackBy: trackOrganisationStructureById">{{organisationStructureOption.name}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

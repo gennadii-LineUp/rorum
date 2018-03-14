@@ -1,0 +1,22 @@
+{
+    "rorumApp": {
+        "StatusOfSending" : {
+            "null": "",
+            "CONFIRMED": "Zatwierdzony",
+            "CONFIRMED1": "Zatwierdzony",
+            "CONFIRMED2": "Zatwierdzony",
+            "CONFIRMED_PLAN": "Zatwierdzony plan",
+            "CONFIRMED_PURPOSES": "Zatwierdzone cele",
+            "REJECT": "Odrzuć",
+            "REJECTED": "Odrzucony",
+            "REJECTED1": "Odrzucony",
+            "REJECTED2": "Odrzucony",
+            "REJECTED_PLAN": "Odrzucony plan",
+            "REJECTED_PURPOSES": "Odrzucony cele",
+            "UNCHECKED_PLAN": "Niezatwierdzony plan",
+            "UNCHECKED": "Niezatwierdzony",
+            "SAVED": "Zapisany",
+            "UNCHECKED_PURPOSES": "Niezatwierdzone cele"
+        }
+    }
+}

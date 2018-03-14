@@ -1,0 +1,21 @@
+{
+    "rorumApp": {
+        "decisionForRisk" : {
+            "home": {
+                "title": "Decision For Risks",
+                "createLabel": "Dodaj Decision For Risk",
+                "createOrEditLabel": "Dodaj lub edytuj: Decision For Risk"
+            },
+            "created": "Utworzono nowy Decision For Risk z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Decision For Risk z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Decision For Risk z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Decision For Risk {{ id }}?"
+            },
+            "detail": {
+                "title": "Decision For Risk"
+            },
+            "name": "Name"
+        }
+    }
+}

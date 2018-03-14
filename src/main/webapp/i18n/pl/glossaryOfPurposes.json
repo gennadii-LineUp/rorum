@@ -1,0 +1,48 @@
+{
+    "rorumApp": {
+        "glossaryOfPurposes" : {
+            "home": {
+                "title": "Słownik celów",
+                "createLabel": "Dodaj cel",
+                "createOrEditLabel": "Dodaj lub edytuj cel"
+            },
+            "created": "Utworzono nowy cel z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono cel z identyfikatorem {{ param }}",
+            "deleted": "Usunięto cel z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć cel o id = {{ id }}?"
+            },
+            "detail": {
+                "title": "Słownik celów"
+            },
+            "name": "Nazwa",
+            "parentId": "Rodzic id",
+            "sumUp": "Cele sumowane wyżej?",
+            "assignmentToCell": "Przypisane do komórki",
+            "isChecked": "Czy zatwierdzone",
+            "glossaryOfProcesses": "Słownik procesów",
+            "glossaryOfMeasureUnits": "Słownik jednostek miar",
+            "glossaryOfRisks": "Słownik ryzyk",
+            "organisationStructure": "Struktura Organizacyjna",
+            "purposesToValidate": "Plan stworzony przez użytkownika",
+            "fromOrder": "z zamówienia",
+            "option": "Opcja",
+            "measureUnit": "J.m.",
+            "value": "Wartość",
+            "finalValue": "Wartość planowana",
+            "baseValue": "Wartość bazowa",
+            "actualValue": "Wartość aktualna",
+            "purposeAccomplished": "Stopień realizacji celu",
+            "probability": "Prawdopodobieństwo",
+            "powerOfInfluence": "Siła oddziaływania",
+            "calculatedValue": "Poziom ryzyka",
+            "reactionOnRisks": "Reakcja na ryzyko",
+            "notationConcernRisk": "Opis reakcji na ryzyko",
+            "strengthOfProbability": "SMK P",
+            "strengthOfInfluence": "SMK S",
+            "costOfPurposeRealisation": "Koszt realizacji celu [zł]",
+            "responsiblePerson": "Osoba odpowiedzialna",
+            "stateForDay": "Stan na dzień"
+        }
+    }
+}

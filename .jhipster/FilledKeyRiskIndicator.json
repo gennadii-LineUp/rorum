@@ -1,0 +1,117 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "setOfSentPurposes",
+            "otherEntityName": "setOfSentPurposes",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "minCautionaryStep",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required",
+                "min",
+                "max"
+            ],
+            "fieldValidateRulesMin": "-100000",
+            "fieldValidateRulesMax": "-100000"
+        },
+        {
+            "fieldName": "firstCautionaryStep",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required",
+                "min",
+                "max"
+            ],
+            "fieldValidateRulesMin": "-100000",
+            "fieldValidateRulesMax": "-100000"
+        },
+        {
+            "fieldName": "secondCautionaryStep",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required",
+                "min",
+                "max"
+            ],
+            "fieldValidateRulesMin": "-100000",
+            "fieldValidateRulesMax": "-100000"
+        },
+        {
+            "fieldName": "thirdCautionaryStep",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required",
+                "min",
+                "max"
+            ],
+            "fieldValidateRulesMin": "-100000",
+            "fieldValidateRulesMax": "-100000"
+        },
+        {
+            "fieldName": "fourthCautionaryStep",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required",
+                "min",
+                "max"
+            ],
+            "fieldValidateRulesMin": "-100000",
+            "fieldValidateRulesMax": "-100000"
+        },
+        {
+            "fieldName": "maxCautionaryStep",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required",
+                "min",
+                "max"
+            ],
+            "fieldValidateRulesMin": "-100000",
+            "fieldValidateRulesMax": "-100000"
+        },
+        {
+            "fieldName": "kriValue",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "doesUserRealize",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "creationDate",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "jm",
+            "fieldType": "UnitOfMeasurement",
+            "fieldValues": "ZL, OS, KM, SZT, M2, KG, L",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20180220094107",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "filled_key_risk_indicator",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

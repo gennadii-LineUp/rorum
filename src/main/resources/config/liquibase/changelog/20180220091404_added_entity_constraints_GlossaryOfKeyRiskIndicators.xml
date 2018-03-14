@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="20180220091404-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="glossary_of_purposes_id"
+                                 baseTableName="glossary_of_kri"
+                                 constraintName="fk_glossary_of_key_risk_indicators_glossary_of_purposes_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="glossary_of_purposes"/>
+
+        <loadData file="config/liquibase/glossary_of_kri.csv"
+                  separator=";"
+                  tableName="glossary_of_kri"/>
+    </changeSet>
+</databaseChangeLog>

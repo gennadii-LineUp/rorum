@@ -1,0 +1,10 @@
+﻿${AnsiColor.GREEN}   ____    U  ___ u   ____      _   _   __  __   
+${AnsiColor.GREEN}U |  _"\ u  \/"_ \/U |  _"\ uU |"|u| |U|' \/ '|u 
+${AnsiColor.GREEN} \| |_) |/  | | | | \| |_) |/ \| |\| |\| |\/| |/ 
+${AnsiColor.GREEN}  |  _ <.-,_| |_| |  |  _ <    | |_| | | |  | |  
+${AnsiColor.GREEN}  |_| \_\\_)-\___/   |_| \_\  <<\___/  |_|  |_|  
+${AnsiColor.GREEN}  //   \\_    \\     //   \\_(__) )(  <<,-,,-.   
+${AnsiColor.GREEN} (__)  (__)  (__)   (__)  (__)   (__)  (./  \.) 
+
+${AnsiColor.BRIGHT_BLUE}:: JHipster 🤓  :: Running Spring Boot ${spring-boot.version} ::
+:: http://www.jhipster.tech ::${AnsiColor.DEFAULT}

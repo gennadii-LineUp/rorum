@@ -1,0 +1,26 @@
+{
+    "rorumApp": {
+        "filledMeasureUnits" : {
+            "home": {
+                "title": "Filled Measure Units",
+                "createLabel": "Dodaj Filled Measure Units",
+                "createOrEditLabel": "Dodaj lub edytuj: Filled Measure Units"
+            },
+            "created": "Utworzono nowy Filled Measure Units z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Filled Measure Units z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Filled Measure Units z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Filled Measure Units {{ id }}?"
+            },
+            "detail": {
+                "title": "Filled Measure Units"
+            },
+            "value": "Value",
+            "option": "Option",
+            "finalValue": "Wartość planowana",
+            "glossaryOfPurposes": "Glossary Of Purposes",
+            "measureUnitsPurposes": "Measure Units Purposes",
+            "glossaryOfMeasureUnits": "Glossary Of Measure Units"
+        }
+    }
+}

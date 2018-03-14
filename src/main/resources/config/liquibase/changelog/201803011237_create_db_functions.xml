@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="201803011237-1" author="akapuscinski">
+        <sql
+            endDelimiter="\nGO"
+            splitStatements="true">
+
+                -- Function: public."getAllChildrenOrganisationStructure"(integer)
+
+                -- DROP FUNCTION public."getAllChildrenOrganisationStructure"(integer);
+
+                CREATE OR REPLACE FUNCTION public."getAllChildrenOrganisationStructure"(IN "jednostkaId" integer)
+                RETURNS TABLE(id bigint, name character varying, parent_id bigint, supervisory_unit_id bigint, status_id boolean, specifying_cells character varying, glossary_of_processes_id bigint) AS
+                $BODY$
+
+                SELECT DISTINCT * FROM public.organisation_structure WHERE parent_id IN (
+                WITH RECURSIVE  podlegli AS (
+                SELECT id, name, parent_id, supervisory_unit_id, status_id, specifying_cells, glossary_of_processes_id
+                FROM organisation_structure WHERE id = "jednostkaId"
+                UNION
+                SELECT e.id, e.name, e.parent_id, e.supervisory_unit_id, e.status_id, e.specifying_cells, e.glossary_of_processes_id
+                FROM public.organisation_structure e INNER JOIN podlegli s ON s.id = e.parent_id
+                ) SELECT id FROM podlegli) 
+
+                    
+                $BODY$
+                LANGUAGE sql STABLE
+                COST 100
+                ROWS 1000;
+                ALTER FUNCTION public."getAllChildrenOrganisationStructure"(integer)
+                OWNER TO postgres;
+                GRANT EXECUTE ON FUNCTION public."getAllChildrenOrganisationStructure"(integer) TO public;
+                GRANT EXECUTE ON FUNCTION public."getAllChildrenOrganisationStructure"(integer) TO postgres;
+        </sql>
+        <sql
+            endDelimiter="\nGO"
+            splitStatements="true">
+
+
+                -- Function: public."getAllParentedAndSupervisoredUsers"(integer)
+
+                -- DROP FUNCTION public."getAllParentedAndSupervisoredUsers"(integer);
+
+                CREATE OR REPLACE FUNCTION public."getAllParentedAndSupervisoredUsers"(IN "jednostkaId" integer)
+                RETURNS TABLE(id bigint, login character varying, password_hash character varying, first_name character varying, last_name character varying, email character varying, image_url character varying, activated boolean, lang_key character varying, activation_key character varying, reset_key character varying, created_by character varying, created_date timestamp without time zone, reset_date timestamp without time zone, last_modified_by character varying, last_modified_date timestamp without time zone, organisation_structure_id bigint) AS
+                $BODY$
+
+                SELECT * FROM users WHERE organisation_structure_id IN ( 
+                    SELECT DISTINCT id  FROM public.organisation_structure 
+                    WHERE id IN (
+                        SELECT id from public."getAllChildrenOrganisationStructure"("jednostkaId")
+                        ) 
+                        
+                        OR 
+                        supervisory_unit_id IN (
+                            (SELECT id from public."getAllChildrenOrganisationStructure"("jednostkaId"))
+                        )
+                );
+
+                $BODY$
+                LANGUAGE sql STABLE
+                COST 100
+                ROWS 1000;
+                ALTER FUNCTION public."getAllParentedAndSupervisoredUsers"(integer)
+                OWNER TO postgres;
+                GRANT EXECUTE ON FUNCTION public."getAllParentedAndSupervisoredUsers"(integer) TO public;
+                GRANT EXECUTE ON FUNCTION public."getAllParentedAndSupervisoredUsers"(integer) TO postgres;
+
+
+        </sql>
+
+        <sql
+            endDelimiter="\nGO"
+            splitStatements="true">
+
+                -- Function: public."getAllParentedAndSupervisoredOrganisationStructure"(integer)
+
+                -- DROP FUNCTION public."getAllParentedAndSupervisoredOrganisationStructure"(integer);
+
+                CREATE OR REPLACE FUNCTION public."getAllParentedAndSupervisoredOrganisationStructure"(IN "jednostkaId" integer)
+                RETURNS TABLE(id bigint, name character varying, parent_id bigint, supervisory_unit_id bigint, status_id boolean, specifying_cells character varying, glossary_of_processes_id bigint) AS
+                $BODY$
+
+                                SELECT DISTINCT * FROM organisation_structure WHERE parent_id IN ( 
+                                        SELECT id from public."getAllChildrenOrganisationStructure"("jednostkaId")
+                                        ) 
+                                        
+                                        OR 
+                                        supervisory_unit_id IN (
+                                            (SELECT id from public."getAllChildrenOrganisationStructure"("jednostkaId"))
+                                        ) 
+                                        OR 
+                                        id IN (
+                                            (SELECT id from public."getAllChildrenOrganisationStructure"("jednostkaId"))
+                                        );
+
+                                $BODY$
+                LANGUAGE sql STABLE
+                COST 100
+                ROWS 1000;
+                ALTER FUNCTION public."getAllParentedAndSupervisoredOrganisationStructure"(integer)
+                OWNER TO postgres;
+                GRANT EXECUTE ON FUNCTION public."getAllParentedAndSupervisoredOrganisationStructure"(integer) TO public;
+                GRANT EXECUTE ON FUNCTION public."getAllParentedAndSupervisoredOrganisationStructure"(integer) TO postgres;
+        </sql>
+
+    </changeSet>
+</databaseChangeLog>

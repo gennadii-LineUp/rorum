@@ -1,0 +1,21 @@
+{
+    "rorumApp": {
+        "possibilitiesToImproveRisk" : {
+            "home": {
+                "title": "Possibilities To Improve Risks",
+                "createLabel": "Dodaj Possibilities To Improve Risk",
+                "createOrEditLabel": "Dodaj lub edytuj: Possibilities To Improve Risk"
+            },
+            "created": "Utworzono nowy Possibilities To Improve Risk z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Possibilities To Improve Risk z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Possibilities To Improve Risk z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Possibilities To Improve Risk {{ id }}?"
+            },
+            "detail": {
+                "title": "Possibilities To Improve Risk"
+            },
+            "name": "Name"
+        }
+    }
+}

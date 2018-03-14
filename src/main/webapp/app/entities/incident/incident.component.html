@@ -1,0 +1,45 @@
+<div>
+    <div class="m-4" align="center" style="font-size: 2em">
+        <h1 class="my-5">Wybierz zlecenie, dla którego chcesz sprawdzić incydenty</h1>
+    </div>
+
+    <div>
+        <h2>Proszę wybrać zlecenie:</h2>
+    </div>
+    <div class="table-responsive" *ngIf="orders">
+        <table class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse">
+                <th><span jhiTranslate="rorumApp.orders.name">Name</span> </th>
+                <th><span jhiTranslate="rorumApp.orders.financingYear">Financing Year</span> </th>
+                <th><span jhiTranslate="rorumApp.orders.startDate">Start Date</span> </th>
+                <th><span jhiTranslate="rorumApp.orders.firstReportingDate">First Reporting Date</span> </th>
+                <th><span jhiTranslate="rorumApp.orders.secondReportingDate">Second Reporting Date</span> </th>
+                <th><span jhiTranslate="rorumApp.orders.thirdReportingDate">Third Reporting Date</span> </th>
+                <th><span jhiTranslate="rorumApp.orders.finalDate">Final Date</span> </th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let order of orders ;trackBy: trackId">
+                <td>{{order.name}}</td>
+                <td>{{order.financingYear}}</td>
+                <td>{{order.startDate | date:'mediumDate'}}</td>
+                <td>{{order.firstReportingDate | date:'mediumDate'}}</td>
+                <td>{{order.secondReportingDate | date:'mediumDate'}}</td>
+                <td>{{order.thirdReportingDate | date:'mediumDate'}}</td>
+                <td>{{order.finalDate | date:'mediumDate'}}</td>
+                <td class="text-right">
+                    <button type="button"
+                            [routerLink]="['/incident/' + order.id]"
+                            replaceUrl="true"
+                            class="btn btn-primary btn-sm">
+                        <span class="fa fa-pencil"></span>
+                        <span class="d-none d-md-inline">Otwórz</span>
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

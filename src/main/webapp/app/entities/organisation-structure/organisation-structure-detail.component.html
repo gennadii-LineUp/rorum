@@ -1,0 +1,47 @@
+
+<div *ngIf="organisationStructure">
+    <h2><span jhiTranslate="rorumApp.organisationStructure.detail.title">Organisation Structure</span> {{organisationStructure.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="rorumApp.organisationStructure.name">Name</span></dt>
+        <dd>
+            <span>{{organisationStructure.name}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.organisationStructure.parentId">Parent Id</span></dt>
+        <dd>
+            <span>{{organisationStructure.parentId}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.organisationStructure.supervisoryUnitId">Supervisory Unit Id</span></dt>
+        <dd>
+            <span>{{organisationStructure.supervisoryUnitId}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.organisationStructure.statusId">Status Id</span></dt>
+        <dd>
+            <span>{{organisationStructure.statusId}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.organisationStructure.specifyingCells">Specifying Cells</span></dt>
+        <dd>
+            <span jhiTranslate="{{'rorumApp.SpecifyingCells.' + organisationStructure.specifyingCells}}">{{organisationStructure.specifyingCells}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.organisationStructure.glossaryOfProcesses">Glossary Of Processes</span></dt>
+        <dd>
+            <div *ngIf="organisationStructure.glossaryOfProcesses">
+                <a [routerLink]="['/glossary-of-processes', organisationStructure.glossaryOfProcesses?.id]">{{organisationStructure.glossaryOfProcesses?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'organisation-structure/'+ organisationStructure.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

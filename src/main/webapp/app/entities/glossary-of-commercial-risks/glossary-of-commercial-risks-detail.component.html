@@ -1,0 +1,51 @@
+
+<div *ngIf="glossaryOfCommercialRisksDTO">
+    <h2><span jhiTranslate="rorumApp.glossaryOfCommercialRisks.detail.title">Glossary Of Commercial Risks</span> {{glossaryOfCommercialRisksDTO.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="rorumApp.glossaryOfCommercialRisks.name">Name</span></dt>
+        <dd>
+            <span>{{glossaryOfCommercialRisksDTO.name}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfCommercialRisks.completionDate">Completion Date</span></dt>
+        <dd>
+            <span>{{glossaryOfCommercialRisksDTO.completionDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfCommercialRisks.creationDate">Creation Date</span></dt>
+        <dd>
+            <span>{{glossaryOfCommercialRisksDTO.creationDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfCommercialRisks.importantTo">Important To</span></dt>
+        <dd>
+            <span>{{glossaryOfCommercialRisksDTO.importantTo | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfCommercialRisks.isChecked">Is Checked</span></dt>
+        <dd>
+            <span>{{glossaryOfCommercialRisksDTO.isChecked}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfCommercialRisks.user">User</span></dt>
+        <dd>
+            {{glossaryOfCommercialRisksDTO.user?.login}}
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfCommercialRisks.organisationStructure">Organisation Structure</span></dt>
+        <dd>
+            <div *ngIf="glossaryOfCommercialRisksDTO.organisationStructure">
+                <a [routerLink]="['/organisation-structure', glossaryOfCommercialRisksDTO.organisationStructure?.id]">{{glossaryOfCommercialRisksDTO.organisationStructure?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'glossary-of-commercial-risks/'+ glossaryOfCommercialRisksDTO.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

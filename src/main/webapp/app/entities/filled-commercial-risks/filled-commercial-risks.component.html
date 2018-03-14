@@ -1,0 +1,80 @@
+<div>
+    <h2>
+        <span jhiTranslate="rorumApp.filledCommercialRisks.home.title">Filled Commercial Risks</span>
+        <button class="btn btn-primary float-right jh-create-entity create-filled-commercial-risks" [routerLink]="['/', { outlets: { popup: ['filled-commercial-risks-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span  jhiTranslate="rorumApp.filledCommercialRisks.home.createLabel">
+            Create new Filled Commercial Risks
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="filledCommercialRisks">
+        <table class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="transition.bind(this)">
+            <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="probability"><span jhiTranslate="rorumApp.filledCommercialRisks.probability">Probability</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="powerOfInfluence"><span jhiTranslate="rorumApp.filledCommercialRisks.powerOfInfluence">Power Of Influence</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="calculatedValue"><span jhiTranslate="rorumApp.filledCommercialRisks.calculatedValue">Calculated Value</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="glossaryOfCommercialRisksDTO.id"><span jhiTranslate="rorumApp.filledCommercialRisks.glossaryOfCommercialRisksDTO">Glossary Of Commercial Risks</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="commercialRisksPurposes.id"><span jhiTranslate="rorumApp.filledCommercialRisks.commercialRisksPurposes">Commercial Risks Purposes</span> <span class="fa fa-sort"></span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let filledCommercialRisks of filledCommercialRisks ;trackBy: trackId">
+                <td><a [routerLink]="['../filled-commercial-risks', filledCommercialRisks.id ]">{{filledCommercialRisks.id}}</a></td>
+                <td>{{filledCommercialRisks.probability}}</td>
+                <td>{{filledCommercialRisks.powerOfInfluence}}</td>
+                <td>{{filledCommercialRisks.calculatedValue}}</td>
+                <td>
+                    <div *ngIf="filledCommercialRisks.glossaryOfCommercialRisksDTO">
+                        <a [routerLink]="['../glossary-of-commercial-risks', filledCommercialRisks.glossaryOfCommercialRisksDTO?.id ]" >{{filledCommercialRisks.glossaryOfCommercialRisksDTO?.id}}</a>
+                    </div>
+                </td>
+                <td>
+                    <div *ngIf="filledCommercialRisks.commercialRisksPurposes">
+                        <a [routerLink]="['../commercial-risks-purposes', filledCommercialRisks.commercialRisksPurposes?.id ]" >{{filledCommercialRisks.commercialRisksPurposes?.id}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['../filled-commercial-risks', filledCommercialRisks.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'filled-commercial-risks/'+ filledCommercialRisks.id + '/edit'} }]"
+                                replaceUrl="true"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'filled-commercial-risks/'+ filledCommercialRisks.id + '/delete'} }]"
+                                replaceUrl="true"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+        <div *ngIf="filledCommercialRisks && filledCommercialRisks.length">
+            <div class="row justify-content-center">
+                <jhi-item-count [page]="page" [total]="queryCount" [maxSize]="5" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+            </div>
+            <div class="row justify-content-center">
+                <ngb-pagination [collectionSize]="totalItems" [maxSize]="5" [pageSize]="itemsPerPage" [(page)]="page" (pageChange)="loadPage(page)"></ngb-pagination>
+            </div>
+        </div>
+</div>

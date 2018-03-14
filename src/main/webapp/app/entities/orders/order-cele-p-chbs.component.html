@@ -1,0 +1,33 @@
+<div style="width: 500px"  *ngIf="_dataIncome && (_dataIncome.length > 0)">
+    <span style="font-weight: bold">Wybierz {{title}}</span>
+    <button type="button" class="close" aria-label="Close" (click)="closePopup()"
+            style="cursor: pointer; float: right; padding: 0 8px">
+        <span aria-hidden="true">&times;</span>
+    </button>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <!--<th></th>-->
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let purpose of _dataIncome" class="size" style="max-width: 496px">
+            <td class="text-left" style="max-width: 494px; overflow: hidden; text-overflow: ellipsis">
+                <label style="cursor: pointer">
+                    <input type="checkbox" id={{purpose.id}} name={{purpose.id}}
+                           [value]="purpose.id"
+                           (change)='addCryterium($event); false'
+                           style="margin: 0 6px 0 10px"
+                           [checked]='_checkboxesChecked.indexOf(+purpose.id) != -1'
+                           [disabled]="_disadledMode">
+                    <span class="control__indicator"></span>
+
+                    <span>{{purpose.name}}</span>
+                </label>
+
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

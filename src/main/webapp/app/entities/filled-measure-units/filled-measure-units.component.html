@@ -1,0 +1,86 @@
+<div>
+    <h2>
+        <span jhiTranslate="rorumApp.filledMeasureUnits.home.title">Filled Measure Units</span>
+        <button class="btn btn-primary float-right jh-create-entity create-filled-measure-units" [routerLink]="['/', { outlets: { popup: ['filled-measure-units-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span  jhiTranslate="rorumApp.filledMeasureUnits.home.createLabel">
+            Create new Filled Measure Units
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="filledMeasureUnits">
+        <table class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="transition.bind(this)">
+            <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="baseValue"><span jhiTranslate="rorumApp.filledMeasureUnits.baseValue">Value</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="option"><span jhiTranslate="rorumApp.filledMeasureUnits.option">Option</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="finalValue"><span jhiTranslate="rorumApp.filledMeasureUnits.finalValue">Final Value</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="glossaryOfRisksService.id"><span jhiTranslate="rorumApp.filledMeasureUnits.glossaryOfRisksService">Glossary Of Purposes</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="measureUnitsPurposes.id"><span jhiTranslate="rorumApp.filledMeasureUnits.measureUnitsPurposes">Measure Units Purposes</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="glossaryOfMeasureUnitsDTO.id"><span jhiTranslate="rorumApp.filledMeasureUnits.glossaryOfMeasureUnitsDTO">Glossary Of Measure Units</span> <span class="fa fa-sort"></span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let filledMeasureUnits of filledMeasureUnits ;trackBy: trackId">
+                <td><a [routerLink]="['../filled-measure-units', filledMeasureUnits.id ]">{{filledMeasureUnits.id}}</a></td>
+                <td>{{filledMeasureUnits.baseValue}}</td>
+                <td jhiTranslate="{{'rorumApp.OptionOfMeasureUnits.' + filledMeasureUnits.option}}">{{filledMeasureUnits.option}}</td>
+                <td>{{filledMeasureUnits.finalValue}}</td>
+                <td>
+                    <div *ngIf="filledMeasureUnits.glossaryOfRisksService">
+                        <a [routerLink]="['../glossary-of-purposes', filledMeasureUnits.glossaryOfRisksService?.id ]" >{{filledMeasureUnits.glossaryOfRisksService?.id}}</a>
+                    </div>
+                </td>
+                <td>
+                    <div *ngIf="filledMeasureUnits.measureUnitsPurposes">
+                        <a [routerLink]="['../measure-units-purposes', filledMeasureUnits.measureUnitsPurposes?.id ]" >{{filledMeasureUnits.measureUnitsPurposes?.id}}</a>
+                    </div>
+                </td>
+                <td>
+                    <div *ngIf="filledMeasureUnits.glossaryOfMeasureUnitsDTO">
+                        <a [routerLink]="['../glossary-of-measure-units', filledMeasureUnits.glossaryOfMeasureUnitsDTO?.id ]" >{{filledMeasureUnits.glossaryOfMeasureUnitsDTO?.id}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['../filled-measure-units', filledMeasureUnits.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'filled-measure-units/'+ filledMeasureUnits.id + '/edit'} }]"
+                                replaceUrl="true"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'filled-measure-units/'+ filledMeasureUnits.id + '/delete'} }]"
+                                replaceUrl="true"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+        <div *ngIf="filledMeasureUnits && filledMeasureUnits.length">
+            <div class="row justify-content-center">
+                <jhi-item-count [page]="page" [total]="queryCount" [maxSize]="5" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+            </div>
+            <div class="row justify-content-center">
+                <ngb-pagination [collectionSize]="totalItems" [maxSize]="5" [pageSize]="itemsPerPage" [(page)]="page" (pageChange)="loadPage(page)"></ngb-pagination>
+            </div>
+        </div>
+</div>

@@ -1,0 +1,49 @@
+
+<div *ngIf="orders">
+    <h2><span jhiTranslate="rorumApp.orders.detail.title">Orders</span> {{orders.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="rorumApp.orders.name">Name</span></dt>
+        <dd>
+            <span>{{orders.name}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.orders.financingYear">Financing Year</span></dt>
+        <dd>
+            <span>{{orders.financingYear}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.orders.startDate">Start Date</span></dt>
+        <dd>
+            <span>{{orders.startDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.orders.firstReportingDate">First Reporting Date</span></dt>
+        <dd>
+            <span>{{orders.firstReportingDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.orders.secondReportingDate">Second Reporting Date</span></dt>
+        <dd>
+            <span>{{orders.secondReportingDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.orders.thirdReportingDate">Third Reporting Date</span></dt>
+        <dd>
+            <span>{{orders.thirdReportingDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.orders.finalDate">Final Date</span></dt>
+        <dd>
+            <span>{{orders.finalDate | date:'mediumDate'}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'orders/'+ orders.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

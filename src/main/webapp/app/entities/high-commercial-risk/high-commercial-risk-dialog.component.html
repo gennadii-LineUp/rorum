@@ -1,0 +1,205 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myHighCommercialRiskLabel" jhiTranslate="rorumApp.highCommercialRisk.home.createOrEditLabel">Create or edit a High Commercial Risk</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!highCommercialRisk.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="highCommercialRisk.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.highCommercialRisk.rejectToAccomplishPurpose" for="field_rejectToAccomplishPurpose">Reject To Accomplish Purpose</label>
+            <input type="checkbox" class="form-control" name="rejectToAccomplishPurpose" id="field_rejectToAccomplishPurpose"
+                [(ngModel)]="highCommercialRisk.rejectToAccomplishPurpose"  />
+            <div [hidden]="!(editForm.controls.rejectToAccomplishPurpose?.dirty && editForm.controls.rejectToAccomplishPurpose?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.rejectToAccomplishPurpose?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.highCommercialRisk.postponePurposeAccomplishment" for="field_postponePurposeAccomplishment">Postpone Purpose Accomplishment</label>
+            <input type="checkbox" class="form-control" name="postponePurposeAccomplishment" id="field_postponePurposeAccomplishment"
+                [(ngModel)]="highCommercialRisk.postponePurposeAccomplishment"  />
+            <div [hidden]="!(editForm.controls.postponePurposeAccomplishment?.dirty && editForm.controls.postponePurposeAccomplishment?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.postponePurposeAccomplishment?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.highCommercialRisk.restrictRangeOfPurposeAccomplishment" for="field_restrictRangeOfPurposeAccomplishment">Restrict Range Of Purpose Accomplishment</label>
+            <input type="checkbox" class="form-control" name="restrictRangeOfPurposeAccomplishment" id="field_restrictRangeOfPurposeAccomplishment"
+                [(ngModel)]="highCommercialRisk.restrictRangeOfPurposeAccomplishment"  />
+            <div [hidden]="!(editForm.controls.restrictRangeOfPurposeAccomplishment?.dirty && editForm.controls.restrictRangeOfPurposeAccomplishment?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.restrictRangeOfPurposeAccomplishment?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.highCommercialRisk.costOfListedPossibilities" for="field_costOfListedPossibilities">Cost Of Listed Possibilities</label>
+            <input type="number" class="form-control" name="costOfListedPossibilities" id="field_costOfListedPossibilities"
+                [(ngModel)]="highCommercialRisk.costOfListedPossibilities" required />
+            <div [hidden]="!(editForm.controls.costOfListedPossibilities?.dirty && editForm.controls.costOfListedPossibilities?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.costOfListedPossibilities?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.costOfListedPossibilities?.errors?.number" jhiTranslate="entity.validation.number">
+                    This field should be a number.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.highCommercialRisk.projectedTermDeployStart" for="field_projectedTermDeployStart">Projected Term Deploy Start</label>
+            <input type="number" class="form-control" name="projectedTermDeployStart" id="field_projectedTermDeployStart"
+                [(ngModel)]="highCommercialRisk.projectedTermDeployStart" required />
+            <div [hidden]="!(editForm.controls.projectedTermDeployStart?.dirty && editForm.controls.projectedTermDeployStart?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.projectedTermDeployStart?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.projectedTermDeployStart?.errors?.number" jhiTranslate="entity.validation.number">
+                    This field should be a number.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.highCommercialRisk.projectedTermDeployFinish" for="field_projectedTermDeployFinish">Projected Term Deploy Finish</label>
+            <input type="number" class="form-control" name="projectedTermDeployFinish" id="field_projectedTermDeployFinish"
+                [(ngModel)]="highCommercialRisk.projectedTermDeployFinish" required />
+            <div [hidden]="!(editForm.controls.projectedTermDeployFinish?.dirty && editForm.controls.projectedTermDeployFinish?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.projectedTermDeployFinish?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.projectedTermDeployFinish?.errors?.number" jhiTranslate="entity.validation.number">
+                    This field should be a number.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.highCommercialRisk.probabilityToReach" for="field_probabilityToReach">Probability To Reach</label>
+            <input type="number" class="form-control" name="probabilityToReach" id="field_probabilityToReach"
+                [(ngModel)]="highCommercialRisk.probabilityToReach" required min="1" max="5" />
+            <div [hidden]="!(editForm.controls.probabilityToReach?.dirty && editForm.controls.probabilityToReach?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.probabilityToReach?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.probabilityToReach?.errors?.min" jhiTranslate="entity.validation.min" translateValues="{ min: 1 }">
+                    This field should be at least 1.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.probabilityToReach?.errors?.max" jhiTranslate="entity.validation.max" translateValues="{ max: 5 }">
+                    This field cannot be more than 5.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.probabilityToReach?.errors?.number" jhiTranslate="entity.validation.number">
+                    This field should be a number.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.highCommercialRisk.powerOfInfluenceToReach" for="field_powerOfInfluenceToReach">Power Of Influence To Reach</label>
+            <input type="number" class="form-control" name="powerOfInfluenceToReach" id="field_powerOfInfluenceToReach"
+                [(ngModel)]="highCommercialRisk.powerOfInfluenceToReach" required min="1" max="5" />
+            <div [hidden]="!(editForm.controls.powerOfInfluenceToReach?.dirty && editForm.controls.powerOfInfluenceToReach?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.powerOfInfluenceToReach?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.powerOfInfluenceToReach?.errors?.min" jhiTranslate="entity.validation.min" translateValues="{ min: 1 }">
+                    This field should be at least 1.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.powerOfInfluenceToReach?.errors?.max" jhiTranslate="entity.validation.max" translateValues="{ max: 5 }">
+                    This field cannot be more than 5.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.powerOfInfluenceToReach?.errors?.number" jhiTranslate="entity.validation.number">
+                    This field should be a number.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.highCommercialRisk.analyze" for="field_analyze">Analyze</label>
+            <select class="form-control" name="analyze" [(ngModel)]="highCommercialRisk.analyze" id="field_analyze"  required>
+                <option value="COSTS_MORE_BENEFITS">{{'rorumApp.AnalyzeOfRisk.COSTS_MORE_BENEFITS' | translate}}</option>
+                <option value="COSTS_ARE_EQUALED_TO_BENEFITS">{{'rorumApp.AnalyzeOfRisk.COSTS_ARE_EQUALED_TO_BENEFITS' | translate}}</option>
+                <option value="COSTS_LESS_BENEFITS">{{'rorumApp.AnalyzeOfRisk.COSTS_LESS_BENEFITS' | translate}}</option>
+            </select>
+            <div [hidden]="!(editForm.controls.analyze?.dirty && editForm.controls.analyze?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.analyze?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.highCommercialRisk.substantiationForAnalyze" for="field_substantiationForAnalyze">Substantiation For Analyze</label>
+            <input type="text" class="form-control" name="substantiationForAnalyze" id="field_substantiationForAnalyze"
+                [(ngModel)]="highCommercialRisk.substantiationForAnalyze" required />
+            <div [hidden]="!(editForm.controls.substantiationForAnalyze?.dirty && editForm.controls.substantiationForAnalyze?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.substantiationForAnalyze?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.highCommercialRisk.commentToHighRiskProcedure" for="field_commentToHighRiskProcedure">Comment To High Risk Procedure</label>
+            <input type="text" class="form-control" name="commentToHighRiskProcedure" id="field_commentToHighRiskProcedure"
+                [(ngModel)]="highCommercialRisk.commentToHighRiskProcedure" required />
+            <div [hidden]="!(editForm.controls.commentToHighRiskProcedure?.dirty && editForm.controls.commentToHighRiskProcedure?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.commentToHighRiskProcedure?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.highCommercialRisk.filledCommercialRisks" for="field_filledCommercialRisks">Filled Commercial Risks</label>
+            <select class="form-control" id="field_filledCommercialRisks" name="filledCommercialRisks" [(ngModel)]="highCommercialRisk.filledCommercialRisks">
+                <option [ngValue]="null"></option>
+                <option [ngValue]="filledCommercialRisksOption.id === highCommercialRisk.filledCommercialRisks?.id ? highCommercialRisk.filledCommercialRisks : filledCommercialRisksOption" *ngFor="let filledCommercialRisksOption of filledcommercialrisks; trackBy: trackFilledCommercialRisksById">{{filledCommercialRisksOption.id}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.highCommercialRisk.decisionForRisk" for="field_decisionForRisk">Decision For Risk</label>
+            <select class="form-control" id="field_decisionForRisk" name="decisionForRisk" [(ngModel)]="highCommercialRisk.decisionForRisk">
+                <option [ngValue]="null"></option>
+                <option [ngValue]="decisionForRiskOption.id === highCommercialRisk.decisionForRisk?.id ? highCommercialRisk.decisionForRisk : decisionForRiskOption" *ngFor="let decisionForRiskOption of decisionforrisks; trackBy: trackDecisionForRiskById">{{decisionForRiskOption.id}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label jhiTranslate="rorumApp.highCommercialRisk.possibilitiesToImproveRisk" for="field_possibilitiesToImproveRisk">Possibilities To Improve Risk</label>
+            <select class="form-control" id="field_possibilitiesToImproveRisk" multiple name="possibilitiesToImproveRisk" [(ngModel)]="highCommercialRisk.possibilitiesToImproveRisks">
+                <option [ngValue]="getSelected(highCommercialRisk.possibilitiesToImproveRisks, possibilitiesToImproveRiskOption)" *ngFor="let possibilitiesToImproveRiskOption of possibilitiestoimproverisks; trackBy: trackPossibilitiesToImproveRiskById">{{possibilitiesToImproveRiskOption.id}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

@@ -1,0 +1,26 @@
+{
+    "rorumApp": {
+        "organisationStructures" : {
+            "home": {
+                "title": "Organisation Structure",
+                "createLabel": "Add Cell",
+                "createOrEditLabel": "Add or Edit: Cell"
+            },
+            "created": "Utworzono nowy Struktura Organizacyjna z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Struktura Organizacyjna z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Struktura Organizacyjna z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Do you want to remove cell: {{ name }}?"
+            },
+            "detail": {
+                "title": "Organisation Structure"
+            },
+            "name": "Name",
+            "parentId": "Parent Id",
+            "supervisoryUnitId": "Supervisory Unit Id",
+            "statusId": "Status",
+            "specifyingCells": "Specifying Cell",
+            "glossaryOfProcesses": "Glossary Of Processes"
+        }
+    }
+}

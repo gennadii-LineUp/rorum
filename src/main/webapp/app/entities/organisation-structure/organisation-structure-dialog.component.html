@@ -1,0 +1,66 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myOrganisationStructureLabel" jhiTranslate="rorumApp.organisationStructure.home.createOrEditLabel">Create or edit a Organisation Structure</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!organisationStructure.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="organisationStructure.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.organisationStructure.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                [(ngModel)]="organisationStructure.name"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.organisationStructure.parentId" for="field_parentId">Parent Id</label>
+            <input type="number" class="form-control" name="parentId" id="field_parentId"
+                [(ngModel)]="organisationStructure.parentId"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.organisationStructure.supervisoryUnitId" for="field_supervisoryUnitId">Supervisory Unit Id</label>
+            <input type="number" class="form-control" name="supervisoryUnitId" id="field_supervisoryUnitId"
+                [(ngModel)]="organisationStructure.supervisoryUnitId"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.organisationStructure.statusId" for="field_statusId">Status Id</label>
+            <input type="checkbox" class="form-control" name="statusId" id="field_statusId"
+                [(ngModel)]="organisationStructure.statusId"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.organisationStructure.specifyingCells" for="field_specifyingCells">Specifying Cells</label>
+            <select class="form-control" name="specifyingCells" [(ngModel)]="organisationStructure.specifyingCells" id="field_specifyingCells" >
+                <option baseValue="BIURO">{{'rorumApp.SpecifyingCells.BIURO' | translate}}</option>
+                <option baseValue="URZAD">{{'rorumApp.SpecifyingCells.URZAD' | translate}}</option>
+                <option baseValue="JEDNOSTKAORGANIZACYJNA">{{'rorumApp.SpecifyingCells.JEDNOSTKAORGANIZACYJNA' | translate}}</option>
+                <option baseValue="JEDNOSTKAWYKONAWCZA">{{'rorumApp.SpecifyingCells.JEDNOSTKAWYKONAWCZA' | translate}}</option>
+                <option baseValue="WYDZIAL">{{'rorumApp.SpecifyingCells.WYDZIAL' | translate}}</option>
+                <option baseValue="WOJEWODZTWO">{{'rorumApp.SpecifyingCells.WOJEWODZTWO' | translate}}</option>
+                <option baseValue="MIASTO">{{'rorumApp.SpecifyingCells.MIASTO' | translate}}</option>
+                <option baseValue="URZADDZIELNICY">{{'rorumApp.SpecifyingCells.URZADDZIELNICY' | translate}}</option>
+                <option baseValue="URZEDYDZIELNIC">{{'rorumApp.SpecifyingCells.URZEDYDZIELNIC' | translate}}</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.organisationStructure.glossaryOfProcesses" for="field_glossaryOfProcesses">Glossary Of Processes</label>
+            <select class="form-control" id="field_glossaryOfProcesses" name="glossaryOfProcesses" [(ngModel)]="organisationStructure.glossaryOfProcesses" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="glossaryOfProcessesOption.id === organisationStructure.glossaryOfProcesses?.id ? organisationStructure.glossaryOfProcesses : glossaryOfProcessesOption" *ngFor="let glossaryOfProcessesOption of glossaryofprocesses; trackBy: trackGlossaryOfProcessesById">{{glossaryOfProcessesOption.id}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

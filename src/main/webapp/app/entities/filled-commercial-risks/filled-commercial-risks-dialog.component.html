@@ -1,0 +1,90 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myFilledCommercialRisksLabel" jhiTranslate="rorumApp.filledCommercialRisks.home.createOrEditLabel">Create or edit a Filled Commercial Risks</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!filledCommercialRisks.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="filledCommercialRisks.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.filledCommercialRisks.probability" for="field_probability">Probability</label>
+            <input type="number" class="form-control" name="probability" id="field_probability"
+                [(ngModel)]="filledCommercialRisks.probability" required min="1" max="5" />
+            <div [hidden]="!(editForm.controls.probability?.dirty && editForm.controls.probability?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.probability?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.probability?.errors?.min" jhiTranslate="entity.validation.min" translateValues="{ min: 1 }">
+                    This field should be at least 1.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.probability?.errors?.max" jhiTranslate="entity.validation.max" translateValues="{ max: 5 }">
+                    This field cannot be more than 5.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.probability?.errors?.number" jhiTranslate="entity.validation.number">
+                    This field should be a number.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.filledCommercialRisks.powerOfInfluence" for="field_powerOfInfluence">Power Of Influence</label>
+            <input type="number" class="form-control" name="powerOfInfluence" id="field_powerOfInfluence"
+                [(ngModel)]="filledCommercialRisks.powerOfInfluence" required min="1" max="5" />
+            <div [hidden]="!(editForm.controls.powerOfInfluence?.dirty && editForm.controls.powerOfInfluence?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.powerOfInfluence?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.powerOfInfluence?.errors?.min" jhiTranslate="entity.validation.min" translateValues="{ min: 1 }">
+                    This field should be at least 1.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.powerOfInfluence?.errors?.max" jhiTranslate="entity.validation.max" translateValues="{ max: 5 }">
+                    This field cannot be more than 5.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.powerOfInfluence?.errors?.number" jhiTranslate="entity.validation.number">
+                    This field should be a number.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.filledCommercialRisks.calculatedValue" for="field_calculatedValue">Calculated Value</label>
+            <input type="number" class="form-control" name="calculatedValue" id="field_calculatedValue"
+                [(ngModel)]="filledCommercialRisks.calculatedValue"  />
+        </div>
+
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.filledCommercialRisks.glossaryOfCommercialRisksDTO" for="field_glossaryOfCommercialRisks">Glossary Of Commercial Risks</label>
+            <select class="form-control" id="field_glossaryOfCommercialRisks" name="glossaryOfCommercialRisksDTO" [(ngModel)]="filledCommercialRisks.glossaryOfCommercialRisksDTO" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="glossaryOfCommercialRisksOption.id === filledCommercialRisks.glossaryOfCommercialRisksDTO?.id ? filledCommercialRisks.glossaryOfCommercialRisksDTO : glossaryOfCommercialRisksOption" *ngFor="let glossaryOfCommercialRisksOption of glossaryofcommercialrisks; trackBy: trackGlossaryOfCommercialRisksById">{{glossaryOfCommercialRisksOption.id}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.filledCommercialRisks.commercialRisksPurposes" for="field_commercialRisksPurposes">Commercial Risks Purposes</label>
+            <select class="form-control" id="field_commercialRisksPurposes" name="commercialRisksPurposes" [(ngModel)]="filledCommercialRisks.commercialRisksPurposes" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="commercialRisksPurposesOption.id === filledCommercialRisks.commercialRisksPurposes?.id ? filledCommercialRisks.commercialRisksPurposes : commercialRisksPurposesOption" *ngFor="let commercialRisksPurposesOption of commercialriskspurposes; trackBy: trackCommercialRisksPurposesById">{{commercialRisksPurposesOption.id}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

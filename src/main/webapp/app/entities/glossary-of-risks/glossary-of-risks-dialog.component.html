@@ -1,0 +1,110 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myGlossaryOfRisksLabel" jhiTranslate="rorumApp.glossaryOfRisks.home.createOrEditLabel">Create or edit a Glossary Of Risks</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!glossaryOfRisksDTO.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="glossaryOfRisksDTO.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfRisks.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                [(ngModel)]="glossaryOfRisksDTO.name" required />
+            <div [hidden]="!(editForm.controls.name?.dirty && editForm.controls.name?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.name?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfRisks.completionDate" for="field_completionDate">Completion Date</label>
+            <div class="input-group">
+                <input id="field_completionDate" type="text" class="form-control" name="completionDate" ngbDatepicker  #completionDateDp="ngbDatepicker" [(ngModel)]="glossaryOfRisksDTO.completionDate"
+                required/>
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary" (click)="completionDateDp.toggle()"><i class="fa fa-calendar"></i></button>
+                </span>
+            </div>
+            <div [hidden]="!(editForm.controls.completionDate?.dirty && editForm.controls.completionDate?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.completionDate?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfRisks.creationDate" for="field_creationDate">Creation Date</label>
+            <div class="input-group">
+                <input id="field_creationDate" type="text" class="form-control" name="creationDate" ngbDatepicker  #creationDateDp="ngbDatepicker" [(ngModel)]="glossaryOfRisksDTO.creationDate"
+                required/>
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary" (click)="creationDateDp.toggle()"><i class="fa fa-calendar"></i></button>
+                </span>
+            </div>
+            <div [hidden]="!(editForm.controls.creationDate?.dirty && editForm.controls.creationDate?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.creationDate?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfRisks.importantTo" for="field_importantTo">Important To</label>
+            <div class="input-group">
+                <input id="field_importantTo" type="text" class="form-control" name="importantTo" ngbDatepicker  #importantToDp="ngbDatepicker" [(ngModel)]="glossaryOfRisksDTO.importantTo"
+                required/>
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary" (click)="importantToDp.toggle()"><i class="fa fa-calendar"></i></button>
+                </span>
+            </div>
+            <div [hidden]="!(editForm.controls.importantTo?.dirty && editForm.controls.importantTo?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.importantTo?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfRisks.isChecked" for="field_isChecked">Is Checked</label>
+            <input type="checkbox" class="form-control" name="isChecked" id="field_isChecked"
+                [(ngModel)]="glossaryOfRisksDTO.isChecked"  />
+        </div>
+
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfRisks.user" for="field_user">User</label>
+            <select class="form-control" id="field_user" name="user" [(ngModel)]="glossaryOfRisksDTO.user" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="userOption.id === glossaryOfRisksDTO.user?.id ? glossaryOfRisksDTO.user : userOption" *ngFor="let userOption of users; trackBy: trackUserById">{{userOption.id}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfRisks.glossaryOfRisksService" for="field_glossaryOfPurposes">Glossary Of Purposes</label>
+            <select class="form-control" id="field_glossaryOfPurposes" name="glossaryOfRisksService" [(ngModel)]="glossaryOfRisksDTO.glossaryOfRisksService" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="glossaryOfPurposesOption.id === glossaryOfRisksDTO.glossaryOfRisksService?.id ? glossaryOfRisksDTO.glossaryOfRisksService : glossaryOfPurposesOption" *ngFor="let glossaryOfPurposesOption of glossaryofpurposes; trackBy: trackGlossaryOfPurposesById">{{glossaryOfPurposesOption.id}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="rorumApp.glossaryOfRisks.organisationStructure" for="field_organisationStructure">Organisation Structure</label>
+            <select class="form-control" id="field_organisationStructure" name="organisationStructure" [(ngModel)]="glossaryOfRisksDTO.organisationStructure" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="organisationStructureOption.id === glossaryOfRisksDTO.organisationStructure?.id ? glossaryOfRisksDTO.organisationStructure : organisationStructureOption" *ngFor="let organisationStructureOption of organisationstructures; trackBy: trackOrganisationStructureById">{{organisationStructureOption.id}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

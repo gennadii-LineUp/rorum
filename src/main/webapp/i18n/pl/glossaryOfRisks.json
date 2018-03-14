@@ -1,0 +1,28 @@
+{
+    "rorumApp": {
+        "glossaryOfRisks" : {
+            "home": {
+                "title": "Słownik ryzyk",
+                "createLabel": "Dodaj ryzyko",
+                "createOrEditLabel": "Dodaj lub edytuj ryzyko"
+            },
+            "created": "Utworzono nowe ryzyko z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono ryzyko z identyfikatorem {{ param }}",
+            "deleted": "Usunięto ryzyko z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć ryzyko o id = {{ id }}?"
+            },
+            "detail": {
+                "title": "Słownik ryzyk"
+            },
+            "name": "Nazwa",
+            "completionDate": "Data kompletowania",
+            "creationDate": "Data utworzenia",
+            "importantTo": "Ważne do",
+            "isChecked": "Sprawdzone",
+            "user": "Użytkownik",
+            "glossaryOfPurposes": "Słownik celów id",
+            "organisationStructure": "Struktura Organizacyjna id"
+        }
+    }
+}

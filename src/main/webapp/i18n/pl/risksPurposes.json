@@ -1,0 +1,23 @@
+{
+    "rorumApp": {
+        "risksPurposes" : {
+            "home": {
+                "title": "Risks Purposes",
+                "createLabel": "Dodaj Risks Purposes",
+                "createOrEditLabel": "Dodaj lub edytuj: Risks Purposes"
+            },
+            "created": "Utworzono nowy Risks Purposes z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Risks Purposes z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Risks Purposes z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Risks Purposes {{ id }}?"
+            },
+            "detail": {
+                "title": "Risks Purposes"
+            },
+            "creationDate": "Creation Date",
+            "setOfSentPurposes": "Set Of Sent Purposes",
+            "filledRisks": "Filled Risks"
+        }
+    }
+}

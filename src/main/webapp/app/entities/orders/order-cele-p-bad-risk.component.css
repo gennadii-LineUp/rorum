@@ -1,0 +1,82 @@
+
+.truncate-text {
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis ;
+}
+.truncate-text:hover {
+    background-color: #d3d3d3;
+    white-space: normal ;
+}
+.text-opened {
+    background-color: #d3d3d3;
+    white-space: normal ;
+}
+h5 {
+    margin-top: .5rem;
+    margin-bottom: .1rem;
+    text-align: center;
+}
+table, h5{
+    white-space: normal;
+}
+table button{
+    padding-bottom: 0;
+    padding-top: 0;
+}
+table th, table td {
+     padding-bottom: 0;
+     padding-top: 0;
+ }
+table td {
+    padding-left: 4px;
+    padding-right: 4px;
+    vertical-align: middle;
+}
+table label {
+    cursor: pointer;
+    width: 100%;
+    padding-top: 4px;
+    margin: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.ng-invalid:not(form) {
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    border-left: 2px solid red;
+}
+.ng-valid[required], .ng-valid.required {
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+div.input-group input{
+    width: 90px;
+}
+textarea {
+    horizontal: none;
+}
+h5{
+    font-size: 0.9rem;
+    font-weight: 800;
+    line-height: 1.4;
+}
+.disadledMode-answer{
+    color: black;
+    font-weight: 500;
+}
+.bold-style {
+    font-weight: bold;
+}

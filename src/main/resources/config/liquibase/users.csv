@@ -1,0 +1,64 @@
+id;login;password_hash;first_name;last_name;email;image_url;activated;lang_key;created_by;last_modified_by;organisation_structure_id
+1;system;$2a$10$mE.qmcV0mFU5NcKh73TZx.z4ueI/.bDWbj0T1BYyqP481kGGarKLG;System;System;system@localhost;;true;pl;system;system;1
+2;anonymoususer;$2a$10$j8S5d7Sr7.8VTOYNviDPOeWX8KcYILUVJBsYV83Y5NtECayypx9lO;Anonymous;User;anonymous@localhost;;true;pl;system;system;2
+3;admin;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;Administrator;admin@localhost;;true;pl;system;system;3
+4;user;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;User;User;user@localhost;;true;pl;system;system;4
+7;user1B;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;User1B;User1B;user1B@localhost;;true;pl;system;system;1170
+8;user2B;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;User2B;User2B;user2B@localhost;;true;pl;system;system;1170
+9;user1UD;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;User1UD;User1UD;user2@localhost;;true;pl;system;system;1644
+10;adminB;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;adminB;adminB;adminB@localhost;;true;pl;system;system;44
+11;adminUD;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;adminUD;adminUD;adminUD@localhost;;true;pl;system;system;408
+12;user1JO;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;user1J;user1J;user1J@localhost;;true;pl;system;system;2164
+13;adminJO;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;adminJO;adminJO;adminJO@localhost;;true;pl;system;system;52
+14;globalAdmin;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;globalAdmin;globalAdmin;globalAdmin@localhost;;true;pl;system;system;19
+15;adminUDBemowo;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Bemowo;adminUDBemowo@localhost;;true;pl;system;system;392
+16;adminUDBialoleka;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Białołęka;adminUDBialoleka@localhost;;true;pl;system;system;394
+17;adminUDBielany;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Bielany;adminUDBielany@localhost;;true;pl;system;system;395
+18;adminUDMokotow;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Mokotów;adminUDMokotow@localhost;;true;pl;system;system;396
+19;adminUDOchota;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Ochota;adminUDOchota@localhost;;true;pl;system;system;397
+20;adminUDPragaPoludnie;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Praga Południe;adminUDPragaPoludnie@localhost;;true;pl;system;system;398
+21;adminUDPragaPolnoc;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Praga Północ;adminUDPragaPolnoc@localhost;;true;pl;system;system;399
+22;adminUDRembertow;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Rembertów;adminUDRembertow@localhost;;true;pl;system;system;400
+23;adminUDSrodmiescie;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Śródmieście;adminUDSrodmiescie@localhost;;true;pl;system;system;401
+24;adminUDTargowek;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Targówek;adminUDTargowek@localhost;;true;pl;system;system;402
+25;adminUDUrsus;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Ursus;adminUDUrsus@localhost;;true;pl;system;system;403
+26;adminUDUrsynow;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Ursynów;adminUDUrsynow@localhost;;true;pl;system;system;404
+27;adminUDWawer;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Wawer;adminUDWawer@localhost;;true;pl;system;system;405
+28;adminUDWesola;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Wesoła;adminUDWesola@localhost;;true;pl;system;system;406
+29;adminUDWilanow;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Wilanów;adminUDWilanow@localhost;;true;pl;system;system;407
+30;adminUDWlochy;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Włochy;adminUDWlochy@localhost;;true;pl;system;system;408
+31;adminUDWola;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Wola;adminUDWola@localhost;;true;pl;system;system;409
+32;adminUDZoliborz;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Żoliborz;adminUDZoliborz@localhost;;true;pl;system;system;410
+33;userWGO;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WGO;userWGO@localhost;;true;pl;system;system;1166
+34;userWGWiG;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WGWiG;userWGWiG@localhost;;true;pl;system;system;1167
+35;userWOSPM;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSPM;userWOSPM@localhost;;true;pl;system;system;1168
+36;userWO;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WO;userWO@localhost;;true;pl;system;system;1169
+37;userWOWE;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOWE;userWOWE@localhost;;true;pl;system;system;1170
+38;userWSZ;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WSZ;userWSZ@localhost;;true;pl;system;system;1171
+39;userWUIiOP;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WUIiOP;userWUIiOP@localhost;;true;pl;system;system;1172
+40;userSWSPF;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;SWSPF;userSWSPF@localhost;;true;pl;system;system;1173
+41;userSWSPDP;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;SWSPDP;userSWSPDP@localhost;;true;pl;system;system;1174
+42;userWSiIoS;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WSiIoS;userWSiIoS@localhost;;true;pl;system;system;1275
+43;userWOSBemowo;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSBemowo;userWOSBemowo@localhost;;true;pl;system;system;1361
+44;userWKS;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WKS;userWKS@localhost;;true;pl;system;system;1385
+45;userWOSBielany;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSBielany;userWOSBielany@localhost;;true;pl;system;system;1404
+46;userWOSMokotow;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSMokotow;userWOSMokotow@localhost;;true;pl;system;system;1425
+47;userWOSOchota;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSOchota;userWOSOchota@localhost;;true;pl;system;system;1448
+48;userWOSPragaPoludnie1;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSPragaPoludnie;userWOSPragaPoludnie1@localhost;;true;pl;system;system;1467
+49;userWOSRembertow;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSRembertow;userWOSRembertow@localhost;;true;pl;system;system;1484
+50;userWOSSrodmiescie;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSSrodmiescie;userWOSSrodmiescie@localhost;;true;pl;system;system;1503
+51;userWOSUrsynow;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSUrsynow;userWOSUrsynow@localhost;;true;pl;system;system;1566
+52;userWOSUrsus;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSUrsus;userWOSUrsus@localhost;;true;pl;system;system;1545
+53;userWOSTargowek;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSTargowek;userWOSTargowek@localhost;;true;pl;system;system;1531
+54;userWOSWlochy;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSWlochy;userWOSWlochy@localhost;;true;pl;system;system;1644
+55;userWOSWesola;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSWesola;userWOSWesola@localhost;;true;pl;system;system;1614
+56;userWOSWawer;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSWawer;userWOSWawer@localhost;;true;pl;system;system;1589
+57;userWOSZoliborz;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSZoliborz;userWOSZoliborz@localhost;;true;pl;system;system;1686
+58;userWOSWola;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSWola;userWOSWola@localhost;;true;pl;system;system;1662
+59;userWOSPragaPoludnie;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSPragaPoludnie;userWOSPragaPoludnie@localhost;;true;pl;system;system;1720
+60;userLasyMiejskie;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;LM;userLM@localhost;;true;pl;system;system;2106
+61;userMiejskiOgrodZoologiczny;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;MOZ;userMOZ@localhost;;true;pl;system;system;2107
+62;userSchronisko;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;SBZ;userSBZ@localhost;;true;pl;system;system;2108
+63;userZarzadZieleni;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;ZZW;userZZW@localhost;;true;pl;system;system;3038
+64;userWOSWilanow;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Użytkownik;WOSWilanow;userWOSWilanow@localhost;;true;pl;system;system;1622
+65;adminB_test;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;UD Ursus;adminB_test@localhost;;true;pl;system;system;1170

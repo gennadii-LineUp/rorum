@@ -1,0 +1,88 @@
+<div>
+    <h2>
+        <span jhiTranslate="rorumApp.highRisk.home.title">High Risks</span>
+        <button class="btn btn-primary float-right jh-create-entity create-high-risk" [routerLink]="['/', { outlets: { popup: ['high-risk-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span  jhiTranslate="rorumApp.highRisk.home.createLabel">
+            Create new High Risk
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="highRisks">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="rorumApp.highRisk.rejectToAccomplishPurpose">Reject To Accomplish Purpose</span></th>
+            <th><span jhiTranslate="rorumApp.highRisk.postponePurposeAccomplishment">Postpone Purpose Accomplishment</span></th>
+            <th><span jhiTranslate="rorumApp.highRisk.restrictRangeOfPurposeAccomplishment">Restrict Range Of Purpose Accomplishment</span></th>
+            <th><span jhiTranslate="rorumApp.highRisk.costOfListedPossibilities">Cost Of Listed Possibilities</span></th>
+            <th><span jhiTranslate="rorumApp.highRisk.projectedTermDeployStart">Projected Term Deploy Start</span></th>
+            <th><span jhiTranslate="rorumApp.highRisk.projectedTermDeployFinish">Projected Term Deploy Finish</span></th>
+            <th><span jhiTranslate="rorumApp.highRisk.probabilityToReach">Probability To Reach</span></th>
+            <th><span jhiTranslate="rorumApp.highRisk.powerOfInfluenceToReach">Power Of Influence To Reach</span></th>
+            <th><span jhiTranslate="rorumApp.highRisk.analyze">Analyze</span></th>
+            <th><span jhiTranslate="rorumApp.highRisk.substantiationForAnalyze">Substantiation For Analyze</span></th>
+            <th><span jhiTranslate="rorumApp.highRisk.commentToHighRiskProcedure">Comment To High Risk Procedure</span></th>
+            <th><span jhiTranslate="rorumApp.highRisk.decisionForRisk">Decision For Risk</span></th>
+            <th><span jhiTranslate="rorumApp.highRisk.possibilitiesToImproveRisk">Possibilities To Improve Risk</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let highRisk of highRisks ;trackBy: trackId">
+                <td><a [routerLink]="['../high-risk', highRisk.id ]">{{highRisk.id}}</a></td>
+                <td>{{highRisk.rejectToAccomplishPurpose}}</td>
+                <td>{{highRisk.postponePurposeAccomplishment}}</td>
+                <td>{{highRisk.restrictRangeOfPurposeAccomplishment}}</td>
+                <td>{{highRisk.costOfListedPossibilities}}</td>
+                <td>{{highRisk.projectedTermDeployStart}}</td>
+                <td>{{highRisk.projectedTermDeployFinish}}</td>
+                <td>{{highRisk.probabilityToReach}}</td>
+                <td>{{highRisk.powerOfInfluenceToReach}}</td>
+                <td jhiTranslate="{{'rorumApp.AnalyzeOfRisk.' + highRisk.analyze}}">{{highRisk.analyze}}</td>
+                <td>{{highRisk.substantiationForAnalyze}}</td>
+                <td>{{highRisk.commentToHighRiskProcedure}}</td>
+                <td>
+                    <div *ngIf="highRisk.decisionForRisk">
+                        <a [routerLink]="['../decision-for-risk', highRisk.decisionForRisk?.id ]" >{{highRisk.decisionForRisk?.id}}</a>
+                    </div>
+                </td>
+                <td>
+                    <span *ngFor="let possibilitiesToImproveRisk of highRisk.possibilitiesToImproveRisks; let last = last">
+                            <a class="form-control-static" [routerLink]="['../possibilities-to-improve-risk', possibilitiesToImproveRisk?.id ]">{{possibilitiesToImproveRisk.id}}</a>{{last ? '' : ', '}}
+                        </span>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['../high-risk', highRisk.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'high-risk/'+ highRisk.id + '/edit'} }]"
+                                replaceUrl="true"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'high-risk/'+ highRisk.id + '/delete'} }]"
+                                replaceUrl="true"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

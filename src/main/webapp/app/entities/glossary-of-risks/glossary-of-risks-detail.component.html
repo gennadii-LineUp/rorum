@@ -1,0 +1,57 @@
+
+<div *ngIf="glossaryOfRisksDTO">
+    <h2><span jhiTranslate="rorumApp.glossaryOfRisks.detail.title">Glossary Of Risks</span> {{glossaryOfRisksDTO.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="rorumApp.glossaryOfRisks.name">Name</span></dt>
+        <dd>
+            <span>{{glossaryOfRisksDTO.name}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfRisks.completionDate">Completion Date</span></dt>
+        <dd>
+            <span>{{glossaryOfRisksDTO.completionDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfRisks.creationDate">Creation Date</span></dt>
+        <dd>
+            <span>{{glossaryOfRisksDTO.creationDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfRisks.importantTo">Important To</span></dt>
+        <dd>
+            <span>{{glossaryOfRisksDTO.importantTo | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfRisks.isChecked">Is Checked</span></dt>
+        <dd>
+            <span>{{glossaryOfRisksDTO.isChecked}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfRisks.user">User</span></dt>
+        <dd>
+            {{glossaryOfRisksDTO.user?.id}}
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfRisks.glossaryOfRisksService">Glossary Of Purposes</span></dt>
+        <dd>
+            <div *ngIf="glossaryOfRisksDTO.glossaryOfRisksService">
+                <a [routerLink]="['/glossary-of-purposes', glossaryOfRisksDTO.glossaryOfRisksService?.id]">{{glossaryOfRisksDTO.glossaryOfRisksService?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.glossaryOfRisks.organisationStructure">Organisation Structure</span></dt>
+        <dd>
+            <div *ngIf="glossaryOfRisksDTO.organisationStructure">
+                <a [routerLink]="['/organisation-structure', glossaryOfRisksDTO.organisationStructure?.id]">{{glossaryOfRisksDTO.organisationStructure?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'glossary-of-risks/'+ glossaryOfRisksDTO.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

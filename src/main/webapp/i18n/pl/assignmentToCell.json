@@ -1,0 +1,10 @@
+{
+    "rorumApp": {
+        "AssignmentToCell" : {
+            "null": "",
+            "JEDNOSTKAWYKONAWCZA": "JEDNOSTKAWYKONAWCZA",
+            "URZADDZIELNICY": "URZADDZIELNICY",
+            "BIURO": "BIURO"
+        }
+    }
+}

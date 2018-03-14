@@ -1,0 +1,30 @@
+{
+    "rorumApp": {
+        "order" : {
+            "home": {
+                "title": "Zlecenie",
+                "createLabel": "Create Order",
+                "createOrEditLabel": "Create or Edit Order"
+            },
+            "created": "Utworzono nowy Zlecenie z identyfikatorem {{ param }}",
+            "updated": "Zmiany zostały zarejestrowane",
+            "deleted": "Usunięto Zlecenie z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Zlecenie {{ id }}?"
+            },
+            "detail": {
+                "title": "Zlecenie"
+            },
+            
+            "name": "Name",
+            "financingYear": "Financing Year",
+            "startDate": "Start Date",
+            "firstReportingDate": "First Reporting Date",
+            "secondReportingDate": "Second Reporting Date",
+            "thirdReportingDate": "Third Reporting Date",
+            "finalDate": "Final date"
+
+           
+        }
+    }
+}

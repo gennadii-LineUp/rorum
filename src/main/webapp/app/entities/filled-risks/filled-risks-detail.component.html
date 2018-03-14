@@ -1,0 +1,51 @@
+
+<div *ngIf="filledRisks">
+    <h2><span jhiTranslate="rorumApp.filledRisks.detail.title">Filled Risks</span> {{filledRisks.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="rorumApp.filledRisks.probability">Probability</span></dt>
+        <dd>
+            <span>{{filledRisks.probability}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.filledRisks.powerOfInfluence">Power Of Influence</span></dt>
+        <dd>
+            <span>{{filledRisks.powerOfInfluence}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.filledRisks.calculatedValue">Calculated Value</span></dt>
+        <dd>
+            <span>{{filledRisks.calculatedValue}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.filledRisks.glossaryOfRisksService">Glossary Of Purposes</span></dt>
+        <dd>
+            <div *ngIf="filledRisks.glossaryOfRisksService">
+                <a [routerLink]="['/glossary-of-purposes', filledRisks.glossaryOfRisksService?.id]">{{filledRisks.glossaryOfRisksService?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.filledRisks.risksPurposes">Risks Purposes</span></dt>
+        <dd>
+            <div *ngIf="filledRisks.risksPurposes">
+                <a [routerLink]="['/risks-purposes', filledRisks.risksPurposes?.id]">{{filledRisks.risksPurposes?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.filledRisks.glossaryOfRisksDTO">Glossary Of Risks</span></dt>
+        <dd>
+            <div *ngIf="filledRisks.glossaryOfRisksDTO">
+                <a [routerLink]="['/glossary-of-risks', filledRisks.glossaryOfRisksDTO?.id]">{{filledRisks.glossaryOfRisksDTO?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'filled-risks/'+ filledRisks.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

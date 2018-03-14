@@ -1,0 +1,113 @@
+<div>
+    <h2>
+        <span *ngIf="order">{{order.name}}</span>
+        <!-- <span jhiTranslate="rorumApp.setOfSentPurposes.home.title">Set Of Sent Purposes</span> -->
+        <!--<button class="btn btn-primary float-right jh-create-entity create-set-of-sent-purposes" [routerLink]="['/', { outlets: { popup: ['set-of-sent-purposes-new'] } }]">-->
+            <!--<span class="fa fa-plus"></span>-->
+            <!--<span  jhiTranslate="rorumApp.setOfSentPurposes.home.createLabel">-->
+            <!--Create new Set Of Sent Purposes-->
+            <!--</span>-->
+        <!--</button>-->
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    <div style="text-align: center; font-size: 2em; color:red">
+        <span *ngIf="!(setOfSentPurposes && setOfSentPurposes.length>0)">Brak planów oczekujących na zatwierdzenie przez administratora</span>
+    </div>
+    <div *ngIf="setOfSentPurposes && setOfSentPurposes.length>0" class="table-responsive" >
+        <table class="table table-striped">
+            <thead>
+                <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="transition.bind(this)">
+                <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <span class="fa fa-sort"></span></th>
+                <th jhiSortBy="statusOfSending"><span jhiTranslate="rorumApp.setOfSentPurposes.statusOfSending">Status Of Sending</span> <span class="fa fa-sort"></span></th>
+                <!--<th jhiSortBy="isLastVersion"><span jhiTranslate="rorumApp.setOfSentPurposes.isLastVersion">Is Last Version</span> <span class="fa fa-sort"></span></th>-->
+                <th jhiSortBy="creationDate"><span jhiTranslate="rorumApp.setOfSentPurposes.creationDate">Creation Date</span> <span class="fa fa-sort"></span></th>
+                <!--<th jhiSortBy="notation"><span jhiTranslate="rorumApp.setOfSentPurposes.notation">Notation</span> <span class="fa fa-sort"></span></th>-->
+                <!--<th jhiSortBy="orders.id"><span jhiTranslate="rorumApp.setOfSentPurposes.orders">Orders</span> <span class="fa fa-sort"></span></th>-->
+                <th jhiSortBy="user.id"><span jhiTranslate="rorumApp.setOfSentPurposes.user">User</span> <span class="fa fa-sort"></span></th>
+                <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let set of setOfSentPurposes; trackBy: trackId">
+                <td><a [routerLink]="['../set-of-sent-purposes', set.id ]">{{set.id}}</a></td>
+                <td jhiTranslate="{{'rorumApp.StatusOfSending.' + set.statusOfSending}}">{{set.statusOfSending}}</td>
+                <!--<td>{{set.isLastVersion}}</td>-->
+                <td>{{set.creationDate | date:'mediumDate'}}</td>
+                <!--<td>{{set.notation}}</td>-->
+                <!--<td>-->
+                    <!--<div *ngIf="set.orders">-->
+                        <!--<a [routerLink]="['../orders', set.orders?.id ]" >{{set.orders?.id}}</a>-->
+                    <!--</div>-->
+                <!--</td>-->
+                <td>
+                    <span *ngIf="set.user.firstName">{{set.user.firstName}}</span>
+                    <!--<span *ngIf="set.user.lastName"> {{set.user.lastName}}</span>-->
+                    <span *ngIf="set.user.login"> {{set.user.lastName}}</span>
+                    <span *ngIf="set.user.login">, {{set.user.organisationStructure.name}}</span>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <!-- <button type="button"
+                                [routerLink]="['../set-of-sent-purposes', set.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button> -->
+                        <!--<button type="submit"-->
+                                <!--[routerLink]="['/', { outlets: { popup: 'set-of-sent-purposes/'+ set.id + '/edit'} }]"-->
+                                <!--replaceUrl="true"-->
+                                <!--class="btn btn-primary btn-sm">-->
+                            <!--<span class="fa fa-pencil"></span>-->
+                            <!--<span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>-->
+                        <!--</button>-->
+                        <button type="button"
+                                [routerLink]="['/', { outlets: {popup: set.id + '/delete'}}]"
+                                replaceUrl="true"
+                                class="btn btn-danger btn-sm" (click)="setOfSentPurposesService.setSetPurposesId(set.id)">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                        <!--*ngIf="set.statusOfSending = 'UNCHECKED'"-->
+                        <button type="submit" *ngIf="(set.statusOfSending === 'UNCHECKED_PURPOSES')
+                                                    || (set.statusOfSending === 'UNCHECKED_PLAN')"
+                                [routerLink]="['../' + parent_type + '/' + set.id + '/check']"
+                                class="btn btn-success btn-sm">
+                            <span class="fa fa-check-square-o"></span>
+                            <span class="d-none d-md-inline"  jhiTranslate="entity.action.check">Check</span>
+                        </button>
+                        <!--<button type="button" (click)= "generatePurposeAccomplishmentRaport(order.id, set.user.id, order.name + '-' + set.user.organisationStructure.name + '-Realizacja-celow' )"-->
+                        <!--&gt;Drukuj raport - realizacja celów -->
+                        <!--&lt;!&ndash; {{order.name}} + '-' + {{set.user.organisationStructure.name}} + '-Realizacja-celow' &ndash;&gt;-->
+                        <!--</button>-->
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" [routerLink]="['../../../']"
+                class="btn btn-info">
+            <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+        </button>
+
+
+        <!--<button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">-->
+            <!--<span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>-->
+        <!--</button>-->
+        <!--<button type="submit" class="btn btn-primary" (click)="submitSaveFunction()">-->
+            <!--<span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>-->
+        <!--</button>-->
+    </div>
+        <!--<div *ngIf="setOfSentPurposes && setOfSentPurposes.length">-->
+            <!--<div class="row justify-content-center">-->
+                <!--<jhi-item-count [page]="page" [total]="queryCount" [maxSize]="5" [itemsPerPage]="itemsPerPage"></jhi-item-count>-->
+            <!--</div>-->
+            <!--<div class="row justify-content-center">-->
+                <!--<ngb-pagination [collectionSize]="totalItems" [maxSize]="5" [pageSize]="itemsPerPage" [(page)]="page" (pageChange)="loadPage(page)"></ngb-pagination>-->
+            <!--</div>-->
+        <!--</div>-->
+</div>

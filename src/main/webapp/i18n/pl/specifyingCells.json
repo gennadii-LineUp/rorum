@@ -1,0 +1,16 @@
+{
+    "rorumApp": {
+        "SpecifyingCells" : {
+            "null": "",
+            "BIURO": "BIURO",
+            "URZAD": "URZAD",
+            "JEDNOSTKAORGANIZACYJNA": "JEDNOSTKAORGANIZACYJNA",
+            "JEDNOSTKAWYKONAWCZA": "JEDNOSTKAWYKONAWCZA",
+            "WYDZIAL": "WYDZIAL",
+            "WOJEWODZTWO": "WOJEWODZTWO",
+            "MIASTO": "MIASTO",
+            "URZADDZIELNICY": "URZADDZIELNICY",
+            "URZEDYDZIELNIC": "URZEDYDZIELNIC"
+        }
+    }
+}

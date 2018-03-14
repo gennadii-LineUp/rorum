@@ -1,0 +1,24 @@
+{
+    "rorumApp": {
+        "commercialRisksPurposes" : {
+            "home": {
+                "title": "Commercial Risks Purposes",
+                "createLabel": "Dodaj Commercial Risks Purposes",
+                "createOrEditLabel": "Dodaj lub edytuj: Commercial Risks Purposes"
+            },
+            "created": "Utworzono nowy Commercial Risks Purposes z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Commercial Risks Purposes z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Commercial Risks Purposes z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Commercial Risks Purposes {{ id }}?"
+            },
+            "detail": {
+                "title": "Commercial Risks Purposes"
+            },
+            "statusOfSending": "Status Of Sending",
+            "creationDate": "Creation Date",
+            "notation": "Notation",
+            "setOfSentPurposes": "Set Of Sent Purposes"
+        }
+    }
+}

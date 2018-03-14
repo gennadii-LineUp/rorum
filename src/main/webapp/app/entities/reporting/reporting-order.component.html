@@ -1,0 +1,178 @@
+<div align="center" class="my-5">
+    <h1>Wybierz raport, który chcesz wygenerować:</h1>
+    <!-- <p-progressSpinner></p-progressSpinner> -->
+</div>
+<p-blockUI [blocked]="!isAvailable"></p-blockUI>
+<p-growl [life]=4000 [(value)]="msgs"></p-growl>
+
+<p-dialog header="Proszę określić parametry dotyczące raportu" [(visible)]="reportByProcessDialog" modal="modal" width="500" [responsive]="true">
+        <span>Wybierz Proces:</span>
+        <select [(ngModel)]="chosenProcessId">
+            <option *ngFor="let g of glossaryOfProceeses" [value]="g.id">
+                {{g.name}}
+            </option>
+        </select>
+       <p-footer>
+            <button type="button" pButton icon="fa-check" (click)="generateReportByProcesses()">Generuj</button>
+            <button type="button" pButton icon="fa-close" (click)="reportByProcessDialog=false">Anuluj</button>
+        </p-footer>
+</p-dialog>
+
+<p-dialog header="Proszę określić parametry dotyczące raportu" [(visible)]="changesInRisks" modal="modal" width="700" [responsive]="true">
+    <span>Wybierz jednostkę:</span>
+    <select [(ngModel)]="chosenOrganisationStructureId">
+        <option *ngFor="let os of organisationStructures" [value]="os.id">
+            {{os.name}}
+        </option>
+    </select>
+    <p-footer>
+        <button type="button" pButton icon="fa-check" (click)="generateRisksChangesReport(order.name + '- rejestr ryzyk')">Generuj</button>
+        <button type="button" pButton icon="fa-close" (click)="changesInRisks=false">Anuluj</button>
+    </p-footer>
+</p-dialog>
+
+<p-dialog header="Proszę określić parametry dotyczące raportu" [(visible)]="purposeAccomplishmentReportAdmin" modal="modal" width="700" [responsive]="true">
+    <span>Wybierz jednostkę:</span>
+    <select [(ngModel)]="chosenOrganisationStructureId">
+        <option *ngFor="let os of organisationStructures" [value]="os.id">
+            {{os.name}}
+        </option>
+    </select>
+    <p-footer>
+        <button type="button" pButton icon="fa-check" (click)="generatePurposeAccomplishmentRaportAdmin(order.name + '- stopień realizacji celu')">Generuj</button>
+        <button type="button" pButton icon="fa-close" (click)="purposeAccomplishmentReportAdmin=false">Anuluj</button>
+    </p-footer>
+</p-dialog>
+
+<ng-template #byStructure><span jhiTranslate="rorumApp.reporting.tooltipText.byStructure"></span></ng-template>
+<ng-template #bySupervisored><span jhiTranslate="rorumApp.reporting.tooltipText.bySupervisored"></span></ng-template>
+<ng-template #risksReport><span jhiTranslate="rorumApp.reporting.tooltipText.risksReport"></span></ng-template>
+<ng-template #risksRegister><span jhiTranslate="rorumApp.reporting.tooltipText.risksRegister"></span></ng-template>
+<ng-template #purposeAccomplishmentReport><span jhiTranslate="rorumApp.reporting.tooltipText.purposeAccomplishmentReport"></span></ng-template>
+<ng-template #byProcess><span jhiTranslate="rorumApp.reporting.tooltipText.byProcess"></span></ng-template>
+<ng-template #changesRisk><span jhiTranslate="rorumApp.reporting.tooltipText.changesRisk"></span></ng-template>
+
+
+<div class="row" >
+        <div *jhiHasAnyAuthority="'ROLE_GENERUJ_RAPORT_WG_STRUKTURY'" class="col-sm-4" align="center">
+            <div class="center" [ngbTooltip]="byStructure">
+                <a (click)="showWarn()" class="link" >
+                    <div class="card my-4 not-finished">
+                        <div class="card-block" align="center">
+                            <div class="my-4"><i class="fa fa-bar-chart" style="font-size:100px"></i></div>
+                            <h3 class="card-title">Rejestr ryzyka</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div *jhiHasAnyAuthority="'ROLE_GENERUJ_RAPORT_WG_NADZORU'" class="col-sm-4" align="center">
+            <div class="center" [ngbTooltip]="bySupervisored">
+                <a (click)="showWarn()" class="link">
+                    <div class="card my-4 not-finished">
+                        <div class="card-block" align="center">
+                            <div class="my-4"><i class="fa fa-area-chart" style="font-size:100px"></i></div>
+                            <h3 class="card-title">Wg nadzoru</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div *jhiHasAnyAuthority="'ROLE_GENERUJ_RAPORT_RYZYK'" class="col-sm-4" align="center">
+            <div class="center" [ngbTooltip]="risksReport">
+                <a (click)="generateRiskReport(orderId, order.name + '- raport ryzyk')" class="link">
+                    <div class="card my-4 in-progress">
+                        <div class="card-block" align="center">
+                            <div class="my-4"><i class="fa fa-archive" style="font-size:100px"></i></div>
+                            <h3 class="card-title">Raport ryzyka - excel</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div *jhiHasAnyAuthority="'ROLE_GENERUJ_RAPORT_RYZYK'" class="col-sm-4" align="center">
+            <div class="center" [ngbTooltip]="risksReport">
+                <a (click)="generateRiskRegisterAdmin(orderId, order.name + '- rejestr ryzyk')" class="link">
+                    <div class="card my-4 in-progress">
+                        <div class="card-block" align="center">
+                            <div class="my-4"><i class="fa fa-book" style="font-size:100px"></i></div>
+                            <h3 class="card-title">Rejestr ryzyk - excel</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div *jhiHasAnyAuthority="'ROLE_GENERUJ_RAPORT_RYZYK'" class="col-sm-4" align="center">
+            <div class="center" [ngbTooltip]="changesRisk">
+                <a (click)="getAllParentedOrSupervisoredOrganisationStructures('risks')" class="link">
+                    <div class="card my-4">
+                        <div class="card-block" align="center">
+                            <div class="my-4"><i class="fa fa-line-chart" style="font-size:100px"></i></div>
+                            <h3 class="card-title">Zmiany ryzyka jednostki</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div *jhiHasAnyAuthority="'ROLE_GENERUJ_RAPORT_RYZYK'" class="col-sm-4" align="center">
+            <div class="center" [ngbTooltip]="purposeAccomplishmentReport">
+                <a (click)="getAllParentedOrSupervisoredOrganisationStructures('purposeAccomplishment')" class="link">
+                    <div class="card my-4">
+                        <div class="card-block" align="center">
+                                <div class="my-4"><i class="fa fa-pie-chart" style="font-size:100px"></i></div>
+                                <h3 class="card-title">Stopień realizacji celu jednostki</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div *jhiHasAnyAuthority="'ROLE_GENERUJ_RAPORT_WG_PROCESOW'" class="col-sm-4" align="center">
+            <div class="center" [ngbTooltip]="byProcess">
+                <a (click)="reportByProcessDialogBox(); showWarn();" class="link">
+                    <div class="card my-4 not-finished">
+                        <div class="card-block" align="center">
+                            <div class="my-4"><i class="fa fa-group" style="font-size:100px"></i></div>
+                            <h3 class="card-title">Wg procesu</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div *jhiHasAnyAuthority="'ROLE_GENERUJ_RAPORT_STOPIEN_REALIZACJI_CELU'" class="col-sm-4" align="center">
+            <div class="center" [ngbTooltip]="purposeAccomplishmentReport">
+                <!-- <a (click)="costam(orderId, userId)" class="link"> -->
+                <a (click)="generatePurposeAccomplishmentRaport(orderId, userId, order.name +   '- stopien realizacji celow')" class="link">
+                    <div class="card my-4">
+                        <div class="card-block" align="center">
+                                <div class="my-4"><i class="fa fa-pie-chart" style="font-size:100px"></i></div>
+                                <h3 class="card-title">Stopień realizacji celu</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div *jhiHasAnyAuthority="'ROLE_GENERUJ_RAPORT_REJESTR_RYZYKA'" class="col-sm-4" align="center">
+            <div class="center" [ngbTooltip]="risksRegister">
+                <a (click)="generateRiskRegisterRaport(orderId, order.name + '- rejestr ryzyk')" class="link">
+                    <div class="card my-4">
+                        <div class="card-block" align="center">
+                            <div class="my-4"><i class="fa fa-line-chart" style="font-size:100px"></i></div>
+                            <h3 class="card-title">Rejestr ryzyka</h3>
+                            
+                            <!-- <div align="center"><a href="#" class="btn btn-primary">Drukuj</a></div> -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+                   
+</div>

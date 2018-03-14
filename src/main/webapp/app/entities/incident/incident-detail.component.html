@@ -1,0 +1,61 @@
+
+<div *ngIf="incident">
+    <h2><span jhiTranslate="rorumApp.incident.detail.title">Incident</span> {{incident.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="rorumApp.incident.description">Description</span></dt>
+        <dd>
+            <span>{{incident.description}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.incident.descriptionOfReaction">Description Of Reaction</span></dt>
+        <dd>
+            <span>{{incident.descriptionOfReaction}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.incident.descriptionOfPlannedActivities">Description Of Planned Activities</span></dt>
+        <dd>
+            <span>{{incident.descriptionOfPlannedActivities}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.incident.isCritical">Is Critical</span></dt>
+        <dd>
+            <span>{{incident.isCritical}}</span>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.incident.setOfSentPurposes">Set Of Sent Purposes</span></dt>
+        <dd>
+            <div *ngIf="incident.setOfSentPurposes">
+                <a [routerLink]="['/set-of-sent-purposes', incident.setOfSentPurposes?.id]">{{incident.setOfSentPurposes?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.incident.glossaryOfPurposes">Glossary Of Purposes</span></dt>
+        <dd>
+            <div *ngIf="incident.glossaryOfPurposes">
+                <a [routerLink]="['/glossary-of-purposes', incident.glossaryOfPurposes?.id]">{{incident.glossaryOfPurposes?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.incident.filledRisks">Filled Risks</span></dt>
+        <dd>
+            <div *ngIf="incident.filledRisks">
+                <a [routerLink]="['/filled-risks', incident.filledRisks?.id]">{{incident.filledRisks?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="rorumApp.incident.filledCommercialRisks">Filled Commercial Risks</span></dt>
+        <dd>
+            <div *ngIf="incident.filledCommercialRisks">
+                <a [routerLink]="['/filled-commercial-risks', incident.filledCommercialRisks?.id]">{{incident.filledCommercialRisks?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'incident/'+ incident.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

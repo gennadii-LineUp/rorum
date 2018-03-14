@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="20171219124633-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="glossary_of_commercial_risks_id"
+                                 baseTableName="filled_commercial_risks"
+                                 constraintName="fk_filled_commercial_risks_glossary_of_commercial_risks_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="glossary_of_commercial_risks"/>
+
+        <addForeignKeyConstraint baseColumnNames="commercial_risks_purposes_id"
+                                 baseTableName="filled_commercial_risks"
+                                 constraintName="fk_filled_commercial_risks_commercial_risks_purposes_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="commercial_risks_purposes"/>
+
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="filled_commercial_risks"
+                                 constraintName="fk_filled_commercial_risks_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="users"/>
+
+        <addForeignKeyConstraint baseColumnNames="filled_commercial_risks_id"
+                                 baseTableName="filled_commercial_risks_probability_configuration"
+                                 constraintName="fk_filled_commercial_risks_id_probability_configuration"
+                                 referencedColumnNames="id"
+                                 referencedTableName="filled_commercial_risks"/>
+
+        <addForeignKeyConstraint baseColumnNames="probability_id"
+                                 baseTableName="filled_commercial_risks_probability_configuration"
+                                 constraintName="fk__commercial_probability_id_probability_configuration"
+                                 referencedColumnNames="id"
+                                 referencedTableName="probability_configuration"/>
+
+        <addForeignKeyConstraint baseColumnNames="filled_commercial_risks_id"
+                                 baseTableName="filled_commercial_risks_power_of_influence_configuration"
+                                 constraintName="fk_filled_commercial_risks_id_power_of_influence_configuration"
+                                 referencedColumnNames="id"
+                                 referencedTableName="filled_commercial_risks"/>
+
+        <addForeignKeyConstraint baseColumnNames="power_of_influence_id"
+                                 baseTableName="filled_commercial_risks_power_of_influence_configuration"
+                                 constraintName="fk_commercial_power_of_influence_id_power_of_influence_configuration"
+                                 referencedColumnNames="id"
+                                 referencedTableName="power_of_influence_configuration"/>
+
+    </changeSet>
+</databaseChangeLog>
