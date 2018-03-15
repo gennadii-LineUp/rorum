@@ -125,7 +125,7 @@ export class GlossaryOfPurposesComponent implements OnInit, OnDestroy {
                 // console.log(treeNode)
                 this.data[0].label = this.glossaryOfPurposes[i].name;
             } else if (!isNull(this.glossaryOfPurposes[i].parentId)) {
-                for(let j = 0, n = this.mainGlossaries.length; j < n; j++ ){
+                for ( let j = 0, n = this.mainGlossaries.length; j < n; j++ ){
                     if(glossaryOfPurposes[i].parentId === this.mainGlossaries[j].id) {
                         this.data[0].children[i].label = this.glossaryOfPurposes[i].name;
                         // treeNodeModel.children.push(treeNode);

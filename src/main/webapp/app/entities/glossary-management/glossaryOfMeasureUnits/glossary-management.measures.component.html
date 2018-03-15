@@ -1,0 +1,9 @@
+<div *ngIf="!measures">
+    Przykro mi, lecz nie masz praw do przeglądania tych treści, lub wystąpił problem z pobraniem użytkownika.
+</div>
+
+<div *ngIf="measures">
+    <div *ngFor="let m of measures">
+        {{m.name}}
+    </div>
+</div>

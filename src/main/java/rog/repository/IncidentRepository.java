@@ -28,4 +28,5 @@ public interface IncidentRepository extends JpaRepository<Incident, Long> {
     List<Incident> getAllOfSupervisingOrganisation(@Param("oId") Long id);
 
     List<Incident> findAllByUserIdAndSetOfSentPurposesId(Long userId, Long setOfSentPurposesId);
+
 }

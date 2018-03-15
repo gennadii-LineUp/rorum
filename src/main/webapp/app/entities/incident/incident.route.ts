@@ -8,9 +8,9 @@ import { IncidentComponent } from './incident.component';
 import { IncidentDetailComponent } from './incident-detail.component';
 import { IncidentPopupComponent } from './incident-dialog.component';
 import { IncidentDeletePopupComponent } from './incident-delete-dialog.component';
-import {IncidentUserComponent} from "./incident-user.component";
-import {IncidentUserOrderComponent} from "./incident-user-order.component";
+import {IncidentUserOrderComponent} from "./incident-user/incident-user-order.component";
 import {IncidentOrderComponent} from "./incident-order.component";
+import {IncidentUserAllComponent} from "./incident-user/incident-user-all.component";
 
 export const incidentRoute: Routes = [
     {
@@ -66,9 +66,10 @@ export const incidentPopupRoute: Routes = [
 ];
 
 export const incidentUserRoute: Routes = [
+
     {
-        path: 'incident-user',
-        component: IncidentUserComponent,
+        path: 'incident-user/:orderId',
+        component: IncidentUserOrderComponent,
         data: {
             authorities: ['ROLE_USER'],
             pageTitle: 'rorumApp.incident.home.title'
@@ -76,8 +77,8 @@ export const incidentUserRoute: Routes = [
         canActivate: [UserRouteAccessService]
     },
     {
-        path: 'incident-user/:orderId',
-        component: IncidentUserOrderComponent,
+        path: 'incident-user/:orderId/get-all',
+        component: IncidentUserAllComponent,
         data: {
             authorities: ['ROLE_USER'],
             pageTitle: 'rorumApp.incident.home.title'

@@ -6,6 +6,5 @@ export * from './incident-delete-dialog.component';
 export * from './incident-detail.component';
 export * from './incident.component';
 export * from './incident.route';
-export * from './incident-user.component';
-export * from './incident-user-order.component';
+export * from './incident-user/incident-user-order.component';
 export * from './incident-order.component'

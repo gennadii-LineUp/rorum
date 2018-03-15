@@ -1,0 +1,10 @@
+<div *ngIf="!purposes">
+    Przykro mi, lecz nie masz praw do przeglądania tych treści.
+</div>
+
+<div *ngIf="purposes">
+    <div *ngFor="let p of purposes">
+        {{p.name}}
+    </div>
+</div>
+<!--<p-organizationChart [value]="data"></p-organizationChart>-->

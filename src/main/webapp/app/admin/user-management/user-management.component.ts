@@ -75,12 +75,20 @@ export class UserMgmtComponent implements OnInit, OnDestroy {
     }
 
     loadAll() {
-        this.userService.query({
-            page: this.page - 1,
-            size: this.itemsPerPage,
-            sort: this.sort()}).subscribe(
-            (res: ResponseWrapper) => this.onSuccess(res.json, res.headers),
-            (res: ResponseWrapper) => this.onError(res.json)
+        // this.userService.query({
+        //     page: this.page - 1,
+        //     size: this.itemsPerPage,
+        //     sort: this.sort()}).subscribe(
+        //     (res: ResponseWrapper) => this.onSuccess(res.json, res.headers),
+        //     (res: ResponseWrapper) => this.onError(res.json)
+        // );
+        this.userService.getAllUsers().subscribe(
+            (res) => {
+                this.users = res.json;
+            },
+            (error) => {
+              console.log(error);
+            }
         );
     }
 

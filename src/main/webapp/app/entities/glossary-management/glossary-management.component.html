@@ -1,0 +1,99 @@
+<p-growl [life]=4000 [(value)]="msgs"></p-growl>
+
+<div *jhiHasAnyAuthority="'ROLE_ZGLASZANIE_PROPOZYCJI_DO_SLOWNIKOW'">
+
+    <p>Hello:)</p>
+    <p>Glossary-management part</p>
+    <p>User section</p>
+
+
+
+
+    <p-tabView (onChange)="onTabChange($event)">
+        <p-tabPanel header="Cele" [selected]="true" id="user0">
+            <glossary-management-purposes [user]="user"> </glossary-management-purposes>
+        </p-tabPanel>
+        <p-tabPanel header="Ryzyka" id="user1">
+            Content 2
+        </p-tabPanel>
+        <p-tabPanel header="Mierniki" id="user2">
+            <glossary-management-measures [user]="user"></glossary-management-measures>
+        </p-tabPanel>
+        <p-tabPanel header="Ryzyka korupcyjne" id="user3">
+            <glossary-management-corruptionRisks [user]="user" ></glossary-management-corruptionRisks>
+        </p-tabPanel>
+        <p-tabPanel header="Procesy" [disabled]="true" id="user4">
+            <glossary-management-processes [user]="user"></glossary-management-processes>
+        </p-tabPanel>
+        <p-tabPanel header="Mechanizmy kontrolne" [disabled]="true" id="user5">
+            Content 6
+        </p-tabPanel>
+    </p-tabView>
+
+    <button type="button" class="btn-info btn-sm" (click)="showActiveTab()">Show Active tab</button>
+    <button type="button" class="btn-info btn-sm" (click)="showParameters()">Show parameters</button>
+
+</div>
+
+<div *jhiHasAnyAuthority="'ROLE_ZARZADZANIE_SLOWNIKAMI_LOCAL_ADMIN'">
+
+    <p>Hello:)</p>
+    <p>Glossary-management part</p>
+    <p>Local admin Section</p>
+
+    <p-tabView (onChange)="onTabChange($event)">
+        <p-tabPanel header="Cele" [selected]="true" id="localadmin0">
+            <glossary-management-purposes [user]="user"> </glossary-management-purposes>
+        </p-tabPanel>
+        <p-tabPanel header="Ryzyka" id="localadmin1">
+            Content 2
+        </p-tabPanel>
+        <p-tabPanel header="Mierniki" id="localadmin2">
+            <glossary-management-measures [user]="user"></glossary-management-measures>
+        </p-tabPanel>
+        <p-tabPanel header="Ryzyka korupcyjne" id="localadmin3">
+            <glossary-management-corruptionRisks [user]="user" ></glossary-management-corruptionRisks>
+        </p-tabPanel>
+        <p-tabPanel header="Procesy">
+            <glossary-management-processes [user]="user"> </glossary-management-processes>
+
+        </p-tabPanel>
+        <p-tabPanel header="Mechanizmy kontrolne">
+            Content 6
+        </p-tabPanel>
+    </p-tabView>
+
+    <button type="button" class="btn-info btn-sm" (click)="showActiveTab()">Show Active tab</button>
+    <button type="button" class="btn-info btn-sm" (click)="showParameters()">Show parameters</button>
+</div>
+
+<div *jhiHasAnyAuthority="'ROLE_ZARZADZANIE_SLOWNIKAMI_GLOBAL_ADMIN'">
+
+    <p>Hello:)</p>
+    <p>Glossary-management part</p>
+    <p>Global admin section</p>
+
+    <p-tabView (onChange)="onTabChange($event)">
+        <p-tabPanel header="Cele" [selected]="true" id="globaladmin0">
+            <glossary-management-purposes [user]="user"> </glossary-management-purposes>
+        </p-tabPanel>
+        <p-tabPanel header="Ryzyka" id="globaladmin1">
+            Content 2
+        </p-tabPanel>
+        <p-tabPanel header="Mierniki" id="globaladmin2">
+            <glossary-management-measures [user]="user"></glossary-management-measures>
+        </p-tabPanel>
+        <p-tabPanel header="Ryzyka korupcyjne" id="globaladmin3">
+            <glossary-management-corruptionRisks [user]="user" ></glossary-management-corruptionRisks>
+        </p-tabPanel>
+        <p-tabPanel header="Procesy" [disabled]="true" id="globaladmin4">
+            <glossary-management-processes [user]="user"></glossary-management-processes>
+        </p-tabPanel>
+        <p-tabPanel header="Mechanizmy kontrolne" [disabled]="true" id="globaladmin5">
+            Content 6
+        </p-tabPanel>
+    </p-tabView>
+
+    <button type="button" class="btn-info btn-sm" (click)="showActiveTab()">Show Active tab</button>
+    <button type="button" class="btn-info btn-sm" (click)="showParameters()">Show parameters</button>
+</div>

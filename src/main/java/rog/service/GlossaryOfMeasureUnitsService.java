@@ -74,5 +74,10 @@ public class GlossaryOfMeasureUnitsService {
     public List<GlossaryOfMeasureUnits> getAllOfCurrentOrganisationByGlossaryOfPurposesId(Long purposeId){
         return glossaryOfMeasureUnitsRepository.getAllOfCurrentOrganisationByGlossaryOfPurposesId(purposeId);
     }
+    @Transactional(readOnly = true)
+    public List<GlossaryOfMeasureUnits> findAll() {
+        log.debug("Request to get all GlossaryOfMeasureUnits without pagination");
+        return glossaryOfMeasureUnitsRepository.findAll();
+    }
 
 }

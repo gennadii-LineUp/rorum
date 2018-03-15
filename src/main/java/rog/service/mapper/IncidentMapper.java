@@ -25,6 +25,7 @@ public class IncidentMapper {
         incident.setDescription(incidentDTO.getDescription());
         incident.setDescriptionOfPlannedActivities(incidentDTO.getDescriptionOfPlannedActivities());
         incident.setDescriptionOfReaction(incidentDTO.getDescriptionOfReaction());
+        incident.setCritical(incidentDTO.getCritical());
 
         SetOfSentPurposes setOfSentPurposes = new SetOfSentPurposes();
         setOfSentPurposes.setId(incidentDTO.getSetOfSentPurposesId());

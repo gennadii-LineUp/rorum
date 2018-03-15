@@ -9,6 +9,7 @@ import {
     UserDialogComponent, UserMgmtComponent, UserMgmtDeleteDialogComponent, UserMgmtDetailComponent,
     UserMgmtDialogComponent, UserModalService, UserResolve, UserResolvePagingParams
 } from './';
+import {RolePipe} from "./user-management/pipes/role.pipe";
 
 /* jhipster-needle-add-admin-module-import - JHipster will add admin modules imports here */
 
@@ -32,7 +33,9 @@ import {
         JhiHealthModalComponent,
         JhiDocsComponent,
         JhiMetricsMonitoringComponent,
-        JhiMetricsMonitoringModalComponent
+        JhiMetricsMonitoringModalComponent,
+        RolePipe,
+
     ],
     entryComponents: [
         UserMgmtDialogComponent,
@@ -48,7 +51,9 @@ import {
         LogsService,
         UserResolvePagingParams,
         UserResolve,
-        UserModalService
+        UserModalService,
+        RolePipe,
+
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

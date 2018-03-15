@@ -184,18 +184,25 @@
                             <span jhiTranslate="global.menu.entities.incident">Incident</span>
                         </a>
                     </li>
-                    <li>
-                        <a class="dropdown-item" routerLink="incident-user" routerLinkActive="active"
-                           [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
-                            <i class="fa fa-fw fa-asterisk" aria-hidden="true"></i>
-                            <span>Incident - user</span>
-                        </a>
-                    </li>
+                    <!--<li>-->
+                        <!--<a class="dropdown-item" routerLink="incident-user" routerLinkActive="active"-->
+                           <!--[routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">-->
+                            <!--<i class="fa fa-fw fa-asterisk" aria-hidden="true"></i>-->
+                            <!--<span>Incident - user</span>-->
+                        <!--</a>-->
+                    <!--</li>-->
                     <li>
                         <a class="dropdown-item" routerLink="reporting" routerLinkActive="active"
                            [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
                             <i class="fa fa-fw fa-asterisk" aria-hidden="true"></i>
                             <span>Moduł raportowania</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="glossary-management" routerLinkActive="active"
+                           [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <i class="fa fa-fw fa-asterisk" aria-hidden="true"></i>
+                            <span>Zarządzanie słownikami</span>
                         </a>
                     </li>
                     <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->

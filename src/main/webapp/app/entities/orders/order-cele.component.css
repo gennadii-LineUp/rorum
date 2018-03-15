@@ -164,6 +164,7 @@ button:disabled{
     user-select: none;
     border-radius: .25rem;
     cursor: initial;
+    color: white;
 }
 .niceRisk {
     background-color: #ffff00;
@@ -171,6 +172,7 @@ button:disabled{
     user-select: none;
     border-radius: .25rem;
     cursor: initial;
+    color: black;
 }
 .normalRisk {
     background-color: #ffA500;
@@ -178,6 +180,7 @@ button:disabled{
     user-select: none;
     border-radius: .25rem;
     cursor: initial;
+    color: black;
 }
 .badRisk {
     /*border-bottom: 2px dashed #ff0000;*/
@@ -186,6 +189,7 @@ button:disabled{
     -webkit-box-sizing: border-box !important;
     box-sizing: border-box;
     margin-top: -2px;
+    color: white;
 }
 .badRisk button {
     height: 25px !important;

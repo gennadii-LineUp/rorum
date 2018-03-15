@@ -1,0 +1,15 @@
+
+
+<div *ngIf="!processes">
+    Przykro mi, lecz nie masz praw do przeglądania tych treści.
+</div>
+
+<div *ngIf="processes">
+    <div *ngFor="let p of processes">
+        {{p.name}}
+    </div>
+</div>
+<!--<div *ngIf="user">-->
+    <!--{{user.firstName}}-->
+<!--</div>-->
+

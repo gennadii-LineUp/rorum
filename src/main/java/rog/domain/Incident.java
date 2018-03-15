@@ -2,6 +2,7 @@ package rog.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import rog.domain.enumeration.StatusOfIncident;
 
 import javax.persistence.*;
@@ -56,6 +57,9 @@ public class Incident implements Serializable {
     @NotNull
     @ManyToOne
     private User user;
+//
+//    @ManyToOne
+//    private User supervisedBy;
 
     @Column(name = "creation_date", nullable = false)
     private LocalDate creationDate = LocalDate.now();
@@ -111,10 +115,12 @@ public class Incident implements Serializable {
         this.descriptionOfPlannedActivities = descriptionOfPlannedActivities;
     }
 
+    @JsonProperty(value="isCritical")
     public Boolean isCritical() {
         return isCritical;
     }
 
+    @JsonProperty(value="isCritical")
     public void setCritical(Boolean isCritical) {
         this.isCritical = isCritical;
     }
@@ -179,6 +185,14 @@ public class Incident implements Serializable {
         this.user = user;
     }
 
+//    public User getSupervisedBy() {
+//        return supervisedBy;
+//    }
+//
+//    public void setSupervisedBy(User supervisedBy) {
+//        this.supervisedBy = supervisedBy;
+//    }
+
     public LocalDate getCreationDate() {
         return creationDate;
     }
@@ -221,6 +235,7 @@ public class Incident implements Serializable {
             ", filledRisks=" + filledRisks +
             ", filledCommercialRisks=" + filledCommercialRisks +
             ", user=" + user +
+//            ", supervisedBy=" + supervisedBy +
             ", creationDate=" + creationDate +
             ", statusOfIncident=" + statusOfIncident +
             '}';

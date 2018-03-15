@@ -15,6 +15,8 @@ import {ConfirmDialogModule} from 'primeng/components/confirmdialog/confirmdialo
 import {DialogModule} from 'primeng/components/dialog/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {DropdownModule} from 'primeng/components/dropdown/dropdown';
+import {TabViewModule} from 'primeng/components/tabview/tabview';
+import {OrganizationChartModule} from "primeng/components/organizationchart/organizationchart";
 
 @NgModule({
     imports: [
@@ -34,7 +36,9 @@ import {DropdownModule} from 'primeng/components/dropdown/dropdown';
         GrowlModule,
         DialogModule,
         BrowserAnimationsModule,
-        DropdownModule
+        DropdownModule,
+        TabViewModule,
+        OrganizationChartModule,
     ],
     exports: [
         FormsModule,
@@ -50,7 +54,9 @@ import {DropdownModule} from 'primeng/components/dropdown/dropdown';
         GrowlModule,
         DialogModule,
         BrowserAnimationsModule,
-        DropdownModule
+        DropdownModule,
+        TabViewModule,
+        OrganizationChartModule,
     ]
 })
 export class RorumSharedLibsModule {}

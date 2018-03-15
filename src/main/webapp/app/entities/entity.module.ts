@@ -22,6 +22,7 @@ import {RorumHighRiskModule} from './high-risk/high-risk.module';
 import {RorumHighCommercialRiskModule} from './high-commercial-risk/high-commercial-risk.module';
 import {ReportingModule} from './reporting/reporting.module';
 import {RorumIncidentModule} from './incident/incident.module';
+import {GlossaryManagementModule} from "./glossary-management/glossary-management.module";
 
 /* jhipster-needle-add-entity-module-import - JHipster will add entity modules imports here */
 
@@ -47,6 +48,7 @@ import {RorumIncidentModule} from './incident/incident.module';
         RorumHighCommercialRiskModule,
         ReportingModule,
         RorumIncidentModule,
+        GlossaryManagementModule
         /* jhipster-needle-add-entity-module - JHipster will add entity modules here */
     ],
     declarations: [],

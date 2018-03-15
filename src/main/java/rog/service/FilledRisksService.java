@@ -67,14 +67,19 @@ public class FilledRisksService {
         log.debug("Request to delete FilledRisks : {}", id);
         filledRisksRepository.delete(id);
     }
-    
+
     @Transactional(readOnly = true)
     public FilledRisks findLastFilledRisk(Long risksPurposesId, Long glossaryOfRisksId) {
     	return filledRisksRepository.findLastFilledRisk(risksPurposesId, glossaryOfRisksId);
     }
-    
+
     @Transactional(readOnly = true)
     public FilledRisks findFirstUnSavedFilledRisk(Long risksPurposesId, Long glossaryOfRisksId) {
     	return filledRisksRepository.findFirstUnSavedFilledRisk(risksPurposesId, glossaryOfRisksId);
+    }
+
+    @Transactional(readOnly = true)
+    public FilledRisks findFilledRiskForIncident(Long riskId, Long purposeId, Long userId) {
+        return filledRisksRepository.findOneForIncident(riskId, purposeId, userId);
     }
 }

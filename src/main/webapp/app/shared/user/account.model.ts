@@ -1,8 +1,9 @@
 export class Account {
     organisationStructureId?: number;
+    authorities?: string[];
     constructor(
         public activated: boolean,
-        public authorities: string[],
+        // public authorities: string[],
         public email: string,
         public firstName: string,
         public langKey: string,

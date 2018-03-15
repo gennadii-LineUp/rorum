@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import rog.domain.*;
+import rog.domain.enumeration.StatusOfIncident;
+import rog.repository.FilledRisksRepository;
 import rog.repository.IncidentRepository;
 import rog.repository.SetOfSentPurposesRepository;
 
@@ -28,6 +30,9 @@ public class IncidentService {
     @Autowired
     private SetOfSentPurposesRepository setOfSentPurposesRepository;
 
+//    @Autowired
+//    private FilledRisksRepository filledRisksRepository;
+
     @Autowired
     private UserService userService;
 
@@ -47,7 +52,7 @@ public class IncidentService {
         log.debug("Request to save Incident : {}", incident);
         SetOfSentPurposes setOfSentPurpose = setOfSentPurposesRepository.getOne(incident.getSetOfSentPurposes().getId());
 
-        if(!setOfSentPurpose.getStatusOfSending().isConfirmedPlan()){
+        if (!setOfSentPurpose.getStatusOfSending().isConfirmedPlan()) {
             return null;
         }
 
@@ -56,9 +61,9 @@ public class IncidentService {
     }
 
     /**
-     *  Get all the incidents.
+     * Get all the incidents.
      *
-     *  @return the list of entities
+     * @return the list of entities
      */
     @Transactional(readOnly = true)
     public List<Incident> findAll() {
@@ -67,10 +72,10 @@ public class IncidentService {
     }
 
     /**
-     *  Get one incident by id.
+     * Get one incident by id.
      *
-     *  @param id the id of the entity
-     *  @return the entity
+     * @param id the id of the entity
+     * @return the entity
      */
     @Transactional(readOnly = true)
     public Incident findOne(Long id) {
@@ -79,9 +84,9 @@ public class IncidentService {
     }
 
     /**
-     *  Delete the  incident by id.
+     * Delete the  incident by id.
      *
-     *  @param id the id of the entity
+     * @param id the id of the entity
      */
     public void delete(Long id) {
         log.debug("Request to delete Incident : {}", id);
@@ -89,12 +94,12 @@ public class IncidentService {
     }
 
     @Transactional(readOnly = true)
-    public List<Incident> getAllOfParentedOrganisation(Long organisationId){
+    public List<Incident> getAllOfParentedOrganisation(Long organisationId) {
         return incidentRepository.getAllOfParentedOrganisation(organisationId);
     }
 
     @Transactional(readOnly = true)
-    public List<Incident> getAllOfSupervisingOrganisation(Long organisationId){
+    public List<Incident> getAllOfSupervisingOrganisation(Long organisationId) {
         return incidentRepository.getAllOfSupervisingOrganisation(organisationId);
     }
 
@@ -112,20 +117,17 @@ public class IncidentService {
 //        Long setOfSentPurposesId = setOfSentPurposesRepository.fin
 
         List<Incident> result = new ArrayList<>();
-        for (User user1: users) {
-            if(setOfSentPurposesRepository.findOneByOrdersIdAndUserId(orderId, user1.getId()) != null){
+        for (User user1 : users) {
+            if (setOfSentPurposesRepository.findOneByOrdersIdAndUserId(orderId, user1.getId()) != null) {
                 setOfSentPurposesId = setOfSentPurposesRepository.findOneByOrdersIdAndUserId(orderId, user1.getId()).getId();
 
-                if(incidentRepository.findAllByUserIdAndSetOfSentPurposesId(user1.getId(), setOfSentPurposesId) != null){
+                if (incidentRepository.findAllByUserIdAndSetOfSentPurposesId(user1.getId(), setOfSentPurposesId) != null) {
                     List<Incident> incidents = incidentRepository.findAllByUserIdAndSetOfSentPurposesId(user1.getId(), setOfSentPurposesId);
 
-                    for (Incident incident: incidents) {
+                    for (Incident incident : incidents) {
                         result.add(incident);
                     }
                 }
-
-
-
             }
 
 //            log.debug("SetOfSentPurposesId: " + setOfSentPurposesId);
@@ -139,11 +141,35 @@ public class IncidentService {
 //
 //                }
 //            }
-
-
         }
-
 //        List<Incident> result = incidentRepository.findAll();
         return result;
     }
+
+    @Transactional(readOnly = true)
+    public List<Incident> getAllParentedOrSupervisoredCellsIncidentsForUser(Long orderId) {
+        User user = userService.getCurrentUser();
+        Long setOfSentPurposesId;
+        List<Incident> incidents = new ArrayList<>();
+        if (setOfSentPurposesRepository.findOneByOrdersIdAndUserId(orderId, user.getId()) != null) {
+            setOfSentPurposesId = setOfSentPurposesRepository.findOneByOrdersIdAndUserId(orderId, user.getId()).getId();
+            if (incidentRepository.findAllByUserIdAndSetOfSentPurposesId(user.getId(), setOfSentPurposesId) != null) {
+                incidents = incidentRepository.findAllByUserIdAndSetOfSentPurposesId(user.getId(), setOfSentPurposesId);
+            }
+        }
+        return incidents;
+    }
+
+    public Incident setSupervisedByAdmin(Incident incident) {
+        log.debug("Request to set Incident as supervised : {}", incident);
+        SetOfSentPurposes setOfSentPurpose = setOfSentPurposesRepository.getOne(incident.getSetOfSentPurposes().getId());
+        if (!setOfSentPurpose.getStatusOfSending().isConfirmedPlan()) {
+            return null;
+        }
+        log.debug(incident.getId() + " IDIDIDIDIDIDIDIDIDIDIDIDIDIDID\n\n\n");
+        incident.setStatusOfIncident(StatusOfIncident.SUPERVISED);
+//        incident.setSupervisedBy(userService.getCurrentUser());
+        return incidentRepository.save(incident);
+    }
+
 }

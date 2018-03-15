@@ -14,15 +14,18 @@ import {
     incidentRoute,
     incidentPopupRoute,
     incidentUserRoute,
-    IncidentUserComponent,
     IncidentUserOrderComponent,
     IncidentOrderComponent
 } from './';
 import {CheckboxModule} from 'primeng/components/checkbox/checkbox';
 import {ReactiveFormsModule} from "@angular/forms";
-import {MessageModule} from "primeng/primeng";
-import {MessagesModule} from 'primeng/components/messages/messages';
+import {GrowlModule} from "primeng/primeng";
 import {MessageService} from "primeng/components/common/messageservice";
+import {Autosize} from "../../shared/directives/autosize.directive";
+import {FilterPipe} from "./filter/filter.pipe";
+import {StatusOfIncidentPipe} from "./pipes/statusOfIncident.pipe";
+import {IsCriticalPipe} from "./pipes/isCritical.pipe";
+import {IncidentUserAllComponent} from "./incident-user/incident-user-all.component";
 
 const ENTITY_STATES = [
     ...incidentRoute,
@@ -36,8 +39,7 @@ const ENTITY_STATES = [
         RouterModule.forRoot(ENTITY_STATES, { useHash: true }),
         CheckboxModule,
         ReactiveFormsModule,
-        MessagesModule,
-        MessageModule
+        GrowlModule
     ],
     declarations: [
         IncidentComponent,
@@ -46,9 +48,13 @@ const ENTITY_STATES = [
         IncidentDeleteDialogComponent,
         IncidentPopupComponent,
         IncidentDeletePopupComponent,
-        IncidentUserComponent,
         IncidentUserOrderComponent,
-        IncidentOrderComponent
+        IncidentUserAllComponent,
+        IncidentOrderComponent,
+        FilterPipe,
+        StatusOfIncidentPipe,
+        IsCriticalPipe,
+		Autosize,
     ],
     entryComponents: [
         IncidentComponent,
@@ -56,8 +62,8 @@ const ENTITY_STATES = [
         IncidentPopupComponent,
         IncidentDeleteDialogComponent,
         IncidentDeletePopupComponent,
-        IncidentUserComponent,
         IncidentUserOrderComponent,
+        IncidentUserAllComponent,
         IncidentOrderComponent
     ],
     providers: [

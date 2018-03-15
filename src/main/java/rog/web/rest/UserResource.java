@@ -136,19 +136,26 @@ public class UserResource {
             HeaderUtil.createAlert("userManagement.updated", managedUserVM.getLogin()));
     }
 
-    /**
-     * GET  /users : get all users.
-     *
-     * @param pageable the pagination information
-     * @return the ResponseEntity with status 200 (OK) and with body all users
-     */
+//    /**
+//     * GET  /users : get all users.
+//     *
+//     * @param pageable the pagination information
+//     * @return the ResponseEntity with status 200 (OK) and with body all users
+//     */
+//    @GetMapping("/users")
+////    @Timed
+////    public ResponseEntity<List<UserDTO>> getAllUsers(@ApiParam Pageable pageable) {
+////        log.debug("REST request to get a page of Users");
+////        final Page<UserDTO> page = userService.getAllManagedUsers(pageable);
+////        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/users");
+////        return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
+////    }
     @GetMapping("/users")
     @Timed
-    public ResponseEntity<List<UserDTO>> getAllUsers(@ApiParam Pageable pageable) {
-        log.debug("REST request to get a page of Users");
-        final Page<UserDTO> page = userService.getAllManagedUsers(pageable);
-        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/users");
-        return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
+    public ResponseEntity<List<User>> getAllUsers() {
+        log.debug("REST request to get all supervisored users");
+
+        return new ResponseEntity<>(userService.getAllParentedAndSupervisoredUsers(userService.getCurrentUser().getOrganisationStructure().getId()) , HttpStatus.OK);
     }
 
     @GetMapping("user/local-admin")

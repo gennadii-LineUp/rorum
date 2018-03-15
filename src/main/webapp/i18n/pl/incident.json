@@ -2,7 +2,7 @@
     "rorumApp": {
         "incident" : {
             "home": {
-                "title": "Incidents",
+                "title": "Incydenty",
                 "createLabel": "Dodaj Incident",
                 "createOrEditLabel": "Dodaj lub edytuj: Incident"
             },

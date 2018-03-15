@@ -3,19 +3,13 @@
         <h1 class="my-5">Wybierz zlecenie, dla którego chcesz sprawdzić incydenty</h1>
     </div>
 
-    <div>
-        <h2>Proszę wybrać zlecenie:</h2>
-    </div>
     <div class="table-responsive" *ngIf="orders">
         <table class="table table-striped">
             <thead>
-            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse">
+            <tr>
                 <th><span jhiTranslate="rorumApp.orders.name">Name</span> </th>
                 <th><span jhiTranslate="rorumApp.orders.financingYear">Financing Year</span> </th>
                 <th><span jhiTranslate="rorumApp.orders.startDate">Start Date</span> </th>
-                <th><span jhiTranslate="rorumApp.orders.firstReportingDate">First Reporting Date</span> </th>
-                <th><span jhiTranslate="rorumApp.orders.secondReportingDate">Second Reporting Date</span> </th>
-                <th><span jhiTranslate="rorumApp.orders.thirdReportingDate">Third Reporting Date</span> </th>
                 <th><span jhiTranslate="rorumApp.orders.finalDate">Final Date</span> </th>
                 <th></th>
             </tr>
@@ -25,18 +19,34 @@
                 <td>{{order.name}}</td>
                 <td>{{order.financingYear}}</td>
                 <td>{{order.startDate | date:'mediumDate'}}</td>
-                <td>{{order.firstReportingDate | date:'mediumDate'}}</td>
-                <td>{{order.secondReportingDate | date:'mediumDate'}}</td>
-                <td>{{order.thirdReportingDate | date:'mediumDate'}}</td>
                 <td>{{order.finalDate | date:'mediumDate'}}</td>
                 <td class="text-right">
+                <td class="text-right">
+                    <div class="btn-group" *jhiHasAnyAuthority="'ROLE_ZGLASZANIE_INCYDENTOW'">
+                        <button type="button"
+                                [routerLink]="['/incident-user/' + order.id]"
+                                replaceUrl="true"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline">Zgłoś incydent</span>
+                        </button>
+                        <button type="button"
+                                [routerLink]="['/incident-user/' + order.id + '/get-all']"
+                                replaceUrl="true"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline">Twoje incydenty</span>
+                        </button>
+                    </div>
+                    <div class="btn-group" *jhiHasAnyAuthority="'ROLE_ZARZADZANIE_INCYDENTAMI'">
                     <button type="button"
-                            [routerLink]="['/incident/' + order.id]"
-                            replaceUrl="true"
-                            class="btn btn-primary btn-sm">
-                        <span class="fa fa-pencil"></span>
-                        <span class="d-none d-md-inline">Otwórz</span>
-                    </button>
+                                [routerLink]="['/incident/' + order.id]"
+                                replaceUrl="true"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline">Otwórz</span>
+                        </button>
+                    </div>
                 </td>
             </tr>
             </tbody>

@@ -6,6 +6,7 @@ import {SERVER_API_URL} from '../../app.constants';
 import {User} from './user.model';
 import {ResponseWrapper} from '../model/response-wrapper.model';
 import {createRequestOption} from '../model/request-util';
+import {GlossaryOfProcesses} from "../../entities/glossary-of-processes";
 
 @Injectable()
 export class UserService {
@@ -47,5 +48,29 @@ export class UserService {
     private convertResponse(res: Response): ResponseWrapper {
         const jsonResponse = res.json();
         return new ResponseWrapper(res.headers, jsonResponse, res.status);
+    }
+
+
+    public getAllUsers(): Observable<ResponseWrapper> {
+        return this.http.get(this.resourceUrl)
+            .map((res: Response) => {
+                return this.convertResponseWithUsers(res);
+            })
+    }
+    private convertResponseWithUsers(res: Response): ResponseWrapper {
+        const jsonResponse = res.json();
+        const result = [];
+        for (let i = 0; i < jsonResponse.length; i++) {
+            result.push(this.convertUsersFromServer(jsonResponse[i]));
+        }
+        return new ResponseWrapper(res.headers, result, res.status);
+    }
+
+    /**
+     * Convert a returned JSON object to .
+     */
+    private convertUsersFromServer(json: any): User {
+        const entity: User = Object.assign(new User(), json);
+        return entity;
     }
 }

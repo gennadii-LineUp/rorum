@@ -4,6 +4,7 @@ import {IncidentService} from "./incident.service";
 import {ActivatedRoute} from "@angular/router";
 import {Incident} from "./incident.model";
 import {Orders} from "../orders";
+import {Message} from "primeng/components/common/api";
 
 @Component({
     selector: 'incident-order',
@@ -14,6 +15,8 @@ export class IncidentOrderComponent implements OnInit, OnDestroy {
     incidents: Incident[];
     predicate: string;
     reverse: any;
+    currentSearch: any;
+    msgs: Message[] = [];
 
     constructor(
         private activatedRoute: ActivatedRoute,
@@ -41,6 +44,15 @@ export class IncidentOrderComponent implements OnInit, OnDestroy {
     }
 
     ngOnDestroy(): void {
+    }
+
+    setSupervisor(incident: Incident) {
+        this.incidentService.setSupervisor(incident).subscribe(() => {})
+    }
+
+    showWarn() {
+        this.msgs = [];
+        this.msgs.push({severity: 'warn', summary: 'Uwaga!', detail: 'Funkcjonalność nie została jeszcze przygotowana'});
     }
 
 }

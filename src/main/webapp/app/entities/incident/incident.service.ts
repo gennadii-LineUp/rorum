@@ -8,11 +8,12 @@ import { ResponseWrapper, createRequestOption } from '../../shared';
 import {Orders} from "../orders";
 import {SetOfSentPurposes} from "../set-of-sent-purposes";
 import {GlossaryOfRisks} from "../glossary-of-risks";
+import {FilledRisks} from "../filled-risks/filled-risks.model";
 
 @Injectable()
 export class IncidentService {
 
-    private resourceUrl = SERVER_API_URL + 'api/incidents';
+    private resourceUrl = SERVER_API_URL + 'api/incident';
     private resourceUserUrl = SERVER_API_URL + 'api/incident-user';
 
     constructor(private http: Http) { }
@@ -22,6 +23,14 @@ export class IncidentService {
         return this.http.post(this.resourceUrl, copy).map((res: Response) => {
             const jsonResponse = res.json();
             return this.convertItemFromServer(jsonResponse);
+        });
+    }
+
+    createForIncidentForm(incident: Incident): Observable<Response> {
+        const copy = this.convert(incident);
+        return this.http.post(this.resourceUrl, copy).map((res: Response) => {
+            // const jsonResponse = res.json();
+            return res;
         });
     }
 
@@ -64,7 +73,16 @@ export class IncidentService {
      */
     private convertItemFromServer(json: any): Incident {
         const entity: Incident = Object.assign(new Incident(), json);
+        console.log(entity);
         return entity;
+    }
+
+    public setSupervisor(incident: Incident): Observable<Incident> {
+        const copy = this.convert(incident);
+        return this.http.put(this.resourceUrl + '/add-supervisor', copy).map((res: Response) => {
+            const jsonResponse = res.json();
+            return this.convertItemFromServer(jsonResponse);
+        });
     }
 
     /**
@@ -125,6 +143,14 @@ export class IncidentService {
                 return this.convertResponseWithRisks(res);
             });
     }
+
+    public loadFilledRiskForIncident(riskId: number, purposeId: number): Observable<ResponseWrapper> {
+        return this.http.get(`${this.resourceUserUrl}/filled/${riskId}/${purposeId}`)
+            .map((res: Response) => {
+                return res;
+            });
+    }
+
     private convertResponseWithRisks(res: Response): ResponseWrapper {
         const jsonResponse = res.json();
         const result = [];
@@ -148,4 +174,13 @@ export class IncidentService {
                 return this.convertResponse(res);
             });
     }
+
+    public getAllParentedOrSupervisoredCellsIncidentsUser(orderId: number) {
+        return this.http.get(`${this.resourceUserUrl}/${orderId}/get-all`)
+            .map((res: Response) => {
+                return this.convertResponse(res);
+            });
+    }
+
+
 }

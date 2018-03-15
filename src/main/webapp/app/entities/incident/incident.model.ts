@@ -11,7 +11,5 @@ export class Incident implements BaseEntity {
         public glossaryOfPurposes?: BaseEntity,
         public filledRisks?: BaseEntity,
         public filledCommercialRisks?: BaseEntity,
-    ) {
-        this.isCritical = false;
-    }
+    ) {}
 }

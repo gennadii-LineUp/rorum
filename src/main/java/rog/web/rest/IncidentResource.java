@@ -56,6 +56,9 @@ public class IncidentResource {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private FilledRisksService filledRisksService;
+
     /**
      * POST  /incident : Create a new incidentDTO.
      *
@@ -169,6 +172,26 @@ public class IncidentResource {
         return ResponseUtil.wrapOrNotFound(Optional.ofNullable(list));
     }
 
+    @PutMapping("/incident/add-supervisor")
+    @Timed
+    @Secured(AuthoritiesConstants.ADMIN)
+    public ResponseEntity<IncidentDTO> setSupervisedBy(@RequestBody IncidentDTO incidentDTO) throws URISyntaxException {
+        log.debug("REST request to save Incident with supervisedBy : {}", incidentDTO);
+
+        if(!isValidIncidentDTO(incidentDTO)){
+            return ResponseEntity.badRequest().body(incidentDTO);
+        }
+
+
+        Incident result = incidentService.setSupervisedByAdmin(incidentMapper.incident(incidentDTO));
+        if(result == null){
+            return ResponseEntity.badRequest().body(null);
+        }
+        return ResponseEntity.created(new URI("/api/incident/add-supervisor" + result.getId()))
+            .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, result.getId().toString()))
+            .body(new IncidentDTO(result));
+    }
+
     @GetMapping("/incident-user")
     @Timed
     public ResponseEntity<List<Orders>> getAllOrders() {
@@ -191,10 +214,27 @@ public class IncidentResource {
         return new ResponseEntity<Set<GlossaryOfRisks>>(incidentService.getRisksForSpecificPurpose(purposeId) , HttpStatus.OK);
     }
 
-    @GetMapping("/incidents/{orderId}/admin")
+    @Timed
+    @Secured(AuthoritiesConstants.USER)
+    @GetMapping("/incident-user/filled/{riskId}/{purposeId}")
+    public ResponseEntity<FilledRisks> getFilledRisksForIncidentReport(@PathVariable Long riskId, @PathVariable Long purposeId) {
+        log.debug("REST request to get FilledRisks (risk id: " + riskId + ", purpose id: " + purposeId + ")");
+        Long currentUserId = userService.getCurrentUser().getId();
+        return new ResponseEntity<>(filledRisksService.findFilledRiskForIncident(riskId, purposeId, currentUserId), HttpStatus.OK);
+    }
+
+    @GetMapping("/incident/{orderId}/admin")
     @Timed
     public ResponseEntity<List<Incident>> getAllParentedOrSupervisoredCellsIncidents(@PathVariable Long orderId) {
         log.debug("REST request to get setOfSentPurposes");
-        return new ResponseEntity<List<Incident>>(incidentService.getAllParentedOrSupervisoredCellsIncidents(orderId) , HttpStatus.OK);
+        return new ResponseEntity<>(incidentService.getAllParentedOrSupervisoredCellsIncidents(orderId) , HttpStatus.OK);
+    }
+
+    @GetMapping("/incident-user/{orderId}/get-all")
+    @Secured(AuthoritiesConstants.USER)
+    @Timed
+    public ResponseEntity<List<Incident>> getAllParentedOrSupervisoredCellsIncidentsForUser(@PathVariable Long orderId) {
+        log.debug("REST request to get setOfSentPurposes");
+        return new ResponseEntity<>(incidentService.getAllParentedOrSupervisoredCellsIncidentsForUser(orderId) , HttpStatus.OK);
     }
 }

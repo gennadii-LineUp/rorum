@@ -1,5 +1,6 @@
 package rog.service.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import rog.domain.*;
 
 import java.io.Serializable;
@@ -74,6 +75,7 @@ public class IncidentDTO implements Serializable {
         if(Objects.nonNull(filledCommercialRisks)){
             this.filledCommercialRisksId = filledCommercialRisks.getId();
         }
+
     }
 
     public Long getId() {
@@ -108,12 +110,14 @@ public class IncidentDTO implements Serializable {
         this.descriptionOfPlannedActivities = descriptionOfPlannedActivities;
     }
 
+    @JsonProperty(value="isCritical")
     public Boolean getCritical() {
         return isCritical;
     }
 
-    public void setCritical(Boolean critical) {
-        isCritical = critical;
+    @JsonProperty(value="isCritical")
+    public void setCritical(Boolean isCritical) {
+        this.isCritical = isCritical;
     }
 
     public Long getSetOfSentPurposesId() {

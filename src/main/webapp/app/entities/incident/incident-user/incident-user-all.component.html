@@ -1,0 +1,37 @@
+<p-growl [life]=4000 [(value)]="msgs"></p-growl>
+<div>
+    <div>
+        <h2>Moje zgłoszone incydenty</h2>
+    </div>
+    <div align="right" >
+        <input [(ngModel)]="currentSearch" placeholder="filtruj">
+    </div>
+    <div class="table-responsive" *ngIf="incidents">
+        <table class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse">
+                <th><span>Id</span> </th>
+                <th><span>Jednostka organizacyjna</span> </th>
+                <th><span>Opis</span> </th>
+                <th><span>Opis planowanych działań</span> </th>
+                <th><span>Opis reakcji</span> </th>
+                <th><span>Czy krytyczny?</span> </th>
+                <th><span>Status incydentu</span> </th>
+                <!--<th></th>-->
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let i of incidents | filterTable: currentSearch: [['user', 'organisationStructure', 'name']]">
+                <td>{{i.id}}</td>
+                <td>{{i.user.organisationStructure.name}}</td>
+                <td>{{i.description}}</td>
+                <td>{{i.descriptionOfPlannedActivities}}</td>
+                <td>{{i.descriptionOfReaction}}</td>
+                <td>{{i.isCritical | isCriticalPipe}}</td>
+                <td>{{i.statusOfIncident | statusOfIncidentPipe}}</td>
+                <!--<td><button *ngIf="i.statusOfIncident == 'REPORTED'" class="btn btn-sm btn-info" (click)="showWarn()">Nadzoruj</button></td>-->
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
