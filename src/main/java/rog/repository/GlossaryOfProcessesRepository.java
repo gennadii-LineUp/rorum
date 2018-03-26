@@ -6,6 +6,8 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import rog.domain.GlossaryOfProcesses;
 
+import java.time.Instant;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 
@@ -22,7 +24,8 @@ public interface GlossaryOfProcessesRepository extends JpaRepository<GlossaryOfP
     Long getIdBySetOfSentPurposesId(@Param("sspId") Long setOfSentPurposesId);
 
     GlossaryOfProcesses findOneByGlossaryOfPurposesId(Long id);
-    
+
     public ArrayList<GlossaryOfProcesses> findAll();
 
+    ArrayList<GlossaryOfProcesses> findAllByImportantToIsGreaterThan(LocalDate date);
 }

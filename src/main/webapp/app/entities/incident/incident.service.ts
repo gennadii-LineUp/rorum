@@ -73,7 +73,6 @@ export class IncidentService {
      */
     private convertItemFromServer(json: any): Incident {
         const entity: Incident = Object.assign(new Incident(), json);
-        console.log(entity);
         return entity;
     }
 

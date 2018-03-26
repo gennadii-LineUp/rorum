@@ -6,15 +6,20 @@ import {GlossaryOfProcesses} from "../../glossary-of-processes";
 import {GlossaryManagementService} from "../glossary-management.service";
 import {Principal, User} from "../../../shared";
 import {GlossaryOfMeasureUnits} from "../../glossary-of-measure-units";
+import {GlossaryOfCommercialRisks} from "../../glossary-of-commercial-risks";
 
 @Component({
     selector: 'glossary-management-corruptionRisks',
-    templateUrl: './glossary-management.corruptionRisks.html'
+    templateUrl: './glossary-management.corruptionRisks.component.html',
+    styleUrls: ['../glossary-management.component.css'],
 })
-export class GlossaryManagementCorruptionRisks implements OnInit, OnDestroy {
+export class GlossaryManagementCorruptionRisksComponent implements OnInit, OnDestroy {
     @Input() user: User;
     msgs: Message[];
-    measures: GlossaryOfMeasureUnits[];
+    commercialRisks: GlossaryOfCommercialRisks[];
+    createPropositionDialog = false;
+    createProposition = false;
+    showLoader = true;
 
     constructor(
         private activatedRoute: ActivatedRoute,
@@ -25,7 +30,7 @@ export class GlossaryManagementCorruptionRisks implements OnInit, OnDestroy {
     ) { }
 
     ngOnInit(): void {
-        if(this.user) {
+        if (this.user) {
             this.loadData();
         }
 
@@ -37,27 +42,42 @@ export class GlossaryManagementCorruptionRisks implements OnInit, OnDestroy {
     loadData() {
         // console.log(this.user.authorities);
         this.principal.hasAuthority("ROLE_ZGLASZANIE_PROPOZYCJI_DO_SLOWNIKOW").then((hasAuthority: boolean) => {
-            // console.log(hasAuthority)
+            if (hasAuthority) {
+                this.getAllUserCommercialRisks();
+            }
         });
         this.principal.hasAuthority("ROLE_ZARZADZANIE_SLOWNIKAMI_LOCAL_ADMIN").then((hasAuthority: boolean) => {
-            if(hasAuthority){
-                // this.getAllMeasures();
+            if (hasAuthority) {
+                this.getAllCommercialRisks();
             }
 
         });
         this.principal.hasAuthority("ROLE_ZARZADZANIE_SLOWNIKAMI_GLOBAL_ADMIN").then((hasAuthority: boolean) => {
-            if(hasAuthority){
-                // this.getAllMeasures();
+            if (hasAuthority) {
+                this.getAllCommercialRisks();
             }
         });
     }
 
-    // getAllMeasures() {
-    //     this.glossaryManagementService.getAllMeasures().subscribe(
-    //         (res) => {
-    //             this.measures = res.json;
-    //         },
-    //         (error) => {console.log(error)}
-    //     );
-    // }
+    getAllCommercialRisks() {
+        this.glossaryManagementService.getAllCommercialRisks().subscribe(
+            (res) => {
+                this.commercialRisks = res.json;
+                this.showLoader = false;
+            },
+            (error) => {console.log(error)}
+        );
+    }
+    createCommercialRisk() {
+        this.createPropositionDialog = true;
+    }
+    getAllUserCommercialRisks() {
+        this.glossaryManagementService.getAllUserCommercialRisks().subscribe(
+            (res) => {
+                this.commercialRisks = res.json;
+                this.showLoader = false;
+            },
+            (error) => {console.log(error)}
+        );
+    }
 }

@@ -12,7 +12,7 @@ export class ReactionOnRiskPipe implements PipeTransform {
         {value: 'AVOID_RISK', display: 'Unikanie ryzyka'},
         {value: 'RESTRICT_RISK', display: 'Ograniczenie ryzyka'},
         {value: 'REINFORCEMENT', display: 'Wzmocnienie'},
-        {value: 'USAGE', display: 'Użycie'}
+        {value: 'USAGE', display: 'Wykorzystanie'}
     ];
 
 

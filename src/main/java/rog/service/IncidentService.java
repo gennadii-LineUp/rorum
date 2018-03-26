@@ -1,5 +1,6 @@
 package rog.service;
 
+import org.hibernate.annotations.Proxy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,9 +11,13 @@ import rog.domain.enumeration.StatusOfIncident;
 import rog.repository.FilledRisksRepository;
 import rog.repository.IncidentRepository;
 import rog.repository.SetOfSentPurposesRepository;
+import rog.service.dto.IncidentDTO;
 
+import javax.persistence.PersistenceContext;
+import javax.persistence.PersistenceContextType;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 /**
@@ -38,6 +43,9 @@ public class IncidentService {
 
     @Autowired
     private GlossaryOfPurposesService glossaryOfPurposesService;
+
+    @Autowired
+    private GlossaryOfRisksService glossaryOfRisksService;
 
     @Autowired
     private OrganisationStructureService organisationStructureService;
@@ -69,6 +77,12 @@ public class IncidentService {
     public List<Incident> findAll() {
         log.debug("Request to get all Incidents");
         return incidentRepository.findAll();
+    }
+
+    @Transactional(readOnly = true)
+    public Incident getOne(IncidentDTO incidentDTO) {
+        log.debug("Request to get one Incident by ID: {}", incidentDTO.getId());
+        return incidentRepository.getOne(incidentDTO.getId());
     }
 
     /**
@@ -105,8 +119,9 @@ public class IncidentService {
 
     @Transactional(readOnly = true)
     public Set<GlossaryOfRisks> getRisksForSpecificPurpose(Long purposeId) {
-        GlossaryOfPurposes glossaryOfPurposes = glossaryOfPurposesService.findOne(purposeId);
-        return glossaryOfPurposes.getGlossaryOfRisks();
+//        GlossaryOfPurposes glossaryOfPurposes = glossaryOfPurposesService.findOne(purposeId);
+//        return glossaryOfPurposes.getGlossaryOfRisks();
+        return glossaryOfRisksService.getAllByGlossaryOfPurposesId(purposeId);
     }
 
     @Transactional(readOnly = true)
@@ -149,26 +164,30 @@ public class IncidentService {
     @Transactional(readOnly = true)
     public List<Incident> getAllParentedOrSupervisoredCellsIncidentsForUser(Long orderId) {
         User user = userService.getCurrentUser();
-        Long setOfSentPurposesId;
-        List<Incident> incidents = new ArrayList<>();
-        if (setOfSentPurposesRepository.findOneByOrdersIdAndUserId(orderId, user.getId()) != null) {
-            setOfSentPurposesId = setOfSentPurposesRepository.findOneByOrdersIdAndUserId(orderId, user.getId()).getId();
-            if (incidentRepository.findAllByUserIdAndSetOfSentPurposesId(user.getId(), setOfSentPurposesId) != null) {
-                incidents = incidentRepository.findAllByUserIdAndSetOfSentPurposesId(user.getId(), setOfSentPurposesId);
-            }
-        }
+
+        Long setOfSentPurposesId = Optional.ofNullable(setOfSentPurposesRepository.findOneByOrdersIdAndUserId(orderId, user.getId()).getId()).orElse(0l);
+        List<Incident> incidents = Optional.ofNullable(incidentRepository.findAllByUserIdAndSetOfSentPurposesId(user.getId(), setOfSentPurposesId)).orElse(new ArrayList<>());
+//        if (setOfSentPurposesRepository.findOneByOrdersIdAndUserId(orderId, user.getId()) != null) {
+//            setOfSentPurposesId = setOfSentPurposesRepository.findOneByOrdersIdAndUserId(orderId, user.getId()).getId();
+//            if (incidentRepository.findAllByUserIdAndSetOfSentPurposesId(user.getId(), setOfSentPurposesId) != null) {
+//                incidents = incidentRepository.findAllByUserIdAndSetOfSentPurposesId(user.getId(), setOfSentPurposesId);
+//            }
+//        }
         return incidents;
     }
 
-    public Incident setSupervisedByAdmin(Incident incident) {
-        log.debug("Request to set Incident as supervised : {}", incident);
-        SetOfSentPurposes setOfSentPurpose = setOfSentPurposesRepository.getOne(incident.getSetOfSentPurposes().getId());
+//    @PersistenceContext(type = PersistenceContextType.EXTENDED)
+    @Transactional
+    public Incident setSupervisedByAdmin(IncidentDTO incidentDTO) {
+        log.debug("Request to set Incident as supervised : {}", incidentDTO);
+        Incident incident = getOne(incidentDTO);
+        Long incId = incidentRepository.getSetOfSentPurposesIdByIncidentId(incidentDTO.getId());
+        SetOfSentPurposes setOfSentPurpose = setOfSentPurposesRepository.getOne(incId);
         if (!setOfSentPurpose.getStatusOfSending().isConfirmedPlan()) {
             return null;
         }
-        log.debug(incident.getId() + " IDIDIDIDIDIDIDIDIDIDIDIDIDIDID\n\n\n");
         incident.setStatusOfIncident(StatusOfIncident.SUPERVISED);
-//        incident.setSupervisedBy(userService.getCurrentUser());
+        incident.setSupervisedBy(Optional.ofNullable(userService.getCurrentUser().getId()).orElse(0l));
         return incidentRepository.save(incident);
     }
 

@@ -41,7 +41,7 @@ public class GlossaryOfRisks implements Serializable {
     private User user;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JsonBackReference
+//    @JsonBackReference
     private GlossaryOfPurposes glossaryOfPurposes;
 
     @Column(name = "is_checked")

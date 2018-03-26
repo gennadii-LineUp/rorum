@@ -79,4 +79,11 @@ public class GlossaryOfCommercialRisksService {
     public List<GlossaryOfCommercialRisks> findByUserIsCurrentUser(){
         return glossaryOfCommercialRisksRepository.findByUserIsCurrentUser();
     }
+
+    @Transactional(readOnly = true)
+    public List<GlossaryOfCommercialRisks> findAll() {
+        log.debug("Request to get all GlossaryOfPurposes without pagination");
+        return glossaryOfCommercialRisksRepository.findAll();
+    }
+
 }

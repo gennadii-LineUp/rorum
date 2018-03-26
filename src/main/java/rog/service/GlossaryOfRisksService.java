@@ -10,7 +10,10 @@ import org.springframework.transaction.annotation.Transactional;
 import rog.domain.GlossaryOfRisks;
 import rog.repository.GlossaryOfRisksRepository;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 
 /**
@@ -25,6 +28,8 @@ public class GlossaryOfRisksService {
     @Autowired
     private GlossaryOfRisksRepository glossaryOfRisksRepository;
 
+    @Autowired
+    private GlossaryManagementService glossaryManagementService;
     /**
      * Save a glossaryOfRisks.
      *
@@ -74,4 +79,29 @@ public class GlossaryOfRisksService {
     public List<GlossaryOfRisks> getAllOfCurrentOrganisationByGlossaryOfPurposesId(Long purposeId){
         return glossaryOfRisksRepository.getAllOfCurrentOrganisationByGlossaryOfPurposesId(purposeId);
     }
+
+    @Transactional
+    public Set<GlossaryOfRisks> getAllByGlossaryOfPurposesId(Long purposeId) {
+        return glossaryOfRisksRepository.getAllByGlossaryOfPurposesId(purposeId);
+    }
+
+    @Transactional(readOnly = true)
+    public List<GlossaryOfRisks> findAll() {
+        return glossaryOfRisksRepository.findAll();
+    }
+
+    @Transactional(readOnly = true)
+    public List<GlossaryOfRisks> findAllByImportantToIsGreaterThan() {
+        LocalDate ld = LocalDate.now();
+        return glossaryOfRisksRepository.findAllByImportantToIsGreaterThan(ld);
+    }
+
+    @Transactional
+    public List<GlossaryOfRisks> getAllUserRisks() {
+        List<GlossaryOfRisks> result = new ArrayList<>();
+        glossaryManagementService.getAllAssignmentToCellOfCurrentOrganisation()
+            .forEach(gop -> result.addAll(glossaryOfRisksRepository.getAllByGlossaryOfPurposesId(gop.getId())));
+        return result;
+    }
+
 }

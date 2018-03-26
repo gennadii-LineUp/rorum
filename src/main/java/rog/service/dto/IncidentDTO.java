@@ -2,11 +2,13 @@ package rog.service.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import rog.domain.*;
+import rog.domain.enumeration.StatusOfIncident;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Optional;
 
 public class IncidentDTO implements Serializable {
 
@@ -19,6 +21,10 @@ public class IncidentDTO implements Serializable {
     private String descriptionOfPlannedActivities;
 
     private Boolean isCritical;
+
+    private StatusOfIncident statusOfIncident;
+
+    private Long supervisedBy;
 
     private Long setOfSentPurposesId;
 
@@ -49,12 +55,32 @@ public class IncidentDTO implements Serializable {
         this.errors = errors;
     }
 
+    public IncidentDTO(Long id, String description, String descriptionOfReaction,
+                       String descriptionOfPlannedActivities, Boolean isCritical, Long setOfSentPurposesId,
+                       Long glossaryOfPurposesId, Long filledRisksId, Long filledCommercialRisksId,
+                       Map<String, String> errors, StatusOfIncident statusOfIncident, Long supervisedBy) {
+        this.id = id;
+        this.description = description;
+        this.descriptionOfReaction = descriptionOfReaction;
+        this.descriptionOfPlannedActivities = descriptionOfPlannedActivities;
+        this.isCritical = isCritical;
+        this.setOfSentPurposesId = setOfSentPurposesId;
+        this.glossaryOfPurposesId = glossaryOfPurposesId;
+        this.filledRisksId = filledRisksId;
+        this.filledCommercialRisksId = filledCommercialRisksId;
+        this.errors = errors;
+        this.statusOfIncident = statusOfIncident;
+        this.supervisedBy = supervisedBy;
+    }
+
     public IncidentDTO(Incident incident){
         this.id = incident.getId();
         this.description = incident.getDescription();
         this.descriptionOfReaction = incident.getDescriptionOfReaction();
         this.descriptionOfPlannedActivities = incident.getDescriptionOfPlannedActivities();
         this.isCritical = incident.isCritical();
+        this.supervisedBy = Optional.ofNullable(incident.getSupervisedBy()).orElse(0l);
+        this.statusOfIncident = Optional.ofNullable(incident.getStatusOfIncident()).orElse(StatusOfIncident.REPORTED);
 
         SetOfSentPurposes setOfSentPurposes = incident.getSetOfSentPurposes();
         if(Objects.nonNull(setOfSentPurposes)){
@@ -158,5 +184,21 @@ public class IncidentDTO implements Serializable {
 
     public void setErrors(Map<String, String> errors) {
         this.errors = errors;
+    }
+
+    public StatusOfIncident getStatusOfIncident() {
+        return statusOfIncident;
+    }
+
+    public void setStatusOfIncident(StatusOfIncident statusOfIncident) {
+        this.statusOfIncident = statusOfIncident;
+    }
+
+    public Long getSupervisedBy() {
+        return supervisedBy;
+    }
+
+    public void setSupervisedBy(Long supervisedBy) {
+        this.supervisedBy = supervisedBy;
     }
 }

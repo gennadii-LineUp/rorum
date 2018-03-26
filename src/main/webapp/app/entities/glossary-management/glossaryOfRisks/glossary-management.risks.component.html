@@ -1,0 +1,69 @@
+<p-growl [life]=4000 [(value)]="msgs"></p-growl>
+
+<div *ngIf="showLoader" class="text-center">
+    <p-progressSpinner [style]="{width: '50px', height: '50px'}" strokeWidth="8" fill="#EEEEEE" animationDuration=".5s"></p-progressSpinner>
+</div>
+
+<p-dialog header="Proszę określić parametry dotyczące tworzonego procesu" [(visible)]="createPropositionDialog" modal="modal" [responsive]="true">
+    Funkcjonalność jeszcze nie przygotowana
+    <p-footer>
+        <button type="button" pButton icon="fa-close" (click)="createPropositionDialog=false">Anuluj</button>
+    </p-footer>
+</p-dialog>
+
+<div *ngIf="!risks">
+    Przykro mi, lecz nie masz praw do przeglądania tych treści.
+</div>
+
+<div *ngIf="risks" class="betterFont">
+    <div *ngIf="createProposition">
+        <!--Zgłoś propozycję celu:-->
+        <div class="w-100 my-3">
+            <div class="btn-group pull-right">
+                <button class="btn btn-primary btn-lg betterFont" (click)="createProcess()">
+                    <span>Zgłoś nowy proces</span>
+                </button>
+            </div>
+        </div>
+        <p-dataTable
+            exportFilename="Słownik ryzyk"
+            #dt
+            [value]="risks"
+            [rows]="10"
+            [paginator]="true">
+
+            <p-header>
+                <div class="ui-helper-clearfix">
+                    <button type="button" pButton icon="fa-file-o" iconPos="left" label="Reset" (click)="dt.reset()" style="float:left"></button>
+                    <span class="center"><b>Lista ryzyk</b></span>
+
+                    <!--<button type="button" pButton icon="fa-file" iconPos="left" label="Eksportuj do csv" (click)="dt.exportCSV()" style="float:right"></button>-->
+                    <!--TODO zmiana nazwy generowanego pliku + export do xlsx -->
+                    <!--<button type="button" pButton icon="fa-file" iconPos="left" label="Selection Only" (click)="dt.exportCSV({selectionOnly:true})" style="float:right"></button>-->
+                </div>
+            </p-header>
+
+            <p-column field="name" header="Nazwa" sortable="true"></p-column>
+            <p-column field="importantTo" header="Ważny do" sortable="true"></p-column>
+            <p-column field="glossaryOfPurposes.name" header="Cel" [filter]="true" filterMatchMode="contains"></p-column>
+            <!--<p-column field="color" header="Color"></p-column>-->
+            <ng-template pTemplate="emptymessage">
+                Nie znaleziono ryzyk o określonych parametrach
+            </ng-template>
+        </p-dataTable>
+    </div>
+
+    <div *ngIf="!createProposition">
+        <div>
+            <h2>Lista ryzyk: </h2>
+            <!--<p-organizationChart [value]="data"></p-organizationChart>-->
+            <ul class="list-group" *ngFor="let r of risks">
+                <li class="list-group-item">
+                    {{r.name}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>

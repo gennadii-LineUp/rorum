@@ -1,5 +1,55 @@
 id;name;important_to;glossary_of_purposes_id
-1;Czas obsługi klienta;2017-12-31;51
-2;Liczba pracowników przypadająca na liczbę obsługiwanych spraw;2017-12-31;51
-3;Liczba etatów;2017-12-31;51
-4;Liczba wniosków;2017-12-31;51
+1;Liczba wniosków rozpatrzonych po terminie;2018-12-31;27
+2;Liczba skarg;2018-12-31;27
+3;Liczba awarii;2018-12-31;27
+4;Liczba nie wykonanych pomiarów;2018-12-31;28
+5;Liczba awarii;2018-12-31;28
+6;liczba opinii wydanych po terminie;2018-12-31;29
+7;liczba awarii;2018-12-31;29
+8;liczba ponownych przetargów;2018-12-31;30
+9;liczba poprawek;2018-12-31;30
+10;liczba dodatkowych ekspertyz/analiz;2018-12-31;30
+11;liczba zmian wynikających ze zmiany prawa;2018-12-31;30
+12;liczba awarii;2018-12-31;31
+13;liczba zmian wynikających ze zmiany prawa;2018-12-31;31
+14;liczba decyzji po terminie;2018-12-31;32
+15;liczba odwołań;2018-12-31;32
+16;liczba skarg;2018-12-31;32
+17;liczba etatów/cel;2018-12-31;32
+18;liczba decyzji po terminie;2018-12-31;34
+19;liczba odwołań;2018-12-31;34
+20;liczba skarg;2018-12-31;34
+21;liczba etatów/cel;2018-12-31;34
+22;liczba decyzji po terminie;2018-12-31;36
+23;liczba odwołań;2018-12-31;36
+24;liczba skarg;2018-12-31;36
+25;liczba etatów/cel;2018-12-31;36
+26;liczba wszczętych postępowań z urzędu w wyniku przeglądu;2018-12-31;37
+27;liczba decyzji po terminie;2018-12-31;38
+28;liczba odwołań;2018-12-31;38
+29;liczba skarg;2018-12-31;38
+30;liczba etatów/cel;2018-12-31;38
+31;Liczba incydentów niszczenia pomników;2018-12-31;40
+32;ilość skarg na przedłużający się czas obsługi;2018-12-31;45
+33;procentowy udział dotacji wykorzystanych niezgodnie z umową lub/i pobranych w nadmiernej wysokości;2018-12-31;46
+34;ilość incydentów wstrzymania wydawania karmy niespełniającej wymogów przetargowych;2018-12-31;49
+35;liczba skarg na jakość karmy;2018-12-31;49
+36;ilość miesięcy bez zapewnienia karmy;2018-12-31;49
+37;ilość skarg i wniosków dotyczących działalności jednostki;2018-12-31;50
+38;ilość skarg i wniosków dotyczących działalności jednostki;2018-12-31;51
+39;liczba odwołań;2018-12-31;54
+40;liczba spraw bez rozpatrzenia;2018-12-31;54
+41;liczba decyzji uchylonych przez SKO;2018-12-31;54
+42;liczba odwołań;2018-12-31;56
+43;liczba decyzji uchylonych przez SKO;2018-12-31;56
+44;liczba odwołań;2018-12-31;57
+45;liczba odwołań;2018-12-31;58
+46;liczba decyzji uchylonych przez SKO;2018-12-31;58
+47;liczba odwołań;2018-12-31;59
+48;liczba decyzji uchylonych przez SKO;2018-12-31;59
+49;wskaźnik prawidłowych/ nieprawidłowych deklaracji;2018-12-31;64
+50;powierzchnia zbiorników wodnych;2018-12-31;66
+51;liczba sprzeciwów;2018-12-31;67
+52;liczba zgłoszeń;2018-12-31;67
+53;koszt przeglądów/ konserwacji;2018-12-31;68
+54;powierzchnia terenu;2018-12-31;77

@@ -2,10 +2,12 @@
 <div>
     <div>
         <h2>Zgłoszone incydenty</h2>
+        <h3 class="text-muted">{{selectedType}}</h3>
     </div>
     <div align="right" >
-        <input [(ngModel)]="currentSearch" placeholder="filtruj">
+        <input [(ngModel)]="currentSearch" placeholder="szukaj">
     </div>
+    <p-selectButton (onOptionClick)="changeTab($event)" [options]="types" [(ngModel)]="selectedType"></p-selectButton>
     <div class="table-responsive" *ngIf="incidents">
         <table class="table table-striped">
             <thead>
@@ -15,8 +17,9 @@
                 <th><span>Opis</span> </th>
                 <th><span>Opis planowanych działań</span> </th>
                 <th><span>Opis reakcji</span> </th>
-                <th><span>Czy krytyczny?</span> </th>
+                <th><span>Czy istotny?</span> </th>
                 <th><span>Status incydentu</span> </th>
+                <th><span>Zgłoszony przez</span></th>
                 <th></th>
             </tr>
             </thead>
@@ -28,8 +31,12 @@
                 <td>{{i.descriptionOfPlannedActivities}}</td>
                 <td>{{i.descriptionOfReaction}}</td>
                 <td>{{i.isCritical | isCriticalPipe}}</td>
-                <td>{{i.statusOfIncident | statusOfIncidentPipe}}</td>
-                <td><button *ngIf="i.statusOfIncident == 'REPORTED'" class="btn btn-sm btn-info" (click)="setSupervisor(i)">Nadzoruj</button></td>
+                <td>{{i.statusOfIncident | statusOfIncidentPipe}}{{getSupervisingUserData(i.supervisedBy)}}</td>
+                <td>{{getReportingUserData(i.user.id)}}</td>
+                <td class="btn-group">
+                    <button *ngIf="i.statusOfIncident == 'REPORTED'" class="btn btn-sm btn-info" (click)="setSupervisor(i)">Monitoruj</button>
+                    <button *ngIf="i.statusOfIncident == 'SUPERVISED'" class="btn btn-sm btn-info" (click)="sendEmail(i);" >Wyślij e-mail</button>
+                </td>
             </tr>
             </tbody>
         </table>

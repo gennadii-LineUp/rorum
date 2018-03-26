@@ -38,4 +38,5 @@ public interface GlossaryOfPurposesRepository extends JpaRepository<GlossaryOfPu
     @Query("SELECT p FROM GlossaryOfPurposes p WHERE p.organisationStructure.id IS NULL")
     Page<GlossaryOfPurposes> getAllConfirmedByGlobalAdmin(Pageable pageable);
 
+    List<GlossaryOfPurposes> findAllByParentId(Long parentId);
 }

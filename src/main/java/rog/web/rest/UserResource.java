@@ -154,9 +154,18 @@ public class UserResource {
     @Timed
     public ResponseEntity<List<User>> getAllUsers() {
         log.debug("REST request to get all supervisored users");
-
         return new ResponseEntity<>(userService.getAllParentedAndSupervisoredUsers(userService.getCurrentUser().getOrganisationStructure().getId()) , HttpStatus.OK);
     }
+
+    @GetMapping("/users/public")
+    @Timed
+    public ResponseEntity<List<UserDTO>> getAllUsersWithReducedData() {
+        log.debug("REST request to get all users with reduced data");
+        return new ResponseEntity<List<UserDTO>>(userService.getAllUsersWithReducedData(), HttpStatus.OK);
+    }
+
+//    @GetMapping("/users/f")
+//    @Secured(AuthoritiesConstants.ADMIN)
 
     @GetMapping("user/local-admin")
     @Timed

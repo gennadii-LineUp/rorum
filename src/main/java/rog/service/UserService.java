@@ -263,9 +263,21 @@ public class UserService {
     	int organisation = Ints.checkedCast(organisationStructureId);
     	return userRepository.getAllParentedAndSupervisoredUsers(organisation);
     }
-    
+
+    @Transactional(readOnly = true)
+    public List<UserDTO> getAllUsersWithReducedData() {
+        List<User> users = userRepository.findAll();
+        List<UserDTO> usersDTO = new ArrayList<>();
+        for(User user: users) {
+            UserDTO userDTO = new UserDTO(user.getId(), user.getFirstName(), user.getLastName(), user.getEmail());
+            usersDTO.add(userDTO);
+        }
+        return usersDTO;
+    }
+
     @Transactional(readOnly = true)
     public User findOneById(Long id) {
     	return userRepository.findOneById(id);
     }
+
 }

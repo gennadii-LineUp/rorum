@@ -26,7 +26,7 @@
                 </a>
             </li> -->
             <li class="nav-item dropdown pointer account">
-            <span>Zalogowano jako: {{account.firstName}} {{account.lastName}}
+            <span *ngIf="organisationStructureName">Zalogowano jako: {{account.firstName}} {{account.lastName}}, {{organisationStructureName}}
             </span>
             </li>
 

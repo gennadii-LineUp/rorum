@@ -4,7 +4,7 @@
         <h2>Moje zgłoszone incydenty</h2>
     </div>
     <div align="right" >
-        <input [(ngModel)]="currentSearch" placeholder="filtruj">
+        <input [(ngModel)]="currentSearch" placeholder="szukaj">
     </div>
     <div class="table-responsive" *ngIf="incidents">
         <table class="table table-striped">
@@ -15,7 +15,7 @@
                 <th><span>Opis</span> </th>
                 <th><span>Opis planowanych działań</span> </th>
                 <th><span>Opis reakcji</span> </th>
-                <th><span>Czy krytyczny?</span> </th>
+                <th><span>Czy istotny?</span> </th>
                 <th><span>Status incydentu</span> </th>
                 <!--<th></th>-->
             </tr>

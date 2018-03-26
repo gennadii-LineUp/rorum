@@ -52,4 +52,5 @@ public interface UserRepository extends JpaRepository<User, Long> {
     ArrayList<User> getAllParentedAndSupervisoredUsers(int organisationStructureId);
 
     User findOneById(Long id);
+
 }

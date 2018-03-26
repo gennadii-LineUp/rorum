@@ -35,8 +35,8 @@ public class GlossaryOfMeasureUnits implements Serializable {
     @Column(name = "frequency_of_gathering_data")
     private FrequencyOfGatheringData frequencyOfGatheringData;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JsonBackReference
+    @ManyToOne
+//    @JsonBackReference
     private GlossaryOfPurposes glossaryOfPurposes;
 
     @Column(name = "is_checked")

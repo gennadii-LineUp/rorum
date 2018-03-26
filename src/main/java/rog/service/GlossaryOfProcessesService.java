@@ -10,6 +10,8 @@ import org.springframework.transaction.annotation.Transactional;
 import rog.domain.GlossaryOfProcesses;
 import rog.repository.GlossaryOfProcessesRepository;
 
+import java.time.Instant;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,7 +74,13 @@ public class GlossaryOfProcessesService {
     }
 
     @Transactional(readOnly = true)
+    public List<GlossaryOfProcesses> findAllByImportantToIsGreaterThan(){
+        LocalDate ld = LocalDate.now();
+    	return glossaryOfProcessesRepository.findAllByImportantToIsGreaterThan(ld);
+    }
+
+    @Transactional(readOnly = true)
     public List<GlossaryOfProcesses> findAll(){
-    	return glossaryOfProcessesRepository.findAll();
+        return glossaryOfProcessesRepository.findAll();
     }
 }

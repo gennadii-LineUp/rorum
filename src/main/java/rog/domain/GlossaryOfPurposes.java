@@ -51,11 +51,11 @@ public class GlossaryOfPurposes implements Serializable {
     private OrganisationStructure organisationStructure;
 
     @OneToMany(mappedBy = "glossaryOfPurposes", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JsonManagedReference
+//    @JsonManagedReference
     private Set<GlossaryOfMeasureUnits> glossaryOfMeasureUnits = new HashSet<>();
 
     @OneToMany(mappedBy = "glossaryOfPurposes", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JsonManagedReference
+//    @JsonManagedReference
     private Set<GlossaryOfRisks> glossaryOfRisks = new HashSet<>();
 
     @ManyToOne(fetch = FetchType.LAZY)

@@ -1,0 +1,5 @@
+export * from './glossary-of-KRI.component'
+export * from './glossary-of-KRI.model'
+export * from './glossary-of-KRI.module'
+export * from './glossary-of-KRI.route'
+export * from './glossary-of-KRI.service'

@@ -29,4 +29,7 @@ public interface IncidentRepository extends JpaRepository<Incident, Long> {
 
     List<Incident> findAllByUserIdAndSetOfSentPurposesId(Long userId, Long setOfSentPurposesId);
 
+    @Query(value = "SELECT i.set_of_sent_purposes_id FROM Incident i WHERE i.id = ?1", nativeQuery = true)
+    Long getSetOfSentPurposesIdByIncidentId(Long id);
+
 }

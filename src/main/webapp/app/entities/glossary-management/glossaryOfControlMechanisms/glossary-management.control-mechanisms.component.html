@@ -1,0 +1,68 @@
+<p-growl [life]=4000 [(value)]="msgs"></p-growl>
+
+<div *ngIf="showLoader" class="text-center">
+    <p-progressSpinner [style]="{width: '50px', height: '50px'}" strokeWidth="8" fill="#EEEEEE" animationDuration=".5s"></p-progressSpinner>
+</div>
+
+<p-dialog header="Proszę określić parametry dotyczące tworzonego procesu" [(visible)]="createPropositionDialog" modal="modal" [responsive]="true">
+    Funkcjonalność jeszcze nie przygotowana
+    <p-footer>
+        <button type="button" pButton icon="fa-close" (click)="createPropositionDialog=false">Anuluj</button>
+    </p-footer>
+</p-dialog>
+
+
+<div *ngIf="!controlMechanisms">
+    Przykro mi, lecz nie masz praw do przeglądania tych treści.
+</div>
+
+<div *ngIf="controlMechanisms" class="betterFont">
+    <div *ngIf="createProposition">
+        <!--Zgłoś propozycję celu:-->
+        <div class="w-100 my-3">
+            <div class="btn-group pull-right">
+                <button class="btn btn-primary btn-lg betterFont" (click)="createKRI()">
+                    <span>Zgłoś nowy Mechanizm Kontrolny</span>
+                </button>
+            </div>
+        </div>
+        <div>
+            <h2>Lista Mechanizmów Kontrolnych: </h2>
+            <ul class="list-group" *ngFor="let cm of controlMechanisms">
+                <li class="list-group-item">
+                    <div class="container-inner">
+                        <div class="row">
+                            <div class="col col-md-5">
+                                {{cm.name}}
+                            </div>
+                            <!--<div class="col col-md-5">-->
+                                <!--{{cm.importantTo}}-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div *ngIf="!createProposition">
+        <div>
+            <h2>Lista Mechanizmów Kontrolnych: </h2>
+            <!--<p-organizationChart [value]="data"></p-organizationChart>-->
+            <ul class="list-group" *ngFor="let cm of controlMechanisms">
+                <li class="list-group-item">
+                    <div class="container-inner">
+                        <div class="row">
+                            <div class="col col-md-5">
+                                {{cm.name}}
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>

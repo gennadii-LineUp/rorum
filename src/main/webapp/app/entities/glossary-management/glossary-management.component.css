@@ -1,0 +1,16 @@
+.betterFont {
+    font-family: 'Times New Roman', Times, serif
+
+}
+.list-group-item:hover {
+    background: lightgrey;
+    font-size: 1.1em;
+    /*opacity: 0.1;*/
+}
+.list-group-item {
+    -webkit-transition: background, font-size 1s ease; /* Safari */
+    transition: background, font-size 1s ease;
+    -moz-transition: background, font-size 1s ease;
+    -o-transition: background, font-size 1s ease;
+
+}

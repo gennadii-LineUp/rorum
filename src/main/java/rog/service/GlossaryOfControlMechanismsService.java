@@ -15,4 +15,5 @@ public class GlossaryOfControlMechanismsService {
     public List<GlossaryOfControlMechanisms> getAllControlMechanisms(){
         return glossaryOfControlMechanismsRepository.findAll();
     }
+
 }

@@ -135,4 +135,10 @@ public class GlossaryOfPurposesService {
     public Set<GlossaryOfPurposes> findOneByOrderIdAndUserId(Long orderId, Long userId) {
         return setOfSentPurposesRepository.findOneByOrdersIdAndUserId(orderId, userId).getGlossaryOfPurposes();
     }
+
+    @Transactional(readOnly = true)
+    public List<GlossaryOfPurposes> findAllByNullParentId() {
+        return glossaryOfPurposesRepository.findAllByParentId(null);
+    }
+
 }

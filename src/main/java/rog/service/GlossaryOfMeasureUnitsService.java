@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import rog.domain.GlossaryOfMeasureUnits;
 import rog.repository.GlossaryOfMeasureUnitsRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -25,6 +26,8 @@ public class GlossaryOfMeasureUnitsService {
     @Autowired
     private GlossaryOfMeasureUnitsRepository glossaryOfMeasureUnitsRepository;
 
+    @Autowired
+    private GlossaryManagementService glossaryManagementService;
     /**
      * Save a glossaryOfMeasureUnits.
      *
@@ -79,5 +82,11 @@ public class GlossaryOfMeasureUnitsService {
         log.debug("Request to get all GlossaryOfMeasureUnits without pagination");
         return glossaryOfMeasureUnitsRepository.findAll();
     }
-
+    @Transactional(readOnly = true)
+    public List<GlossaryOfMeasureUnits> findAllUserMeasureUnits() {
+        List<GlossaryOfMeasureUnits> result = new ArrayList<>();
+        glossaryManagementService.getAllAssignmentToCellOfCurrentOrganisation()
+            .forEach(gop -> result.addAll(glossaryOfMeasureUnitsRepository.getAllOfCurrentOrganisationByGlossaryOfPurposesId(gop.getId())));
+        return result;
+    }
 }

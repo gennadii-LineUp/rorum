@@ -57,9 +57,9 @@ public class Incident implements Serializable {
     @NotNull
     @ManyToOne
     private User user;
-//
-//    @ManyToOne
-//    private User supervisedBy;
+
+    @Column(name = "supervised_by_id")
+    private Long supervisedBy;
 
     @Column(name = "creation_date", nullable = false)
     private LocalDate creationDate = LocalDate.now();
@@ -115,12 +115,12 @@ public class Incident implements Serializable {
         this.descriptionOfPlannedActivities = descriptionOfPlannedActivities;
     }
 
-    @JsonProperty(value="isCritical")
+    @JsonProperty(value = "isCritical")
     public Boolean isCritical() {
         return isCritical;
     }
 
-    @JsonProperty(value="isCritical")
+    @JsonProperty(value = "isCritical")
     public void setCritical(Boolean isCritical) {
         this.isCritical = isCritical;
     }
@@ -185,13 +185,14 @@ public class Incident implements Serializable {
         this.user = user;
     }
 
-//    public User getSupervisedBy() {
-//        return supervisedBy;
-//    }
-//
-//    public void setSupervisedBy(User supervisedBy) {
-//        this.supervisedBy = supervisedBy;
-//    }
+
+    public Long getSupervisedBy() {
+        return supervisedBy;
+    }
+
+    public void setSupervisedBy(Long supervisedBy) {
+        this.supervisedBy = supervisedBy;
+    }
 
     public LocalDate getCreationDate() {
         return creationDate;

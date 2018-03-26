@@ -6,8 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import rog.domain.GlossaryOfKeyRiskIndicators;
+import rog.domain.GlossaryOfPurposes;
 import rog.repository.GlossaryOfKeyRiskIndicatorsRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,6 +23,9 @@ public class GlossaryOfKeyRiskIndicatorsService {
 
     @Autowired
     private GlossaryOfKeyRiskIndicatorsRepository glossaryOfKeyRiskIndicatorsRepository;
+
+    @Autowired
+    private GlossaryManagementService glossaryManagementService;
 
     /**
      * Save a glossaryOfKeyRiskIndicators.
@@ -69,5 +74,12 @@ public class GlossaryOfKeyRiskIndicatorsService {
     @Transactional(readOnly = true)
     public List<GlossaryOfKeyRiskIndicators> getAllByPurposeId(Long purposeId){
         return glossaryOfKeyRiskIndicatorsRepository.getAllByPurposeId(purposeId);
+    }
+    @Transactional
+    public List<GlossaryOfKeyRiskIndicators> getAllUserKRI() {
+        List<GlossaryOfKeyRiskIndicators> result = new ArrayList<>();
+        glossaryManagementService.getAllAssignmentToCellOfCurrentOrganisation()
+            .forEach(gop -> result.addAll(glossaryOfKeyRiskIndicatorsRepository.getAllByPurposeId(gop.getId())));
+        return result;
     }
 }

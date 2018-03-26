@@ -5,6 +5,7 @@ import rog.domain.*;
 import rog.service.dto.IncidentDTO;
 
 import java.util.Objects;
+import java.util.Optional;
 
 @Service
 public class IncidentMapper {
@@ -26,6 +27,7 @@ public class IncidentMapper {
         incident.setDescriptionOfPlannedActivities(incidentDTO.getDescriptionOfPlannedActivities());
         incident.setDescriptionOfReaction(incidentDTO.getDescriptionOfReaction());
         incident.setCritical(incidentDTO.getCritical());
+//        Optional.ofNullable(incident.setStatusOfIncident(incidentDTO.getSta);)
 
         SetOfSentPurposes setOfSentPurposes = new SetOfSentPurposes();
         setOfSentPurposes.setId(incidentDTO.getSetOfSentPurposesId());

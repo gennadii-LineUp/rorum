@@ -28,7 +28,7 @@ export class NavbarComponent implements OnInit {
     modalRef: NgbModalRef;
     version: string;
     account: Account;
-    organisationStructure: OrganisationStructure;
+    organisationStructureName: String;
 
     constructor(
         private loginService: LoginService,
@@ -57,11 +57,13 @@ export class NavbarComponent implements OnInit {
         });
         this.principal.identity().then((account) => {
             this.account = account;
-            // this.organisationStructureService.find(this.account.organisationStructureId).subscribe(
-            //     (organisationStructure) => {
-            //         this.organisationStructure = organisationStructure;
-            //     }
-            // );
+            if (this.account) {
+                this.organisationStructureService.find(this.account.organisationStructureId).subscribe(
+                    (organisationStructure) => {
+                        this.organisationStructureName = organisationStructure.name;
+                    }
+                );
+            }
             this.eventManager.subscribe('authenticationSucces', (response) => this.ngOnInit());
         });
    }

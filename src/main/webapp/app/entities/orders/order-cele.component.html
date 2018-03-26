@@ -201,7 +201,7 @@
                                                     {{ocena.display}}
                                                 </option>
                                             </select>
-                                            <span *ngIf="plansAreSendAndUnchecked">{{send.measureUnitsPurposesDTOS[p_index].filledMeasureUnitsDTOS[i].purposeAccomplishmentStatus}}</span>
+                                            <span *ngIf="plansAreSendAndUnchecked">{{send.measureUnitsPurposesDTOS[p_index].filledMeasureUnitsDTOS[i].purposeAccomplishmentStatus | purposeAccomplishmentPipe}}</span>
                                         </td>
                                         <td class="text-center narrow30">
                                             <input *ngIf="!plansAreSendAndUnchecked"
@@ -283,12 +283,17 @@
                                                                       [disadledMode]="plansAreSendAndUnchecked"
                                                                       (onClosePopup)="closePopupCheckboxes($event)"></jhi-popup-checkboxes>
                                             </div>
-                                            <div *ngIf="plansAreSendAndUnchecked" class="select-duplicate"
-                                                 (click)="selectRisksProbabilityClicked(send.risksPurposesDTOS[p_index].filledRisksDTOS[i].probability,
+
+                                            <div *ngIf="plansAreSendAndUnchecked">
+                                                <span class="mx-2 bold">{{send.risksPurposesDTOS[p_index].filledRisksDTOS[i].probability}}</span>
+
+
+                                                <button class="btn btn-info btn-sm" style="color: white"
+                                                        (click)="selectRisksProbabilityClicked(send.risksPurposesDTOS[p_index].filledRisksDTOS[i].probability,
                                                                                            'r_probabilities',
                                                                                            p_index, i)">
-                                                <span>{{send.risksPurposesDTOS[p_index].filledRisksDTOS[i].probability}}</span>
-                                                <div class="arrow-down"></div>
+                                                    +
+                                                </button>
                                             </div>
                                         </td>
                                         <td class="text-center narrow30" (click)="$event.stopPropagation()"
@@ -330,12 +335,17 @@
                                                                       [disadledMode]="plansAreSendAndUnchecked"
                                                                       (onClosePopup)="closePopupCheckboxes($event)"></jhi-popup-checkboxes>
                                             </div>
-                                            <div *ngIf="plansAreSendAndUnchecked" class="select-duplicate"
-                                                 (click)="selectRisksProbabilityClicked(send.risksPurposesDTOS[p_index].filledRisksDTOS[i].powerOfInfluence,
+
+                                            <div *ngIf="plansAreSendAndUnchecked">
+                                                <span class="mx-2 bold">{{send.risksPurposesDTOS[p_index].filledRisksDTOS[i].powerOfInfluence}}</span>
+
+
+                                                <button class="btn btn-info btn-sm" style="color: white"
+                                                        (click)="selectRisksProbabilityClicked(send.risksPurposesDTOS[p_index].filledRisksDTOS[i].powerOfInfluence,
                                                                                            'r_powerOfInfluence',
                                                                                            p_index, i)">
-                                                <span>{{send.risksPurposesDTOS[p_index].filledRisksDTOS[i].powerOfInfluence}}</span>
-                                                <div class="arrow-down"></div>
+                                                    +
+                                                </button>
                                             </div>
                                         </td>
                                         <td class="text-center narrow30">
@@ -392,9 +402,9 @@
                                                     {{reaction.display}}
                                                 </option>
                                             </select>
-                                            <span *ngIf="plansAreSendAndUnchecked">{{send.risksPurposesDTOS[p_index].filledRisksDTOS[i].reactionOnRisks}}</span>
+                                            <span *ngIf="plansAreSendAndUnchecked">{{send.risksPurposesDTOS[p_index].filledRisksDTOS[i].reactionOnRisks | reactionOnRiskPipe}}</span>
                                         </td>
-                                        <td class="text-center narrow30" style="min-width: 120px !important">
+                                        <td class="text-center" style="min-width: 120px !important">
 
                                             <textarea *ngIf="!plansAreSendAndUnchecked" class="text-left" required
                                                       name="input_risk_notationConcernRisk_{{p_index}}{{i}}" cols="10" rows="2"
@@ -404,7 +414,7 @@
                                             </textarea>
                                             <span *ngIf="plansAreSendAndUnchecked">{{send.risksPurposesDTOS[p_index].filledRisksDTOS[i].notationConcernRisk}}</span>
                                         </td>
-                                        <td class="text-center narrow30" style="min-width: 120px !important">
+                                        <td class="text-center" style="min-width: 120px !important">
                                             <div *ngIf="!plansAreSendAndUnchecked" class="input-group">
                                                 <input id="r_stateForDay_{{p_index}}{{i}}" type="text" name="r_stateForDay_{{p_index}}{{i}}"
                                                        ngbDatepicker  #r_stateForDay="ngbDatepicker" style="height: 24px"
@@ -422,7 +432,7 @@
                                                 {{_send.risksPurposesDTOS[p_index].filledRisksDTOS[i].stateForDay | datepickerFrontViewUser}}
                                             </span>
                                         </td>
-                                        <td class="text-center narrow30" style="min-width: 120px !important">
+                                        <td class="text-center" style="min-width: 120px !important">
 
                                             <textarea *ngIf="!plansAreSendAndUnchecked" class="text-left" required
                                                       name="input_risk_responsiblePerson_{{p_index}}{{i}}" cols="10" rows="2"
@@ -482,12 +492,19 @@
                             <div class="plusButton"
                                  *ngIf="!plansAreSendAndUnchecked && send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probability"
                                  [ngClass]="{colorGreen: !(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probabilities.length===0),
+                                            colorRed: send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probabilities.length===0}">
+
+                                <button class="btn btn-sm rounded" style="color: white;"
+                                        title="Po kliknięciu możliwe będzie wybranie kryteriów dotyczących wybranego prawdopodobieństwa"
+                                        [ngClass]="{colorGreen: !(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probabilities.length===0),
                                             colorRed: send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probabilities.length===0}"
-                                 (click)="selectRisksProbabilityClicked(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probability,
+                                        (click)="selectRisksProbabilityClicked(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probability,
                                                                                            'cr_probabilities',
                                                                                            undefined, i)">
-                                +
+                                    +
+                                </button>
                             </div>
+
                             <!--<span *ngIf="plansAreSendAndUnchecked">{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probability}}</span>-->
                             <div *ngIf="_i===i && popupCheckboxesActiveType==='cr_probabilities'" class="popupCheckboxes">
                                 <jhi-popup-checkboxes [title]="'Prawdopodobieństwo'"
@@ -497,13 +514,18 @@
                                                       [disadledMode]="plansAreSendAndUnchecked"
                                                       (onClosePopup)="closePopupCheckboxes($event)"></jhi-popup-checkboxes>
                             </div>
-                            <div *ngIf="plansAreSendAndUnchecked" class="select-duplicate"
-                                 (click)="selectRisksProbabilityClicked(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probability,
+                            <div *ngIf="plansAreSendAndUnchecked">
+                                <span class="mx-2 bold">{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probability}}</span>
+
+
+                                <button class="btn btn-info btn-sm" style="color: white"
+                                        (click)="selectRisksProbabilityClicked(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probability,
                                                                                            'cr_probabilities',
                                                                                            undefined, i)">
-                                <span>{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probability}}</span>
-                                <div class="arrow-down"></div>
+                                    +
+                                </button>
                             </div>
+
                         </td>
                         <td class="text-center narrow30" (click)="$event.stopPropagation()"
                             [ngClass]="{tdWithSelectDuplicate: plansAreSendAndUnchecked}">
@@ -521,27 +543,39 @@
                             <div class="plusButton"
                                  *ngIf="!plansAreSendAndUnchecked && send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluence"
                                  [ngClass]="{colorGreen: !(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluences.length===0),
+                                            colorRed: send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluences.length===0}">
+
+                                <button class="btn btn-sm rounded" style="color: white;"
+                                        title="Po kliknięciu możliwe będzie wybranie kryteriów dotyczących wybranego prawdopodobieństwa"
+                                        [ngClass]="{colorGreen: !(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluences.length===0),
                                             colorRed: send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluences.length===0}"
-                                 (click)="selectRisksProbabilityClicked(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluence,
+                                        (click)="selectRisksProbabilityClicked(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluence,
                                                                                            'cr_powerOfInfluence',
                                                                                            undefined, i)">
-                                +
+                                    +
+                                </button>
                             </div>
+
                             <!--<span *ngIf="plansAreSendAndUnchecked">{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluence}}</span>-->
                             <div *ngIf="_i===i && popupCheckboxesActiveType==='cr_powerOfInfluence'" class="popupCheckboxes">
-                                <jhi-popup-checkboxes [title]="'Moc oddziaływania'"
+                                <jhi-popup-checkboxes [title]="'Siła oddziaływania'"
                                                       [dataIncome]="checkboxesToDisplay"
                                                       [checkboxesChecked]="checkboxesChecked"
                                                       (dataOutput)="setNewValue($event)"
                                                       [disadledMode]="plansAreSendAndUnchecked"
                                                       (onClosePopup)="closePopupCheckboxes($event)"></jhi-popup-checkboxes>
                             </div>
-                            <div *ngIf="plansAreSendAndUnchecked" class="select-duplicate"
-                                 (click)="selectRisksProbabilityClicked(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluence,
+
+                            <div *ngIf="plansAreSendAndUnchecked">
+                                <span class="mx-2 bold">{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluence}}</span>
+
+
+                                <button class="btn btn-info btn-sm" style="color: white"
+                                        (click)="selectRisksProbabilityClicked(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluence,
                                                                                            'cr_powerOfInfluence',
                                                                                            undefined, i)">
-                                <span>{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluence}}</span>
-                                <div class="arrow-down"></div>
+                                    +
+                                </button>
                             </div>
                         </td>
                         <td class="text-center narrow30">
@@ -610,9 +644,9 @@
                                     {{reaction.display}}
                                 </option>
                             </select>
-                            <span *ngIf="plansAreSendAndUnchecked">{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].reactionOnRisks}}</span>
+                            <span *ngIf="plansAreSendAndUnchecked">{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].reactionOnRisks | reactionOnRiskPipe}}</span>
                         </td>
-                        <td class="text-center narrow30" style="min-width: 64px !important">
+                        <td class="text-center" style="min-width: 64px !important;">
                             <!--<input *ngIf="!plansAreSendAndUnchecked" style="height: 24px"-->
                             <!--name="input_comrisks_reaction_{{i}}" placeholder=""-->
                             <!--type="text" [disabled]="plansAreSendAndUnchecked" required-->
@@ -626,7 +660,7 @@
                             <!--(keyup.enter)='createNewReceiver_mobile_amount=false'-->
                             <span *ngIf="plansAreSendAndUnchecked">{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].notationConcernRisk}}</span>
                         </td>
-                        <td class="text-center narrow30" style="min-width: 120px !important">
+                        <td class="text-center" style="min-width: 120px !important">
                             <div *ngIf="!plansAreSendAndUnchecked" class="input-group">
                                 <input id="cr_stateForDay_{{i}}" type="text" name="cr_stateForDay_{{i}}"
                                        ngbDatepicker  #cr_stateForDay="ngbDatepicker" style="height: 24px"
@@ -645,7 +679,7 @@
                                 {{_send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].stateForDay | datepickerFrontViewUser}}
                             </span>
                         </td>
-                        <td class="text-center narrow30" style="min-width: 64px !important">
+                        <td class="text-center" style="min-width: 64px !important">
                             <!--<input *ngIf="!plansAreSendAndUnchecked" style="height: 24px"-->
                             <!--name="input_comrisks_responsiblePerson_{{i}}" placeholder=""-->
                             <!--type="text" [disabled]="plansAreSendAndUnchecked" required-->

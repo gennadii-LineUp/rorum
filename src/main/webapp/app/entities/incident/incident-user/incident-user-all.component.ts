@@ -32,7 +32,6 @@ export class IncidentUserAllComponent implements OnInit, OnDestroy {
                 this.incidentService.getAllParentedOrSupervisoredCellsIncidentsUser(this.orderId).subscribe(
                     (res) => {
                         this.incidents = res.json;
-                        console.log(this.incidents)
                     },
                     (error) => {console.error('Problem getting Incidents: ' + error)},
                     () => {}

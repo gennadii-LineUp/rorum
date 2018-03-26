@@ -17,6 +17,8 @@ import {ProbabilityValuePipe} from './pipes/probability-value.pipe';
 import {InfluenceValuePipe} from './pipes/influence-value.pipe';
 import {TrueFalseFrontViewPipe} from "./pipes/trueFalseFrontView.pipe";
 import {HighriskAnalizFrontViewPipe} from "./pipes/highriskAnalizFrontView.pipe";
+import {PurposeAccomplishmentPipe} from "./pipes/purposeAccomplishment.pipe";
+import {ReactionOnRiskPipe} from "./pipes/reactionOnRisk.pipe";
 
 const ENTITY_STATES = [
     ...ordersRoute,
@@ -39,12 +41,16 @@ const ENTITY_STATES = [
         OrdersUserComponent,
         OrderCelePopupCheckboxesComponent, OrderCelePopupBadRiskComponent,
         KryteriumPipe, DatepickerFrontViewUserPipe, ProbabilityValuePipe, InfluenceValuePipe, TrueFalseFrontViewPipe,
-        HighriskAnalizFrontViewPipe
+        HighriskAnalizFrontViewPipe,
+        PurposeAccomplishmentPipe,
+        ReactionOnRiskPipe
     ],
     exports: [
         OrderCelePopupCheckboxesComponent, OrderCelePopupBadRiskComponent,
         KryteriumPipe, DatepickerFrontViewUserPipe, ProbabilityValuePipe, InfluenceValuePipe, TrueFalseFrontViewPipe,
-        HighriskAnalizFrontViewPipe
+        HighriskAnalizFrontViewPipe,
+        PurposeAccomplishmentPipe,
+        ReactionOnRiskPipe
     ],
     entryComponents: [
         OrdersComponent,

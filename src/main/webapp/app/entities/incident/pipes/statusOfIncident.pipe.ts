@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class StatusOfIncidentPipe implements PipeTransform {
     select_costs_values = [
         {value: 'REPORTED', display: 'Zgłoszony'},
-        {value: 'SUPERVISED', display: 'Nadzorowany'},
+        {value: 'SUPERVISED', display: 'Monitorowany'},
     ];
 
     transform(value: string) {

@@ -101,6 +101,14 @@ public class UserDTO implements Serializable{
 
     }
 
+    public UserDTO(Long id, String firstName, String lastName,
+                   String email) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
+
     public UserDTO(Long id, String login, String firstName, String lastName,
                    String email, boolean activated, String imageUrl, String langKey,
                    String createdBy, Instant createdDate, String lastModifiedBy, Instant lastModifiedDate,

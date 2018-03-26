@@ -1,4 +1,5 @@
 import { BaseEntity } from './../../shared';
+import {User} from "../../shared/user/user.model";
 
 export class Incident implements BaseEntity {
     constructor(
@@ -11,5 +12,8 @@ export class Incident implements BaseEntity {
         public glossaryOfPurposes?: BaseEntity,
         public filledRisks?: BaseEntity,
         public filledCommercialRisks?: BaseEntity,
+        public statusOfIncident?: string,
+        public supervisedBy?: number,
+        public user?: User
     ) {}
 }

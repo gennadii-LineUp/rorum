@@ -30,7 +30,7 @@ export class FilterPipe implements PipeTransform {
                     if(item[property] === 'REPORTED' && 'Zgłoszony'.toLowerCase().includes(term.toLowerCase())){
                         return true
                     }
-                    if(item[property] === 'SUPERVISED' && 'Nadzorowany'.toLowerCase().includes(term.toLowerCase())){
+                    if(item[property] === 'SUPERVISED' && 'Monitorowany'.toLowerCase().includes(term.toLowerCase())){
                         return true
                     }
                 }

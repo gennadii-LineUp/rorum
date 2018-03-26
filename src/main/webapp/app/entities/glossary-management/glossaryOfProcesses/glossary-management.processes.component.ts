@@ -8,12 +8,16 @@ import {Principal, User} from "../../../shared";
 
 @Component({
     selector: 'glossary-management-processes',
-    templateUrl: './glossary-management.processes.component.html'
+    templateUrl: './glossary-management.processes.component.html',
+    styleUrls: ['../glossary-management.component.css'],
 })
 export class GlossaryManagementProcessesComponent implements OnInit, OnDestroy {
     @Input() user: User;
     msgs: Message[];
     processes: GlossaryOfProcesses[];
+    createProposition = false;
+    createPropositionDialog = false;
+    showLoader = true;
 
     constructor(
         private activatedRoute: ActivatedRoute,
@@ -24,7 +28,7 @@ export class GlossaryManagementProcessesComponent implements OnInit, OnDestroy {
     ) { }
 
     ngOnInit(): void {
-        if(this.user) {
+        if (this.user) {
             this.loadData();
         }
 
@@ -36,17 +40,22 @@ export class GlossaryManagementProcessesComponent implements OnInit, OnDestroy {
     loadData() {
         // console.log(this.user.authorities);
         this.principal.hasAuthority("ROLE_ZGLASZANIE_PROPOZYCJI_DO_SLOWNIKOW").then((hasAuthority: boolean) => {
-            // console.log(hasAuthority)
+            if (hasAuthority) {
+                console.log(hasAuthority)
+                this.showLoader = false;
+            }
         });
         this.principal.hasAuthority("ROLE_ZARZADZANIE_SLOWNIKAMI_LOCAL_ADMIN").then((hasAuthority: boolean) => {
-            if(hasAuthority){
+            if (hasAuthority) {
                 this.getAllProcesses();
+                this.createProposition = true;
             }
 
         });
         this.principal.hasAuthority("ROLE_ZARZADZANIE_SLOWNIKAMI_GLOBAL_ADMIN").then((hasAuthority: boolean) => {
-            if(hasAuthority){
+            if (hasAuthority) {
                 this.getAllProcesses();
+                this.createProposition = true;
             }
         });
     }
@@ -55,8 +64,12 @@ export class GlossaryManagementProcessesComponent implements OnInit, OnDestroy {
         this.glossaryManagementService.getAllProcesses().subscribe(
             (res) => {
                 this.processes = res.json;
+                this.showLoader = false;
             },
             (error) => {console.log(error)}
         );
+    }
+    createProcess() {
+        this.createPropositionDialog = true;
     }
 }

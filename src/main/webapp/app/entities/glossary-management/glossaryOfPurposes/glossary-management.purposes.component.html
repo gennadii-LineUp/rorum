@@ -1,10 +1,84 @@
+<p-growl [life]=4000 [(value)]="msgs"></p-growl>
+<div *ngIf="showLoader" class="text-center">
+        <p-progressSpinner [style]="{width: '50px', height: '50px'}" strokeWidth="8" fill="#EEEEEE" animationDuration=".5s"></p-progressSpinner>
+</div>
+
+<p-dialog header="Proszę określić parametry dotyczące składanej propozycji celu" [(visible)]="createPropositionDialog" modal="modal" [responsive]="true">
+        <!--<form [formGroup]="purpose" (ngSubmit)="onSubmit(purpose)" novalidate>-->
+            <!--<div class="row mx-5">-->
+                <!--<div class="col col-md-4">-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="exampleFormControlTextarea1">Opis incydentu</label>-->
+                        <!--<textarea autosize class="form-control" id="exampleFormControlTextarea1" rows="3"-->
+                                  <!--formControlName="name"></textarea>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<p>{{user.id}}</p>-->
+
+                <!--&lt;!&ndash;<div class="col col-md-4">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<label for="exampleFormControlTextarea2">Opis reakcji</label>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<textarea autosize class="form-control" id="exampleFormControlTextarea2" rows="3"&ndash;&gt;-->
+                                  <!--&lt;!&ndash;formControlName="descriptionOfReaction"></textarea>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="col col-md-4">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<label for="exampleFormControlTextarea3">Opis planowanych aktywności (?)</label>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<textarea autosize class="form-control" id="exampleFormControlTextarea3" rows="3"&ndash;&gt;-->
+                                  <!--&lt;!&ndash;formControlName="descriptionOfPlannedActivities"></textarea>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--</div>-->
+
+            <!--<div class="pull-right btn-group">-->
+                <!--<button type="submit" class="btn btn-success" [hidden]="wasSubmitted">Zgłoś incydent-->
+                <!--</button>-->
+            <!--</div>-->
+        <!--</form>-->
+
+    <p-footer>
+        <!--<button type="button" pButton icon="fa-check" (click)="()">Generuj</button>-->
+        <button type="button" pButton icon="fa-close" (click)="createPropositionDialog=false">Anuluj</button>
+    </p-footer>
+</p-dialog>
+
+
 <div *ngIf="!purposes">
     Przykro mi, lecz nie masz praw do przeglądania tych treści.
 </div>
 
-<div *ngIf="purposes">
-    <div *ngFor="let p of purposes">
-        {{p.name}}
+<div *ngIf="purposes" class="betterFont">
+    <div *ngIf="createProposition">
+        <!--Zgłoś propozycję celu:-->
+        <div class="w-100 my-3">
+            <div class="btn-group pull-right">
+                <button class="btn btn-primary btn-lg betterFont" (click)="createPurposeProposition()">
+                    <span>Zgłoś propozycję celu</span>
+                </button>
+            </div>
+        </div>
+        <div>
+            <h2>Lista celów: </h2>
+            <ul class="list-group" *ngFor="let p of purposes">
+                <li class="list-group-item">
+                    {{p.name}}
+                </li>
+            </ul>
+        </div>
     </div>
+
+    <div *ngIf="!createProposition">
+        <div>
+            <!--<p-organizationChart [value]="data"></p-organizationChart>-->
+            <h2>Lista celów: </h2>
+            <ul class="list-group" *ngFor="let p of purposes">
+                <li class="list-group-item">
+                    {{p.name}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
 </div>
-<!--<p-organizationChart [value]="data"></p-organizationChart>-->

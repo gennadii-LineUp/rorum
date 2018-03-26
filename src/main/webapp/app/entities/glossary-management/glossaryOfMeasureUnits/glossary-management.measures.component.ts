@@ -6,15 +6,20 @@ import {GlossaryOfProcesses} from "../../glossary-of-processes";
 import {GlossaryManagementService} from "../glossary-management.service";
 import {Principal, User} from "../../../shared";
 import {GlossaryOfMeasureUnits} from "../../glossary-of-measure-units";
+import {DataTable} from "primeng/primeng";
 
 @Component({
     selector: 'glossary-management-measures',
-    templateUrl: './glossary-management.measures.component.html'
+    templateUrl: './glossary-management.measures.component.html',
+    styleUrls: ['../glossary-management.component.css'],
 })
 export class GlossaryManagementMeasuresComponent implements OnInit, OnDestroy {
     @Input() user: User;
     msgs: Message[];
     measures: GlossaryOfMeasureUnits[];
+    createProposition = true;
+    createPropositionDialog = false;
+    showLoader = true;
 
     constructor(
         private activatedRoute: ActivatedRoute,
@@ -25,7 +30,7 @@ export class GlossaryManagementMeasuresComponent implements OnInit, OnDestroy {
     ) { }
 
     ngOnInit(): void {
-        if(this.user) {
+        if (this.user) {
             this.loadData();
         }
 
@@ -38,15 +43,19 @@ export class GlossaryManagementMeasuresComponent implements OnInit, OnDestroy {
         // console.log(this.user.authorities);
         this.principal.hasAuthority("ROLE_ZGLASZANIE_PROPOZYCJI_DO_SLOWNIKOW").then((hasAuthority: boolean) => {
             // console.log(hasAuthority)
+            if (hasAuthority) {
+                this.getAllUserMeasures();
+
+            }
         });
         this.principal.hasAuthority("ROLE_ZARZADZANIE_SLOWNIKAMI_LOCAL_ADMIN").then((hasAuthority: boolean) => {
-            if(hasAuthority){
+            if (hasAuthority) {
                 this.getAllMeasures();
             }
 
         });
         this.principal.hasAuthority("ROLE_ZARZADZANIE_SLOWNIKAMI_GLOBAL_ADMIN").then((hasAuthority: boolean) => {
-            if(hasAuthority){
+            if (hasAuthority) {
                 this.getAllMeasures();
             }
         });
@@ -56,8 +65,29 @@ export class GlossaryManagementMeasuresComponent implements OnInit, OnDestroy {
         this.glossaryManagementService.getAllMeasures().subscribe(
             (res) => {
                 this.measures = res.json;
+                this.showLoader = false;
             },
             (error) => {console.log(error)}
         );
+    }
+    getAllUserMeasures() {
+        this.glossaryManagementService.getAllUserMeasures().subscribe(
+            (res) => {
+                this.measures = res.json;
+                this.showLoader = false;
+            },
+            (error) => {console.log(error)}
+        );
+    }
+    createMeasureUnit() {
+        this.createPropositionDialog = true;
+    }
+
+    reset(dt: DataTable) {
+        dt.reset();
+    }
+
+    exportCSV(dt: DataTable) {
+        dt.exportCSV();
     }
 }

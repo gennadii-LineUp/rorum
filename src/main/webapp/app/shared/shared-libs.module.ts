@@ -17,6 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {DropdownModule} from 'primeng/components/dropdown/dropdown';
 import {TabViewModule} from 'primeng/components/tabview/tabview';
 import {OrganizationChartModule} from "primeng/components/organizationchart/organizationchart";
+import {DataListModule} from 'primeng/components/datalist/datalist';
+import {ButtonModule} from "primeng/primeng";
 
 @NgModule({
     imports: [
@@ -39,6 +41,8 @@ import {OrganizationChartModule} from "primeng/components/organizationchart/orga
         DropdownModule,
         TabViewModule,
         OrganizationChartModule,
+        DataListModule,
+        ButtonModule
     ],
     exports: [
         FormsModule,
@@ -57,6 +61,8 @@ import {OrganizationChartModule} from "primeng/components/organizationchart/orga
         DropdownModule,
         TabViewModule,
         OrganizationChartModule,
+        DataListModule,
+        ButtonModule
     ]
 })
 export class RorumSharedLibsModule {}

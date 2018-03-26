@@ -211,14 +211,14 @@
                                         <th class="text-center"><span jhiTranslate="rorumApp.glossaryOfPurposes.strengthOfInfluence">Stregth Of Power Of Influence</span></th><!-- -->
                                         <th class="text-center"><span jhiTranslate="rorumApp.glossaryOfPurposes.calculatedValue">Calculated value</span></th><!-- jhiTranslate="rorumApp.glossaryOfPurposes.calculatedValue"-->
                                         <th class="text-center"><span jhiTranslate="rorumApp.glossaryOfPurposes.reactionOnRisks">Reaction On Risks</span></th><!-- -->
-                                        <th class="text-center"><span jhiTranslate="rorumApp.glossaryOfPurposes.stateForDay">state for day</span></th>
                                         <th class="text-center"><span jhiTranslate="rorumApp.glossaryOfPurposes.notationConcernRisk">notationConcernRisk</span></th><!-- -->
+                                        <th class="text-center"><span jhiTranslate="rorumApp.glossaryOfPurposes.stateForDay">state for day</span></th>
                                         <th class="text-center"><span jhiTranslate="rorumApp.glossaryOfPurposes.responsiblePerson">responsiblePerson</span></th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr *ngFor="let risk of send.risksPurposesDTOS[p_index].filledRisksDTOS; let i='index'">
-                                        <td style="width: 40%">{{risk.glossaryOfRisksDTO.name}}</td>
+                                        <td>{{risk.glossaryOfRisksDTO.name}}</td>
                                         <td class="text-center narrow30" (click)="$event.stopPropagation()">
                                             <!--<span>{{send.risksPurposesDTOS[p_index].filledRisksDTOS[i].probability}}</span>-->
                                             <div *ngIf="_p_index===p_index && _i===i && popupCheckboxesActiveType==='r_probabilities'"
@@ -312,13 +312,14 @@
                                         <td class="text-center narrow30">
                                             <span>{{send.risksPurposesDTOS[p_index].filledRisksDTOS[i].reactionOnRisks | reactionOnRiskPipe}}</span>
                                         </td>
+                                        <td class="text-center" style="min-width: 64px !important">
+                                            <span>{{send.risksPurposesDTOS[p_index].filledRisksDTOS[i].notationConcernRisk}}</span>
+                                        </td>
                                         <td class="text-center narrow30">
                                             <span>{{send.risksPurposesDTOS[p_index].filledRisksDTOS[i].stateForDay | datepickerFrontViewAdmin}}</span>
                                         </td>
-                                        <td class="text-center narrow30" style="min-width: 64px !important">
-                                            <span>{{send.risksPurposesDTOS[p_index].filledRisksDTOS[i].notationConcernRisk}}</span>
-                                        </td>
-                                        <td class="text-center narrow30" style="min-width: 64px !important">
+
+                                        <td class="text-center" style="min-width: 64px !important">
                                             <span>{{send.risksPurposesDTOS[p_index].filledRisksDTOS[i].responsiblePerson}}</span>
                                         </td>
                                     </tr>
@@ -346,8 +347,8 @@
                     <th class="text-center"><span jhiTranslate="rorumApp.glossaryOfPurposes.strengthOfInfluence">Stregth Of Power Of Influence</span></th><!-- -->
                     <th class="text-center"><span jhiTranslate="rorumApp.glossaryOfPurposes.calculatedValue">Calculated value</span></th><!-- jhiTranslate="rorumApp.glossaryOfPurposes.calculatedValue"-->
                     <th class="text-center"><span jhiTranslate="rorumApp.glossaryOfPurposes.reactionOnRisks">Reaction On Risks</span></th><!-- -->
-                    <th class="text-center"><span jhiTranslate="rorumApp.glossaryOfPurposes.stateForDay">state for day</span></th>
                     <th class="text-center"><span jhiTranslate="rorumApp.glossaryOfPurposes.notationConcernRisk">notationConcernRisk</span></th><!-- -->
+                    <th class="text-center"><span jhiTranslate="rorumApp.glossaryOfPurposes.stateForDay">state for day</span></th>
                     <th class="text-center"><span jhiTranslate="rorumApp.glossaryOfPurposes.responsiblePerson">responsiblePerson</span></th><!-- -->
                 </tr>
                 </thead>
@@ -363,12 +364,15 @@
                                                   [disadledMode]="plansAreSendAndUnchecked"
                                                   (onClosePopup)="closePopupCheckboxes($event)"></jhi-popup-checkboxes>
                         </div>
-                        <div *ngIf="plansAreSendAndUnchecked" class="select-duplicate"
-                             (click)="selectRisksProbabilityClicked(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probability,
+                        <div *ngIf="plansAreSendAndUnchecked">
+                            <span class="mx-2 bold">{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probability}}</span>
+
+                            <button class="btn btn-info btn-sm" style="color: white"
+                                    (click)="selectRisksProbabilityClicked(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probability,
                                                                                            'cr_probabilities',
                                                                                            undefined, i)">
-                            <span>{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].probability}}</span>
-                            <div class="arrow-down"></div>
+                                +
+                            </button>
                         </div>
                     </td>
                     <td class="text-center narrow30" (click)="$event.stopPropagation()">
@@ -380,12 +384,16 @@
                                                   [disadledMode]="plansAreSendAndUnchecked"
                                                   (onClosePopup)="closePopupCheckboxes($event)"></jhi-popup-checkboxes>
                         </div>
-                        <div *ngIf="plansAreSendAndUnchecked" class="select-duplicate"
-                             (click)="selectRisksProbabilityClicked(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluence,
+                        <div *ngIf="plansAreSendAndUnchecked">
+                            <span class="mx-2 bold">{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluence}}</span>
+
+
+                            <button class="btn btn-info btn-sm" style="color: white"
+                                    (click)="selectRisksProbabilityClicked(send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluence,
                                                                                                'cr_powerOfInfluence',
                                                                                                undefined, i)">
-                            <span>{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].powerOfInfluence}}</span>
-                            <div class="arrow-down"></div>
+                                +
+                            </button>
                         </div>
                     </td>
                     <td class="text-center narrow30">
@@ -411,7 +419,7 @@
                                     type="button" class="btn btn-danger"
                                     (click)="badRiskFunction('cr_highRisk', undefined, i)">
                                 {{levelOfRisk('cr_highRisk', undefined, i)}}
-                                ; {{percentageOfRisk('cr_highRisk', undefined, i)}}%
+                                <!--; {{percentageOfRisk('cr_highRisk', undefined, i)}}%-->
                             </button>
                         </div>
                         <div *ngIf="_i===i && badRiskReached && popupCheckboxesActiveType==='cr_highRisk'" class="popupCheckboxes popupBadRisk">
@@ -427,15 +435,15 @@
                         </div>
                     </td>
                     <td class="text-center narrow30">
-                        <span>{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].reactionOnRisks}}</span>
+                        <span>{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].reactionOnRisks | reactionOnRiskPipe}}</span>
+                    </td>
+                    <td class="text-center" style="min-width: 64px !important">
+                        <span>{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].notationConcernRisk}}</span>
                     </td>
                     <td class="narrow30" > <!--style="min-width: 120px !important"-->
                         <span>{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].stateForDay | datepickerFrontViewAdmin}}</span>
                     </td>
-                    <td class="text-center narrow30" style="min-width: 64px !important">
-                        <span>{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].notationConcernRisk}}</span>
-                    </td>
-                    <td class="text-center narrow30" style="min-width: 64px !important">
+                    <td class="text-center" style="min-width: 64px !important">
                         <span>{{send.commercialRisksPurposesDTO.filledCommercialRisksDTOS[i].responsiblePerson}}</span>
                     </td>
                 </tr>

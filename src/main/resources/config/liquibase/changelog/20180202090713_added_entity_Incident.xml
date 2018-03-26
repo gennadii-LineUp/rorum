@@ -59,6 +59,10 @@
             <column name="status" type="varchar(255)">
                 <constraints nullable="false" />
             </column>
+
+            <column name="supervised_by_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
         </createTable>
     </changeSet>
 </databaseChangeLog>

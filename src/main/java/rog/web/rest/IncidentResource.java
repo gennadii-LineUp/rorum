@@ -181,15 +181,11 @@ public class IncidentResource {
         if(!isValidIncidentDTO(incidentDTO)){
             return ResponseEntity.badRequest().body(incidentDTO);
         }
-
-
-        Incident result = incidentService.setSupervisedByAdmin(incidentMapper.incident(incidentDTO));
+        Incident result = incidentService.setSupervisedByAdmin(incidentDTO);
         if(result == null){
             return ResponseEntity.badRequest().body(null);
         }
-        return ResponseEntity.created(new URI("/api/incident/add-supervisor" + result.getId()))
-            .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, result.getId().toString()))
-            .body(new IncidentDTO(result));
+        return new ResponseEntity<>(incidentMapper.incidentDTO(result), HttpStatus.OK);
     }
 
     @GetMapping("/incident-user")

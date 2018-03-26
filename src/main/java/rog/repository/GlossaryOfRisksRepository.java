@@ -6,7 +6,9 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import rog.domain.GlossaryOfRisks;
 
+import java.time.LocalDate;
 import java.util.List;
+import java.util.Set;
 
 
 /**
@@ -30,4 +32,10 @@ public interface GlossaryOfRisksRepository extends JpaRepository<GlossaryOfRisks
 
     @Query("SELECT r FROM GlossaryOfRisks r WHERE r.organisationStructure.id IS NULL")
     List<GlossaryOfRisks> getAllConfirmedByGlobalAdmin();
+
+    Set<GlossaryOfRisks> getAllByGlossaryOfPurposesId(Long purposeId);
+
+    List<GlossaryOfRisks> findAll();
+
+    List<GlossaryOfRisks> findAllByImportantToIsGreaterThan(LocalDate date);
 }

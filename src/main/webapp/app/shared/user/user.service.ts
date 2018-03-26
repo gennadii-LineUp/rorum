@@ -50,13 +50,20 @@ export class UserService {
         return new ResponseWrapper(res.headers, jsonResponse, res.status);
     }
 
-
     public getAllUsers(): Observable<ResponseWrapper> {
         return this.http.get(this.resourceUrl)
             .map((res: Response) => {
                 return this.convertResponseWithUsers(res);
             })
     }
+
+    public getAllUsersWithReducedData(): Observable<ResponseWrapper> {
+        return this.http.get(this.resourceUrl + '/public')
+            .map((res: Response) => {
+                return this.convertResponseWithUsers(res);
+            })
+    }
+
     private convertResponseWithUsers(res: Response): ResponseWrapper {
         const jsonResponse = res.json();
         const result = [];

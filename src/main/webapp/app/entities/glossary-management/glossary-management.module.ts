@@ -8,7 +8,11 @@ import {GlossaryManagementService} from "./glossary-management.service";
 import {GlossaryManagementProcessesComponent} from "./glossaryOfProcesses/glossary-management.processes.component";
 import {GlossaryManagementPurposesComponent} from "./glossaryOfPurposes/glossary-management.purposes.component";
 import {GlossaryManagementMeasuresComponent} from "./glossaryOfMeasureUnits/glossary-management.measures.component";
-import {GlossaryManagementCorruptionRisks} from "./glossaryOfCorruptionRisks/glossary-management.corruptionRisks";
+import {ReactiveFormsModule} from "@angular/forms";
+import {GlossaryManagementControlMechanismsComponent} from "./glossaryOfControlMechanisms/glossary-management.control-mechanisms.component";
+import {GlossaryManagementCorruptionRisksComponent} from "./glossaryOfCorruptionRisks/glossary-management.corruptionRisks.component";
+import {GlossaryManagementKRIComponent} from "./glossaryOfKRI/glossary-management.KRI.component";
+import {GlossaryManagementRisksComponent} from "./glossaryOfRisks/glossary-management.risks.component";
 
 const ENTITY_STATES = [
     ...glossaryManagementRoute
@@ -17,21 +21,28 @@ const ENTITY_STATES = [
 @NgModule({
     imports: [
         RorumSharedModule,
-        RouterModule.forRoot(ENTITY_STATES, { useHash: true })
+        RouterModule.forRoot(ENTITY_STATES, { useHash: true }),
+        ReactiveFormsModule
     ],
     declarations: [
         GlossaryManagementComponent,
         GlossaryManagementProcessesComponent,
         GlossaryManagementPurposesComponent,
         GlossaryManagementMeasuresComponent,
-        GlossaryManagementCorruptionRisks
+        GlossaryManagementCorruptionRisksComponent,
+        GlossaryManagementControlMechanismsComponent,
+        GlossaryManagementKRIComponent,
+        GlossaryManagementRisksComponent
     ],
     entryComponents: [
         GlossaryManagementComponent,
         GlossaryManagementProcessesComponent,
         GlossaryManagementPurposesComponent,
         GlossaryManagementMeasuresComponent,
-        GlossaryManagementCorruptionRisks
+        GlossaryManagementCorruptionRisksComponent,
+        GlossaryManagementControlMechanismsComponent,
+        GlossaryManagementKRIComponent,
+        GlossaryManagementRisksComponent
     ],
     providers: [
         GlossaryManagementService

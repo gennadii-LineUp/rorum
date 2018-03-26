@@ -1,3 +1,6 @@
 id;name;completion_date;creation_date;user_id;important_to;is_checked;organisation_structure_id
 1;Ryzyko 1;2017-12-04;2017-12-04;14;2017-12-04;true;1170
 2;Ryzyko 2;2017-12-04;2017-12-04;14;2017-12-04;true;1171
+3;Ryzyko komercyjne 1;2017-12-04;2017-12-04;14;2017-12-04;true;1166
+4;Ryzyko komercyjne 2;2017-12-04;2017-12-04;14;2017-12-04;true;1166
+5;Ryzyko komercyjne 1;2017-12-04;2017-12-04;14;2017-12-04;true;1169

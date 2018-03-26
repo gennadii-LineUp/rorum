@@ -19,7 +19,7 @@ import {
 } from './';
 import {CheckboxModule} from 'primeng/components/checkbox/checkbox';
 import {ReactiveFormsModule} from "@angular/forms";
-import {GrowlModule} from "primeng/primeng";
+import {GrowlModule, SelectButtonModule} from "primeng/primeng";
 import {MessageService} from "primeng/components/common/messageservice";
 import {Autosize} from "../../shared/directives/autosize.directive";
 import {FilterPipe} from "./filter/filter.pipe";
@@ -39,7 +39,8 @@ const ENTITY_STATES = [
         RouterModule.forRoot(ENTITY_STATES, { useHash: true }),
         CheckboxModule,
         ReactiveFormsModule,
-        GrowlModule
+        GrowlModule,
+        SelectButtonModule
     ],
     declarations: [
         IncidentComponent,
